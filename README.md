@@ -5,8 +5,8 @@
 ## License
 
 Copyright 2024 Robert S. Muhlestein (<mailto:robmuh@gmail.com>)  
-SPDX-License-Identifier: [Apache-2.0] (code)
-SPDX-License-Identifier: [CC BY-NC-ND] (prose)
+SPDX-License-Identifier: [Apache-2.0] (code)  
+SPDX-License-Identifier: [CC BY-NC-ND] (prose)  
 
 [Apache-2.0]: LICENSE-code
 [CC BY-NC-ND]: LICENSE-prose
