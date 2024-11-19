@@ -32,9 +32,7 @@
 This is the optional preamble (an untitled section body). Useful for
 writing simple sectionless documents consisting only of a preamble.
 
-include::preface.adoc[]
-
-include::foreward.adoc[]
-
-include::intro/content.adoc[]
+include::preface.adoc[]  
+include::foreward.adoc[]  
+include::intro/content.adoc[]  
 
