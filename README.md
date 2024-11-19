@@ -20,3 +20,4 @@ Muhlestein but can be used freely to refer to this book
 <https://github.com/rwxrob/code-wizard-book> without limitation. To avoid
 potential confusion, intentionally using this trademark to refer to other
 projects—free or proprietary—is prohibited.
+
