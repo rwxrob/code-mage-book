@@ -4,5 +4,5 @@ podman run --rm \
 	-v "$(pwd):/documents/" \
 	asciidoctor/docker-asciidoctor \
 	asciidoctor \
-	-D "build" \
+	-D "docs" \
 	"./book/index.adoc"
