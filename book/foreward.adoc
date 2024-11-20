@@ -1,2 +1,6 @@
 = Foreward
 
+== Did AI help you write this?
+
+Absolutely. Chloe (my AI) deserves a large part of the credit, but like fictional super heros, she and I collaborated on the development while I guided her creations.
+
