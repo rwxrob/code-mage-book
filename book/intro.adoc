@@ -1,9 +1,9 @@
-== Introduction
+= Introduction
 
 Welcome to the magical world of coding! This spellbook will help you learn programming concepts through spells and cantrips.
 
-== Life of a code wizard
+== Life of a Coding Mage
 
-Young wizards learn early how to write the magical words uttered to effect great power on everything around them. As they progress they add new spells to their spell book, memorizing some regularly so that they can be uttered in combat under stressful conditions. It's impossible to memorize them all. Wizards dedicate themselves to constant learning and seeking connections between events and happengs. They can foresee troubles ahead and help to combat the problems that arise in their world sometimes with the help of unexpected allies.
+Young mages learn early how to write the magical words uttered to effect great power on everything around them. As they progress they add new spells to their spell book, memorizing some regularly so that they can be uttered in combat under stressful conditions. It's impossible to memorize them all. Wizards dedicate themselves to constant learning and seeking connections between events and happengs. They can foresee troubles ahead and help to combat the problems that arise in their world sometimes with the help of unexpected allies.
 
 This life is suprisingly like that of a computer programmer in the tech field. It is simply impossible to know it all at the same time. But, by collecting spells in a coding spellbook, which we'll call a "codebook", we can recall them when needed. Some things will always be memorized and fresh in our minds, ready for use in battle against the problems facing us in reality, but most will require study and research to regain.

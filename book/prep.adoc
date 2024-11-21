@@ -1,4 +1,3 @@
-[preparation]
 = Preparation
 
 include::prep/terminal.adoc[]  

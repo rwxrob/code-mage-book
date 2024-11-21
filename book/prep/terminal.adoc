@@ -1,7 +1,7 @@
-= Conjuring the Command Portal
+== Conjuring the Command Portal
 Before you can begin your journey as a mage of code, you must conjure the gateway to your digital spellcraft: the Command Portal. The portal, often known as the terminal, is where you’ll cast incantations (commands) and shape your magical constructs (code). Depending on your operating system, the steps to conjure this portal vary slightly. Follow the guidance below to prepare your Command Portal for action.
 
-== For Mac
+=== For Mac
 On macOS, the terminal is already pre-installed, waiting for you to summon it. Here’s how to conjure it:
 
 1. Press `Command + Space` to open Spotlight.
@@ -14,7 +14,7 @@ Alternatively, you can use the mystical power of Spotlight Search:
 
 Once the Terminal appears, you’ve successfully conjured your Command Portal. It’s ready to receive your magical commands!
 
-== For Windows
+=== For Windows
 On Windows, the most powerful portal is the **Windows Terminal Preview**, and an essential tool for cross-platform magic is **Git Bash**. Follow these steps to install both:
 
 1. Open the **Microsoft Store** on your Windows machine.

@@ -10,7 +10,7 @@
 :doctype: book
 :leveloffset: +1
 :front-cover-image: image:cover.jpeg[width=1024,height=1024]
-:sectnums:
+:sectnums!:
 :sectlinks:
 :toc: left
 :toclevels: 4

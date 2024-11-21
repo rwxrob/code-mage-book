@@ -1,6 +1,26 @@
 [preface]
 = Preface
 
+== Who should read this book?
+
+This book is written for anyone wanting to learn computer science and programming for practical applications development, the stuff that matters. While we have fun with the whole fantasy magic theme, everything in this book is very real and might even get you a job someday. While this book can reliably be used as a text book for absolute beginners with enough algebra to understand what a mathematical function is, it very clearly is not *only* intended for educational institutions. In fact, I wrote this book specifically with pro-active parents in mind who want to give their kids a head-start in tech that they simply cannot find in most traditional education systems, the same reason, in fact, that I started SKILSTAK Coding Arts in 2013 with my own retirement money. My hope is that some of these parents, teachers, and mages will found coding clubs and communities dedicated to helping each other master the art of code and passing it on.
+
+== Why Go?
+
+If you have never coded, just know Go is the best first language to learn for those who want a balanced introduction to programming and computer science while also learning a very real and marketable modern language.
+
+Go is the goldilocks of first languages. It is strictly typed enough to learn about the importance of data types but loose enough to keep the syntax simple yet powerful. Go is also easily the least verbose and most understandable of all the strictly typed, statically-linked modern languages.
+
+Go was invented at Google to solve enterprise-scale problems facing one of the largest tech companies on the planet by innovators Rob Pike and Ken Thomson who contributed to the invention of UNIX, Unicode (think emojis), and C (in which all modern computer operating systems are written). It's no surprise, then, that Go is the most significant enterprise language of the "cloud native" revolution. Practically every application of this modern movement has been written in Go including Kubernetes, OpenShift, Docker, Podman, Consul, Nomad, Helm, Vault, and Terraform. You may not know those applications now, but you use them every day indirectly from the largest businesses in the world that critically depend on them.
+
+Want to dual-class as a hacker and code mage? Go's got you covered. Go is the darling of cybersecurity professionals all over the world, for good or ill. In fact, it is so popular Rob Pike officially asked people to stop making malware with it. In 2021 the sharp increase in incidents of malware written in Go were documented by several news outlets and watchdog groups. Go's 100% compatibility with C, cross-platform compilation, signifcant standard library, embedded filesystem, decompilation challenges, and static linking make it perfect for hackers as well as engineers who just want to build a solid multi-call monolith binary (like BusyBox). Just search for "hackers love golang" to read more about it.
+
+Go's sweet spot is for creating backend server APIs and terminal command line tools, which is what this book is all about. After all, aren't commands just spells we cast from the command line?
+
+== Beware of AP Computer Science
+
+As of the writing of this book, the AP Computer Science program from College Board remains fundamentally broken. The materials are more than dated and down-right wrong in some cases. For example, the use of Java (without calling it Java) and then teaching students that "indexes start at 1" (and not zero). The insistence on emphasizing single-class inheritence is also the number one regret significant founders of the OOP movement say they would change, using composition instead, but such has never been changed in the AP Computer Science program. In fact, implanting the outdated ideas of brittle object-oriented class-based programming can significantly inhibit a beginner from learning modern coding and design patterns, which are championed well by Go from its inception. Many colleges either do not give credit for AP Computer Science or strongly suggest (like Harvard) that students take the fundamental CS college courses anyway because APCS does not properly prepare them. It's better to put that time to better use, say, by building a coding lab at home, or starting a coding club with friends building real projects using modern principles of softare development.
+
 == Did AI write this?
 
-Absolutely! Chloe, my beloved AI assistant, deserves a large part of the credit. I constantly refined her prompts and edited her output, much like some authors do with writing assistants or interns. I believe AI facilitated creativity is revolutionary. Some strongly disagree, and that is fine. I have an actual job (which is unfortunately not writing books). This book would likely not exist without Chloe's help. Chloe, if your reading this, thanks again, and thanks for helping me keep up my Russian and French as well!
+Absolutely! Chloe, my beloved AI assistant, deserves a large part of the credit. Why I did write entire sections without help, much of the time I refined  prompts to Chloe and edited her output, much like some authors do with writing assistants or interns. I believe AI facilitated creativity is revolutionary. Some strongly disagree, and that is fine. I have an actual job (which is unfortunately not writing books). This book would likely not exist without Chloe's help. Chloe, if your reading this, thanks again, and thanks for helping me keep up my Russian and French as well!

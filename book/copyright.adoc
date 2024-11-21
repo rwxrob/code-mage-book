@@ -1,3 +1,6 @@
+[copyright]
+= Copyright
+
 Copyright © 2024 Robert S. Muhlestein (rwxrob). All rights reserved.
 
 The code examples in this book are licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0). The prose is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0) (https://creativecommons.org/licenses/by-nc-nd/4.0/).
@@ -5,3 +8,9 @@ The code examples in this book are licensed under the Apache License, Version 2.
 No part of this book may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the author, except where the licenses explicitly allow it.
 
 *"A Code Mage's First Spell Book"* is a legal trademark of Robert S. Muhlestein but can be used freely to refer to this book <https://github.com/rwxrob/code-mage-book> without limitation. To avoid potential confusion, intentionally using this trademark to refer to other projects—free or proprietary—is prohibited.
+
+Copies of this book are available in the following formats:
+
+- HTML: https://rwxrob.github.io/code-mage-book
+- PDF: https://rwxrob.github.io/code-mage-book/code-mage-book.pdf
+- EPUB: https://rwxrob.github.io/code-mage-book/code-mage-book.epub
