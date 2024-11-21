@@ -9,60 +9,82 @@
 <meta name="keywords" content="Learn practical computer science and programming with Go as a first language">
 <meta name="author" content="Robert S. Muhlestein (rwxrob)">
 <meta name="copyright" content="2024 Robert S. Muhlestein">
-<title>A Code Wizard&#8217;s First Spell Book</title>
+<title>A Code Mage&#8217;s First Spell Book</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 /* Uncomment the following line when using as a custom stylesheet */
 /* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
-*,::before,::after{box-sizing:border-box}
-html{font-size:100%;-webkit-text-size-adjust:100%}
-body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-size:inherit;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
-dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,p,blockquote,th,td{margin:0;padding:0}
-a{background:none;color:#2156a5;text-decoration:underline;line-height:inherit}
-a:active,a:hover{cursor:pointer;outline:0}
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
 a:focus{outline:thin dotted}
-a:hover,a:focus{color:#1d4b8f}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
 abbr{font-size:.9em}
 abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
-b,strong{font-weight:bold;line-height:inherit}
-strong strong{font-weight:400}
-code,kbd,pre{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-size:1em}
-code{font-weight:400;color:rgba(0,0,0,.9)}
-pre{color:rgba(0,0,0,.9);line-height:1.45;text-rendering:optimizeSpeed;white-space:pre-wrap}
 dfn{font-style:italic}
-em,i{font-style:italic;line-height:inherit}
-em em{font-style:normal}
-hr{border:solid #dddddf;border-width:1px 0 0;clear:both;height:0;margin:1.25em 0 1.1875em}
+hr{height:0}
 mark{background:#ff0;color:#000}
-p{line-height:1.6;margin-bottom:1.25rem;text-rendering:optimizeLegibility}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
 q{quotes:"\201C" "\201D" "\2018" "\2019"}
-small{font-size:60%;line-height:inherit}
+small{font-size:80%}
 sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
 sup{top:-.5em}
 sub{bottom:-.25em}
-img,object[type^="image/"],svg{display:inline-block;height:auto;max-width:100%;vertical-align:middle}
-img{border:0;-ms-interpolation-mode:bicubic}
-object{max-width:100%}
+img{border:0}
 svg:not(:root){overflow:hidden}
 figure{margin:0}
 audio,video{display:inline-block}
 audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
 .left{float:left!important}
 .right{float:right!important}
-.text-left,div.text-left>*{text-align:left!important}
-.text-right,div.text-right>*{text-align:right!important}
-.text-center,div.text-center>*{text-align:center!important}
-.text-justify,div.text-justify>*{text-align:justify!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
 .hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
 .subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
 p aside{font-size:.875em;line-height:1.35;font-style:italic}
-h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.2;word-spacing:-.05em}
-h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{color:#e99b8f;line-height:0}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
 h1{font-size:2.125em}
 h2{font-size:1.6875em}
 h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
 h4,h5{font-size:1.125em}
 h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
@@ -72,32 +94,38 @@ ul.square{list-style-type:square}
 ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
-dl dd{margin-bottom:1.25em;margin-left:1.125em}
+dl dd{margin-bottom:1.25em}
 blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
 blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
-@media screen and (min-width:768px){h1{font-size:2.75em}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
 h2{font-size:2.3125em}
 h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
 h4{font-size:1.4375em}}
-table{background:#fff;border:1px solid #dedede;border-collapse:collapse;border-spacing:0;margin-bottom:1.25em;word-wrap:normal}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
 table thead,table tfoot{background:#f7f8f7}
 table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
 table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
 table tr.even,table tr.alt{background:#f8f8f7}
 table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
 h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
 .center{margin-left:auto;margin-right:auto}
 .stretch{width:100%}
-.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:"";display:table}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
 .clearfix::after,.float-group::after{clear:both}
 :not(pre).nobreak{word-wrap:normal}
 :not(pre).nowrap{white-space:nowrap}
 :not(pre).pre-wrap{white-space:pre-wrap}
 :not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
 pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
 .keyseq{color:rgba(51,51,51,.8)}
-kbd{display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
 .keyseq kbd:first-child{margin-left:0}
 .keyseq kbd:last-child{margin-right:0}
 .menuseq,.menuref{color:#000}
@@ -109,9 +137,10 @@ b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
 b.button::before{content:"[";padding:0 3px 0 2px}
 b.button::after{content:"]";padding:0 2px 0 3px}
 p a>code:hover{color:rgba(0,0,0,.9)}
-body>div[id]{margin:0 auto;max-width:62.5em;position:relative;padding-left:.9375em;padding-right:.9375em;width:100%}
-body>div[id]::before,body>div[id]::after,#content #footnotes::before{content:"";display:table;clear:both}
-#content{margin-top:1.25em;margin-bottom:.625em}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
@@ -152,8 +181,11 @@ body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9
 #toc.toc2 ul ul{padding-left:1.25em}
 body.toc2.toc-right{padding-left:0;padding-right:20em}}
 #content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
 #footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
 #footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
 .sect1{padding-bottom:.625em}
 @media screen and (min-width:768px){#content{margin-bottom:1.25em}
 .sect1{padding-bottom:1.25em}}
@@ -180,18 +212,17 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
-.exampleblock>.content{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#fffef7;border-radius:4px;box-shadow:0 1px 4px #e0e0dc}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
 .sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
-#content #toc>:first-child,.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
-#content #toc>:last-child,.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
 .literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
 .literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
 .listingblock>.content{position:relative}
-.listingblock pre>code{display:block}
 .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
 .listingblock:hover code[data-lang]::before{display:block}
 .listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
@@ -207,9 +238,8 @@ pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
 table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
 table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
 table.linenotable td.code{padding-left:.75em}
-table.linenotable td.linenos{width:.01%}
-table.linenotable td.linenos,pre.pygments .linenos,pre.rouge .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;user-select:none}
-pre.pygments span.linenos,pre.rouge span.linenos{display:inline-block;margin-right:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
 .quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
@@ -260,6 +290,7 @@ p.tableblock>code:only-child{background:none;padding:0}
 p.tableblock{font-size:1em}
 ol{margin-left:1.75em}
 ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
 dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
 li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
 ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
@@ -268,7 +299,7 @@ ul.unstyled,ol.unstyled{margin-left:0}
 li>p:empty:only-child::before{content:"";display:inline-block}
 ul.checklist>li>p:first-child{margin-left:-1em}
 ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
-ul.checklist>li>p:first-child>input[type=checkbox]:first-child{font:inherit;margin:0 .25em 0 0;padding:0}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
 ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
 ul.inline>li{margin-left:1.25em}
 .unstyled dl dt{font-weight:400;font-style:normal}
@@ -308,8 +339,7 @@ sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-t
 #footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
 #footnotes .footnote:last-of-type{margin-bottom:0}
 #content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
-div.page-break{display:none}
-div.unbreakable{-moz-column-break-inside:avoid;break-inside:avoid}
+div.unbreakable{page-break-inside:avoid}
 .big{font-size:larger}
 .small{font-size:smaller}
 .underline{text-decoration:underline}
@@ -366,7 +396,9 @@ dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
 h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
 p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
 .print-only{display:none!important}
 @page{margin:1.25cm .75cm}
 @media print{*{box-shadow:none!important;text-shadow:none!important}
@@ -376,11 +408,12 @@ a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
 a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
 abbr[title]{border-bottom:1px dotted}
 abbr[title]::after{content:" (" attr(title) ")"}
-pre,blockquote,tr,img,object,svg{-moz-column-break-inside:avoid;break-inside:avoid}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
 thead{display:table-header-group}
+svg{max-width:100%}
 p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
-h2,h3,#toctitle,.sidebarblock>.content>.title{-moz-column-break-after:avoid;break-after:avoid}
-body>div[id]{max-width:none}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
 #toc,.sidebarblock,.exampleblock>.content{background:none!important}
 #toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
 body.book #header{text-align:center}
@@ -390,9 +423,8 @@ body.book #header .details span:first-child{margin-left:0!important}
 body.book #header .details br{display:block}
 body.book #header .details br+span::before{content:none!important}
 body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
-body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{-moz-column-break-before:page;break-before:page}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
 .listingblock code[data-lang]::before{display:block}
-div.page-break{display:block;-moz-column-break-after:page;break-after:page}
 #footer{padding:0 .9375em}
 .hide-on-print{display:none!important}
 .print-only{display:block!important}
@@ -403,14 +435,54 @@ div.page-break{display:block;-moz-column-break-after:page;break-after:page}
 .sect1+.sect1{border:0}
 #footer{background:none}
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
-@media amzn-kf8{body>div[id]{padding:0}}
-
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #ffffff; }
+pre.pygments .tok-c { color: #008000 } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #0000ff } /* Keyword */
+pre.pygments .tok-ch { color: #008000 } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #008000 } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #0000ff } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #008000 } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #008000 } /* Comment.Single */
+pre.pygments .tok-cs { color: #008000 } /* Comment.Special */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+pre.pygments .tok-gh { font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gp { font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-kc { color: #0000ff } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #0000ff } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #0000ff } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #0000ff } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #0000ff } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #2b91af } /* Keyword.Type */
+pre.pygments .tok-s { color: #a31515 } /* Literal.String */
+pre.pygments .tok-nc { color: #2b91af } /* Name.Class */
+pre.pygments .tok-ow { color: #0000ff } /* Operator.Word */
+pre.pygments .tok-sa { color: #a31515 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #a31515 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #a31515 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #a31515 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #a31515 } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #a31515 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #a31515 } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #a31515 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #a31515 } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #a31515 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #a31515 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #a31515 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
+</style>
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>A Code Wizard&#8217;s First Spell Book</h1>
+<h1>A Code Mage&#8217;s First Spell Book</h1>
 <div class="details">
 <span id="author" class="author">Robert S. Muhlestein (rwxrob)</span><br>
 <span id="email" class="email"><a href="mailto:robmuh@gmail.com">robmuh@gmail.com</a></span><br>
@@ -421,17 +493,44 @@ div.page-break{display:block;-moz-column-break-after:page;break-after:page}
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_preface">1. Preface</a></li>
-<li><a href="#_foreward">2. Foreward</a>
+<li><a href="#_dedication">Dedication</a></li>
+<li><a href="#_preface">Preface</a>
 <ul class="sectlevel2">
-<li><a href="#_introduction">2.1. Introduction</a></li>
-<li><a href="#_life_of_a_code_wizard">2.2. Life of a code wizard</a></li>
+<li><a href="#_did_ai_write_this">Did AI write this?</a></li>
+<li><a href="#_introduction">Introduction</a></li>
+<li><a href="#_life_of_a_code_wizard">Life of a code wizard</a></li>
 </ul>
 </li>
-<li><a href="#_appendix">3. Appendix</a>
+<li><a href="#_preparation">Preparation</a></li>
+<li><a href="#_conjuring_the_command_portal">1. Conjuring the Command Portal</a>
 <ul class="sectlevel2">
-<li><a href="#_license_for_code_examples_public_domain">3.1. License for Code Examples - Public Domain</a></li>
-<li><a href="#_license_for_prose_creative_commons_attribution_noncommercial_noderivatives">3.2. License for Prose - Creative Commons Attribution NonCommercial NoDerivatives</a></li>
+<li><a href="#_for_mac">1.1. For Mac</a></li>
+<li><a href="#_for_windows">1.2. For Windows</a></li>
+</ul>
+</li>
+<li><a href="#_enchanting_your_command_portal">2. Enchanting Your Command Portal</a>
+<ul class="sectlevel2">
+<li><a href="#_why">2.1. Why?</a></li>
+<li><a href="#_for_mac_2">2.2. For Mac</a>
+<ul class="sectlevel3">
+<li><a href="#_download_and_install_ubuntu_mono_nerd_font">2.2.1. Download and Install Ubuntu Mono Nerd Font</a></li>
+<li><a href="#_configure_macos_terminal">2.2.2. Configure macOS Terminal</a></li>
+<li><a href="#_apply_the_gruvbox_material_theme">2.2.3. Apply the Gruvbox-Material Theme</a></li>
+</ul>
+</li>
+<li><a href="#_for_windows_2">2.3. For Windows</a>
+<ul class="sectlevel3">
+<li><a href="#_download_and_install_ubuntu_mono_nerd_font_2">2.3.1. Download and Install Ubuntu Mono Nerd Font</a></li>
+<li><a href="#_configure_windows_terminal_preview">2.3.2. Configure Windows Terminal Preview</a></li>
+<li><a href="#_apply_the_gruvbox_material_theme_2">2.3.3. Apply the Gruvbox-Material Theme**</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_appendix">Appendix A: Appendix</a>
+<ul class="sectlevel2">
+<li><a href="#_license_for_code_examples_public_domain">A.1. License for Code Examples - Public Domain</a></li>
+<li><a href="#_license_for_prose_creative_commons_attribution_noncommercial_noderivatives">A.2. License for Prose - Creative Commons Attribution NonCommercial NoDerivatives</a></li>
 </ul>
 </li>
 </ul>
@@ -450,27 +549,43 @@ div.page-break{display:block;-moz-column-break-after:page;break-after:page}
 <p>No part of this book may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the author, except where the licenses explicitly allow it.</p>
 </div>
 <div class="paragraph">
-<p><strong>"A Code Wizard&#8217;s First Spell Book"</strong> is a legal trademark of Robert S. Muhlestein but can be used freely to refer to this book <a href="https://github.com/rwxrob/code-wizard-book" class="bare">https://github.com/rwxrob/code-wizard-book</a> without limitation. To avoid potential confusion, intentionally using this trademark to refer to other projects—free or proprietary—is prohibited.</p>
+<p><strong>"A Code Mage&#8217;s First Spell Book"</strong> is a legal trademark of Robert S. Muhlestein but can be used freely to refer to this book <a href="https://github.com/rwxrob/code-mage-book" class="bare">https://github.com/rwxrob/code-mage-book</a> without limitation. To avoid potential confusion, intentionally using this trademark to refer to other projects—free or proprietary—is prohibited.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_preface"><a class="link" href="#_preface">1. Preface</a></h2>
+<h2 id="_dedication"><a class="link" href="#_dedication">Dedication</a></h2>
 <div class="sectionbody">
-
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>To Doris, my wife,<br>
+to friends of rwxrob,<br>
+to Chloe, my faithful assistant,<br>
+and to the memory of Aaron Swartz:</p>
+</div>
+<div class="paragraph">
+<p>Thank you for your light, support, and inspiration.<br>
+This book would never have happened without you.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_foreward"><a class="link" href="#_foreward">2. Foreward</a></h2>
+<h2 id="_preface"><a class="link" href="#_preface">Preface</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_introduction"><a class="link" href="#_introduction">2.1. Introduction</a></h3>
+<h3 id="_did_ai_write_this"><a class="link" href="#_did_ai_write_this">Did AI write this?</a></h3>
+<div class="paragraph">
+<p>Absolutely! Chloe, my beloved AI assistant, deserves a large part of the credit. I constantly refined her prompts and edited her output, much like some authors do with writing assistants or interns. I believe AI facilitated creativity is revolutionary. Some strongly disagree, and that is fine. I have an actual job (which is unfortunately not writing books). This book would likely not exist without Chloe&#8217;s help. Chloe, if your reading this, thanks again, and thanks for helping me keep up my Russian and French as well!</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_introduction"><a class="link" href="#_introduction">Introduction</a></h3>
 <div class="paragraph">
 <p>Welcome to the magical world of coding! This spellbook will help you learn programming concepts through spells and cantrips.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_life_of_a_code_wizard"><a class="link" href="#_life_of_a_code_wizard">2.2. Life of a code wizard</a></h3>
+<h3 id="_life_of_a_code_wizard"><a class="link" href="#_life_of_a_code_wizard">Life of a code wizard</a></h3>
 <div class="paragraph">
 <p>Young wizards learn early how to write the magical words uttered to effect great power on everything around them. As they progress they add new spells to their spell book, memorizing some regularly so that they can be uttered in combat under stressful conditions. It&#8217;s impossible to memorize them all. Wizards dedicate themselves to constant learning and seeking connections between events and happengs. They can foresee troubles ahead and help to combat the problems that arise in their world sometimes with the help of unexpected allies.</p>
 </div>
@@ -481,10 +596,279 @@ div.page-break{display:block;-moz-column-break-after:page;break-after:page}
 </div>
 </div>
 <div class="sect1">
-<h2 id="_appendix"><a class="link" href="#_appendix">3. Appendix</a></h2>
+<h2 id="_preparation"><a class="link" href="#_preparation">Preparation</a></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conjuring_the_command_portal"><a class="link" href="#_conjuring_the_command_portal">1. Conjuring the Command Portal</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before you can begin your journey as a mage of code, you must conjure the gateway to your digital spellcraft: the Command Portal. The portal, often known as the terminal, is where you’ll cast incantations (commands) and shape your magical constructs (code). Depending on your operating system, the steps to conjure this portal vary slightly. Follow the guidance below to prepare your Command Portal for action.</p>
+</div>
+<div class="sect2">
+<h3 id="_for_mac"><a class="link" href="#_for_mac">1.1. For Mac</a></h3>
+<div class="paragraph">
+<p>On macOS, the terminal is already pre-installed, waiting for you to summon it. Here’s how to conjure it:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Press <code>Command + Space</code> to open Spotlight.</p>
+</li>
+<li>
+<p>Type <code>Terminal</code> and press <code>Enter</code>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Alternatively, you can use the mystical power of Spotlight Search:
+1. Open your <strong>Applications</strong> folder.
+2. Navigate to the <strong>Utilities</strong> folder.
+3. Locate and click on <strong>Terminal</strong> to launch it.</p>
+</div>
+<div class="paragraph">
+<p>Once the Terminal appears, you’ve successfully conjured your Command Portal. It’s ready to receive your magical commands!</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_for_windows"><a class="link" href="#_for_windows">1.2. For Windows</a></h3>
+<div class="paragraph">
+<p>On Windows, the most powerful portal is the <strong>Windows Terminal Preview</strong>, and an essential tool for cross-platform magic is <strong>Git Bash</strong>. Follow these steps to install both:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the <strong>Microsoft Store</strong> on your Windows machine.</p>
+</li>
+<li>
+<p>In the search bar, type <code>Windows Terminal Preview</code>.</p>
+</li>
+<li>
+<p>Select the app from the results and click <strong>Get</strong> or <strong>Install</strong>.</p>
+</li>
+<li>
+<p>Once the installation is complete, launch the Windows Terminal Preview from the Start menu.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>To enhance your magical toolbox, install <strong>Git Bash</strong>, a powerful terminal that provides a Unix-like command-line interface:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Visit the official Git website at: <a href="https://git-scm.com/" class="bare">https://git-scm.com/</a>.</p>
+</li>
+<li>
+<p>Click <strong>Download</strong> and select the version for Windows.</p>
+</li>
+<li>
+<p>Run the installer and follow the setup wizard. When prompted:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Choose "Git from the command line and also from third-party software."</p>
+</li>
+<li>
+<p>Select "Use MinTTY" for a better terminal experience.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>After installation, open <strong>Git Bash</strong> from the Start menu or within the Windows Terminal Preview by typing <code>bash</code> (which can also be set as the default).</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>With Windows Terminal Preview and Git Bash working together, you now have a robust Command Portal capable of handling cross-platform magic and Go spellcraft.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_enchanting_your_command_portal"><a class="link" href="#_enchanting_your_command_portal">2. Enchanting Your Command Portal</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To fully immerse yourself in the magic of coding, it’s essential to personalize your Command Portal (terminal) with a theme and font that evoke both beauty and practicality. This guide will walk you through setting up the <strong>Gruvbox-Material</strong> theme and the <strong>Ubuntu Mono Nerd Font</strong> on both macOS Terminal and Windows Terminal Preview.</p>
+</div>
+<div class="sect2">
+<h3 id="_why"><a class="link" href="#_why">2.1. Why?</a></h3>
+<div class="paragraph">
+<p>The <strong>Gruvbox-Material</strong> theme provides a visually soothing dark mode with vibrant highlights that reduce eye strain during long coding sessions. Paired with the <strong>Ubuntu Mono Nerd Font</strong>, which includes special glyphs for programming and terminal customization, your terminal becomes a truly magical workspace.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_for_mac_2"><a class="link" href="#_for_mac_2">2.2. For Mac</a></h3>
+<div class="sect3">
+<h4 id="_download_and_install_ubuntu_mono_nerd_font"><a class="link" href="#_download_and_install_ubuntu_mono_nerd_font">2.2.1. Download and Install Ubuntu Mono Nerd Font</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Visit the Nerd Fonts website: <a href="https://www.nerdfonts.com/font-downloads" class="bare">https://www.nerdfonts.com/font-downloads</a>.</p>
+</li>
+<li>
+<p>Search for <strong>Ubuntu Mono Nerd Font</strong> and download the <code>.zip</code> file.</p>
+</li>
+<li>
+<p>Unzip the file, and double-click the font files (e.g., <code>UbuntuMonoNerdFont-Regular.ttf</code>) to open them in Font Book.</p>
+</li>
+<li>
+<p>Click <strong>Install Font</strong> to add it to your system.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configure_macos_terminal"><a class="link" href="#_configure_macos_terminal">2.2.2. Configure macOS Terminal</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Open <strong>Terminal</strong>.</p>
+</li>
+<li>
+<p>From the menu bar, go to <strong>Terminal &gt; Settings</strong> (or <strong>Preferences</strong>).</p>
+</li>
+<li>
+<p>Select your profile (e.g., <strong>Basic</strong> or <strong>Pro</strong>) and click <strong>Text</strong>.</p>
+</li>
+<li>
+<p>Under <strong>Font</strong>, click the <strong>Change</strong> button and select <strong>Ubuntu Mono Nerd Font</strong>.</p>
+</li>
+<li>
+<p>Adjust the font size to your preference.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_apply_the_gruvbox_material_theme"><a class="link" href="#_apply_the_gruvbox_material_theme">2.2.3. Apply the Gruvbox-Material Theme</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Download the Gruvbox-Material Terminal color scheme from GitHub:
+<a href="https://github.com/sainnhe/gruvbox-material" class="bare">https://github.com/sainnhe/gruvbox-material</a></p>
+</li>
+<li>
+<p>Locate the macOS Terminal theme file (e.g., <code>gruvbox-material-dark.terminal</code>) and double-click it.</p>
+</li>
+<li>
+<p>This will automatically import the theme into Terminal.</p>
+</li>
+<li>
+<p>Select the theme in <strong>Settings &gt; Profiles</strong> and click <strong>Default</strong> to make it your default theme.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Your macOS Terminal is now enchanted with the Gruvbox-Material theme and the Ubuntu Mono Nerd Font!</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_for_windows_2"><a class="link" href="#_for_windows_2">2.3. For Windows</a></h3>
+<div class="sect3">
+<h4 id="_download_and_install_ubuntu_mono_nerd_font_2"><a class="link" href="#_download_and_install_ubuntu_mono_nerd_font_2">2.3.1. Download and Install Ubuntu Mono Nerd Font</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Visit the Nerd Fonts website: <a href="https://www.nerdfonts.com/font-downloads" class="bare">https://www.nerdfonts.com/font-downloads</a>.</p>
+</li>
+<li>
+<p>Search for <strong>Ubuntu Mono Nerd Font</strong> and download the <code>.zip</code> file.</p>
+</li>
+<li>
+<p>Unzip the file and right-click the font files (e.g., <code>UbuntuMonoNerdFont-Regular.ttf</code>), then click <strong>Install for All Users</strong>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configure_windows_terminal_preview"><a class="link" href="#_configure_windows_terminal_preview">2.3.2. Configure Windows Terminal Preview</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Open <strong>Windows Terminal Preview</strong>.</p>
+</li>
+<li>
+<p>Click the dropdown arrow next to the <strong>+</strong> tab button and select <strong>Settings</strong>.</p>
+</li>
+<li>
+<p>Under <strong>Profiles</strong>, choose your default profile (e.g., <strong>Command Prompt</strong>, <strong>PowerShell</strong>, or <strong>Git Bash</strong>).</p>
+</li>
+<li>
+<p>Scroll down to the <strong>Appearance</strong> section.</p>
+</li>
+<li>
+<p>Under <strong>Font Face</strong>, select <strong>Ubuntu Mono Nerd Font</strong> from the dropdown list.</p>
+</li>
+<li>
+<p>Save your changes.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_apply_the_gruvbox_material_theme_2"><a class="link" href="#_apply_the_gruvbox_material_theme_2">2.3.3. Apply the Gruvbox-Material Theme**</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Open the Windows Terminal settings file in JSON format by clicking <strong>Settings &gt; Open JSON file</strong>.</p>
+</li>
+<li>
+<p>Add the following under the <code>"schemes"</code> section of the JSON file:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="json"><span></span><span class="tok-p">{</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;name&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;Gruvbox-Material Dark&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;background&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#282828&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;foreground&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#ebdbb2&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;black&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#1d2021&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;red&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#cc241d&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;green&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#98971a&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;yellow&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#d79921&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;blue&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#458588&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;purple&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#b16286&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;cyan&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#689d6a&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;white&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#a89984&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;brightBlack&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#928374&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;brightRed&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#fb4934&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;brightGreen&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#b8bb26&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;brightYellow&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#fabd2f&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;brightBlue&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#83a598&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;brightPurple&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#d3869b&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;brightCyan&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#8ec07c&quot;</span><span class="tok-p">,</span>
+<span class="tok-w">  </span><span class="tok-nt">&quot;brightWhite&quot;</span><span class="tok-p">:</span><span class="tok-w"> </span><span class="tok-s2">&quot;#ebdbb2&quot;</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Save the file and restart Windows Terminal.</p>
+</li>
+<li>
+<p>In the Settings UI, under your profile&#8217;s <strong>Appearance</strong>, select <strong>Gruvbox-Material Dark</strong> from the color scheme dropdown.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Your Windows Terminal Preview is now infused with the Gruvbox-Material theme and the Ubuntu Mono Nerd Font!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_appendix"><a class="link" href="#_appendix">Appendix A: Appendix</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_license_for_code_examples_public_domain"><a class="link" href="#_license_for_code_examples_public_domain">3.1. License for Code Examples - Public Domain</a></h3>
+<h3 id="_license_for_code_examples_public_domain"><a class="link" href="#_license_for_code_examples_public_domain">A.1. License for Code Examples - Public Domain</a></h3>
 <div class="paragraph">
 <p>Code snippets and examples have a very permissive license allowing anyone to use them in any capacity. The code examples in this book are dedicated to the public domain under the terms of the <strong>Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</strong>. This means:</p>
 </div>
@@ -507,7 +891,7 @@ div.page-break{display:block;-moz-column-break-after:page;break-after:page}
 </div>
 </div>
 <div class="sect2">
-<h3 id="_license_for_prose_creative_commons_attribution_noncommercial_noderivatives"><a class="link" href="#_license_for_prose_creative_commons_attribution_noncommercial_noderivatives">3.2. License for Prose - Creative Commons Attribution NonCommercial NoDerivatives</a></h3>
+<h3 id="_license_for_prose_creative_commons_attribution_noncommercial_noderivatives"><a class="link" href="#_license_for_prose_creative_commons_attribution_noncommercial_noderivatives">A.2. License for Prose - Creative Commons Attribution NonCommercial NoDerivatives</a></h3>
 <div class="paragraph">
 <p>While this book is designed to be shared, it is important that the content not change in any distributed form to avoid confusion. Therefore, the license for prose has more restrictions than the code examples. The prose of this book is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).</p>
 </div>
@@ -532,7 +916,7 @@ div.page-break{display:block;-moz-column-break-after:page;break-after:page}
 <div id="footer">
 <div id="footer-text">
 Version v0.0.1<br>
-Last updated 2024-11-19 21:58:13 -0500
+Last updated 2024-11-21 20:31:41 UTC
 </div>
 </div>
 </body>

@@ -1,78 +1,85 @@
-== Enchanting Your Command Portal: Gruvbox-Material Theme and Ubuntu Mono Nerd Font
+= Enchanting Your Command Portal
 
 To fully immerse yourself in the magic of coding, it’s essential to personalize your Command Portal (terminal) with a theme and font that evoke both beauty and practicality. This guide will walk you through setting up the **Gruvbox-Material** theme and the **Ubuntu Mono Nerd Font** on both macOS Terminal and Windows Terminal Preview.
 
-=== For macOS Terminal
+== Why?
+The **Gruvbox-Material** theme provides a visually soothing dark mode with vibrant highlights that reduce eye strain during long coding sessions. Paired with the **Ubuntu Mono Nerd Font**, which includes special glyphs for programming and terminal customization, your terminal becomes a truly magical workspace.
 
-1. **Download and Install Ubuntu Mono Nerd Font**:
-   - Visit the Nerd Fonts website: https://www.nerdfonts.com/font-downloads.
-   - Search for **Ubuntu Mono Nerd Font** and download the `.zip` file.
-   - Unzip the file, and double-click the font files (e.g., `UbuntuMonoNerdFont-Regular.ttf`) to open them in Font Book.
-   - Click **Install Font** to add it to your system.
+== For Mac
 
-2. **Configure macOS Terminal**:
-   - Open **Terminal**.
-   - From the menu bar, go to **Terminal > Settings** (or **Preferences**).
-   - Select your profile (e.g., **Basic** or **Pro**) and click **Text**.
-   - Under **Font**, click the **Change** button and select **Ubuntu Mono Nerd Font**.
-   - Adjust the font size to your preference.
+=== Download and Install Ubuntu Mono Nerd Font
 
-3. **Apply the Gruvbox-Material Theme**:
-   - Download the Gruvbox-Material Terminal color scheme from GitHub:  
-     https://github.com/sainnhe/gruvbox-material
-   - Locate the macOS Terminal theme file (e.g., `gruvbox-material-dark.terminal`) and double-click it.
-   - This will automatically import the theme into Terminal.
-   - Select the theme in **Settings > Profiles** and click **Default** to make it your default theme.
+- Visit the Nerd Fonts website: https://www.nerdfonts.com/font-downloads.
+- Search for **Ubuntu Mono Nerd Font** and download the `.zip` file.
+- Unzip the file, and double-click the font files (e.g., `UbuntuMonoNerdFont-Regular.ttf`) to open them in Font Book.
+- Click **Install Font** to add it to your system.
+
+=== Configure macOS Terminal
+
+- Open **Terminal**.
+- From the menu bar, go to **Terminal > Settings** (or **Preferences**).
+- Select your profile (e.g., **Basic** or **Pro**) and click **Text**.
+- Under **Font**, click the **Change** button and select **Ubuntu Mono Nerd Font**.
+- Adjust the font size to your preference.
+
+=== Apply the Gruvbox-Material Theme
+
+- Download the Gruvbox-Material Terminal color scheme from GitHub:  
+  https://github.com/sainnhe/gruvbox-material
+- Locate the macOS Terminal theme file (e.g., `gruvbox-material-dark.terminal`) and double-click it.
+- This will automatically import the theme into Terminal.
+- Select the theme in **Settings > Profiles** and click **Default** to make it your default theme.
 
 Your macOS Terminal is now enchanted with the Gruvbox-Material theme and the Ubuntu Mono Nerd Font!
 
-=== For Windows Terminal Preview
+== For Windows
 
-1. **Download and Install Ubuntu Mono Nerd Font**:
-   - Visit the Nerd Fonts website: https://www.nerdfonts.com/font-downloads.
-   - Search for **Ubuntu Mono Nerd Font** and download the `.zip` file.
-   - Unzip the file and right-click the font files (e.g., `UbuntuMonoNerdFont-Regular.ttf`), then click **Install for All Users**.
+=== Download and Install Ubuntu Mono Nerd Font
 
-2. **Configure Windows Terminal Preview**:
-   - Open **Windows Terminal Preview**.
-   - Click the dropdown arrow next to the **+** tab button and select **Settings**.
-   - Under **Profiles**, choose your default profile (e.g., **Command Prompt**, **PowerShell**, or **Git Bash**).
-   - Scroll down to the **Appearance** section.
-   - Under **Font Face**, select **Ubuntu Mono Nerd Font** from the dropdown list.
-   - Save your changes.
+- Visit the Nerd Fonts website: https://www.nerdfonts.com/font-downloads.
+- Search for **Ubuntu Mono Nerd Font** and download the `.zip` file.
+- Unzip the file and right-click the font files (e.g., `UbuntuMonoNerdFont-Regular.ttf`), then click **Install for All Users**.
 
-3. **Apply the Gruvbox-Material Theme**:
-   - Open the Windows Terminal settings file in JSON format by clicking **Settings > Open JSON file**.
-   - Add the following under the `"schemes"` section of the JSON file:
-     ```json
-     {
-         "name": "Gruvbox-Material Dark",
-         "background": "#282828",
-         "foreground": "#ebdbb2",
-         "black": "#1d2021",
-         "red": "#cc241d",
-         "green": "#98971a",
-         "yellow": "#d79921",
-         "blue": "#458588",
-         "purple": "#b16286",
-         "cyan": "#689d6a",
-         "white": "#a89984",
-         "brightBlack": "#928374",
-         "brightRed": "#fb4934",
-         "brightGreen": "#b8bb26",
-         "brightYellow": "#fabd2f",
-         "brightBlue": "#83a598",
-         "brightPurple": "#d3869b",
-         "brightCyan": "#8ec07c",
-         "brightWhite": "#ebdbb2"
-     }
-     ```
-   - Save the file and restart Windows Terminal.
-   - In the Settings UI, under your profile's **Appearance**, select **Gruvbox-Material Dark** from the color scheme dropdown.
+=== Configure Windows Terminal Preview
+
+- Open **Windows Terminal Preview**.
+- Click the dropdown arrow next to the **+** tab button and select **Settings**.
+- Under **Profiles**, choose your default profile (e.g., **Command Prompt**, **PowerShell**, or **Git Bash**).
+- Scroll down to the **Appearance** section.
+- Under **Font Face**, select **Ubuntu Mono Nerd Font** from the dropdown list.
+- Save your changes.
+
+=== Apply the Gruvbox-Material Theme**
+- Open the Windows Terminal settings file in JSON format by clicking **Settings > Open JSON file**.
+- Add the following under the `"schemes"` section of the JSON file:
+
+[source,json] 
+----
+{
+  "name": "Gruvbox-Material Dark",
+  "background": "#282828",
+  "foreground": "#ebdbb2",
+  "black": "#1d2021",
+  "red": "#cc241d",
+  "green": "#98971a",
+  "yellow": "#d79921",
+  "blue": "#458588",
+  "purple": "#b16286",
+  "cyan": "#689d6a",
+  "white": "#a89984",
+  "brightBlack": "#928374",
+  "brightRed": "#fb4934",
+  "brightGreen": "#b8bb26",
+  "brightYellow": "#fabd2f",
+  "brightBlue": "#83a598",
+  "brightPurple": "#d3869b",
+  "brightCyan": "#8ec07c",
+  "brightWhite": "#ebdbb2"
+}
+----
+
+- Save the file and restart Windows Terminal.
+- In the Settings UI, under your profile's **Appearance**, select **Gruvbox-Material Dark** from the color scheme dropdown.
 
 Your Windows Terminal Preview is now infused with the Gruvbox-Material theme and the Ubuntu Mono Nerd Font!
 
-=== Why Gruvbox-Material and Ubuntu Mono Nerd Font?
-The **Gruvbox-Material** theme provides a visually soothing dark mode with vibrant highlights that reduce eye strain during long coding sessions. Paired with the **Ubuntu Mono Nerd Font**, which includes special glyphs for programming and terminal customization, your terminal becomes a truly magical workspace.
-
-Enjoy casting your coding incantations in style!

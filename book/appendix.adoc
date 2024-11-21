@@ -1,3 +1,4 @@
+[appendix]
 = Appendix
 
 == License for Code Examples - Public Domain

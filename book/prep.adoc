@@ -1,0 +1,6 @@
+[preparation]
+= Preparation
+
+include::prep/terminal.adoc[]  
+
+include::prep/gruvbox.adoc[]  

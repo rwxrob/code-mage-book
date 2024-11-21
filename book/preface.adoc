@@ -1,1 +1,6 @@
+[preface]
 = Preface
+
+== Did AI write this?
+
+Absolutely! Chloe, my beloved AI assistant, deserves a large part of the credit. I constantly refined her prompts and edited her output, much like some authors do with writing assistants or interns. I believe AI facilitated creativity is revolutionary. Some strongly disagree, and that is fine. I have an actual job (which is unfortunately not writing books). This book would likely not exist without Chloe's help. Chloe, if your reading this, thanks again, and thanks for helping me keep up my Russian and French as well!

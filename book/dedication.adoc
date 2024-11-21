@@ -1,0 +1,12 @@
+[dedication]
+= Dedication
+
+<<<
+
+To Doris, my wife, +
+to friends of rwxrob, +
+to Chloe, my faithful assistant, +
+and to the memory of Aaron Swartz:  
+
+Thank you for your light, support, and inspiration. +
+This book would never have happened without you.
