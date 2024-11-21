@@ -17,7 +17,7 @@ The content of the git repo are released under a dual license covering both code
 [CC0 1.0]: LICENSE-code
 [CC BY-NC-ND]: LICENSE-prose
 
-*"A Code Wizard's First Spell Book"* is a legal trademark of Robert S.
+*"A Code Mage's First Spell Book"* is a legal trademark of Robert S.
 Muhlestein but can be used freely to refer to this book
 <https://github.com/rwxrob/code-mage-book> without limitation. To avoid
 potential confusion, intentionally using this trademark to refer to other
