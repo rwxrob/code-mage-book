@@ -1,8 +1,8 @@
-# A Code Wizard's First Spell Book
+# A Code Mage's First Spell Book
 
 *Learn Practical Computer Science and Programming with Go as a First Language*
 
-<https://rwxrob.github.io/code-wizard-book>
+<https://rwxrob.github.io/code-mage-book>
 
 ## Legal
 
@@ -19,7 +19,7 @@ The content of the git repo are released under a dual license covering both code
 
 *"A Code Wizard's First Spell Book"* is a legal trademark of Robert S.
 Muhlestein but can be used freely to refer to this book
-<https://github.com/rwxrob/code-wizard-book> without limitation. To avoid
+<https://github.com/rwxrob/code-mage-book> without limitation. To avoid
 potential confusion, intentionally using this trademark to refer to other
 projects—free or proprietary—is prohibited.
 
