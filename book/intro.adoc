@@ -2,7 +2,7 @@
 
 Welcome to the magical world of coding! This spellbook will help you learn programming concepts through spells and cantrips.
 
-== Life of a Coding Mage
+== Life of a coding mage
 
 Young mages learn early how to write the magical words uttered to effect great power on everything around them. As they progress they add new spells to their spell book, memorizing some regularly so that they can be uttered in combat under stressful conditions. It's impossible to memorize them all. Maged dedicate themselves to constant learning and seeking connections between events and happengs. They can foresee troubles ahead and help to combat the problems that arise in their world sometimes with the help of unexpected allies.
 

@@ -1,6 +1,6 @@
 # A Code Mage's First Spell Book
 
-*Learn Practical Computer Science and Programming with Go as a First Language*
+*Learn practical computer science and programming with Go as a first language*
 
 <https://rwxrob.github.io/code-mage-book>
 
