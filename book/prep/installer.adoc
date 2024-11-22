@@ -1,0 +1,86 @@
+== Install Brew or Winget
+
+Before diving into the world of coding, you’ll need a reliable package manager to help you summon and install the tools of your trade. On Mac, this means using Homebrew, affectionately known as "brew." On Windows, your equivalent is the Windows Package Manager, `winget`. Both serve as your trusted assistants for setting up the magical crafting tools you’ll need.
+
+=== Brew for Mac
+
+Homebrew simplifies the installation of software and tools, making it a must-have for any developer. Follow these steps to get it working on your Mac:
+
+**Open Terminal**:
+
+- Press `Cmd + Space`, type `Terminal`, and press `Enter` to open your command-line interface.
+
+**Install Homebrew**:
+
+- Run the following command to install Homebrew:
+[source,shell]
+----
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+----
+
+**Follow the prompts**:
+
+- During installation, you may be asked to enter your password and confirm some actions. Follow the on-screen instructions.
+
+**Verify the installation**:
+
+- After installation is complete, check that Homebrew is installed by running:
+[source,shell]
+----
+brew --version
+----
+- If you see version information, you’re ready to proceed.
+
+=== Winget for Windows
+
+Before using `winget`, you’ll need to open your terminal. On Windows, Git Bash provides a powerful terminal environment for developers. Here’s how to open it for the first time:
+
+**Open Git Bash**:
+
+- Press `Win` to open the search bar.
+- Type `bash` and press `Enter` to launch the terminal.
+
+With Git Bash open, you’re ready to proceed with `winget` setup.
+
+The Windows Package Manager, `winget`, makes installing software on Windows as simple as typing a command. Here’s how to get started:
+
+**Check for Winget availability**:
+
+- `winget` is included by default in Windows 10 (version 1809 or later) and Windows 11. Open Git Bash and type:
+[source,shell]
+----
+winget --version
+----
+- If a version number appears, you’re ready to use `winget`.
+
+**Install Winget (if necessary)**:
+
+- If `winget` is not available, install it by downloading the **App Installer** from the Microsoft Store: https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1
+
+**Verify the installation**:
+
+- Open Git Bash and check that `winget` is working by running:
+[source,shell]
+----
+winget --version
+----
+- If you see version information, your package manager is ready to go.
+
+=== Testing your toolset
+
+To ensure your package manager is working properly, try installing a simple tool:
+
+- **Brew**:
+[source,shell]
+----
+brew install wget
+----
+- **Winget**:
+[source,shell]
+----
+winget install --id GNU.Wget
+----
+
+Once installed, verify the tool by typing `wget --version`. If the version information displays, your package manager is functioning correctly.
+
+With Brew or Winget installed and tested, your magical toolset is now prepared. These package managers will simplify the installation of the many tools and dependencies you’ll need throughout your coding journey.

@@ -1,0 +1,72 @@
+== Install Bash
+
+Before diving into your coding journey, it’s essential to ensure that you have a capable terminal environment to run commands. For this, we’ll focus on **Bash**, a widely-used Unix shell that serves as the foundation for many coding workflows. If you’re on Windows, you’ll need to install and use **Git Bash** as a Bash-compatible terminal.
+
+=== Mac
+
+Mac computers come with Bash pre-installed as part of the macOS operating system. To confirm Bash is available:
+
+**Open Terminal**:
+
+ - Press `Cmd + Space`, type `Terminal`, and press `Enter`.
+
+**Check Bash version**:
+
+- Run the following command:
+[source,shell]
+----
+bash --version
+----
+- If you see version information, Bash is installed and ready to use.
+
+[note]
+====
+The version of bash on Mac is very old. We don't need the latest for Go but later you can update it with `brew install bash` if you like.
+====
+
+=== Windows
+
+Windows does not include Bash natively, but you can use **Git Bash**, which provides a Unix-like terminal environment:
+
+**Install Git Bash**:
+
+- Download Git for Windows from: https://git-scm.com/.
+- Run the installer and follow these steps during installation:
+  - Choose your preferred editor (optional).
+  - Select "Git from the command line and also from 3rd-party software" when prompted.
+  - Leave default options for the rest of the setup unless you have specific needs.
+
+**Launch Git Bash**:
+
+- After installation, press `Win`, type `bash`, and press `Enter` to open the minimal bash terminal.
+
+**Check Bash version**:
+
+- Run the following command:
+[source,shell]
+----
+bash --version
+----
+- If version information appears, Git Bash is successfully installed.
+
+[note]
+====
+Perhaps your friends have told you to use WSL, the Windows Subsystem for Linux. WSL is an inferior Linux version from Microsoft. Git Bash is superior. It was created by the inventor of Linux and Git himself, works directly from Windows allowing you do to things like open graphics applications directly (such as your web browser or video clips player), supports use of USB devices, has better security, doesn't break as easily, and doesn't require installing an entire virtual machine meaning it uses far less resources saving mana for more powerful spells instead. Later, we will use an actual Linux Ubuntu distro used by most of the world and all enterprise tech companies, not Microsoft's proprietary WSL. Now you know why.
+====
+
+=== Verifying your setup
+
+To ensure your basic terminal is ready for coding:
+
+**Open your terminal**
+
+**Run a simple command**:
+[source,shell]
+----
+echo "Your terminal is ready!"
+----
+
+If you see the message printed on the screen, your terminal environment is correctly set up.
+
+With Bash or Git Bash installed and tested, your basic terminal is now ready to handle the commands needed for coding workflows. You can now proceed to upgrade from the basic terminal to Alacritty and install tools like Homebrew or Winget with confidence!
+

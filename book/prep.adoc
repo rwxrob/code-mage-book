@@ -1,9 +1,15 @@
 = Preparation
 
-include::prep/terminal.adoc[]  
+include::prep/computer.adoc[]  
 
-include::prep/podman.adoc[]  
+include::prep/bash.adoc[]  
 
-include::prep/github.adoc[]  
+include::prep/installer.adoc[]  
 
+include::prep/alacritty.adoc[]  
 
+//include::prep/neovim.adoc[]  
+
+//include::prep/github.adoc[]  
+
+//include::prep/golang.adoc[]  

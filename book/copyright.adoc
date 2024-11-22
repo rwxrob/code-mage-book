@@ -7,7 +7,7 @@ The code examples in this book are licensed under the Apache License, Version 2.
 
 No part of this book may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the author, except where the licenses explicitly allow it.
 
-*"A Code Mage's First Spell Book"* is a legal trademark of Robert S. Muhlestein but can be used freely to refer to this book <https://github.com/rwxrob/code-mage-book> without limitation. To avoid potential confusion, intentionally using this trademark to refer to other projects—free or proprietary—is prohibited.
+_"A Code Mage's First Spell Book"_ is a legal trademark of Robert S. Muhlestein but can be used freely to refer to this book <https://github.com/rwxrob/code-mage-book> without limitation. To avoid potential confusion, intentionally using this trademark to refer to other projects—free or proprietary—is prohibited.
 
 Copies of this book are available in the following formats:
 

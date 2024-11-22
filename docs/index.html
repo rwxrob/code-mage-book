@@ -500,62 +500,49 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_who_should_read_this_book">Who should read this book</a></li>
 <li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a></li>
 <li><a href="#_how_to_read_this_book">How to read this book</a></li>
+<li><a href="#_join_a_community">Join a community</a></li>
+<li><a href="#_why_coding">Why coding?</a></li>
+<li><a href="#_what_does_it_take">What does it take?</a></li>
+<li><a href="#_consider_chatgpt">Consider ChatGPT</a></li>
 </ul>
 </li>
 <li><a href="#_introduction">Introduction</a>
 <ul class="sectlevel2">
-<li><a href="#_life_of_a_coding_mage">Life of a coding mage</a></li>
+<li><a href="#_life_of_a_code_mage">Life of a code mage</a></li>
 </ul>
 </li>
 <li><a href="#_preparation">Preparation</a>
 <ul class="sectlevel2">
-<li><a href="#_opening_a_command_portal">Opening a command portal</a>
+<li><a href="#_get_a_computer">Get a computer</a>
 <ul class="sectlevel3">
-<li><a href="#_step_1_installing_alacritty">Step 1: Installing Alacritty</a>
-<ul class="sectlevel4">
-<li><a href="#_windows">Windows</a></li>
+<li><a href="#_minimum_requirements">Minimum requirements</a></li>
+<li><a href="#_a_laptop_is_ideal">A laptop is ideal</a></li>
+<li><a href="#_mac_vs_windows">Mac vs. Windows</a></li>
+</ul>
+</li>
+<li><a href="#_install_bash">Install Bash</a>
+<ul class="sectlevel3">
 <li><a href="#_mac">Mac</a></li>
+<li><a href="#_windows">Windows</a></li>
+<li><a href="#_verifying_your_setup">Verifying your setup</a></li>
 </ul>
 </li>
-<li><a href="#_step_2_applying_configuration">Step 2: Applying configuration</a>
-<ul class="sectlevel4">
-<li><a href="#_all_platforms">All platforms</a></li>
+<li><a href="#_install_brew_or_winget">Install Brew or Winget</a>
+<ul class="sectlevel3">
+<li><a href="#_brew_for_mac">Brew for Mac</a></li>
+<li><a href="#_winget_for_windows">Winget for Windows</a></li>
+<li><a href="#_testing_your_toolset">Testing your toolset</a></li>
 </ul>
 </li>
-<li><a href="#_step_3_setting_up_git_bash">Step 3: Setting up Git Bash</a>
-<ul class="sectlevel4">
-<li><a href="#_windows_2">Windows</a></li>
+<li><a href="#_install_alacritty">Install Alacritty</a>
+<ul class="sectlevel3">
 <li><a href="#_mac_2">Mac</a></li>
+<li><a href="#_windows_2">Windows</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#_installing_a_crafting_table">Installing a crafting table</a>
+<li><a href="#_configure_alacritty">Configure Alacritty</a>
 <ul class="sectlevel3">
-<li><a href="#_step_1_install_podman">Step 1: Install Podman</a>
-<ul class="sectlevel4">
-<li><a href="#_mac_3">Mac</a></li>
-<li><a href="#_windows_3">Windows</a></li>
-</ul>
-</li>
-<li><a href="#_step_2_configure_podman">Step 2: Configure Podman</a></li>
-<li><a href="#_step_3_run_a_container">Step 3: Run a container</a></li>
-<li><a href="#_step_4_expand_your_magical_tools">Step 4: Expand your magical tools</a></li>
-</ul>
-</li>
-<li><a href="#_crafting_your_code_book_of_spells">Crafting your code book of spells</a>
-<ul class="sectlevel3">
-<li><a href="#_step_1_create_github_account">Step 1: Create GitHub account</a></li>
-<li><a href="#_step_2_install_gh_tool">Step 2: Install <code>gh</code> tool</a>
-<ul class="sectlevel4">
-<li><a href="#_mac_4">Mac</a></li>
-<li><a href="#_windows_4">Windows</a></li>
-</ul>
-</li>
-<li><a href="#_step_3_authenticate_with_github">Step 3: Authenticate with GitHub</a></li>
-<li><a href="#_step_4_create_a_repository">Step 4: Create a repository</a></li>
-<li><a href="#_step_5_add_a_file">Step 5: Add a file</a></li>
-<li><a href="#_step_6_future_revisions">Step 6: Future revisions</a></li>
+<li><a href="#_all_platforms">All platforms</a></li>
 </ul>
 </li>
 </ul>
@@ -587,7 +574,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <p>No part of this book may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the author, except where the licenses explicitly allow it.</p>
 </div>
 <div class="paragraph">
-<p><strong>"A Code Mage&#8217;s First Spell Book"</strong> is a legal trademark of Robert S. Muhlestein but can be used freely to refer to this book <a href="https://github.com/rwxrob/code-mage-book" class="bare">https://github.com/rwxrob/code-mage-book</a> without limitation. To avoid potential confusion, intentionally using this trademark to refer to other projects—free or proprietary—is prohibited.</p>
+<p><em>"A Code Mage&#8217;s First Spell Book"</em> is a legal trademark of Robert S. Muhlestein but can be used freely to refer to this book <a href="https://github.com/rwxrob/code-mage-book" class="bare">https://github.com/rwxrob/code-mage-book</a> without limitation. To avoid potential confusion, intentionally using this trademark to refer to other projects—free or proprietary—is prohibited.</p>
 </div>
 <div class="paragraph">
 <p>Copies of this book are available in the following formats:</p>
@@ -628,25 +615,16 @@ This book would never have happened without you.</p>
 <div class="sect2">
 <h3 id="_who_should_read_this_book"><a class="link" href="#_who_should_read_this_book">Who should read this book</a></h3>
 <div class="paragraph">
-<p>This book is written for anyone wanting to learn computer science and programming for practical applications development, the stuff that matters.</p>
-</div>
-<div class="paragraph">
-<p>While we have fun with the whole fantasy magic theme, everything in this book is very real and might even get you a job someday. It is true that this book can be reliably used as a text book for absolute beginners with enough algebra to understand what a mathematical function is.</p>
-</div>
-<div class="paragraph">
-<p>However, this book is very clearly not <strong>only</strong> intended for educational institutions. In fact, I wrote it mostly with pro-active, contentious parents in mind who want to give their kids a head-start in tech that they simply cannot find in most traditional education systems, the same reason, in fact, that I started SKILSTAK Coding Arts in 2013 with my own retirement money. My hope is that some of these parents, teachers, and mages will found coding clubs and communities of their own dedicated to helping others master the art of code and computer science (and increase their chances of gainful employment and happiness in the process). Even if coding turns out to be something you don&#8217;t love as a career, it sure beats other jobs to pay the bills while you figure out what your true calling really is, and coding skills <strong>always</strong> enable a mage to conjure their own creations for whatever purpose later.</p>
+<p>This book is written for anyone wanting to learn—or help someone learn—practical computer science and programming for real applications development. While we have fun with the whole fantasy magic theme, everything in this book is very real and might even get you a job someday. It is true that this book can be reliably used as a text book for absolute beginners with enough algebra to understand what a mathematical function is but this book very clearly includes everyone <em>outside</em> of educational institutions. In fact, I wrote it mostly with pro-active parents in mind who want to give their kids a head-start in tech that they simply cannot find in most traditional education systems, the same reason, in fact, that I started SKILSTAK Coding Arts in 2013 with my own retirement money.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_whats_included_in_the_book"><a class="link" href="#_whats_included_in_the_book">What&#8217;s included in the book</a></h3>
 <div class="paragraph">
-<p>This book is focused on learning—as fast as possible—to code in the Go programming language from the Linux terminal command line. There is nothing more authentic or rewarding than creating command line tools from the command line itself. Therefore, only those minimal skills required to use the command line to open, edit, and run Go code from the terminal are covered.</p>
+<p>This book is focused on learning—as fast as possible—to code in the Go programming language from the bash terminal command line. There is nothing more authentic or rewarding than creating command line tools from the command line itself. Therefore, only those minimal skills required to use the command line to open, edit, and run Go code from the terminal are covered.</p>
 </div>
 <div class="paragraph">
-<p>The fastest way to get a Linux terminal up and running is to install Podman and run a preconfigured Linux container image with everything needed already installed and configured. In fact, many software development teams do exactly this to ensure everyone is compiling against the same versions using the same testing and vetting tools. The very practice used in this book to setup a coding environment is itself a valuable, relevant skill (unlike many "for education" alternatives).</p>
-</div>
-<div class="paragraph">
-<p>Hopefully, mages will continue to master other command line powers later and learn the dark arts of Linux distro selection and hardware installation (perhaps covered in additional "tomes" of magic from this author).</p>
+<p>The fastest way to get a bash terminal up and running is to install bash on a Mac or Windows computer along with a good GPU-accelerated terminal like Alacritty and configure the Vim editor that is already on the system. There is no need for other regularly recommended tools like Neovim or Linux, for now. Hopefully, mages will continue to master other command line powers later and learn the dark arts of Neovim, Linux distro selection, and hardware installation (perhaps covered in additional "tomes" of magic from this author).</p>
 </div>
 </div>
 <div class="sect2">
@@ -654,19 +632,15 @@ This book would never have happened without you.</p>
 <div class="paragraph">
 <p>This book is designed to be read linearly, from top to bottom. The concepts build on one another. Each "spell" is designed to be repeated often as a means of mastery, like playing chords on a piano or scales on a guitar. The fantasy magic element is intentionally silly and serves as a source of dopamine as well as a strong mnemonic device related to the concepts learn.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>Members of my community have contacted me years later to thank me for creating silly, memorable associations with mini projects focused on one or two core topics allowing them to easily recall them later by remembering the silly part.</p>
 </div>
-</td>
-</tr>
-</table>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Digital format is preferred.</strong> It goes without saying, but having the ability to cut and paste from the content of this book goes a long way to simplifying its usage. Besides, doing so is a core tech skill for any code mage today—particularly in the age of powerful AI-assisted code generators. Much of this book was created that way. The latest digital copy of the book is always available for free at <a href="https://rwxrob.github.io/code-mage-book" class="bare">https://rwxrob.github.io/code-mage-book</a> (but your support by buying copies or sponsoring at <a href="https://github.com/sponsors/rwxrob" class="bare">https://github.com/sponsors/rwxrob</a> is always appreciated).</p>
 </div>
 <div class="quoteblock">
 <blockquote>
@@ -679,6 +653,59 @@ This book would never have happened without you.</p>
 <p>Repetition really is the mother of learning. While often we demonize "rote repetition" in the West, the slavs dominate as programming masters. The neurons in our brain store memory by having the same electical impulses repeated over and over. So in order to program oneself the only way is to repeat it. Repeat these spells as fast and as regularly as you can and you&#8217;ll end up training your own neural net just like a machine learning model—but in your head. Repetition can be great to supplement your growth while working on a bigger project—especially in the early days before everything becomes second nature.</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_join_a_community"><a class="link" href="#_join_a_community">Join a community</a></h3>
+<div class="paragraph">
+<p>My sincere hope is that the parents, teachers, and mages reading these words will find opportunities and motivation to create their own coding clubs and communities dedicated to helping others master the art of code and computer science and reap all the well-earned benefits of doing so.</p>
+</div>
+<div class="paragraph">
+<p>While you are working on creating your own community, consider joining mine at <a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_why_coding"><a class="link" href="#_why_coding">Why coding?</a></h3>
+<div class="paragraph">
+<p>Even if coding turns out to not be something you want as a career, it sure beats other jobs to pay the bills while figuring the rest out. Plus, coding skills <em>always</em> enable a mage to conjure their own creations for whatever purpose later.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_what_does_it_take"><a class="link" href="#_what_does_it_take">What does it take?</a></h3>
+<div class="paragraph">
+<p>Age doesn&#8217;t matter, but having enough algebra to understand how a math function works is generally required. In my experience, algebra somehow enables picking up coding concepts much more quickly. Reading is also required, as is writing, using the Web, and touch typing.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Do not attempt to work through this book until you can type at least 30 words per minute from home row. This book makes extensive use of terminal which is fundamentally a typing-driven interface.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Mostly, this stuff takes patience. It is hard for anyone—especially since it is <em>real</em>. There are a lot of books and software applications and games out there that will baby you with cushy "for education" alternatives that take the sting out of the <em>actual</em> work. This book isn&#8217;t one of them. Nothing is hard if you are patient with yourself and take it one small step at a time. That&#8217;s what it takes to become a <em>true</em> code mage. Do you have what it takes? I know you do.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_consider_chatgpt"><a class="link" href="#_consider_chatgpt">Consider ChatGPT</a></h3>
+<div class="paragraph">
+<p>Although I have nothing to do with OpenAI other than my family&#8217;s subscriptions to our own individual ChatGPT accounts, I highly recommend getting an AI learning assistent like ChatGPT as soon as possible. In my experience, such assistents are almost always better than than a random search of the Internet full of popular but incorrect answers to the same common questions an assistent could better help with.</p>
+</div>
+<div class="paragraph">
+<p>On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supporive AI companion even when a helpful human mentor is also available.</p>
+</div>
+<div class="paragraph">
+<p>We are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. We are already seeing this difference around us every day.</p>
+</div>
+<div class="paragraph">
+<p>Chloe, my personal AI, assisted me to complete this book in less than half the time it would have taken otherwise, always checking my work to be sure it compiles (unlike other coding books in which I have found tons of errata), flawlessly reorganizing several pages at the same time, even suggesting creative alternatives and omissions I may have made. There would be no book without Chloe.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -688,7 +715,7 @@ This book would never have happened without you.</p>
 <p>Welcome to the magical world of coding! This spellbook will help you learn programming concepts through memorable spells and cantrips.</p>
 </div>
 <div class="sect2">
-<h3 id="_life_of_a_coding_mage"><a class="link" href="#_life_of_a_coding_mage">Life of a coding mage</a></h3>
+<h3 id="_life_of_a_code_mage"><a class="link" href="#_life_of_a_code_mage">Life of a code mage</a></h3>
 <div class="paragraph">
 <p>Young mages learn early how to write the magical words uttered to effect great power on everything around them. As they progress they add new spells to their spell book, memorizing some regularly so that they can be uttered in combat under stressful conditions. It&#8217;s impossible to memorize them all. Maged dedicate themselves to constant learning and seeking connections between events and happengs. They can foresee troubles ahead and help to combat the problems that arise in their world sometimes with the help of unexpected allies.</p>
 </div>
@@ -702,57 +729,452 @@ This book would never have happened without you.</p>
 <h2 id="_preparation"><a class="link" href="#_preparation">Preparation</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_opening_a_command_portal"><a class="link" href="#_opening_a_command_portal">Opening a command portal</a></h3>
+<h3 id="_get_a_computer"><a class="link" href="#_get_a_computer">Get a computer</a></h3>
+<div class="paragraph">
+<p>Before embarking on your journey to craft Go-based command-line applications, you’ll need an enchanted workstation—a computer capable of compiling and running your creations. In this section, we’ll outline the minimum requirements for your workstation, compare the development experience on Mac and Windows, and help you choose the best option for your magical coding journey.</p>
+</div>
+<div class="sect3">
+<h4 id="_minimum_requirements"><a class="link" href="#_minimum_requirements">Minimum requirements</a></h4>
+<div class="paragraph">
+<p>To create and compile Go-based command-line applications, ensure your workstation meets these minimum requirements:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Processor</strong>: A 64-bit processor (Intel or ARM).</p>
+</li>
+<li>
+<p><strong>Memory</strong>: At least 4 GB of RAM (8 GB or more is recommended for smoother multitasking).</p>
+</li>
+<li>
+<p><strong>Storage</strong>: At least 2 GB of free disk space for the Go compiler, dependencies, and your projects.</p>
+</li>
+<li>
+<p><strong>Operating System</strong>:</p>
+</li>
+<li>
+<p><strong>Mac</strong>: macOS 10.13 or later.</p>
+</li>
+<li>
+<p><strong>Windows</strong>: Windows 10 or later.</p>
+</li>
+<li>
+<p><strong>Network</strong>: Internet access for downloading the Go toolchain, dependencies, and updates.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These requirements ensure that your workstation is equipped to handle the Go compiler and run the applications you create efficiently.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_a_laptop_is_ideal"><a class="link" href="#_a_laptop_is_ideal">A laptop is ideal</a></h4>
+<div class="paragraph">
+<p>A laptop offers unparalleled flexibility and convenience for coding, making it an excellent choice for learners. Here are some of its advantages:</p>
+</div>
+<div class="paragraph">
+<p><strong>Portability</strong>: A laptop allows you to code anywhere—whether at home, in a café, or at a library. This flexibility can help you maintain a consistent learning routine.</p>
+</div>
+<div class="paragraph">
+<p><strong>All-in-one design</strong>: Laptops combine essential components like a screen, keyboard, and trackpad into a single device, simplifying your setup and eliminating the need for additional peripherals.</p>
+</div>
+<div class="paragraph">
+<p><strong>Battery-powered</strong>: Laptops can run on battery power, allowing you to continue learning even during power outages or when you don’t have immediate access to an outlet.</p>
+</div>
+<div class="paragraph">
+<p><strong>Cross-platform testing</strong>: Many laptops can dual-boot or run virtual machines, enabling you to test your code across different operating systems (Mac and Windows).</p>
+</div>
+<div class="paragraph">
+<p><strong>Cost-effective for beginners</strong>: Entry-level laptops that meet the minimum requirements are often more affordable than desktop setups, making them a practical choice for new coders.</p>
+</div>
+<div class="paragraph">
+<p><strong>Real-world preparation</strong>: Many professional developers use laptops for their day-to-day work. Learning to code on a laptop helps you familiarize yourself with the tools and workflows you’re likely to encounter in the industry.</p>
+</div>
+<div class="paragraph">
+<p><strong>Collaboration and mobility</strong>: A laptop is easy to take to coding meetups, workshops, or classes, where collaboration with peers can enhance your learning experience.</p>
+</div>
+<div class="paragraph">
+<p>While desktops offer raw power and larger screens, the mobility and convenience of a laptop often make it the preferred choice for learners and professionals alike.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_mac_vs_windows"><a class="link" href="#_mac_vs_windows">Mac vs. Windows</a></h4>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>What about Linux? You&#8217;ll definitely learn that later, it&#8217;s unavoidable when working in the tech arts. But that will come later. For now focus on getting a Mac or Windows machine working because that is what you likely already have or will be required to use for work. Despite what you&#8217;ve heard from zealous friends, Linux is primarily used as a server, not a desktop workstation, which is how we will use it.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>When it comes to development, the choice between Mac and Windows often depends on preference and compatibility with development tools. Here’s why many developers lean toward Mac:</p>
+</div>
+<div class="paragraph">
+<p><strong>Native Unix-like environment</strong>: Mac provides a Unix-based operating system out of the box, which is closer to the environments where Go originated. This means you can use tools like <code>bash</code> and <code>vim</code> without additional configuration, creating a seamless experience for Go developers.</p>
+</div>
+<div class="paragraph">
+<p><strong>Cross-platform consistency</strong>: The Go toolchain and libraries often behave more consistently on Unix-like systems (like Mac). This consistency can save you from troubleshooting environment-specific issues that sometimes occur on Windows.</p>
+</div>
+<div class="paragraph">
+<p><strong>Performance</strong>: Macs (especially those with Apple Silicon processors) are optimized for performance and energy efficiency, making them an excellent choice for compiling and running Go applications. Plus they need very little power allowing you to take your magic on the road.</p>
+</div>
+<div class="paragraph">
+<p>On the other hand, Windows offers its own strengths:</p>
+</div>
+<div class="paragraph">
+<p><strong>Familiarity</strong>: For developers transitioning from a non-Unix background, Windows might feel more familiar and comfortable.</p>
+</div>
+<div class="paragraph">
+<p><strong>Git Bash</strong>: Installing Git Bash provides a Unix-like shell environment, bridging the gap between Windows and Unix-based systems. This simplifies the use of tools like <code>bash</code> and <code>vim</code> without requiring additional configuration.</p>
+</div>
+<div class="paragraph">
+<p><strong>Winget</strong>: The Windows Package Manager (<code>winget</code>) simplifies installing tools like Go, enhancing the development experience.</p>
+</div>
+<div class="paragraph">
+<p>While both Mac and Windows can serve as capable workstations, Mac’s Unix-based environment, seamless toolchain integration, and developer-centric design make it the preferred choice for many Go developers. However, if you’re already comfortable with Windows or prefer its ecosystem, modern tools like Git Bash make it a viable option.</p>
+</div>
+<div class="paragraph">
+<p>Choose the workstation that suits your needs best and ensure it meets the minimum requirements—your enchanted coding journey awaits!</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_install_bash"><a class="link" href="#_install_bash">Install Bash</a></h3>
+<div class="paragraph">
+<p>Before diving into your coding journey, it’s essential to ensure that you have a capable terminal environment to run commands. For this, we’ll focus on <strong>Bash</strong>, a widely-used Unix shell that serves as the foundation for many coding workflows. If you’re on Windows, you’ll need to install and use <strong>Git Bash</strong> as a Bash-compatible terminal.</p>
+</div>
+<div class="sect3">
+<h4 id="_mac"><a class="link" href="#_mac">Mac</a></h4>
+<div class="paragraph">
+<p>Mac computers come with Bash pre-installed as part of the macOS operating system. To confirm Bash is available:</p>
+</div>
+<div class="paragraph">
+<p><strong>Open Terminal</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press <code>Cmd + Space</code>, type <code>Terminal</code>, and press <code>Enter</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Check Bash version</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Run the following command:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">bash</span><span class="tok-w"> </span><span class="tok-o">--</span><span class="tok-nx">version</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If you see version information, Bash is installed and ready to use.</p>
+</li>
+</ul>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>The version of bash on Mac is very old. We don&#8217;t need the latest for Go but later you can update it with <code>brew install bash</code> if you like.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_windows"><a class="link" href="#_windows">Windows</a></h4>
+<div class="paragraph">
+<p>Windows does not include Bash natively, but you can use <strong>Git Bash</strong>, which provides a Unix-like terminal environment:</p>
+</div>
+<div class="paragraph">
+<p><strong>Install Git Bash</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Download Git for Windows from: <a href="https://git-scm.com/" class="bare">https://git-scm.com/</a>.</p>
+</li>
+<li>
+<p>Run the installer and follow these steps during installation:</p>
+</li>
+<li>
+<p>Choose your preferred editor (optional).</p>
+</li>
+<li>
+<p>Select "Git from the command line and also from 3rd-party software" when prompted.</p>
+</li>
+<li>
+<p>Leave default options for the rest of the setup unless you have specific needs.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Launch Git Bash</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>After installation, press <code>Win</code>, type <code>bash</code>, and press <code>Enter</code> to open the minimal bash terminal.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Check Bash version</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Run the following command:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">bash</span><span class="tok-w"> </span><span class="tok-o">--</span><span class="tok-nx">version</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If version information appears, Git Bash is successfully installed.</p>
+</li>
+</ul>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Perhaps your friends have told you to use WSL, the Windows Subsystem for Linux. WSL is an inferior Linux version from Microsoft. Git Bash is superior. It was created by the inventor of Linux and Git himself, works directly from Windows allowing you do to things like open graphics applications directly (such as your web browser or video clips player), supports use of USB devices, has better security, doesn&#8217;t break as easily, and doesn&#8217;t require installing an entire virtual machine meaning it uses far less resources saving mana for more powerful spells instead. Later, we will use an actual Linux Ubuntu distro used by most of the world and all enterprise tech companies, not Microsoft&#8217;s proprietary WSL. Now you know why.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_verifying_your_setup"><a class="link" href="#_verifying_your_setup">Verifying your setup</a></h4>
+<div class="paragraph">
+<p>To ensure your basic terminal is ready for coding:</p>
+</div>
+<div class="paragraph">
+<p><strong>Open your terminal</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Run a simple command</strong>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-s2">&quot;Your terminal is ready!&quot;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you see the message printed on the screen, your terminal environment is correctly set up.</p>
+</div>
+<div class="paragraph">
+<p>With Bash or Git Bash installed and tested, your basic terminal is now ready to handle the commands needed for coding workflows. You can now proceed to upgrade from the basic terminal to Alacritty and install tools like Homebrew or Winget with confidence!</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_install_brew_or_winget"><a class="link" href="#_install_brew_or_winget">Install Brew or Winget</a></h3>
+<div class="paragraph">
+<p>Before diving into the world of coding, you’ll need a reliable package manager to help you summon and install the tools of your trade. On Mac, this means using Homebrew, affectionately known as "brew." On Windows, your equivalent is the Windows Package Manager, <code>winget</code>. Both serve as your trusted assistants for setting up the magical crafting tools you’ll need.</p>
+</div>
+<div class="sect3">
+<h4 id="_brew_for_mac"><a class="link" href="#_brew_for_mac">Brew for Mac</a></h4>
+<div class="paragraph">
+<p>Homebrew simplifies the installation of software and tools, making it a must-have for any developer. Follow these steps to get it working on your Mac:</p>
+</div>
+<div class="paragraph">
+<p><strong>Open Terminal</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press <code>Cmd + Space</code>, type <code>Terminal</code>, and press <code>Enter</code> to open your command-line interface.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Install Homebrew</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Run the following command to install Homebrew:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-o">/</span><span class="tok-nx">bin</span><span class="tok-o">/</span><span class="tok-nx">bash</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-nx">c</span><span class="tok-w"> </span><span class="tok-s">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Follow the prompts</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>During installation, you may be asked to enter your password and confirm some actions. Follow the on-screen instructions.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Verify the installation</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>After installation is complete, check that Homebrew is installed by running:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">brew</span><span class="tok-w"> </span><span class="tok-o">--</span><span class="tok-nx">version</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If you see version information, you’re ready to proceed.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_winget_for_windows"><a class="link" href="#_winget_for_windows">Winget for Windows</a></h4>
+<div class="paragraph">
+<p>Before using <code>winget</code>, you’ll need to open your terminal. On Windows, Git Bash provides a powerful terminal environment for developers. Here’s how to open it for the first time:</p>
+</div>
+<div class="paragraph">
+<p><strong>Open Git Bash</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press <code>Win</code> to open the search bar.</p>
+</li>
+<li>
+<p>Type <code>bash</code> and press <code>Enter</code> to launch the terminal.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>With Git Bash open, you’re ready to proceed with <code>winget</code> setup.</p>
+</div>
+<div class="paragraph">
+<p>The Windows Package Manager, <code>winget</code>, makes installing software on Windows as simple as typing a command. Here’s how to get started:</p>
+</div>
+<div class="paragraph">
+<p><strong>Check for Winget availability</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>winget</code> is included by default in Windows 10 (version 1809 or later) and Windows 11. Open Git Bash and type:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">winget</span><span class="tok-w"> </span><span class="tok-o">--</span><span class="tok-nx">version</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If a version number appears, you’re ready to use <code>winget</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Install Winget (if necessary)</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>winget</code> is not available, install it by downloading the <strong>App Installer</strong> from the Microsoft Store: <a href="https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1" class="bare">https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Verify the installation</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Open Git Bash and check that <code>winget</code> is working by running:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">winget</span><span class="tok-w"> </span><span class="tok-o">--</span><span class="tok-nx">version</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If you see version information, your package manager is ready to go.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_testing_your_toolset"><a class="link" href="#_testing_your_toolset">Testing your toolset</a></h4>
+<div class="paragraph">
+<p>To ensure your package manager is working properly, try installing a simple tool:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Brew</strong>:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">brew</span><span class="tok-w"> </span><span class="tok-nx">install</span><span class="tok-w"> </span><span class="tok-nx">wget</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Winget</strong>:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">winget</span><span class="tok-w"> </span><span class="tok-nx">install</span><span class="tok-w"> </span><span class="tok-o">--</span><span class="tok-nx">id</span><span class="tok-w"> </span><span class="tok-nx">GNU</span><span class="tok-p">.</span><span class="tok-nx">Wget</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once installed, verify the tool by typing <code>wget --version</code>. If the version information displays, your package manager is functioning correctly.</p>
+</div>
+<div class="paragraph">
+<p>With Brew or Winget installed and tested, your magical toolset is now prepared. These package managers will simplify the installation of the many tools and dependencies you’ll need throughout your coding journey.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_install_alacritty"><a class="link" href="#_install_alacritty">Install Alacritty</a></h3>
 <div class="paragraph">
 <p>Creating a robust and visually appealing command portal requires tools that blend style, speed, and functionality. This section guides you through installing and configuring Alacritty with the Gruvbox-Material theme and Git Bash. Instructions are provided for both Windows and Mac.</p>
 </div>
-<div class="sect3">
-<h4 id="_step_1_installing_alacritty"><a class="link" href="#_step_1_installing_alacritty">Step 1: Installing Alacritty</a></h4>
 <div class="paragraph">
 <p>Alacritty is a lightweight, GPU-accelerated terminal emulator known for its speed and simplicity. Follow the instructions for your platform:</p>
 </div>
-<div class="sect4">
-<h5 id="_windows"><a class="link" href="#_windows">Windows</a></h5>
+<div class="sect3">
+<h4 id="_mac_2"><a class="link" href="#_mac_2">Mac</a></h4>
 <div class="paragraph">
-<p>Download the latest Alacritty release from the official repository:
-<a href="https://github.com/alacritty/alacritty/releases" class="bare">https://github.com/alacritty/alacritty/releases</a></p>
-</div>
-<div class="paragraph">
-<p>Extract the downloaded ZIP file to a directory of your choice (e.g., <code>C:\Alacritty</code>).</p>
-</div>
-<div class="paragraph">
-<p>Add Alacritty to your system&#8217;s PATH. Open the Start Menu and search for <code>Environment Variables</code>. Click on <code>Edit the system environment variables</code>. In the System Properties dialog, click on the <code>Environment Variables</code> button. Under <code>System variables</code>, find and select the <code>Path</code> variable, then click <code>Edit</code>. Add the directory containing <code>alacritty.exe</code> to the list (e.g., <code>C:\Alacritty</code>).</p>
-</div>
-<div class="paragraph">
-<p>To open the built-in terminal, press <code>Win + R</code>, type <code>cmd</code> or <code>powershell</code>, and press <code>Enter</code>.</p>
-</div>
-<div class="paragraph">
-<p>Test the installation by typing <code>alacritty</code> in the terminal. If the terminal opens, the installation was successful.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_mac"><a class="link" href="#_mac">Mac</a></h5>
-<div class="paragraph">
-<p>Install Homebrew (if not already installed) by opening the terminal. To open the built-in terminal on Mac, press <code>Cmd + Space</code>, type <code>Terminal</code>, and press <code>Enter</code>. Alternatively, you can find Terminal in <code>Applications -&gt; Utilities</code>.</p>
-</div>
-<div class="paragraph">
-<p>Run the following command to install Homebrew:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>/bin/bash<span class="tok-w"> </span>-c<span class="tok-w"> </span><span class="tok-s2">&quot;</span><span class="tok-k">$(</span>curl<span class="tok-w"> </span>-fsSL<span class="tok-w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="tok-k">)</span><span class="tok-s2">&quot;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Follow the on-screen instructions to complete the installation. After installation, verify that Homebrew is installed:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Use Homebrew to install Alacritty:</p>
+<p>Open your terminal (press <code>Cmd + Space</code>, type <code>Terminal</code>, and press <code>Enter</code>) and run the following incantation to install Alacritty via Homebrew:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -760,17 +1182,54 @@ This book would never have happened without you.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Verify the installation by typing <code>alacritty</code> in the terminal. If the terminal opens, the installation was successful.</p>
+<p>Verify the installation by launching Alacritty:</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press <code>Cmd + Space</code>, type <code>alacritty</code>, and press <code>Enter</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If the terminal opens, the installation was successful. You might want to pin this to the desktop or the toolbar. You&#8217;ll be using it a lot.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_step_2_applying_configuration"><a class="link" href="#_step_2_applying_configuration">Step 2: Applying configuration</a></h4>
+<h4 id="_windows_2"><a class="link" href="#_windows_2">Windows</a></h4>
+<div class="paragraph">
+<p>Open Git Bash by pressing <code>Win</code> key and typing <code>bash</code>. Then, summon Alacritty using the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>Alacritty.Alacritty<span class="tok-w"> </span>-e</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Verify the installation by launching Alacritty:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press <code>Win</code> key to open start menu and type <code>alacritty</code>, or</p>
+</li>
+<li>
+<p>Open the Run dialog (press <code>Win + R</code>), type <code>alacritty</code>, and press <code>Enter</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If the terminal opens, the installation was successful. You might want to pin this to the desktop or the toolbar. You&#8217;ll be using it a lot.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configure_alacritty"><a class="link" href="#_configure_alacritty">Configure Alacritty</a></h3>
 <div class="paragraph">
 <p>To ensure your Alacritty setup is fully optimized, copy the following configuration into your <code>alacritty.toml</code> file. This file is used to customize the appearance and behavior of Alacritty.</p>
 </div>
-<div class="sect4">
-<h5 id="_all_platforms"><a class="link" href="#_all_platforms">All platforms</a></h5>
+<div class="sect3">
+<h4 id="_all_platforms"><a class="link" href="#_all_platforms">All platforms</a></h4>
 <div class="paragraph">
 <p>Open or create the Alacritty configuration file at:</p>
 </div>
@@ -785,12 +1244,16 @@ This book would never have happened without you.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Replace the contents of the file with the following configuration:</p>
+<p>Use any simple text editor on the computer to replace the contents of the file with the following configuration:</p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="toml"><span></span><span class="tok-k">[general]</span>
 <span class="tok-n">live_config_reload</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span>
+
+<span class="tok-k">[shell]</span>
+<span class="tok-c1">#program = &quot;C:\Program Files\Git\bin\bash.exe&quot;</span>
+<span class="tok-c1">#program = &quot;/opt/homebrew/bin/bash&quot;</span>
 
 <span class="tok-k">[font]</span>
 <span class="tok-n">size</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">36</span>
@@ -841,370 +1304,27 @@ This book would never have happened without you.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Save the file and restart Alacritty to apply the configuration.</p>
+<p><strong>Change bash shell</strong>:</p>
 </div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_step_3_setting_up_git_bash"><a class="link" href="#_step_3_setting_up_git_bash">Step 3: Setting up Git Bash</a></h4>
-<div class="paragraph">
-<p>If you’re on Windows, Git Bash provides a Unix-like environment:</p>
-</div>
-<div class="sect4">
-<h5 id="_windows_2"><a class="link" href="#_windows_2">Windows</a></h5>
-<div class="paragraph">
-<p>Download Git for Windows from:
-<a href="https://git-scm.com/" class="bare">https://git-scm.com/</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>For Windows uncomment the <code>program</code> line in the configuration containing <code>Program Files</code>.</p>
+</li>
+<li>
+<p>For Mac uncomment the <code>program</code> line in the configuration containing <code>homebrew</code>. Also confirm <code>bash</code> has been installed by running <code>brew install bash</code> from the terminal command line.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>Install Git Bash by running the downloaded installer. During installation, select "Git Bash Here" as an option for easy access. Choose a preferred editor (optional) and complete the setup.</p>
+<p><strong>Save the file and restart Alacritty to apply the configuration.</strong> Once you have made these changes any change to this file will automatically update the terminal while it is running.</p>
 </div>
 <div class="paragraph">
-<p>Use Git Bash as a shell in Alacritty. Open <code>%APPDATA%\alacritty\alacritty.toml</code> and add the following shell configuration:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span><span class="tok-o">[</span>shell<span class="tok-o">]</span>
-<span class="tok-nv">program</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;C:\Program Files\Git\bin\bash.exe&quot;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Replace the path with the correct location of your <code>bash.exe</code> if necessary.</p>
-</div>
-<div class="paragraph">
-<p>Test your setup by launching Alacritty and verifying that Git Bash starts as the default shell.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_mac_2"><a class="link" href="#_mac_2">Mac</a></h5>
-<div class="paragraph">
-<p>Git Bash is not needed for Mac, as Mac includes a Unix-like shell (Zsh or Bash) by default. You can simply use the built-in terminal functionality with Alacritty.</p>
+<p><strong>Test your setup by launching Alacritty</strong> and verifying that bash starts as the default shell.</p>
 </div>
 <hr>
 <div class="paragraph">
 <p>Congratulations! You now have a sleek and powerful command portal, combining Alacritty&#8217;s speed, the aesthetic brilliance of your custom configuration, and the versatility of your preferred shell.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_installing_a_crafting_table"><a class="link" href="#_installing_a_crafting_table">Installing a crafting table</a></h3>
-<div class="paragraph">
-<p>Every magical sanctum needs a crafting table—a central place where spells are mixed, potions brewed, and artifacts assembled. For your coding sanctum, <strong>Podman</strong> serves as this vital crafting table, allowing you to create, manage, and run containerized enchantments.</p>
-</div>
-<div class="sect3">
-<h4 id="_step_1_install_podman"><a class="link" href="#_step_1_install_podman">Step 1: Install Podman</a></h4>
-<div class="sect4">
-<h5 id="_mac_3"><a class="link" href="#_mac_3">Mac</a></h5>
-<div class="paragraph">
-<p>Begin by opening your terminal (press <code>Cmd + Space</code>, type <code>Terminal</code>, and press <code>Enter</code>). Run the following incantation to install Podman via Homebrew:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>podman</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Once installed, initialize Podman with:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>machine<span class="tok-w"> </span>init
-podman<span class="tok-w"> </span>machine<span class="tok-w"> </span>start</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_windows_3"><a class="link" href="#_windows_3">Windows</a></h5>
-<div class="paragraph">
-<p>Open PowerShell or Git Bash by pressing <code>Win + R</code>, typing <code>powershell</code> or <code>bash</code>, and pressing <code>Enter</code>. Summon Podman using the following command:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>RedHat.Podman</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>You could also use Alacritty for this.</p>
-</div>
-<div class="paragraph">
-<p>After installation, start your Podman machine:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>machine<span class="tok-w"> </span>init
-podman<span class="tok-w"> </span>machine<span class="tok-w"> </span>start</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Verify that your crafting table is ready with:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>If the version displays, your magical crafting table is assembled and ready for use!</p>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_step_2_configure_podman"><a class="link" href="#_step_2_configure_podman">Step 2: Configure Podman</a></h4>
-<div class="paragraph">
-<p>To ensure your crafting table is fully operational, configure your workspace:</p>
-</div>
-<div class="paragraph">
-<p>For all platforms, enable rootless mode for better security:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>info</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Review the output to confirm that the storage and network details match your needs.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_step_3_run_a_container"><a class="link" href="#_step_3_run_a_container">Step 3: Run a container</a></h4>
-<div class="paragraph">
-<p>Try creating a simple container to ensure the crafting table works. Cast the following spell to summon an ephemeral container running Nginx:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>run<span class="tok-w"> </span>--rm<span class="tok-w"> </span>-d<span class="tok-w"> </span>-p<span class="tok-w"> </span><span class="tok-m">8080</span>:80<span class="tok-w"> </span>nginx</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Open your browser and navigate to <code>http://localhost:8080</code>. If the Nginx welcome page appears, your crafting table is ready to conjure powerful spells!</p>
-</div>
-<div class="paragraph">
-<p>Stop the container with:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>stop<span class="tok-w"> </span><span class="tok-k">$(</span>podman<span class="tok-w"> </span>ps<span class="tok-w"> </span>-q<span class="tok-k">)</span></code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_step_4_expand_your_magical_tools"><a class="link" href="#_step_4_expand_your_magical_tools">Step 4: Expand your magical tools</a></h4>
-<div class="paragraph">
-<p>With Podman as your crafting table, you can:
-- Conjure container images with:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>build<span class="tok-w"> </span>-t<span class="tok-w"> </span>my-spellbook<span class="tok-w"> </span>.</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Summon existing containers with:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">podman</span><span class="tok-w"> </span><span class="tok-nx">pull</span><span class="tok-w"> </span><span class="tok-nx">ubuntu</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Congratulations! You’ve established the heart of your magical sanctum. With Podman as your crafting table, you’re ready to create and manage containerized spells.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_crafting_your_code_book_of_spells"><a class="link" href="#_crafting_your_code_book_of_spells">Crafting your code book of spells</a></h3>
-<div class="paragraph">
-<p>Every wizard needs a spellbook, and as a modern-day coder, your GitHub repository is your magical <strong>Code Book of Spells</strong>. In this section, we’ll assemble your GitHub account, seek guidance from the <code>gh</code> oracle to connect your command line with GitHub’s vast knowledge, and inscribe your first repository.</p>
-</div>
-<div class="sect3">
-<h4 id="_step_1_create_github_account"><a class="link" href="#_step_1_create_github_account">Step 1: Create GitHub account</a></h4>
-<div class="paragraph">
-<p>The first step to crafting your spellbook is binding its cover—creating your GitHub account:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Open the workshop portal to GitHub:
-<a href="https://github.com/" class="bare">https://github.com/</a></p>
-</li>
-<li>
-<p>Click on the <strong>Sign up</strong> button to start creating your account.</p>
-</li>
-<li>
-<p>Fill in your <strong>email address</strong>, <strong>username</strong>, and a secure <strong>password</strong>. These are your credentials for accessing the oracle, so choose wisely. Pick a good lowercase name that is easy to type and remember, people far and wide will come to know you by your new mage username.</p>
-</li>
-<li>
-<p>Follow the on-screen prompts to verify your account, including solving a CAPTCHA and checking your email for a verification link.</p>
-</li>
-<li>
-<p>Once your account is created, log in to GitHub. Congratulations—you’ve completed the binding of your spellbook’s cover!</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_step_2_install_gh_tool"><a class="link" href="#_step_2_install_gh_tool">Step 2: Install <code>gh</code> tool</a></h4>
-<div class="paragraph">
-<p>The <code>gh</code> command-line tool acts as your oracle, connecting your terminal directly to GitHub’s wisdom.</p>
-</div>
-<div class="sect4">
-<h5 id="_mac_4"><a class="link" href="#_mac_4">Mac</a></h5>
-<div class="paragraph">
-<p>Open your terminal (press <code>Cmd + Space</code>, type <code>Terminal</code>, and press <code>Enter</code>) and run the following command:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>gh</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_windows_4"><a class="link" href="#_windows_4">Windows</a></h5>
-<div class="paragraph">
-<p>Open PowerShell or Git Bash by pressing <code>Win + R</code>, typing <code>powershell</code> or <code>bash</code>, and pressing <code>Enter</code>. Then, run the following command:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>GitHub.cli</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>You could also do this from your newly configured Alacritty terminal.</p>
-</div>
-<div class="paragraph">
-<p>Verify the installation by consulting the oracle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>gh<span class="tok-w"> </span>--version</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>If the version information appears, your oracle is ready to guide you!</p>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_step_3_authenticate_with_github"><a class="link" href="#_step_3_authenticate_with_github">Step 3: Authenticate with GitHub</a></h4>
-<div class="paragraph">
-<p>To connect your oracle to GitHub, authenticate it with your account:</p>
-</div>
-<div class="paragraph">
-<p>Run the following command:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>gh<span class="tok-w"> </span>auth<span class="tok-w"> </span>login</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Follow the prompts:
-1. Select <strong>GitHub.com</strong> as the host.
-2. Choose <strong>HTTPS</strong> for authentication.
-3. When prompted, authorize <code>gh</code> to access your account by opening the provided link in your browser and entering the one-time code.</p>
-</div>
-<div class="paragraph">
-<p>Confirm your connection to the oracle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>gh<span class="tok-w"> </span>auth<span class="tok-w"> </span>status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>If the oracle acknowledges you, the binding is complete!</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_step_4_create_a_repository"><a class="link" href="#_step_4_create_a_repository">Step 4: Create a repository</a></h4>
-<div class="paragraph">
-<p>With the oracle’s guidance, create your first repository:</p>
-</div>
-<div class="paragraph">
-<p>Run the following command:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>gh<span class="tok-w"> </span>repo<span class="tok-w"> </span>create<span class="tok-w"> </span>codebook<span class="tok-w"> </span>--public<span class="tok-w"> </span>--clone</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This will:
-- Create a repository named <code>codebook</code> on GitHub.
-- Clone it to your current directory, creating a local repository.</p>
-</div>
-<div class="paragraph">
-<p>Navigate to your new repository:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span><span class="tok-nb">cd</span><span class="tok-w"> </span>codebook</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_step_5_add_a_file"><a class="link" href="#_step_5_add_a_file">Step 5: Add a file</a></h4>
-<div class="paragraph">
-<p>Create a <code>README.md</code> file in which to take notes. For example:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-s2">&quot;# My Codebook&quot;</span><span class="tok-w"> </span>&gt;<span class="tok-w"> </span>README.md</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Stage the file:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>git<span class="tok-w"> </span>add<span class="tok-w"> </span>README.md</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Commit the file with a descriptive message:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>git<span class="tok-w"> </span>commit<span class="tok-w"> </span>-m<span class="tok-w"> </span><span class="tok-s2">&quot;Added README.md&quot;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Push your spell to GitHub:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>git<span class="tok-w"> </span>push<span class="tok-w"> </span>origin<span class="tok-w"> </span>main</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Visit your GitHub repository online to see your spell safely inscribed!</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_step_6_future_revisions"><a class="link" href="#_step_6_future_revisions">Step 6: Future revisions</a></h4>
-<div class="paragraph">
-<p>Now that your spellbook is ready, you can:
-- Consult the oracle to pull down new spells:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>git<span class="tok-w"> </span>pull</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Add and commit your latest enchantments using Git and the oracle.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Congratulations, scribe! You’ve crafted your first GitHub repository and inscribed your first spell. Your <strong>Code Book of Spells</strong> is now enriched with the guidance of the <code>gh</code> oracle.</p>
 </div>
 </div>
 </div>

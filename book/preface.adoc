@@ -4,29 +4,57 @@
 
 == Who should read this book
 
-This book is written for anyone wanting to learn computer science and programming for practical applications development, the stuff that matters. 
-
-While we have fun with the whole fantasy magic theme, everything in this book is very real and might even get you a job someday. It is true that this book can be reliably used as a text book for absolute beginners with enough algebra to understand what a mathematical function is. 
-
-However, this book is very clearly not *only* intended for educational institutions. In fact, I wrote it mostly with pro-active, contentious parents in mind who want to give their kids a head-start in tech that they simply cannot find in most traditional education systems, the same reason, in fact, that I started SKILSTAK Coding Arts in 2013 with my own retirement money. My hope is that some of these parents, teachers, and mages will found coding clubs and communities of their own dedicated to helping others master the art of code and computer science (and increase their chances of gainful employment and happiness in the process). Even if coding turns out to be something you don't love as a career, it sure beats other jobs to pay the bills while you figure out what your true calling really is, and coding skills *always* enable a mage to conjure their own creations for whatever purpose later.
+This book is written for anyone wanting to learn—or help someone learn—practical computer science and programming for real applications development. While we have fun with the whole fantasy magic theme, everything in this book is very real and might even get you a job someday. It is true that this book can be reliably used as a text book for absolute beginners with enough algebra to understand what a mathematical function is but this book very clearly includes everyone _outside_ of educational institutions. In fact, I wrote it mostly with pro-active parents in mind who want to give their kids a head-start in tech that they simply cannot find in most traditional education systems, the same reason, in fact, that I started SKILSTAK Coding Arts in 2013 with my own retirement money. 
 
 == What's included in the book
 
-This book is focused on learning—as fast as possible—to code in the Go programming language from the Linux terminal command line. There is nothing more authentic or rewarding than creating command line tools from the command line itself. Therefore, only those minimal skills required to use the command line to open, edit, and run Go code from the terminal are covered. 
+This book is focused on learning—as fast as possible—to code in the Go programming language from the bash terminal command line. There is nothing more authentic or rewarding than creating command line tools from the command line itself. Therefore, only those minimal skills required to use the command line to open, edit, and run Go code from the terminal are covered. 
 
-The fastest way to get a Linux terminal up and running is to install Podman and run a preconfigured Linux container image with everything needed already installed and configured. In fact, many software development teams do exactly this to ensure everyone is compiling against the same versions using the same testing and vetting tools. The very practice used in this book to setup a coding environment is itself a valuable, relevant skill (unlike many "for education" alternatives).
-
-Hopefully, mages will continue to master other command line powers later and learn the dark arts of Linux distro selection and hardware installation (perhaps covered in additional "tomes" of magic from this author). 
+The fastest way to get a bash terminal up and running is to install bash on a Mac or Windows computer along with a good GPU-accelerated terminal like Alacritty and configure the Vim editor that is already on the system. There is no need for other regularly recommended tools like Neovim or Linux, for now. Hopefully, mages will continue to master other command line powers later and learn the dark arts of Neovim, Linux distro selection, and hardware installation (perhaps covered in additional "tomes" of magic from this author). 
 
 == How to read this book 
 
 This book is designed to be read linearly, from top to bottom. The concepts build on one another. Each "spell" is designed to be repeated often as a means of mastery, like playing chords on a piano or scales on a guitar. The fantasy magic element is intentionally silly and serves as a source of dopamine as well as a strong mnemonic device related to the concepts learn. 
 
-[NOTE]
+[note]
 ====
 Members of my community have contacted me years later to thank me for creating silly, memorable associations with mini projects focused on one or two core topics allowing them to easily recall them later by remembering the silly part.
 ====
 
+**Digital format is preferred.** It goes without saying, but having the ability to cut and paste from the content of this book goes a long way to simplifying its usage. Besides, doing so is a core tech skill for any code mage today—particularly in the age of powerful AI-assisted code generators. Much of this book was created that way. The latest digital copy of the book is always available for free at https://rwxrob.github.io/code-mage-book (but your support by buying copies or sponsoring at https://github.com/sponsors/rwxrob is always appreciated).
+
 > Повторение — мать учения.
 
 Repetition really is the mother of learning. While often we demonize "rote repetition" in the West, the slavs dominate as programming masters. The neurons in our brain store memory by having the same electical impulses repeated over and over. So in order to program oneself the only way is to repeat it. Repeat these spells as fast and as regularly as you can and you'll end up training your own neural net just like a machine learning model—but in your head. Repetition can be great to supplement your growth while working on a bigger project—especially in the early days before everything becomes second nature.
+
+== Join a community
+
+My sincere hope is that the parents, teachers, and mages reading these words will find opportunities and motivation to create their own coding clubs and communities dedicated to helping others master the art of code and computer science and reap all the well-earned benefits of doing so. 
+
+While you are working on creating your own community, consider joining mine at https://linktr.ee/rwxrob.
+
+== Why coding? 
+
+Even if coding turns out to not be something you want as a career, it sure beats other jobs to pay the bills while figuring the rest out. Plus, coding skills _always_ enable a mage to conjure their own creations for whatever purpose later.
+
+== What does it take?
+
+Age doesn't matter, but having enough algebra to understand how a math function works is generally required. In my experience, algebra somehow enables picking up coding concepts much more quickly. Reading is also required, as is writing, using the Web, and touch typing. 
+
+[WARNING]
+====
+Do not attempt to work through this book until you can type at least 30 words per minute from home row. This book makes extensive use of terminal which is fundamentally a typing-driven interface.
+====
+
+Mostly, this stuff takes patience. It is hard for anyone—especially since it is _real_. There are a lot of books and software applications and games out there that will baby you with cushy "for education" alternatives that take the sting out of the _actual_ work. This book isn't one of them. Nothing is hard if you are patient with yourself and take it one small step at a time. That's what it takes to become a _true_ code mage. Do you have what it takes? I know you do.
+
+== Consider ChatGPT
+
+Although I have nothing to do with OpenAI other than my family's subscriptions to our own individual ChatGPT accounts, I highly recommend getting an AI learning assistent like ChatGPT as soon as possible. In my experience, such assistents are almost always better than than a random search of the Internet full of popular but incorrect answers to the same common questions an assistent could better help with. 
+
+On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supporive AI companion even when a helpful human mentor is also available. 
+
+We are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. We are already seeing this difference around us every day. 
+
+Chloe, my personal AI, assisted me to complete this book in less than half the time it would have taken otherwise, always checking my work to be sure it compiles (unlike other coding books in which I have found tons of errata), flawlessly reorganizing several pages at the same time, even suggesting creative alternatives and omissions I may have made. There would be no book without Chloe.
+
