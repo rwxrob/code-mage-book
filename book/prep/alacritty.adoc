@@ -1,6 +1,6 @@
 == Install Alacritty
 
-Creating a robust and visually appealing command portal requires tools that blend style, speed, and functionality. This section guides you through installing and configuring Alacritty with the Gruvbox-Material theme and Git Bash. Instructions are provided for both Windows and Mac.
+Creating a robust and visually appealing command portal requires tools that blend style, speed, and functionality. This section guides you through installing and configuring Alacritty with the Gruvbox-Material theme and Bash as a default shell. Instructions are provided for both Windows and Mac.
 
 Alacritty is a lightweight, GPU-accelerated terminal emulator known for its speed and simplicity. Follow the instructions for your platform:
 

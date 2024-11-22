@@ -1,6 +1,6 @@
 == Install Bash
 
-Before diving into your coding journey, it’s essential to ensure that you have a capable terminal environment to run commands. For this, we’ll focus on **Bash**, a widely-used Unix shell that serves as the foundation for many coding workflows. If you’re on Windows, you’ll need to install and use **Git Bash** as a Bash-compatible terminal.
+Before diving into your coding journey, it’s essential to ensure that you have a capable terminal environment to run commands. For this, we’ll focus on **Bash**, a widely-used Unix shell that serves as the foundation for many coding workflows. A shell is an interactive terminal program that prompts you to enter commands one at a time. If you’re on Windows, you’ll need to install and use **Git Bash** as a Bash-compatible terminal. Mac already has it.
 
 === Mac
 
@@ -19,10 +19,7 @@ bash --version
 ----
 - If you see version information, Bash is installed and ready to use.
 
-[note]
-====
-The version of bash on Mac is very old. We don't need the latest for Go but later you can update it with `brew install bash` if you like.
-====
+The version of bash on Mac is very old but it will work for Go development. In the next section you can upgrade with `brew install bash` if you like once you have the `brew` installed.
 
 === Windows
 

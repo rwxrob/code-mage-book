@@ -27,28 +27,27 @@ Members of my community have contacted me years later to thank me for creating s
 
 Repetition really is the mother of learning. While often we demonize "rote repetition" in the West, the slavs dominate as programming masters. The neurons in our brain store memory by having the same electical impulses repeated over and over. So in order to program oneself the only way is to repeat it. Repeat these spells as fast and as regularly as you can and you'll end up training your own neural net just like a machine learning model—but in your head. Repetition can be great to supplement your growth while working on a bigger project—especially in the early days before everything becomes second nature.
 
-== Join a community
+== Supplement your reading
+
+This book is but a part of a more complete personal learning strategy. Make sure to not neglect the other parts:
+
+=== Find a mentor
+
+Humans have been passing knowledge one to another since the beginning. It's what we do. Luckily learning happens naturally when someone with experience and knowledge is available to someone who knows how to ask questions, apply what they learn, and return with more questions. That's you, the inquisitive one. The mentor's job is to answer questions and provide feedback—*not* to "teach" you. 
+
+Most mentors won't have that kind of free time available to constantly lead you by the hand on your learning journey. In fact, the more likely you are to hear from someone, the less likely you are to want to learn what they have to say. There are those who *do* stuff and those that *talk about* doing stuff. The more someone talks about doing stuff the less time they have to actually do something. It's important to find people you know who are regularly and actively engaged in doing the thing you want to learn and then approach them about possibly mentoring you, perhaps for a small fee (most will decline). 
+
+You will find that many people *want* to share what they know but just don't know how to do it or who would want to hear. Find these people and approach them. Perhaps you can find a few mentors so you can compare how they differ in their approach to programming.
+
+=== Join a community
+
+In addition to finding a mentor, or perhaps in place of it if you cannot find one, join a community that is learning the same things as you. Meetups, hacker spaces, clubs, church groups, social media, and live streamers are all great places to find a community. The community is a place to collaborate and share peer reviews of one another's learning and projects.
 
 My sincere hope is that the parents, teachers, and mages reading these words will find opportunities and motivation to create their own coding clubs and communities dedicated to helping others master the art of code and computer science and reap all the well-earned benefits of doing so. 
 
 While you are working on creating your own community, consider joining mine at https://linktr.ee/rwxrob.
 
-== Why coding? 
-
-Even if coding turns out to not be something you want as a career, it sure beats other jobs to pay the bills while figuring the rest out. Plus, coding skills _always_ enable a mage to conjure their own creations for whatever purpose later.
-
-== What does it take?
-
-Age doesn't matter, but having enough algebra to understand how a math function works is generally required. In my experience, algebra somehow enables picking up coding concepts much more quickly. Reading is also required, as is writing, using the Web, and touch typing. 
-
-[WARNING]
-====
-Do not attempt to work through this book until you can type at least 30 words per minute from home row. This book makes extensive use of terminal which is fundamentally a typing-driven interface.
-====
-
-Mostly, this stuff takes patience. It is hard for anyone—especially since it is _real_. There are a lot of books and software applications and games out there that will baby you with cushy "for education" alternatives that take the sting out of the _actual_ work. This book isn't one of them. Nothing is hard if you are patient with yourself and take it one small step at a time. That's what it takes to become a _true_ code mage. Do you have what it takes? I know you do.
-
-== Consider ChatGPT
+=== Consider ChatGPT
 
 Although I have nothing to do with OpenAI other than my family's subscriptions to our own individual ChatGPT accounts, I highly recommend getting an AI learning assistant like ChatGPT as soon as possible. In my experience, such assistants are almost always better than than a random search of the Internet full of popular but incorrect answers to the same common questions that an assistant could better help with. 
 
