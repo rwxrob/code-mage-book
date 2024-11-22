@@ -2,7 +2,7 @@
 
 Creating a robust and visually appealing command portal requires tools that blend style, speed, and functionality. This section guides you through installing and configuring Alacritty with the Gruvbox-Material theme and Git Bash. Instructions are provided for both Windows and Mac.
 
-=== Installing Alacritty
+=== Step 1: Installing Alacritty
 
 Alacritty is a lightweight, GPU-accelerated terminal emulator known for its speed and simplicity. Follow the instructions for your platform:
 
@@ -42,11 +42,11 @@ brew install alacritty
 
 Verify the installation by typing `alacritty` in the terminal. If the terminal opens, the installation was successful.
 
-=== Applying the configuration file
+=== Step 2: Applying configuration
 
 To ensure your Alacritty setup is fully optimized, copy the following configuration into your `alacritty.toml` file. This file is used to customize the appearance and behavior of Alacritty.
 
-==== For all platforms
+==== All platforms
 
 Open or create the Alacritty configuration file at:
 
@@ -111,7 +111,7 @@ foreground = "0xd4be98"
 
 Save the file and restart Alacritty to apply the configuration.
 
-=== Setting up Git Bash
+=== Step 3: Setting up Git Bash
 
 If you’re on Windows, Git Bash provides a Unix-like environment:
 

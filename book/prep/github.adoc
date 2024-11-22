@@ -1,0 +1,131 @@
+== Crafting your code book of spells
+
+Every wizard needs a spellbook, and as a modern-day coder, your GitHub repository is your magical **Code Book of Spells**. In this section, we’ll assemble your GitHub account, seek guidance from the `gh` oracle to connect your command line with GitHub’s vast knowledge, and inscribe your first repository.
+
+=== Step 1: Create GitHub account
+
+The first step to crafting your spellbook is binding its cover—creating your GitHub account:
+
+1. Open the workshop portal to GitHub:  
+   https://github.com/
+
+2. Click on the **Sign up** button to start creating your account.
+
+3. Fill in your **email address**, **username**, and a secure **password**. These are your credentials for accessing the oracle, so choose wisely. Pick a good lowercase name that is easy to type and remember, people far and wide will come to know you by your new mage username.
+
+4. Follow the on-screen prompts to verify your account, including solving a CAPTCHA and checking your email for a verification link.
+
+5. Once your account is created, log in to GitHub. Congratulations—you’ve completed the binding of your spellbook’s cover!
+
+=== Step 2: Install `gh` tool
+
+The `gh` command-line tool acts as your oracle, connecting your terminal directly to GitHub’s wisdom.
+
+==== Mac
+
+Open your terminal (press `Cmd + Space`, type `Terminal`, and press `Enter`) and run the following command:
+[source,shell]
+----
+brew install gh
+----
+
+==== Windows
+
+Open PowerShell or Git Bash by pressing `Win + R`, typing `powershell` or `bash`, and pressing `Enter`. Then, run the following command:
+[source,shell]
+----
+winget install --id GitHub.cli
+----
+
+You could also do this from your newly configured Alacritty terminal.
+
+Verify the installation by consulting the oracle:
+[source,shell]
+----
+gh --version
+----
+
+If the version information appears, your oracle is ready to guide you!
+
+=== Step 3: Authenticate with GitHub
+
+To connect your oracle to GitHub, authenticate it with your account:
+
+Run the following command:
+[source,shell]
+----
+gh auth login
+----
+
+Follow the prompts:
+1. Select **GitHub.com** as the host.
+2. Choose **HTTPS** for authentication.
+3. When prompted, authorize `gh` to access your account by opening the provided link in your browser and entering the one-time code.
+
+Confirm your connection to the oracle:
+[source,shell]
+----
+gh auth status
+----
+
+If the oracle acknowledges you, the binding is complete!
+
+=== Step 4: Create a repository
+
+With the oracle’s guidance, create your first repository:
+
+Run the following command:
+[source,shell]
+----
+gh repo create codebook --public --clone
+----
+
+This will:
+- Create a repository named `codebook` on GitHub.
+- Clone it to your current directory, creating a local repository.
+
+Navigate to your new repository:
+[source,shell]
+----
+cd codebook
+----
+
+=== Step 5: Add a file
+
+Create a `README.md` file in which to take notes. For example:
+[source,shell]
+----
+echo "# My Codebook" > README.md
+----
+
+Stage the file:
+[source,shell]
+----
+git add README.md
+----
+
+Commit the file with a descriptive message:
+[source,shell]
+----
+git commit -m "Added README.md"
+----
+
+Push your spell to GitHub:
+[source,shell]
+----
+git push origin main
+----
+
+Visit your GitHub repository online to see your spell safely inscribed!
+
+=== Step 6: Future revisions
+
+Now that your spellbook is ready, you can:
+- Consult the oracle to pull down new spells:
+[source,shell]
+----
+git pull
+----
+- Add and commit your latest enchantments using Git and the oracle.
+
+Congratulations, scribe! You’ve crafted your first GitHub repository and inscribed your first spell. Your **Code Book of Spells** is now enriched with the guidance of the `gh` oracle.

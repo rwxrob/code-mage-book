@@ -2,3 +2,5 @@
 
 include::prep/terminal.adoc[]  
 
+include::prep/github.adoc[]  
+
