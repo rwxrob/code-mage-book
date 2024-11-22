@@ -1,0 +1,89 @@
+== Installing a crafting table
+
+Every magical sanctum needs a crafting table—a central place where spells are mixed, potions brewed, and artifacts assembled. For your coding sanctum, **Podman** serves as this vital crafting table, allowing you to create, manage, and run containerized enchantments.
+
+=== Step 1: Install Podman
+
+==== Mac
+
+Begin by opening your terminal (press `Cmd + Space`, type `Terminal`, and press `Enter`). Run the following incantation to install Podman via Homebrew:
+[source,shell]
+----
+brew install podman
+----
+
+Once installed, initialize Podman with:
+[source,shell]
+----
+podman machine init
+podman machine start
+----
+
+==== Windows
+
+Open PowerShell or Git Bash by pressing `Win + R`, typing `powershell` or `bash`, and pressing `Enter`. Summon Podman using the following command:
+[source,shell]
+----
+winget install --id RedHat.Podman
+----
+
+You could also use Alacritty for this.
+
+After installation, start your Podman machine:
+[source,shell]
+----
+podman machine init
+podman machine start
+----
+
+Verify that your crafting table is ready with:
+[source,shell]
+----
+podman --version
+----
+
+If the version displays, your magical crafting table is assembled and ready for use!
+
+=== Step 2: Configure Podman
+
+To ensure your crafting table is fully operational, configure your workspace:
+
+For all platforms, enable rootless mode for better security:
+[source,shell]
+----
+podman info
+----
+
+Review the output to confirm that the storage and network details match your needs.
+
+=== Step 3: Run a container
+
+Try creating a simple container to ensure the crafting table works. Cast the following spell to summon an ephemeral container running Nginx:
+[source,shell]
+----
+podman run --rm -d -p 8080:80 nginx
+----
+
+Open your browser and navigate to `http://localhost:8080`. If the Nginx welcome page appears, your crafting table is ready to conjure powerful spells!
+
+Stop the container with:
+[source,shell]
+----
+podman stop $(podman ps -q)
+----
+
+=== Step 4: Expand your magical tools
+
+With Podman as your crafting table, you can:
+- Conjure container images with:
+[source,shell]
+----
+podman build -t my-spellbook .
+----
+- Summon existing containers with:
+[source,shell]
+----
+podman pull ubuntu
+----
+
+Congratulations! You’ve established the heart of your magical sanctum. With Podman as your crafting table, you’re ready to create and manage containerized spells.

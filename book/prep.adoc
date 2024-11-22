@@ -2,5 +2,8 @@
 
 include::prep/terminal.adoc[]  
 
+include::prep/podman.adoc[]  
+
 include::prep/github.adoc[]  
+
 

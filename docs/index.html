@@ -509,7 +509,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </li>
 <li><a href="#_preparation">Preparation</a>
 <ul class="sectlevel2">
-<li><a href="#_conjuring_a_command_portal">Conjuring a command portal</a>
+<li><a href="#_opening_a_command_portal">Opening a command portal</a>
 <ul class="sectlevel3">
 <li><a href="#_step_1_installing_alacritty">Step 1: Installing Alacritty</a>
 <ul class="sectlevel4">
@@ -530,13 +530,26 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </li>
 </ul>
 </li>
+<li><a href="#_installing_a_crafting_table">Installing a crafting table</a>
+<ul class="sectlevel3">
+<li><a href="#_step_1_install_podman">Step 1: Install Podman</a>
+<ul class="sectlevel4">
+<li><a href="#_mac_3">Mac</a></li>
+<li><a href="#_windows_3">Windows</a></li>
+</ul>
+</li>
+<li><a href="#_step_2_configure_podman">Step 2: Configure Podman</a></li>
+<li><a href="#_step_3_run_a_container">Step 3: Run a container</a></li>
+<li><a href="#_step_4_expand_your_magical_tools">Step 4: Expand your magical tools</a></li>
+</ul>
+</li>
 <li><a href="#_crafting_your_code_book_of_spells">Crafting your code book of spells</a>
 <ul class="sectlevel3">
 <li><a href="#_step_1_create_github_account">Step 1: Create GitHub account</a></li>
 <li><a href="#_step_2_install_gh_tool">Step 2: Install <code>gh</code> tool</a>
 <ul class="sectlevel4">
-<li><a href="#_mac_3">Mac</a></li>
-<li><a href="#_windows_3">Windows</a></li>
+<li><a href="#_mac_4">Mac</a></li>
+<li><a href="#_windows_4">Windows</a></li>
 </ul>
 </li>
 <li><a href="#_step_3_authenticate_with_github">Step 3: Authenticate with GitHub</a></li>
@@ -689,7 +702,7 @@ This book would never have happened without you.</p>
 <h2 id="_preparation"><a class="link" href="#_preparation">Preparation</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_conjuring_a_command_portal"><a class="link" href="#_conjuring_a_command_portal">Conjuring a command portal</a></h3>
+<h3 id="_opening_a_command_portal"><a class="link" href="#_opening_a_command_portal">Opening a command portal</a></h3>
 <div class="paragraph">
 <p>Creating a robust and visually appealing command portal requires tools that blend style, speed, and functionality. This section guides you through installing and configuring Alacritty with the Gruvbox-Material theme and Git Bash. Instructions are provided for both Windows and Mac.</p>
 </div>
@@ -875,6 +888,135 @@ This book would never have happened without you.</p>
 </div>
 </div>
 <div class="sect2">
+<h3 id="_installing_a_crafting_table"><a class="link" href="#_installing_a_crafting_table">Installing a crafting table</a></h3>
+<div class="paragraph">
+<p>Every magical sanctum needs a crafting table—a central place where spells are mixed, potions brewed, and artifacts assembled. For your coding sanctum, <strong>Podman</strong> serves as this vital crafting table, allowing you to create, manage, and run containerized enchantments.</p>
+</div>
+<div class="sect3">
+<h4 id="_step_1_install_podman"><a class="link" href="#_step_1_install_podman">Step 1: Install Podman</a></h4>
+<div class="sect4">
+<h5 id="_mac_3"><a class="link" href="#_mac_3">Mac</a></h5>
+<div class="paragraph">
+<p>Begin by opening your terminal (press <code>Cmd + Space</code>, type <code>Terminal</code>, and press <code>Enter</code>). Run the following incantation to install Podman via Homebrew:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>podman</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once installed, initialize Podman with:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>machine<span class="tok-w"> </span>init
+podman<span class="tok-w"> </span>machine<span class="tok-w"> </span>start</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_windows_3"><a class="link" href="#_windows_3">Windows</a></h5>
+<div class="paragraph">
+<p>Open PowerShell or Git Bash by pressing <code>Win + R</code>, typing <code>powershell</code> or <code>bash</code>, and pressing <code>Enter</code>. Summon Podman using the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>RedHat.Podman</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You could also use Alacritty for this.</p>
+</div>
+<div class="paragraph">
+<p>After installation, start your Podman machine:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>machine<span class="tok-w"> </span>init
+podman<span class="tok-w"> </span>machine<span class="tok-w"> </span>start</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Verify that your crafting table is ready with:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>--version</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If the version displays, your magical crafting table is assembled and ready for use!</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_step_2_configure_podman"><a class="link" href="#_step_2_configure_podman">Step 2: Configure Podman</a></h4>
+<div class="paragraph">
+<p>To ensure your crafting table is fully operational, configure your workspace:</p>
+</div>
+<div class="paragraph">
+<p>For all platforms, enable rootless mode for better security:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>info</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Review the output to confirm that the storage and network details match your needs.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_step_3_run_a_container"><a class="link" href="#_step_3_run_a_container">Step 3: Run a container</a></h4>
+<div class="paragraph">
+<p>Try creating a simple container to ensure the crafting table works. Cast the following spell to summon an ephemeral container running Nginx:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>run<span class="tok-w"> </span>--rm<span class="tok-w"> </span>-d<span class="tok-w"> </span>-p<span class="tok-w"> </span><span class="tok-m">8080</span>:80<span class="tok-w"> </span>nginx</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Open your browser and navigate to <code>http://localhost:8080</code>. If the Nginx welcome page appears, your crafting table is ready to conjure powerful spells!</p>
+</div>
+<div class="paragraph">
+<p>Stop the container with:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>stop<span class="tok-w"> </span><span class="tok-k">$(</span>podman<span class="tok-w"> </span>ps<span class="tok-w"> </span>-q<span class="tok-k">)</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_step_4_expand_your_magical_tools"><a class="link" href="#_step_4_expand_your_magical_tools">Step 4: Expand your magical tools</a></h4>
+<div class="paragraph">
+<p>With Podman as your crafting table, you can:
+- Conjure container images with:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>podman<span class="tok-w"> </span>build<span class="tok-w"> </span>-t<span class="tok-w"> </span>my-spellbook<span class="tok-w"> </span>.</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Summon existing containers with:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">podman</span><span class="tok-w"> </span><span class="tok-nx">pull</span><span class="tok-w"> </span><span class="tok-nx">ubuntu</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Congratulations! You’ve established the heart of your magical sanctum. With Podman as your crafting table, you’re ready to create and manage containerized spells.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="_crafting_your_code_book_of_spells"><a class="link" href="#_crafting_your_code_book_of_spells">Crafting your code book of spells</a></h3>
 <div class="paragraph">
 <p>Every wizard needs a spellbook, and as a modern-day coder, your GitHub repository is your magical <strong>Code Book of Spells</strong>. In this section, we’ll assemble your GitHub account, seek guidance from the <code>gh</code> oracle to connect your command line with GitHub’s vast knowledge, and inscribe your first repository.</p>
@@ -911,7 +1053,7 @@ This book would never have happened without you.</p>
 <p>The <code>gh</code> command-line tool acts as your oracle, connecting your terminal directly to GitHub’s wisdom.</p>
 </div>
 <div class="sect4">
-<h5 id="_mac_3"><a class="link" href="#_mac_3">Mac</a></h5>
+<h5 id="_mac_4"><a class="link" href="#_mac_4">Mac</a></h5>
 <div class="paragraph">
 <p>Open your terminal (press <code>Cmd + Space</code>, type <code>Terminal</code>, and press <code>Enter</code>) and run the following command:</p>
 </div>
@@ -922,7 +1064,7 @@ This book would never have happened without you.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_windows_3"><a class="link" href="#_windows_3">Windows</a></h5>
+<h5 id="_windows_4"><a class="link" href="#_windows_4">Windows</a></h5>
 <div class="paragraph">
 <p>Open PowerShell or Git Bash by pressing <code>Win + R</code>, typing <code>powershell</code> or <code>bash</code>, and pressing <code>Enter</code>. Then, run the following command:</p>
 </div>
