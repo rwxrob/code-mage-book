@@ -1,29 +1,40 @@
-== Install Bash
+== Install bash
 
-Before diving into your coding journey, it’s essential to ensure that you have a capable terminal environment to run commands. For this, we’ll focus on **Bash**, a widely-used Unix shell that serves as the foundation for many coding workflows. A shell is an interactive terminal program that prompts you to enter commands one at a time. If you’re on Windows, you’ll need to install and use **Git Bash** as a Bash-compatible terminal. Mac already has it.
+Before diving into your coding journey, it’s essential to ensure that you have a capable terminal environment to run commands. For this, we’ll focus on **bash**, a widely-used Unix shell that serves as the foundation for many coding workflows. A shell is an interactive terminal program that prompts you to enter commands one at a time. If you’re on Windows, you’ll need to install and use **Git Bash** as a bash-compatible terminal. Mac already has it.
+
+[NOTE]
+====
+**Why learn bash instead of Zsh?**
+
+Bash (the Bourne Again Shell) is the most widely used and foundational shell in the Unix ecosystem. While Zsh offers additional features like advanced completion and a customizable environment, learning bash provides several key advantages:
+
+- **Ubiquity**: bash is the default shell on most Linux distributions and is widely available across servers, embedded systems, and even macOS (as a legacy option). Learning bash ensures you’re prepared for almost any Unix-based environment.
+
+- **Portability**: Scripts written in bash are compatible with a broader range of systems compared to Zsh. bash remains the best starting point for anyone looking to build a solid foundation in shell scripting and command-line mastery. Once you’re comfortable with bash, transitioning to Zsh or other shells becomes a matter of personal preference rather than necessity.
+====
 
 === Mac
 
-Mac computers come with Bash pre-installed as part of the macOS operating system. To confirm Bash is available:
+Mac computers come with bash pre-installed as part of the macOS operating system. To confirm bash is available:
 
 **Open Terminal**:
 
  - Press `Cmd + Space`, type `Terminal`, and press `Enter`.
 
-**Check Bash version**:
+**Check bash version**:
 
 - Run the following command:
 [source,shell]
 ----
 bash --version
 ----
-- If you see version information, Bash is installed and ready to use.
+- If you see version information, bash is installed and ready to use.
 
 The version of bash on Mac is very old but it will work for Go development. In the next section you can upgrade with `brew install bash` if you like once you have the `brew` installed.
 
 === Windows
 
-Windows does not include Bash natively, but you can use **Git Bash**, which provides a Unix-like terminal environment:
+Windows does not include bash natively, but you can use **Git Bash**, which provides a Unix-like terminal environment:
 
 **Install Git Bash**:
 
@@ -65,5 +76,5 @@ echo "Your terminal is ready!"
 
 If you see the message printed on the screen, your terminal environment is correctly set up.
 
-With Bash or Git Bash installed and tested, your basic terminal is now ready to handle the commands needed for coding workflows. You can now proceed to upgrade from the basic terminal to Alacritty and install tools like Homebrew or Winget with confidence!
+With bash or Git Bash installed and tested, your basic terminal is now ready to handle the commands needed for coding workflows. You can now proceed to upgrade from the basic terminal to Alacritty and install tools like Homebrew or Winget with confidence!
 

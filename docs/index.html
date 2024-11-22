@@ -567,7 +567,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_mac_vs_windows">Mac vs. Windows</a></li>
 </ul>
 </li>
-<li><a href="#_install_bash">Install Bash</a>
+<li><a href="#_install_bash">Install bash</a>
 <ul class="sectlevel3">
 <li><a href="#_mac">Mac</a></li>
 <li><a href="#_windows">Windows</a></li>
@@ -585,9 +585,23 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <ul class="sectlevel3">
 <li><a href="#_mac_2">Mac</a></li>
 <li><a href="#_windows_2">Windows</a></li>
+<li><a href="#_configure_alacritty">Configure Alacritty</a></li>
 </ul>
 </li>
-<li><a href="#_configure_alacritty">Configure Alacritty</a></li>
+<li><a href="#_install_tmux">Install tmux</a>
+<ul class="sectlevel3">
+<li><a href="#_why_tmux">Why tmux?</a></li>
+<li><a href="#_installing_tmux">Installing tmux</a>
+<ul class="sectlevel4">
+<li><a href="#_for_mac">For Mac</a></li>
+<li><a href="#_for_windows">For Windows</a></li>
+<li><a href="#_verify_the_installation">Verify the installation</a></li>
+</ul>
+</li>
+<li><a href="#_configuring_tmux">Configuring tmux</a></li>
+<li><a href="#_activate_your_tmux_configuration">Activate your tmux configuration</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#_appendix">Appendix</a>
@@ -972,6 +986,9 @@ This book would never have happened without you.</p>
 <div class="sect1">
 <h2 id="_preparation"><a class="link" href="#_preparation">Preparation</a></h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Setting up your development environment manually is more than just a technical exercise—it’s a foundational step in mastering your craft. By configuring your tools from scratch rather than relying on containers or preconfigured environments, you gain a deeper understanding of the technologies you’re using and the ability to troubleshoot and adapt them to your needs. This approach takes a lot longer, but it empowers you to build environments tailored to your workflow and ensures you’re not reliant on external solutions that might not align with your goals as a Code Mage. Manual setup is the first step toward true mastery of your tools. Consider yourself lucky to be doing this "the hard way" while lesser mages take shortcuts. Feel the power building within.</p>
+</div>
 <div class="sect2">
 <h3 id="_get_a_computer"><a class="link" href="#_get_a_computer">Get a computer</a></h3>
 <div class="paragraph">
@@ -1083,14 +1100,41 @@ This book would never have happened without you.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_install_bash"><a class="link" href="#_install_bash">Install Bash</a></h3>
+<h3 id="_install_bash"><a class="link" href="#_install_bash">Install bash</a></h3>
 <div class="paragraph">
-<p>Before diving into your coding journey, it’s essential to ensure that you have a capable terminal environment to run commands. For this, we’ll focus on <strong>Bash</strong>, a widely-used Unix shell that serves as the foundation for many coding workflows. A shell is an interactive terminal program that prompts you to enter commands one at a time. If you’re on Windows, you’ll need to install and use <strong>Git Bash</strong> as a Bash-compatible terminal. Mac already has it.</p>
+<p>Before diving into your coding journey, it’s essential to ensure that you have a capable terminal environment to run commands. For this, we’ll focus on <strong>bash</strong>, a widely-used Unix shell that serves as the foundation for many coding workflows. A shell is an interactive terminal program that prompts you to enter commands one at a time. If you’re on Windows, you’ll need to install and use <strong>Git Bash</strong> as a bash-compatible terminal. Mac already has it.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>Why learn bash instead of Zsh?</strong></p>
+</div>
+<div class="paragraph">
+<p>Bash (the Bourne Again Shell) is the most widely used and foundational shell in the Unix ecosystem. While Zsh offers additional features like advanced completion and a customizable environment, learning bash provides several key advantages:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Ubiquity</strong>: bash is the default shell on most Linux distributions and is widely available across servers, embedded systems, and even macOS (as a legacy option). Learning bash ensures you’re prepared for almost any Unix-based environment.</p>
+</li>
+<li>
+<p><strong>Portability</strong>: Scripts written in bash are compatible with a broader range of systems compared to Zsh. bash remains the best starting point for anyone looking to build a solid foundation in shell scripting and command-line mastery. Once you’re comfortable with bash, transitioning to Zsh or other shells becomes a matter of personal preference rather than necessity.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="sect3">
 <h4 id="_mac"><a class="link" href="#_mac">Mac</a></h4>
 <div class="paragraph">
-<p>Mac computers come with Bash pre-installed as part of the macOS operating system. To confirm Bash is available:</p>
+<p>Mac computers come with bash pre-installed as part of the macOS operating system. To confirm bash is available:</p>
 </div>
 <div class="paragraph">
 <p><strong>Open Terminal</strong>:</p>
@@ -1103,7 +1147,7 @@ This book would never have happened without you.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p><strong>Check Bash version</strong>:</p>
+<p><strong>Check bash version</strong>:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1120,7 +1164,7 @@ This book would never have happened without you.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>If you see version information, Bash is installed and ready to use.</p>
+<p>If you see version information, bash is installed and ready to use.</p>
 </li>
 </ul>
 </div>
@@ -1131,7 +1175,7 @@ This book would never have happened without you.</p>
 <div class="sect3">
 <h4 id="_windows"><a class="link" href="#_windows">Windows</a></h4>
 <div class="paragraph">
-<p>Windows does not include Bash natively, but you can use <strong>Git Bash</strong>, which provides a Unix-like terminal environment:</p>
+<p>Windows does not include bash natively, but you can use <strong>Git Bash</strong>, which provides a Unix-like terminal environment:</p>
 </div>
 <div class="paragraph">
 <p><strong>Install Git Bash</strong>:</p>
@@ -1215,7 +1259,7 @@ This book would never have happened without you.</p>
 <p>If you see the message printed on the screen, your terminal environment is correctly set up.</p>
 </div>
 <div class="paragraph">
-<p>With Bash or Git Bash installed and tested, your basic terminal is now ready to handle the commands needed for coding workflows. You can now proceed to upgrade from the basic terminal to Alacritty and install tools like Homebrew or Winget with confidence!</p>
+<p>With bash or Git Bash installed and tested, your basic terminal is now ready to handle the commands needed for coding workflows. You can now proceed to upgrade from the basic terminal to Alacritty and install tools like Homebrew or Winget with confidence!</p>
 </div>
 </div>
 </div>
@@ -1462,9 +1506,8 @@ This book would never have happened without you.</p>
 <p>If the terminal opens, the installation was successful. You might want to pin this to the desktop or the toolbar. You&#8217;ll be using it a lot.</p>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_configure_alacritty"><a class="link" href="#_configure_alacritty">Configure Alacritty</a></h3>
+<div class="sect3">
+<h4 id="_configure_alacritty"><a class="link" href="#_configure_alacritty">Configure Alacritty</a></h4>
 <div class="paragraph">
 <p>To ensure your Alacritty setup is fully optimized, copy the following configuration into your <code>alacritty.toml</code> file. This file is used to customize the appearance and behavior of Alacritty.</p>
 </div>
@@ -1486,12 +1529,64 @@ This book would never have happened without you.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="toml"><span></span><span class="tok-k">[general]</span>
+<pre class="pygments highlight"><code data-lang="toml"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-k">[general]</span>
 <span class="tok-n">live_config_reload</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span>
 
 <span class="tok-k">[shell]</span>
-<span class="tok-c1">#program = &quot;C:\Program Files\Git\bin\bash.exe&quot;</span>
-<span class="tok-c1">#program = &quot;/opt/homebrew/bin/bash&quot;</span>
+<span class="tok-c1">#program = &quot;C:\Program Files\Git\bin\bash.exe&quot; </span><i class="conum" data-value="1"></i><b>(1)</b>
+<span class="tok-c1">#program = &quot;/opt/homebrew/bin/bash&quot;            </span><i class="conum" data-value="2"></i><b>(2)</b>
 
 <span class="tok-k">[font]</span>
 <span class="tok-n">size</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">36</span>
@@ -1538,21 +1633,24 @@ This book would never have happened without you.</p>
 
 <span class="tok-k">[colors.primary]</span>
 <span class="tok-n">background</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0x282828&quot;</span>
-<span class="tok-n">foreground</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0xd4be98&quot;</span></code></pre>
+<span class="tok-n">foreground</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0xd4be98&quot;</span>
+</pre></div></td></tr></table></div></code></pre>
 </div>
 </div>
 <div class="paragraph">
 <p><strong>Change bash shell</strong>:</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>For Windows uncomment the <code>program</code> line in the configuration containing <code>Program Files</code>.</p>
-</li>
-<li>
-<p>For Mac uncomment the <code>program</code> line in the configuration containing <code>homebrew</code>. Also confirm <code>bash</code> has been installed by running <code>brew install bash</code> from the terminal command line.</p>
-</li>
-</ul>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Uncomment this line for Windows</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Uncomment this line for Mac but also make sure to run <code>brew install bash</code> from the terminal command line</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p><strong>Save the file and restart Alacritty to apply the configuration.</strong> Once you have made these changes any change to this file will automatically update the terminal while it is running.</p>
@@ -1563,6 +1661,272 @@ This book would never have happened without you.</p>
 <hr>
 <div class="paragraph">
 <p>Congratulations! You now have a sleek and powerful command portal, combining Alacritty&#8217;s speed, the aesthetic brilliance of your custom configuration, and the versatility of your preferred shell.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_install_tmux"><a class="link" href="#_install_tmux">Install tmux</a></h3>
+<div class="paragraph">
+<p>As a Code Mage, your ability to manage multiple spells (commands) simultaneously is critical. Enter <strong>tmux</strong>, the terminal multiplexer—a powerful tool for organizing and navigating your terminal sessions like a true master. Think of tmux as a portal that splits your  into multiple panes and windows, each capable of running its own spell. In this section, you&#8217;ll learn why tmux is essential and how to set it up with a configuration designed for optimal efficiency.</p>
+</div>
+<div class="sect3">
+<h4 id="_why_tmux"><a class="link" href="#_why_tmux">Why tmux?</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Multitasking Made Easy</strong>: tmux allows you to split your terminal into multiple panes, making it easier to monitor and manage simultaneous tasks.</p>
+</li>
+<li>
+<p><strong>Session Persistence</strong>: Forget losing work due to a dropped connection. tmux keeps your sessions alive even when your terminal closes.</p>
+</li>
+<li>
+<p><strong>Customizable Interface</strong>: With tmux, you can tailor your workspace with custom keybindings, colors, and layouts to match your workflow.</p>
+</li>
+<li>
+<p><strong>Efficiency Boost</strong>: Navigate, resize, and manage panes with simple keyboard shortcuts, reducing the need to switch between multiple terminal tabs or windows.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_installing_tmux"><a class="link" href="#_installing_tmux">Installing tmux</a></h4>
+<div class="sect4">
+<h5 id="_for_mac"><a class="link" href="#_for_mac">For Mac</a></h5>
+<div class="paragraph">
+<p>If you&#8217;re using Mac with Homebrew installed, run the following spell to install tmux:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>tmux</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_for_windows"><a class="link" href="#_for_windows">For Windows</a></h5>
+<div class="paragraph">
+<p>On Windows, you can install tmux using <code>winget</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>tmux.tmux</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_verify_the_installation"><a class="link" href="#_verify_the_installation">Verify the installation</a></h5>
+<div class="paragraph">
+<p>Confirm tmux is installed by running:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>tmux<span class="tok-w"> </span>-V</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you see the version number, your command portal is ready!</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuring_tmux"><a class="link" href="#_configuring_tmux">Configuring tmux</a></h4>
+<div class="paragraph">
+<p>To maximize the power of tmux, use the following custom configuration file. Don&#8217;t worry about understanding anything that is in it. You&#8217;ll have plenty of time to learn all about tmux usage and configuration later. For now just save it as <code>.tmux.conf</code> (don&#8217;t forget the dot) in your home directory (commonly written as <code>~/.tmux.conf</code>) using whatever text editor you have:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="tmux"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span></pre></div></td><td class="code"><div><pre><span></span># change default meta key to same as screen
+unbind C-b
+unbind C-a
+set -g prefix C-a
+
+# turn pane sync on/off
+bind -r y setw synchronize-panes
+
+# reload configuration
+bind -r r source-file ~/.tmux.conf \; display &quot;Config reloaded&quot;
+
+# add double-tap meta key to toggle last window
+bind-key C-a last-window
+
+# use a different prefix for nested
+bind-key -n C-y send-prefix
+
+# create more intuitive split key combos (same as modern screen)
+unbind |
+bind | split-window -h
+bind &#39;\&#39; split-window -h
+bind &#39;C-\&#39; split-window -h
+unbind -
+bind - split-window -v
+unbind _
+bind _ split-window -v
+
+# kill current window and all panes
+bind-key &amp; kill-window
+
+# vi for copy mode
+setw -g mode-keys vi
+
+# vi for command status
+set -g status-keys vi
+
+# vi keys to resize
+bind -r C-k resize-pane -U 1
+bind -r C-j resize-pane -D 1
+bind -r C-h resize-pane -L 1
+bind -r C-l resize-pane -R 1
+
+# vi keys to navigate panes
+bind -r k select-pane -U
+bind -r j select-pane -D
+bind -r h select-pane -L
+bind -r l select-pane -R
+
+# avoid cursor movement messing with resize
+set -g repeat-time 200
+
+# 24-bit color
+set -g default-terminal &quot;tmux-256color&quot;
+set -ga terminal-overrides &quot;,xterm-256color:Tc&quot;
+
+set -g clock-mode-style 12
+setw -g clock-mode-colour cyan
+set -g base-index 1
+setw -g pane-base-index 1
+
+# color the pane borders nearly invisible
+# (when not using hacked tmux without them)
+set -g pane-border-style &quot;fg=#171717&quot;
+set -g pane-active-border-style &quot;fg=#171717&quot;
+
+# color of the window selection background
+set -g mode-style &quot;bg=black&quot;
+
+# when status bar is displayed
+set -g status-style &quot;fg=#665c54&quot;
+set -g status-bg default
+set -g status-position top
+set -g status-interval 1
+set -g status-left &quot;&quot;
+
+# disable status bar (prefer index)
+set -g status off
+set -g window-status-current-format &quot;&quot;
+
+# start with 1
+set -g base-index 1
+set -g pane-base-index 1
+
+set -g message-style &quot;fg=red&quot;
+
+# better window names
+set -g automatic-rename
+
+# form vim/tmux d/y buffer sync
+set -g focus-events
+</pre></div></td></tr></table></div></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_activate_your_tmux_configuration"><a class="link" href="#_activate_your_tmux_configuration">Activate your tmux configuration</a></h4>
+<div class="paragraph">
+<p>Once the configuration file is in place, reload it with the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>tmux<span class="tok-w"> </span>source-file<span class="tok-w"> </span>~/.tmux.conf</code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1653,7 +2017,7 @@ This book would never have happened without you.</p>
 <div id="footer">
 <div id="footer-text">
 Version v0.0.1<br>
-Last updated 2024-11-22 00:31:51 UTC
+Last updated 2024-11-22 21:09:32 UTC
 </div>
 </div>
 </body>

@@ -33,7 +33,7 @@ Verify the installation by launching Alacritty:
 
 If the terminal opens, the installation was successful. You might want to pin this to the desktop or the toolbar. You'll be using it a lot.
 
-== Configure Alacritty
+=== Configure Alacritty
 
 To ensure your Alacritty setup is fully optimized, copy the following configuration into your `alacritty.toml` file. This file is used to customize the appearance and behavior of Alacritty.
 
@@ -44,14 +44,14 @@ Open or create the Alacritty configuration file at:
 
 Use any simple text editor on the computer to replace the contents of the file with the following configuration:
 
-[source,toml]
+[source,toml,linenums]
 ----
 [general]
 live_config_reload = true
 
 [shell]
-#program = "C:\Program Files\Git\bin\bash.exe"
-#program = "/opt/homebrew/bin/bash"
+#program = "C:\Program Files\Git\bin\bash.exe" <1>
+#program = "/opt/homebrew/bin/bash"            <2>
 
 [font]
 size = 36
@@ -104,8 +104,8 @@ foreground = "0xd4be98"
 
 **Change bash shell**:
 
-- For Windows uncomment the `program` line in the configuration containing `Program Files`.
-- For Mac uncomment the `program` line in the configuration containing `homebrew`. Also confirm `bash` has been installed by running `brew install bash` from the terminal command line.
+<1> Uncomment this line for Windows
+<2> Uncomment this line for Mac but also make sure to run `brew install bash` from the terminal command line
 
 **Save the file and restart Alacritty to apply the configuration.** Once you have made these changes any change to this file will automatically update the terminal while it is running.
 

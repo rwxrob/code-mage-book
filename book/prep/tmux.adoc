@@ -1,0 +1,144 @@
+== Install tmux
+
+As a Code Mage, your ability to manage multiple spells (commands) simultaneously is critical. Enter **tmux**, the terminal multiplexer—a powerful tool for organizing and navigating your terminal sessions like a true master. Think of tmux as a portal that splits your  into multiple panes and windows, each capable of running its own spell. In this section, you'll learn why tmux is essential and how to set it up with a configuration designed for optimal efficiency.
+
+=== Why tmux?
+
+- **Multitasking Made Easy**: tmux allows you to split your terminal into multiple panes, making it easier to monitor and manage simultaneous tasks.
+- **Session Persistence**: Forget losing work due to a dropped connection. tmux keeps your sessions alive even when your terminal closes.
+- **Customizable Interface**: With tmux, you can tailor your workspace with custom keybindings, colors, and layouts to match your workflow.
+- **Efficiency Boost**: Navigate, resize, and manage panes with simple keyboard shortcuts, reducing the need to switch between multiple terminal tabs or windows.
+
+=== Installing tmux
+
+==== For Mac
+
+If you're using Mac with Homebrew installed, run the following spell to install tmux:
+[source,shell]
+----
+brew install tmux
+----
+
+==== For Windows
+
+On Windows, you can install tmux using `winget`:
+[source,shell]
+----
+winget install --id tmux.tmux
+----
+
+==== Verify the installation
+
+Confirm tmux is installed by running:
+[source,shell]
+----
+tmux -V
+----
+
+If you see the version number, your command portal is ready!
+
+=== Configuring tmux
+
+To maximize the power of tmux, use the following custom configuration file. Don't worry about understanding anything that is in it. You'll have plenty of time to learn all about tmux usage and configuration later. For now just save it as `.tmux.conf` (don't forget the dot) in your home directory (commonly written as `~/.tmux.conf`) using whatever text editor you have:
+
+[source,tmux,linenums]
+----
+# change default meta key to same as screen
+unbind C-b
+unbind C-a
+set -g prefix C-a
+
+# turn pane sync on/off
+bind -r y setw synchronize-panes
+
+# reload configuration
+bind -r r source-file ~/.tmux.conf \; display "Config reloaded"
+
+# add double-tap meta key to toggle last window
+bind-key C-a last-window
+
+# use a different prefix for nested
+bind-key -n C-y send-prefix
+
+# create more intuitive split key combos (same as modern screen)
+unbind |
+bind | split-window -h
+bind '\' split-window -h
+bind 'C-\' split-window -h
+unbind -
+bind - split-window -v
+unbind _
+bind _ split-window -v
+
+# kill current window and all panes
+bind-key & kill-window
+
+# vi for copy mode
+setw -g mode-keys vi
+
+# vi for command status
+set -g status-keys vi
+
+# vi keys to resize
+bind -r C-k resize-pane -U 1
+bind -r C-j resize-pane -D 1
+bind -r C-h resize-pane -L 1
+bind -r C-l resize-pane -R 1
+
+# vi keys to navigate panes
+bind -r k select-pane -U
+bind -r j select-pane -D
+bind -r h select-pane -L
+bind -r l select-pane -R
+
+# avoid cursor movement messing with resize
+set -g repeat-time 200
+
+# 24-bit color
+set -g default-terminal "tmux-256color"
+set -ga terminal-overrides ",xterm-256color:Tc"
+
+set -g clock-mode-style 12
+setw -g clock-mode-colour cyan
+set -g base-index 1
+setw -g pane-base-index 1
+
+# color the pane borders nearly invisible
+# (when not using hacked tmux without them)
+set -g pane-border-style "fg=#171717"
+set -g pane-active-border-style "fg=#171717"
+
+# color of the window selection background
+set -g mode-style "bg=black"
+
+# when status bar is displayed
+set -g status-style "fg=#665c54"
+set -g status-bg default
+set -g status-position top
+set -g status-interval 1
+set -g status-left ""
+
+# disable status bar (prefer index)
+set -g status off
+set -g window-status-current-format ""
+
+# start with 1
+set -g base-index 1
+set -g pane-base-index 1
+
+set -g message-style "fg=red"
+
+# better window names
+set -g automatic-rename
+
+# form vim/tmux d/y buffer sync
+set -g focus-events
+----
+
+=== Activate your tmux configuration
+
+Once the configuration file is in place, reload it with the following command:
+[source,shell]
+----
+tmux source-file ~/.tmux.conf
+----
