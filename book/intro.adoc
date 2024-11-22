@@ -1,6 +1,6 @@
 = Introduction
 
-Welcome to the magical world of coding! This spellbook will help you learn programming concepts through spells and cantrips.
+Welcome to the magical world of coding! This spellbook will help you learn programming concepts through memorable spells and cantrips.
 
 == Life of a coding mage
 

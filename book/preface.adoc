@@ -19,3 +19,14 @@ The fastest way to get a Linux terminal up and running is to install Podman and 
 Hopefully, mages will continue to master other command line powers later and learn the dark arts of Linux distro selection and hardware installation (perhaps covered in additional "tomes" of magic from this author). 
 
 == How to read this book 
+
+This book is designed to be read linearly, from top to bottom. The concepts build on one another. Each "spell" is designed to be repeated often as a means of mastery, like playing chords on a piano or scales on a guitar. The fantasy magic element is intentionally silly and serves as a source of dopamine as well as a strong mnemonic device related to the concepts learn. 
+
+[NOTE]
+====
+Members of my community have contacted me years later to thank me for creating silly, memorable associations with mini projects focused on one or two core topics allowing them to easily recall them later by remembering the silly part.
+====
+
+> Повторение — мать учения.
+
+Repetition really is the mother of learning. While often we demonize "rote repetition" in the West, the slavs dominate as programming masters. The neurons in our brain store memory by having the same electical impulses repeated over and over. So in order to program oneself the only way is to repeat it. Repeat these spells as fast and as regularly as you can and you'll end up training your own neural net just like a machine learning model—but in your head. Repetition can be great to supplement your growth while working on a bigger project—especially in the early days before everything becomes second nature.
