@@ -25,18 +25,21 @@ builds:
 
 archives:
   - format: tar.gz
-    files:
-      - LICENSE
-      - README.md
-    replacements:
-      darwin: macOS
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- title .Os }}_
+      {{- if eq .Arch "amd64" }}x86_64
+      {{- else if eq .Arch "386" }}i386
+      {{- else }}{{ .Arch }}{{ end }}
+      {{- if .Arm }}v{{ .Arm }}{{ end }}
+    format_overrides:
+    - goos: windows
+      format: zip
 
 release:
   github:
     owner: ${{ secrets.GITHUB_REPOSITORY_OWNER }}
     name: ${{ github.event.repository.name }}
-    draft: false
-    prerelease: false
 
 changelog:
   sort: desc
@@ -46,10 +49,6 @@ changelog:
 
 checksum:
   name_template: 'checksums.txt'
-
-artifacts:
-  paths:
-    - dist/*
 
 version:
   # Use the VERSION file to determine the version
