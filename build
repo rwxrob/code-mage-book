@@ -5,8 +5,8 @@ read -r -d '' helptxt <<EOF
 This script is used for building this book.
 
 	help - print this help message
-	epub - build the artifacts/code-mage-book-<version>.epub
-	pdf  - build the artifacts/code-mage-book-<version>.pdf
+	epub - build the dist/code-mage-book-<version>.epub
+	pdf  - build the dist/code-mage-book-<version>.pdf
 	html - build the docs/index-<version>.html
 	all  - build epub, pdf, html (default)
 
@@ -34,7 +34,7 @@ x-all() {
 
 x-epub() {
 		asciidoctor-epub3 \
-		-D "artifacts" \
+		-D "dist" \
 		-o "code-mage-book-${VERSION}.epub" \
 		-a pdf-themesdir="./book/assets/themes" \
 		-a pdf-theme="dark-theme.yml" \
@@ -44,7 +44,7 @@ x-epub() {
 
 x-pdf() {
 		asciidoctor-pdf \
-		-D "artifacts" \
+		-D "dist" \
 		-o "code-mage-book-${VERSION}.pdf" \
 		-a pdf-themesdir="./book/assets/themes" \
 		-a pdf-fontsdir="./book/assets/fonts" \
