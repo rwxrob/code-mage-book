@@ -61,7 +61,7 @@ jobs:
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: artifacts/code-mage-book-*.pdf
-        asset_name: code-mage-book.pdf
+        asset_name: code-mage-book-${{ env.VERSION }}.pdf
         asset_content_type: application/pdf
 
     - name: Upload EPUB to Release
@@ -69,6 +69,6 @@ jobs:
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: artifacts/code-mage-book-*.epub
-        asset_name: code-mage-book.epub
+        asset_name: code-mage-book-${{ env.VERSION }}.epub
         asset_content_type: application/epub+zip
 
