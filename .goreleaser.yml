@@ -7,6 +7,9 @@ before:
     - go mod tidy
     - go mod download
 
+git:
+  tag: "{{ .Version }}"
+
 builds:
   - id: code-mage
     main: ./cmd/code-mage
@@ -49,5 +52,9 @@ changelog:
 
 checksum:
   name_template: 'checksums.txt'
+
+version:
+  # Use the VERSION file to determine the version
+  file: VERSION
 
 
