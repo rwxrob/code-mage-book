@@ -50,8 +50,4 @@ changelog:
 checksum:
   name_template: 'checksums.txt'
 
-version:
-  # Use the VERSION file to determine the version
-  file: VERSION
-
 
