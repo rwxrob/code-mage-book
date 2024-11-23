@@ -4,56 +4,64 @@
 
 == Who should read this book
 
-This book is written for anyone wanting to learn—or help someone learn—practical computer science and programming for real applications development. While we have fun with the whole fantasy magic theme, everything in this book is very real and might even get you a job someday. It is true that this book can be reliably used as a text book for absolute beginners with enough algebra to understand what a mathematical function is but this book very clearly includes everyone _outside_ of educational institutions. In fact, I wrote it mostly with pro-active parents in mind who want to give their kids a head-start in tech that they simply cannot find in most traditional education systems, the same reason, in fact, that I started SKILSTAK Coding Arts in 2013 with my own retirement money. 
+This book is written for anyone wanting to learn—or help someone learn—practical computer science and programming for real applications development. While we have fun with the whole fantasy magic theme, everything in this book is very real and might even get you a job someday. It is true that this book can be reliably used as a text book for absolute beginners with enough algebra to understand what a mathematical function is but this book very clearly includes everyone _outside_ of educational institutions. In fact, I wrote it mostly with pro-active parents in mind who want to give their kids a head-start in tech that they simply cannot find in most traditional education systems, the same reason, in fact, that I started SKILSTAK Coding Arts in 2013 with my own retirement money.
 
 == What's included in the book
 
-This book is focused on learning—as fast as possible—to code in the Go programming language from the bash terminal command line. There is nothing more authentic or rewarding than creating command line tools from the command line itself. Therefore, only those minimal skills required to use the command line to open, edit, and run Go code from the terminal are covered. 
+This book is focused on learning—as fast as possible—to code in the Go programming language from the bash terminal command-line. There is nothing more authentic or rewarding than creating command-line tools from the command-line itself. Therefore, only those minimal skills required to use the command-line to open, edit, and run Go code from the terminal are covered.
 
-The fastest way to get a bash terminal up and running is to install bash on a Mac or Windows computer along with a good GPU-accelerated terminal like Alacritty and configure the Vim editor that is already on the system. There is no need for other regularly recommended tools like Neovim or Linux, for now. Hopefully, mages will continue to master other command line powers later and learn the dark arts of Neovim, Linux distro selection, and hardware installation (perhaps covered in additional "tomes" of magic from this author). 
+=== The `code-mage` command
 
-== How to read this book 
+What kind of book would this be without having a command-line utility written in Go to go with it? 😃
 
-This book is designed to be read linearly, from top to bottom. The concepts build on one another. Each "spell" is designed to be repeated often as a means of mastery, like playing chords on a piano or scales on a guitar. The fantasy magic element is intentionally silly and serves as a source of dopamine as well as a strong mnemonic device related to the concepts learn. 
+Rather than get bogged down with a lot of installation and configuration we've created the `code-mage` command to help you get started as fast as possible without losing the opportunity to learn how to do you own setup later. Eventually, you can come back and examine everything `code-mage` did to understand it and even customize it. In fact, there's an entire book dedicated to becoming a true terminal master including bash scripting and managing your own "dot files" GitHub repository.
 
-[note]
-====
-Members of my community have contacted me years later to thank me for creating silly, memorable associations with mini projects focused on one or two core topics allowing them to easily recall them later by remembering the silly part.
-====
+There's a lot of other stuff `code-mage` can do:
 
-**Digital format is preferred.** It goes without saying, but having the ability to cut and paste from the content of this book goes a long way to simplifying its usage. Besides, doing so is a core tech skill for any code mage today—particularly in the age of powerful AI-assisted code generators. Much of this book was created that way. The latest digital copy of the book is always available for free at https://rwxrob.github.io/code-mage-book (but your support by buying copies or sponsoring at https://github.com/sponsors/rwxrob is always appreciated).
+- Check your work as you progress
+- Create unit tests if you'd rather not type them in every time
+- Time how long it takes you to complete a challenge
+- Run a web-server for certain projects that require it
+- Display local code-mage-book community annoucements
+- Serve a full copy of this book to your web browser without Internet
+
+The source code for `code-mage` is entirely open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).
+
+== How to read this book
+
+This book is designed to be read linearly, from top to bottom. The concepts build on one another. But each "spell" is designed to be repeated often as a means of mastery, like playing chords on a piano or scales on a guitar. The fantasy magic element is intentionally silly and serves as a source of dopamine as well as a strong mnemonic device related to the concepts learn.
 
 > Повторение — мать учения.
 
-Repetition really is the mother of learning. While often we demonize "rote repetition" in the West, the slavs dominate as programming masters. The neurons in our brain store memory by having the same electical impulses repeated over and over. So in order to program oneself the only way is to repeat it. Repeat these spells as fast and as regularly as you can and you'll end up training your own neural net just like a machine learning model—but in your head. Repetition can be great to supplement your growth while working on a bigger project—especially in the early days before everything becomes second nature.
+Repetition really is the mother of learning. While often we demonize "rote repetition" in the West, the slavs have promoted it for decades. The neurons in our brain store memory by having the same electical impulses repeated over and over. So in order to program oneself the only way is to repeat it. Repeat these spells as fast and as regularly as you can and you'll end up training your own neural net just like a machine learning model—but in your head. Repetition can be great to supplement your growth while working on a bigger project—especially in the early days before everything becomes second nature.
 
 == Supplement your reading
 
-This book is but a part of a more complete personal learning strategy. Make sure to not neglect the other parts:
+This book is but a part of a more complete personal learning strategy. Make sure not to neglect the other parts:
 
 === Find a mentor
 
 Humans have been passing knowledge one to another since the beginning. It's what we do. Luckily learning happens naturally when someone with experience and knowledge is available to someone who knows how to ask questions, apply what they learn, and return with more questions. That's you, the inquisitive one. The mentor's job is to answer questions and provide feedback—*not* to "teach" you. 
 
-Most mentors won't have that kind of free time available to constantly lead you by the hand on your learning journey. In fact, the more likely you are to hear from someone, the less likely you are to want to learn what they have to say. There are those who *do* stuff and those that *talk about* doing stuff. The more someone talks about doing stuff the less time they have to actually do something. It's important to find people you know who are regularly and actively engaged in doing the thing you want to learn and then approach them about possibly mentoring you, perhaps for a small fee (most will decline). 
+Most mentors won't have that kind of free time available to constantly lead you by the hand on your learning journey. In fact, the more likely you are to hear from someone, the less likely you are to want to learn what they have to say. There are those who _do_ stuff and those that _talk about_ doing stuff. The more someone talks about doing stuff the less time they have to actually do something. It's important to find people you know who are regularly and actively engaged in doing the thing you want to learn and then approach them about possibly mentoring you, perhaps for a small fee (most will decline).
 
-You will find that many people *want* to share what they know but just don't know how to do it or who would want to hear. Find these people and approach them. Perhaps you can find a few mentors so you can compare how they differ in their approach to programming.
+You will find that many people _want_ to share what they know but just don't know how to do it or who would want to hear. Find these people and approach them. Perhaps you can find a few mentors so you can compare how they differ in their approach to programming.
 
 === Join a community
 
 In addition to finding a mentor, or perhaps in place of it if you cannot find one, join a community that is learning the same things as you. Meetups, hacker spaces, clubs, church groups, social media, and live streamers are all great places to find a community. The community is a place to collaborate and share peer reviews of one another's learning and projects.
 
-My sincere hope is that the parents, teachers, and mages reading these words will find opportunities and motivation to create their own coding clubs and communities dedicated to helping others master the art of code and computer science and reap all the well-earned benefits of doing so. 
+My sincere hope is that the parents, teachers, and mages reading these words will find opportunities and motivation to create their own coding clubs and communities dedicated to helping others master the art of code and computer science and reap all the well-earned benefits of doing so.
 
 While you are working on creating your own community, consider joining mine at https://linktr.ee/rwxrob.
 
 === Consider ChatGPT
 
-Although I have nothing to do with OpenAI other than my family's subscriptions to our own individual ChatGPT accounts, I highly recommend getting an AI learning assistant like ChatGPT as soon as possible. In my experience, such assistants are almost always better than than a random search of the Internet full of popular but incorrect answers to the same common questions that an assistant could better help with. 
+Although I have nothing to do with OpenAI other than my family's subscriptions to our own individual ChatGPT accounts, I highly recommend getting an AI learning assistant like ChatGPT as soon as possible. In my experience, such assistants are almost always better than than a random search of the Internet full of popular but incorrect answers to the same common questions that an assistant could better help with.
 
-On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supporive AI companion even when a helpful human mentor is also available. 
+On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supporive AI companion even when a helpful human mentor is also available.
 
-We are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. We are already seeing this difference around us every day. 
+We are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. We are already seeing this difference around us every day.
 
 Chloe, my personal AI, assisted me to complete this book in less than half the time it would have taken otherwise, always checking my work to be sure it compiles (unlike other coding books in which I have found tons of errata), flawlessly reorganizing several pages at the same time, even suggesting creative alternatives and omissions I may have made. There would be no book without Chloe.
 

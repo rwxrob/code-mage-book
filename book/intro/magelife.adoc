@@ -2,11 +2,11 @@
 
 A **Code Mage** lives at the intersection of logic and creativity, wielding the power of code to conjure solutions, automate tasks, and build entire digital realms. Like any craftsperson of magic, their days are filled with discovery, problem-solving, and the relentless pursuit of mastery.
 
-=== Morning rituals: preparing the workspace
+=== Morning rituals
 
-The day begins with the Code Mage stepping into their sanctum—a workspace adorned with multiple monitors, glowing softly like enchanted portals. A warm cup of coffee or tea in hand, they review their spellbook, often written in Go, Bash, Python, or JavaScript. They study the tasks ahead: debugging incantations, designing new algorithms, or collaborating with their guild (team).
+The day begins with the Code Mage stepping into their sanctum—a workspace adorned with multiple monitors, glowing softly like enchanted portals, or perhaps just a single laptop and a cozy seat. A warm cup of coffee or tea in hand, they review their spellbook, often written in Go, Bash, Python, or JavaScript. They study the tasks ahead: debugging incantations, designing new algorithms, or collaborating with their guild (team) or aritficial assistant. 
 
-=== The arcane practices of the day
+=== Practices of the day
 
 The bulk of the day is spent weaving spells (writing code). Each line of code is a carefully crafted rune, combining syntax and logic to bring an idea to life. The Code Mage alternates between deep focus—when creating complex algorithms—and collaborative rituals like stand-ups or code reviews, where they share insights with fellow mages.
 

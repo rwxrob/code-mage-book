@@ -7,8 +7,8 @@
 ## Legal
 
 Copyright 2024 Robert S. Muhlestein (<mailto:robmuh@gmail.com>)  
-SPDX-License-Identifier: [CC0 1.0]  
-SPDX-License-Identifier: [CC BY-NC-ND]  
+SPDX-License-Identifier: [CC0 1.0][]  
+SPDX-License-Identifier: [CC BY-NC-ND][]  
 
 All code and prose are original works unless otherwise noted.
 

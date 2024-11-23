@@ -12,7 +12,7 @@ include::prep/alacritty.adoc[]
 
 include::prep/tmux.adoc[]  
 
-//include::prep/neovim.adoc[]  
+include::prep/neovim.adoc[]  
 
 //include::prep/github.adoc[]  
 

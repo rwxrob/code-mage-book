@@ -498,7 +498,11 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_preface">Preface</a>
 <ul class="sectlevel2">
 <li><a href="#_who_should_read_this_book">Who should read this book</a></li>
-<li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a></li>
+<li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a>
+<ul class="sectlevel3">
+<li><a href="#_the_code_mage_command">The <code>code-mage</code> command</a></li>
+</ul>
+</li>
 <li><a href="#_how_to_read_this_book">How to read this book</a></li>
 <li><a href="#_supplement_your_reading">Supplement your reading</a>
 <ul class="sectlevel3">
@@ -524,8 +528,8 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </li>
 <li><a href="#_the_life_of_a_code_mage">The life of a code mage</a>
 <ul class="sectlevel3">
-<li><a href="#_morning_rituals_preparing_the_workspace">Morning rituals: preparing the workspace</a></li>
-<li><a href="#_the_arcane_practices_of_the_day">The arcane practices of the day</a></li>
+<li><a href="#_morning_rituals">Morning rituals</a></li>
+<li><a href="#_practices_of_the_day">Practices of the day</a></li>
 <li><a href="#_encounters_with_challenges">Encounters with challenges</a></li>
 <li><a href="#_moments_of_triumph">Moments of triumph</a></li>
 <li><a href="#_lifelong_learning">Lifelong learning</a></li>
@@ -608,6 +612,8 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <ul class="sectlevel2">
 <li><a href="#_beware_of_ap_computer_science">Beware of AP Computer Science</a></li>
 <li><a href="#_why_not_crowd_source_this_book">Why not crowd source this book?</a></li>
+<li><a href="#_why_vim">Why Vim?</a></li>
+<li><a href="#why-vimrc">Why <code>~/.vimrc</code>?</a></li>
 <li><a href="#_but_didnt_ai_write_this">But didn&#8217;t AI write this?</a></li>
 <li><a href="#_license_code_cc0_1_0">License (code): CC0 1.0</a></li>
 <li><a href="#_license_prose_cc_by_nc_nd_4_0">License (prose): CC BY-NC-ND 4.0</a></li>
@@ -677,26 +683,50 @@ This book would never have happened without you.</p>
 <div class="sect2">
 <h3 id="_whats_included_in_the_book"><a class="link" href="#_whats_included_in_the_book">What&#8217;s included in the book</a></h3>
 <div class="paragraph">
-<p>This book is focused on learning—as fast as possible—to code in the Go programming language from the bash terminal command line. There is nothing more authentic or rewarding than creating command line tools from the command line itself. Therefore, only those minimal skills required to use the command line to open, edit, and run Go code from the terminal are covered.</p>
+<p>This book is focused on learning—as fast as possible—to code in the Go programming language from the bash terminal command-line. There is nothing more authentic or rewarding than creating command-line tools from the command-line itself. Therefore, only those minimal skills required to use the command-line to open, edit, and run Go code from the terminal are covered.</p>
+</div>
+<div class="sect3">
+<h4 id="_the_code_mage_command"><a class="link" href="#_the_code_mage_command">The <code>code-mage</code> command</a></h4>
+<div class="paragraph">
+<p>What kind of book would this be without having a command-line utility written in Go to go with it? 😃</p>
 </div>
 <div class="paragraph">
-<p>The fastest way to get a bash terminal up and running is to install bash on a Mac or Windows computer along with a good GPU-accelerated terminal like Alacritty and configure the Vim editor that is already on the system. There is no need for other regularly recommended tools like Neovim or Linux, for now. Hopefully, mages will continue to master other command line powers later and learn the dark arts of Neovim, Linux distro selection, and hardware installation (perhaps covered in additional "tomes" of magic from this author).</p>
+<p>Rather than get bogged down with a lot of installation and configuration we&#8217;ve created the <code>code-mage</code> command to help you get started as fast as possible without losing the opportunity to learn how to do you own setup later. Eventually, you can come back and examine everything <code>code-mage</code> did to understand it and even customize it. In fact, there&#8217;s an entire book dedicated to becoming a true terminal master including bash scripting and managing your own "dot files" GitHub repository.</p>
+</div>
+<div class="paragraph">
+<p>There&#8217;s a lot of other stuff <code>code-mage</code> can do:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Check your work as you progress</p>
+</li>
+<li>
+<p>Create unit tests if you&#8217;d rather not type them in every time</p>
+</li>
+<li>
+<p>Time how long it takes you to complete a challenge</p>
+</li>
+<li>
+<p>Run a web-server for certain projects that require it</p>
+</li>
+<li>
+<p>Display local code-mage-book community annoucements</p>
+</li>
+<li>
+<p>Serve a full copy of this book to your web browser without Internet</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The source code for <code>code-mage</code> is entirely open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).</p>
+</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_how_to_read_this_book"><a class="link" href="#_how_to_read_this_book">How to read this book</a></h3>
 <div class="paragraph">
-<p>This book is designed to be read linearly, from top to bottom. The concepts build on one another. Each "spell" is designed to be repeated often as a means of mastery, like playing chords on a piano or scales on a guitar. The fantasy magic element is intentionally silly and serves as a source of dopamine as well as a strong mnemonic device related to the concepts learn.</p>
-</div>
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p>Members of my community have contacted me years later to thank me for creating silly, memorable associations with mini projects focused on one or two core topics allowing them to easily recall them later by remembering the silly part.</p>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Digital format is preferred.</strong> It goes without saying, but having the ability to cut and paste from the content of this book goes a long way to simplifying its usage. Besides, doing so is a core tech skill for any code mage today—particularly in the age of powerful AI-assisted code generators. Much of this book was created that way. The latest digital copy of the book is always available for free at <a href="https://rwxrob.github.io/code-mage-book" class="bare">https://rwxrob.github.io/code-mage-book</a> (but your support by buying copies or sponsoring at <a href="https://github.com/sponsors/rwxrob" class="bare">https://github.com/sponsors/rwxrob</a> is always appreciated).</p>
+<p>This book is designed to be read linearly, from top to bottom. The concepts build on one another. But each "spell" is designed to be repeated often as a means of mastery, like playing chords on a piano or scales on a guitar. The fantasy magic element is intentionally silly and serves as a source of dopamine as well as a strong mnemonic device related to the concepts learn.</p>
 </div>
 <div class="quoteblock">
 <blockquote>
@@ -706,13 +736,13 @@ This book would never have happened without you.</p>
 </blockquote>
 </div>
 <div class="paragraph">
-<p>Repetition really is the mother of learning. While often we demonize "rote repetition" in the West, the slavs dominate as programming masters. The neurons in our brain store memory by having the same electical impulses repeated over and over. So in order to program oneself the only way is to repeat it. Repeat these spells as fast and as regularly as you can and you&#8217;ll end up training your own neural net just like a machine learning model—but in your head. Repetition can be great to supplement your growth while working on a bigger project—especially in the early days before everything becomes second nature.</p>
+<p>Repetition really is the mother of learning. While often we demonize "rote repetition" in the West, the slavs have promoted it for decades. The neurons in our brain store memory by having the same electical impulses repeated over and over. So in order to program oneself the only way is to repeat it. Repeat these spells as fast and as regularly as you can and you&#8217;ll end up training your own neural net just like a machine learning model—but in your head. Repetition can be great to supplement your growth while working on a bigger project—especially in the early days before everything becomes second nature.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_supplement_your_reading"><a class="link" href="#_supplement_your_reading">Supplement your reading</a></h3>
 <div class="paragraph">
-<p>This book is but a part of a more complete personal learning strategy. Make sure to not neglect the other parts:</p>
+<p>This book is but a part of a more complete personal learning strategy. Make sure not to neglect the other parts:</p>
 </div>
 <div class="sect3">
 <h4 id="_find_a_mentor"><a class="link" href="#_find_a_mentor">Find a mentor</a></h4>
@@ -720,10 +750,10 @@ This book would never have happened without you.</p>
 <p>Humans have been passing knowledge one to another since the beginning. It&#8217;s what we do. Luckily learning happens naturally when someone with experience and knowledge is available to someone who knows how to ask questions, apply what they learn, and return with more questions. That&#8217;s you, the inquisitive one. The mentor&#8217;s job is to answer questions and provide feedback—<strong>not</strong> to "teach" you.</p>
 </div>
 <div class="paragraph">
-<p>Most mentors won&#8217;t have that kind of free time available to constantly lead you by the hand on your learning journey. In fact, the more likely you are to hear from someone, the less likely you are to want to learn what they have to say. There are those who <strong>do</strong> stuff and those that <strong>talk about</strong> doing stuff. The more someone talks about doing stuff the less time they have to actually do something. It&#8217;s important to find people you know who are regularly and actively engaged in doing the thing you want to learn and then approach them about possibly mentoring you, perhaps for a small fee (most will decline).</p>
+<p>Most mentors won&#8217;t have that kind of free time available to constantly lead you by the hand on your learning journey. In fact, the more likely you are to hear from someone, the less likely you are to want to learn what they have to say. There are those who <em>do</em> stuff and those that <em>talk about</em> doing stuff. The more someone talks about doing stuff the less time they have to actually do something. It&#8217;s important to find people you know who are regularly and actively engaged in doing the thing you want to learn and then approach them about possibly mentoring you, perhaps for a small fee (most will decline).</p>
 </div>
 <div class="paragraph">
-<p>You will find that many people <strong>want</strong> to share what they know but just don&#8217;t know how to do it or who would want to hear. Find these people and approach them. Perhaps you can find a few mentors so you can compare how they differ in their approach to programming.</p>
+<p>You will find that many people <em>want</em> to share what they know but just don&#8217;t know how to do it or who would want to hear. Find these people and approach them. Perhaps you can find a few mentors so you can compare how they differ in their approach to programming.</p>
 </div>
 </div>
 <div class="sect3">
@@ -816,13 +846,13 @@ This book would never have happened without you.</p>
 <p>A <strong>Code Mage</strong> lives at the intersection of logic and creativity, wielding the power of code to conjure solutions, automate tasks, and build entire digital realms. Like any craftsperson of magic, their days are filled with discovery, problem-solving, and the relentless pursuit of mastery.</p>
 </div>
 <div class="sect3">
-<h4 id="_morning_rituals_preparing_the_workspace"><a class="link" href="#_morning_rituals_preparing_the_workspace">Morning rituals: preparing the workspace</a></h4>
+<h4 id="_morning_rituals"><a class="link" href="#_morning_rituals">Morning rituals</a></h4>
 <div class="paragraph">
-<p>The day begins with the Code Mage stepping into their sanctum—a workspace adorned with multiple monitors, glowing softly like enchanted portals. A warm cup of coffee or tea in hand, they review their spellbook, often written in Go, Bash, Python, or JavaScript. They study the tasks ahead: debugging incantations, designing new algorithms, or collaborating with their guild (team).</p>
+<p>The day begins with the Code Mage stepping into their sanctum—a workspace adorned with multiple monitors, glowing softly like enchanted portals, or perhaps just a single laptop and a cozy seat. A warm cup of coffee or tea in hand, they review their spellbook, often written in Go, Bash, Python, or JavaScript. They study the tasks ahead: debugging incantations, designing new algorithms, or collaborating with their guild (team) or aritficial assistant.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_the_arcane_practices_of_the_day"><a class="link" href="#_the_arcane_practices_of_the_day">The arcane practices of the day</a></h4>
+<h4 id="_practices_of_the_day"><a class="link" href="#_practices_of_the_day">Practices of the day</a></h4>
 <div class="paragraph">
 <p>The bulk of the day is spent weaving spells (writing code). Each line of code is a carefully crafted rune, combining syntax and logic to bring an idea to life. The Code Mage alternates between deep focus—when creating complex algorithms—and collaborative rituals like stand-ups or code reviews, where they share insights with fellow mages.</p>
 </div>
@@ -1944,6 +1974,260 @@ set -g focus-events
 <h3 id="_why_not_crowd_source_this_book"><a class="link" href="#_why_not_crowd_source_this_book">Why not crowd source this book?</a></h3>
 <div class="paragraph">
 <p>Tech books have very little value given how quickly they become out of date. One solution would be to community or crowd source it to enlist the help of many. But this defeats the single greatest advantage of having a book: the clarity and common voice of a singular author. To get an idea about this, read just a few paragraphs of anything on Wikipedia or in any overpriced, mandatory course text book with a single "author" on the cover even though it was actually written by dozens of uncredited students slaving away to win that author&#8217;s favor. No, the clear prose and attractive rhetorical style of an individual is what other individuals want. It&#8217;s how they best learn. It&#8217;s the reason people have favorite authors and will read anything from them on any topic. Writing remains best a solo sport, for everyone.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_why_vim"><a class="link" href="#_why_vim">Why Vim?</a></h3>
+<div class="paragraph">
+<p>The benefits of Vim over other editors lie in its unique approach to efficiency, customization, and versatility. Here’s a breakdown of why many developers swear by Vim:</p>
+</div>
+<div class="paragraph">
+<p>Speed and Efficiency</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Modal Editing: Vim’s modal nature separates editing, navigating, and selecting text into distinct modes. This allows for precise and fast text manipulation without needing to move your hands away from the keyboard.</p>
+</li>
+<li>
+<p>Keyboard-Driven Workflow: Everything in Vim can be done without a mouse, significantly speeding up tasks for those accustomed to its commands.</p>
+</li>
+<li>
+<p>Commands as Composable Primitives: Vim commands can be combined in intuitive ways (e.g., daw deletes a word, yap yanks a paragraph). This composability makes it exceptionally powerful for editing text.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Lightweight and Ubiquitous</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Low Resource Usage: Vim is highly efficient, making it an excellent choice for older machines or resource-constrained environments.</p>
+</li>
+<li>
+<p>Available Everywhere: Vim comes pre-installed on almost all Unix-like systems, ensuring it’s accessible in nearly any server or terminal environment.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Customization and Extensibility</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Highly Configurable: Vim’s configuration through .vimrc (or init.lua for Neovim) allows users to create tailored environments for specific workflows.</p>
+</li>
+<li>
+<p>Plugin Ecosystem: Thousands of plugins extend Vim’s functionality, from language servers (LSP) for autocompletion and linting to themes like Gruvbox-Material for aesthetic improvements.</p>
+</li>
+<li>
+<p>Scriptable: Vimscript or Lua (for Neovim) can be used to automate repetitive tasks or create custom commands.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Precision and Versatility</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Powerful Search and Replace: Vim’s regex-based search and replace (:%s/pattern/replacement/g) works across entire files or custom ranges.</p>
+</li>
+<li>
+<p>Macros: Record and replay sequences of commands, making repetitive edits easy and consistent.</p>
+</li>
+<li>
+<p>Versatility: Suitable for quick edits or complex projects, Vim adapts to any programming or text editing need.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Productivity with Practice</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Muscle Memory: Learning Vim takes effort, but once mastered, it becomes second nature, allowing you to edit text faster than with GUI-based editors.</p>
+</li>
+<li>
+<p>Fewer Context Switches: Vim can be embedded into many tools (e.g., Git, terminal multipliers like tmux), reducing the need to leave your environment.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Longevity and Community</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Long History: Vim has been around for decades, and its continued evolution ensures it remains relevant.</p>
+</li>
+<li>
+<p>Active Community: An engaged user base and contributors produce a steady stream of tutorials, plugins, and updates.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Comparison with Other Editors</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Vim vs. GUI Editors (e.g., VSCode, Sublime Text):</p>
+</li>
+<li>
+<p>Vim is faster for text manipulation and navigation once learned but lacks a GUI’s visual aids.</p>
+</li>
+<li>
+<p>GUI editors often have built-in integrations, while Vim relies on plugins for similar features.</p>
+</li>
+<li>
+<p>Vim vs. IDEs (e.g., IntelliJ, Eclipse):</p>
+</li>
+<li>
+<p>IDEs provide extensive language-specific tooling out of the box but can feel bloated compared to Vim’s minimalist approach.</p>
+</li>
+<li>
+<p>Vim’s plugin ecosystem bridges the gap for features like autocompletion and linting.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In summary, Vim shines for users who prioritize speed, flexibility, and control over out-of-the-box features or visual interfaces. It excels in environments where efficiency and keyboard-driven workflows are paramount. While it has a steeper learning curve than other editors, the productivity payoff makes it a beloved tool for developers, sysadmins, and writers alike.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="why-vimrc"><a class="link" href="#why-vimrc">Why <code>~/.vimrc</code>?</a></h3>
+<div class="paragraph">
+<p>Using .vimrc as your main configuration file has several advantages for someone who values portability and needs to use Vim across different systems, especially when Neovim might not always be available:</p>
+</div>
+<div class="paragraph">
+<p>Portability and Ubiquity</p>
+</div>
+<div class="paragraph">
+<p><strong>Vim is Ubiquitous</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Vim is pre-installed on virtually all Unix-like systems, including Linux distributions and macOS. It’s also commonly found on remote servers and even embedded systems.</p>
+</li>
+<li>
+<p>This ensures you can always access a familiar editing environment without needing to install anything extra.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>.vimrc Compatibility</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The .vimrc file is recognized by all standard Vim installations. By sticking to .vimrc, you ensure your configurations work everywhere that Vim is available.</p>
+</li>
+<li>
+<p>Neovim can also read <code>.vimrc</code>, either natively or by sourcing it, making it possible to share your configuration between Vim and Neovim.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Simplicity and Minimal Dependencies</p>
+</div>
+<div class="paragraph">
+<p><strong>Avoids Neovim-Specific Features</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Neovim introduces some features, such as Lua-based configuration, that are not compatible with standard Vim. While these can be powerful, they may lock you into using Neovim exclusively.</p>
+</li>
+<li>
+<p>By using <code>.vimrc</code>, you focus on features and plugins that work universally, avoiding incompatibilities on systems where only Vim is available.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Quick Setup</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If you frequently work on different machines or servers, having a portable <code>.vimrc</code> file that you can quickly copy or source makes it easier to get up and running.</p>
+</li>
+<li>
+<p>You can even store your <code>.vimrc</code> in a version-controlled repository (like GitHub), allowing you to fetch it quickly on any machine.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Efficiency and Familiarity</p>
+</div>
+<div class="paragraph">
+<p><strong>Immediate Usability</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>With <code>.vimrc</code>, your configurations and workflows are immediately usable on systems with Vim pre-installed. No need to install Neovim or additional dependencies.</p>
+</li>
+<li>
+<p>This is particularly useful in environments like remote servers, where you may not have the permissions or the time to install Neovim.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Standard Features</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Vim and .vimrc cover the majority of use cases for editing, scripting, and navigating text. For someone who values speed and universality over cutting-edge features, .vimrc is often enough.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Use Case Scenarios</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Remote Work: If you SSH into servers or work on machines where you cannot control the software installed, Vim is more likely to be available, and your .vimrc will ensure a consistent editing environment.</p>
+</li>
+<li>
+<p>Team Environments: Some workplaces or collaborative environments may standardize on Vim instead of Neovim, making .vimrc the more practical choice.</p>
+</li>
+<li>
+<p>Emergency Situations: If you find yourself on a system without Neovim, being familiar with and having a .vimrc setup ensures you won’t lose productivity.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Best of Both Worlds</p>
+</div>
+<div class="paragraph">
+<p>For users who still want to take advantage of Neovim when available:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Dual Configuration: Use <code>.vimrc</code> as your main file and configure Neovim to source it:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">vim</span><span class="tok-p">.</span><span class="tok-nx">cmd</span><span class="tok-p">(</span><span class="tok-err">&#39;</span><span class="tok-nx">source</span><span class="tok-w"> </span><span class="tok-o">~/</span><span class="tok-p">.</span><span class="tok-nx">vimrc</span><span class="tok-err">&#39;</span><span class="tok-p">)</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This way, you can enjoy Neovim’s advanced features when it’s installed while maintaining a universal configuration for Vim.</p>
+</div>
+<div class="paragraph">
+<p>Conclusion</p>
+</div>
+<div class="paragraph">
+<p>Using <code>.vimrc</code> as your main configuration file provides the most flexibility and portability. It ensures you can work comfortably in almost any environment without needing to rely on Neovim-specific features. For someone who values a consistent workflow across systems, <code>.vimrc</code> is the pragmatic choice.</p>
 </div>
 </div>
 <div class="sect2">
