@@ -1,0 +1,61 @@
+# Release configuration for GoReleaser
+project_name: code-mage
+
+before:
+  hooks:
+    # Ensure the Go module is tidy and dependencies are downloaded
+    - go mod tidy
+    - go mod download
+
+builds:
+  - id: code-mage
+    main: ./cmd/code-mage
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - "-s -w -X main.version={{.Version}}"
+    env:
+      - CGO_ENABLED=0
+    binary: code-mage
+    output: artifacts/{{.Os}}_{{.Arch}}/{{.Binary}}
+
+archives:
+  - format: tar.gz
+    files:
+      - LICENSE
+      - README.md
+    replacements:
+      darwin: macOS
+    destination: artifacts
+
+release:
+  github:
+    owner: ${{ secrets.GITHUB_REPOSITORY_OWNER }}
+    name: ${{ github.event.repository.name }}
+    draft: false
+    prerelease: false
+
+changelog:
+  sort: desc
+  filters:
+    exclude:
+      - "^docs:"
+
+checksum:
+  name_template: 'checksums.txt'
+  output: artifacts/checksums.txt
+
+artifacts:
+  paths:
+    - artifacts/*
+    - artifacts/**/*.*
+    - artifacts/checksums.txt
+
+version:
+  # Use the VERSION file to determine the version
+  file: VERSION
