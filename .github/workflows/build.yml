@@ -66,6 +66,8 @@ jobs:
         asset_path: artifacts/code-mage-book-${{ env.VERSION }}.pdf
         asset_name: code-mage-book-${{ env.VERSION }}.pdf
         asset_content_type: application/pdf
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Upload EPUB to Release
       uses: actions/upload-release-asset@v1
@@ -74,4 +76,7 @@ jobs:
         asset_path: artifacts/code-mage-book-${{ env.VERSION }}.epub
         asset_name: code-mage-book-${{ env.VERSION }}.epub
         asset_content_type: application/epub+zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
