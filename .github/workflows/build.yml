@@ -1,0 +1,41 @@
+name: Build EPUB, PDF, and HTML
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v3
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.1 # Specify the Ruby version
+
+    - name: Install Asciidoctor and Extensions
+      run: |
+        gem install asciidoctor
+        gem install asciidoctor-pdf
+        gem install asciidoctor-epub3
+
+    - name: Build PDF
+      run: ./build pdf
+
+    - name: Build EPUB
+      run: ./build epub
+
+    - name: Build HTML
+      run: ./build html
+
+    - name: Upload Build Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-files
+        path: artifacts/
