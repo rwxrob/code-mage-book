@@ -1,6 +1,6 @@
 # Release configuration for GoReleaser
 project_name: code-mage
-version: 2
+version: 1
 
 before:
   hooks:
