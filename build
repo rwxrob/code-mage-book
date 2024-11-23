@@ -33,9 +33,6 @@ x-all() {
 }
 
 x-epub() {
-	podman run --rm \
-		-v "$(pwd):/documents/" \
-		asciidoctor/docker-asciidoctor \
 		asciidoctor-epub3 \
 		-D "artifacts" \
 		-o "code-mage-book-${VERSION}.epub" \
@@ -46,9 +43,6 @@ x-epub() {
 }
 
 x-pdf() {
-	podman run --rm \
-		-v "$(pwd):/documents/" \
-		asciidoctor/docker-asciidoctor \
 		asciidoctor-pdf \
 		-D "artifacts" \
 		-o "code-mage-book-${VERSION}.pdf" \
@@ -58,9 +52,6 @@ x-pdf() {
 }
 
 x-html() {
-	podman run --rm \
-		-v "$(pwd):/documents/" \
-		asciidoctor/docker-asciidoctor \
 		asciidoctor \
 		-D "docs" \
 		-o "index.html" \
