@@ -52,8 +52,8 @@ jobs:
       id: create_release
       uses: actions/create-release@v1
       with:
-        tag_name: ${{ env.VERSION }}
-        release_name: "Release ${{ env.VERSION }}"
+        tag_name: v${{ env.VERSION }}
+        release_name: "Release v${{ env.VERSION }}"
         draft: false
         prerelease: false
       env:
@@ -63,8 +63,8 @@ jobs:
       uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: dist/code-mage-book-${{ env.VERSION }}.pdf
-        asset_name: code-mage-book-${{ env.VERSION }}.pdf
+        asset_path: dist/code-mage-book-v${{ env.VERSION }}.pdf
+        asset_name: code-mage-book-v${{ env.VERSION }}.pdf
         asset_content_type: application/pdf
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -73,8 +73,8 @@ jobs:
       uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: dist/code-mage-book-${{ env.VERSION }}.epub
-        asset_name: code-mage-book-${{ env.VERSION }}.epub
+        asset_path: dist/code-mage-book-v${{ env.VERSION }}.epub
+        asset_name: code-mage-book-v${{ env.VERSION }}.epub
         asset_content_type: application/epub+zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -83,6 +83,16 @@ jobs:
       uses: actions/setup-go@v4
       with:
         go-version: 1.21
+
+    - name: Create Git Tag
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        VERSION=$(<VERSION)
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git tag v"$VERSION"
+        git push origin v"$VERSION"
 
     - name: Install Goreleaser
       run: go install github.com/goreleaser/goreleaser@latest

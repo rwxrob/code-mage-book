@@ -35,7 +35,7 @@ x-all() {
 x-epub() {
 		asciidoctor-epub3 \
 		-D "dist" \
-		-o "code-mage-book-${VERSION}.epub" \
+		-o "code-mage-book-v${VERSION}.epub" \
 		-a pdf-themesdir="./book/assets/themes" \
 		-a pdf-theme="dark-theme.yml" \
 		-a pdf-fontsdir="./book/assets/fonts" \
@@ -45,7 +45,7 @@ x-epub() {
 x-pdf() {
 		asciidoctor-pdf \
 		-D "dist" \
-		-o "code-mage-book-${VERSION}.pdf" \
+		-o "code-mage-book-v${VERSION}.pdf" \
 		-a pdf-themesdir="./book/assets/themes" \
 		-a pdf-fontsdir="./book/assets/fonts" \
 		"./book/index.adoc"

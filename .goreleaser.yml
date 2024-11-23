@@ -1,14 +1,12 @@
 # Release configuration for GoReleaser
 project_name: code-mage
+version: 2
 
 before:
   hooks:
     # Ensure the Go module is tidy and dependencies are downloaded
     - go mod tidy
     - go mod download
-
-git:
-  tag: "{{ .Version }}"
 
 builds:
   - id: code-mage
@@ -52,9 +50,3 @@ changelog:
 
 checksum:
   name_template: 'checksums.txt'
-
-version:
-  # Use the VERSION file to determine the version
-  file: VERSION
-
-
