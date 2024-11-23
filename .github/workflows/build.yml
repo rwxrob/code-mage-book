@@ -46,7 +46,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: build-files
-        path: artifacts/
+        path: dist/
 
     - name: Create GitHub Release
       id: create_release
@@ -63,7 +63,7 @@ jobs:
       uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: artifacts/code-mage-book-${{ env.VERSION }}.pdf
+        asset_path: dist/code-mage-book-${{ env.VERSION }}.pdf
         asset_name: code-mage-book-${{ env.VERSION }}.pdf
         asset_content_type: application/pdf
       env:
@@ -73,7 +73,7 @@ jobs:
       uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: artifacts/code-mage-book-${{ env.VERSION }}.epub
+        asset_path: dist/code-mage-book-${{ env.VERSION }}.epub
         asset_name: code-mage-book-${{ env.VERSION }}.epub
         asset_content_type: application/epub+zip
       env:
@@ -92,6 +92,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         VERSION: ${{ env.VERSION }}
       run: |
-        goreleaser release --rm-dist --config .goreleaser.yml
+        goreleaser release --clean --config .goreleaser.yml
 
 

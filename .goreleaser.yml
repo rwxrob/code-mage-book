@@ -22,7 +22,6 @@ builds:
     env:
       - CGO_ENABLED=0
     binary: code-mage
-    output: artifacts/{{.Os}}_{{.Arch}}/{{.Binary}}
 
 archives:
   - format: tar.gz
@@ -31,7 +30,6 @@ archives:
       - README.md
     replacements:
       darwin: macOS
-    destination: artifacts
 
 release:
   github:
@@ -48,14 +46,13 @@ changelog:
 
 checksum:
   name_template: 'checksums.txt'
-  output: artifacts/checksums.txt
 
 artifacts:
   paths:
-    - artifacts/*
-    - artifacts/**/*.*
-    - artifacts/checksums.txt
+    - dist/*
 
 version:
   # Use the VERSION file to determine the version
   file: VERSION
+
+
