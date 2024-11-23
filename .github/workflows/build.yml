@@ -50,31 +50,33 @@ jobs:
 
     - name: Create GitHub Release
       id: create_release
-      uses: softprops/action-gh-release@v1
+      uses: actions/create-release@v1
       with:
         tag_name: ${{ env.VERSION }}
-        name: "Release ${{ env.VERSION }}"
+        release_name: "Release ${{ env.VERSION }}"
         draft: false
         prerelease: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Upload PDF to Release
-      run: |
-        curl -X POST \
-          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-          -H "Content-Type: application/pdf" \
-          --data-binary @artifacts/code-mage-book-${{ env.VERSION }}.pdf \
-          "$(jq -r '.upload_url' < response.json)"
+      uses: actions/upload-release-asset@v1
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: artifacts/code-mage-book-${{ env.VERSION }}.pdf
+        asset_name: code-mage-book-${{ env.VERSION }}.pdf
+        asset_content_type: application/pdf
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Upload EPUB to Release
-      run: |
-        curl -X POST \
-          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-          -H "Content-Type: application/epub+zip" \
-          --data-binary @artifacts/code-mage-book-${{ env.VERSION }}.epub \
-          "$(jq -r '.upload_url' < response.json)"
+      uses: actions/upload-release-asset@v1
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: artifacts/code-mage-book-${{ env.VERSION }}.epub
+        asset_name: code-mage-book-${{ env.VERSION }}.epub
+        asset_content_type: application/epub+zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
