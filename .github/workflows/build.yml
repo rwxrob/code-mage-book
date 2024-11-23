@@ -60,7 +60,7 @@ jobs:
       uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: artifacts/code-mage-book-*.pdf
+        asset_path: artifacts/code-mage-book-${{ env.VERSION }}.pdf
         asset_name: code-mage-book-${{ env.VERSION }}.pdf
         asset_content_type: application/pdf
 
@@ -68,7 +68,7 @@ jobs:
       uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: artifacts/code-mage-book-*.epub
+        asset_path: artifacts/code-mage-book-${{ env.VERSION }}.epub
         asset_name: code-mage-book-${{ env.VERSION }}.epub
         asset_content_type: application/epub+zip
 
