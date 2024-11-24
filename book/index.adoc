@@ -27,7 +27,6 @@
 :source-highlighter: pygments
 :pygments-style: vs
 :pygments-linenums-mode: table
-:source-language: go
 
 include::copyright.adoc[]  
 
@@ -41,7 +40,9 @@ include::intro.adoc[]
 
 include::prep.adoc[]
 
-//include::spells.adoc[] 
+include::code.adoc[] 
+
+include::develop.adoc[] 
 
 include::faq.adoc[]  
 

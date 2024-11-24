@@ -11,3 +11,5 @@ include::faq/whyvimrc.adoc[]
 include::faq/whyanotherbook.adoc[]  
 
 include::faq/apcs.adoc[]  
+
+include::faq/whywinget.adoc[]  

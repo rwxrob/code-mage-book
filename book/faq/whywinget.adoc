@@ -1,0 +1,3 @@
+== Why winget?
+
+The Microsoft `winget` utility is the only officially supported way to install software on Windows from the command line. All other package managers (`scoop`, `choco`, etc.) may have inspired its creation, but are now more or less deprecated in favor of the official method. As such `winget` is the most reliable and secure of any software package manager. Even if you end up preferring one of the others you must learn `winget` in order to know how to officially update any Windows system from the command line. You cannot be sure your favorite method will be supported at work, for example, but you always know `winget` will be there.

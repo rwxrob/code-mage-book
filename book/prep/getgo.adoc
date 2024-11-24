@@ -1,4 +1,4 @@
-== Install Go
+== Install Go language
 
 To embark on the path of the developer, you must first forge your tools. In this guide, you'll install the Go programming language, equipping yourself with a blade of unparalleled efficiency. Whether on a Mac, Windows, or Linux machine, the process is straightforward.
 

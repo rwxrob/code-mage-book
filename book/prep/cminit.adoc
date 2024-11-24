@@ -1,6 +1,6 @@
-== Create your PDE
+== Install development environment
 
-Every great mage has their sanctum, a personal development environment where spells are honed and wonders are crafted—a carefully constructed digital workspace where ideas come to life, lines of code flow seamlessly, and creativity flourishes. Crafting a PDE is not merely about tools and configurations; it’s an act of self-discovery and empowerment. A terminal-based PDE will seem daunting at first, like learning to play a fine instrument, but the power and music it produces later will resonant far better than any GUI alternative. Terminal interfaces aren't just "for boomers" they are for a discrete, dicerning set of technologists who operate on a magical plane high above their peers.
+Every great mage has their sanctum, a personal development environment where spells are honed and wonders are crafted—a carefully constructed digital workspace where ideas come to life, lines of code flow seamlessly, and creativity flourishes. Crafting a PDE is not merely about tools and configurations; it’s an act of self-discovery and empowerment. A terminal-based PDE will seem daunting at first, like learning to play a fine instrument, but the power and music it produces later will resonant far better than any GUI alternative. Terminal interfaces aren't just "for boomers" they are for a discrete, dicerning set of technologists who operate on a magical plane much higher than most of their peers.
 
 [CAUTION]
 ====
@@ -54,14 +54,22 @@ As great as Neovim is, it can get just as slow and bloated as graphical editors 
 
 === Window manager: tmux
 
-Linux people fight for days over the best graphical "window manager" but the best code mages already know the answer to this: tmux, the terminal-based _multiplexer_ (think of ciniplex, it's the same, multiple screens). Who cares what your desktop environment is if you have mastered doing everything in the terminal including live collaboration with your buddies all sharing the same virtual keyboard. Tmux also provides universal cutting and pasting that functions _outside_ of vim as well as provides a safe way to leave something running (like a Minecraft server console) and return to it later. This is virtually impossible without tmux. Learn it.
+"What's your window manager?" is a question people with way too much time on their hands will ask you. Soon you can answer "tmux!"
 
-=== Version control: git + gh
+Strictly speaking tmux is a terminal session manager, a _multiplexer_ ("multiple screens", think ciniplex) not a "window manager" according to most people's definition which is tied to graphic user interfaces for some stupid reason. Control-w in tmux is literally for managing "terminal windows" so yes, tmux _is_ a window manager. Now when pedantic GUI people want to waste ungodly amounts of time fighting over the best graphic window manager you can quickly answer them and get on with stuff that matters.
 
-Version control systems like Git help manage the spellbooks of developers. They preserve your progress, allow experimentation without fear, and let you collaborate with others seamlessly. GitHub is the leading place to store those repos with the `gh` command line tool.
+Tmux isn't _just_ for managing windows, it also provides universal cut and paste functionality without leaving the terminal (stuff you cannot do with just a terminal editor) or using your mouse and allows live collaboration with your buddies all sharing the same virtual keyboard. Most importantly, however, tmux provides a safe way to leave something running and reattach to it later, even if your connection to the computer is dropped. This is virtually impossible without tmux. Learn it.
+
+[NOTE]
+====
+I've worked more than 30 years as a remote employee, logging into central enterprise systems responsible for running things that keep products, money, and power flowing. What would happen if during an important, long-running thing my Internet connection died? That exact thing has happened multiple times, but every single time I was able to recover by simply reconnecting to my work network and reattaching tmux (or screen, tmux's ancestor), sometimes while other team members were also connected simultaneously. People who say, "you don't need tmux" are really limiting themselves at best, and living dangerously at worst.
+====
+
+=== Source control: git + gh
+
+Source control systems like Git help manage the spellbooks of developers. They preserve your progress, allow experimentation without fear, and let you collaborate with others seamlessly. GitHub is the leading source control service and uniquely allows repos, pull requests, issues, comments to be managed with the `gh` command line tool (written in Go, btw).
 
 === Research: w3m + mods + claude
 
 Harnessing the power of command-line tools like the terminal web browser `w3m` and the command line AI query tool `mods` from Charmbracelet powered by the Claude API, creates a streamlined environment for efficient web browsing and AI-assisted research from the terminal that dominates those doing the alternative from graphic user interfaces. This setup ensures you stay focused, efficient, and immersed in the terminal-first environment.
-
 

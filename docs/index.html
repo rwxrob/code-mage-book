@@ -513,7 +513,6 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_consider_ai_assistance">Consider AI assistance</a></li>
 </ul>
 </li>
-<li><a href="#_beware_of_ap_computer_science">Beware of AP Computer Science</a></li>
 </ul>
 </li>
 <li><a href="#_introduction">Introduction</a>
@@ -560,7 +559,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_go_is_the_goldilocks_of_first_languages">Go is the Goldilocks of first languages</a></li>
 <li><a href="#_go_solves_real_problems">Go solves real problems</a></li>
 <li><a href="#_hackers_love_go">Hackers love Go</a></li>
-<li><a href="#_gos_is_great_for_terminal_apps">Go&#8217;s is great for terminal apps</a></li>
+<li><a href="#_go_is_great_for_terminal_apps">Go is great for terminal apps</a></li>
 </ul>
 </li>
 </ul>
@@ -574,8 +573,8 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_mac_vs_windows_vs_linux">Mac vs. Windows vs. Linux</a></li>
 </ul>
 </li>
-<li><a href="#_install_go">Install Go</a></li>
-<li><a href="#_install_code_mage">Install Code-Mage</a>
+<li><a href="#_install_go_language">Install Go language</a></li>
+<li><a href="#_install_code_mage_assistant">Install Code-Mage assistant</a>
 <ul class="sectlevel3">
 <li><a href="#_open_a_terminal">Open a terminal</a>
 <ul class="sectlevel4">
@@ -584,10 +583,10 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_linux">Linux</a></li>
 </ul>
 </li>
-<li><a href="#_install_cm_command">Install cm command</a></li>
+<li><a href="#_go_install_cm">Go install cm</a></li>
 </ul>
 </li>
-<li><a href="#_create_your_pde">Create your PDE</a>
+<li><a href="#_install_development_environment">Install development environment</a>
 <ul class="sectlevel3">
 <li><a href="#_ingredients_of_a_great_pde">Ingredients of a great PDE</a></li>
 <li><a href="#_package_manager_brew_winget">Package manager: brew, winget</a></li>
@@ -596,17 +595,52 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_theme_gruvbox_material">Theme: gruvbox-material</a></li>
 <li><a href="#_editor_neovim_plugins">Editor: neovim + plugins</a></li>
 <li><a href="#_window_manager_tmux">Window manager: tmux</a></li>
-<li><a href="#_version_control_git_gh">Version control: git + gh</a></li>
+<li><a href="#_source_control_git_gh">Source control: git + gh</a></li>
 <li><a href="#_research_w3m_mods_claude">Research: w3m + mods + claude</a></li>
 </ul>
 </li>
+<li><a href="#_learn_basic_shell_commands">Learn basic shell commands</a></li>
+<li><a href="#learnvim">Learn basic vim usage</a></li>
+<li><a href="#_learn_basic_tmux">Learn basic tmux</a>
+<ul class="sectlevel3">
+<li><a href="#_start_tmux_session">Start tmux session</a></li>
+<li><a href="#_lookup_tmux_help">Lookup tmux help</a></li>
+<li><a href="#_detact_from_tmux">Detact from tmux</a></li>
+<li><a href="#_reattach_to_tmux_session">Reattach to tmux session</a></li>
+<li><a href="#_list_sessions">List sessions</a></li>
+<li><a href="#_navigate_tmux_windows">Navigate tmux windows</a></li>
+<li><a href="#_split_window_into_panes">Split window into panes</a></li>
+<li><a href="#_cut_and_paste_text_anywhere">Cut and paste text anywhere</a></li>
+<li><a href="#_customize_tmux_conf">Customize ~/.tmux.conf</a></li>
 </ul>
 </li>
+<li><a href="#_learn_w3m_web_browser">Learn w3m web browser</a>
+<ul class="sectlevel3">
+<li><a href="#_open_a_specific_url">Open a specific URL</a></li>
+<li><a href="#_search_web_from_command_line">Search web from command line</a></li>
+<li><a href="#_follow_a_link">Follow a link</a></li>
+<li><a href="#_go_back_to_previous_page">Go back to previous page</a></li>
+<li><a href="#_open_graphic_web_browser">Open graphic web browser</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_learn_to_code">Learn to code</a>
+<ul class="sectlevel2">
+<li><a href="#_the_four_fundamental_elements">The four fundamental elements</a></li>
+<li><a href="#_combining_the_elements">Combining the elements</a></li>
+<li><a href="#_cantrip_echo_greeting_hello_world">Cantrip: Echo Greeting (Hello World)</a></li>
+</ul>
+</li>
+<li><a href="#_develop_applications">Develop applications</a></li>
 <li><a href="#_appendix_faq">Appendix: FAQ</a>
 <ul class="sectlevel2">
 <li><a href="#whatdidcmdo">What did cm init do?</a></li>
 <li><a href="#whyvim">Why Vim?</a></li>
 <li><a href="#whyvimrc">Why ~/.vimrc?</a></li>
+<li><a href="#_why_another_go_book">Why another Go book?</a></li>
+<li><a href="#_what_about_ap_computer_science">What about AP Computer Science?</a></li>
+<li><a href="#_why_winget">Why winget?</a></li>
 </ul>
 </li>
 <li><a href="#_appendix_legal">Appendix: Legal</a>
@@ -839,15 +873,6 @@ in the early days before everything becomes second nature.</p>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_beware_of_ap_computer_science"><a class="link" href="#_beware_of_ap_computer_science">Beware of AP Computer Science</a></h3>
-<div class="paragraph">
-<p>Unfortunately, I have to end this preface on a negative note. People reading this must understand not to waste their time with AP Computer Science (in America).</p>
-</div>
-<div class="paragraph">
-<p>As of the writing of this book, the AP Computer Science program from College Board remains fundamentally broken. The materials are more than dated and down-right wrong in some cases. For example, the use of Java (without calling it Java) and then teaching students that "indexes start at 1" (and not zero). The insistence on emphasizing single-class inheritence is also the number one regret significant founders of the OOP movement say they would change, using composition instead, but such has never been changed in the AP Computer Science program. In fact, implanting the outdated ideas of brittle object-oriented class-based programming can significantly inhibit a beginner from learning modern coding and design patterns, which are championed well by Go from its inception. Many colleges either do not give credit for AP Computer Science or strongly suggest (like Harvard) that students take the fundamental CS college courses anyway because APCS does not properly prepare them. It&#8217;s better to put that time to better use, say, by building a coding lab at home, or starting a coding club with friends building real projects using modern principles of softare development.</p>
-</div>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -1069,7 +1094,7 @@ in the early days before everything becomes second nature.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_gos_is_great_for_terminal_apps"><a class="link" href="#_gos_is_great_for_terminal_apps">Go&#8217;s is great for terminal apps</a></h4>
+<h4 id="_go_is_great_for_terminal_apps"><a class="link" href="#_go_is_great_for_terminal_apps">Go is great for terminal apps</a></h4>
 <div class="paragraph">
 <p>Go’s sweet spot is for creating backend server APIs and terminal command-line tools, which is what this book is all about. After all, aren’t commands just spells we cast from the command line?</p>
 </div>
@@ -1253,7 +1278,7 @@ in the early days before everything becomes second nature.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_install_go"><a class="link" href="#_install_go">Install Go</a></h3>
+<h3 id="_install_go_language"><a class="link" href="#_install_go_language">Install Go language</a></h3>
 <div class="paragraph">
 <p>To embark on the path of the developer, you must first forge your tools. In this guide, you&#8217;ll install the Go programming language, equipping yourself with a blade of unparalleled efficiency. Whether on a Mac, Windows, or Linux machine, the process is straightforward.</p>
 </div>
@@ -1276,7 +1301,7 @@ in the early days before everything becomes second nature.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_install_code_mage"><a class="link" href="#_install_code_mage">Install Code-Mage</a></h3>
+<h3 id="_install_code_mage_assistant"><a class="link" href="#_install_code_mage_assistant">Install Code-Mage assistant</a></h3>
 <div class="paragraph">
 <p>Code-Mage (abbreviated as <code>cm</code>) is your ultimate tool to orchestrate your development environment. This guide walks you through the installation process for Mac, Windows, and Linux, starting from opening your terminal to running your first <code>cm</code> command.</p>
 </div>
@@ -1305,7 +1330,7 @@ in the early days before everything becomes second nature.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_install_cm_command"><a class="link" href="#_install_cm_command">Install cm command</a></h4>
+<h4 id="_go_install_cm"><a class="link" href="#_go_install_cm">Go install cm</a></h4>
 <div class="paragraph">
 <p>Code-Mage is contained in the <code>cm</code> command. See the Preface for more about what it does. Now it is time to use the <code>go</code> command to install it. This is the best way to install other Go projects in the safest way possible since the entire code of the project can be read by anyone to ensure there has been no tampering (as opposed to downloading some executable off the Internet).</p>
 </div>
@@ -1337,9 +1362,9 @@ in the early days before everything becomes second nature.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_create_your_pde"><a class="link" href="#_create_your_pde">Create your PDE</a></h3>
+<h3 id="_install_development_environment"><a class="link" href="#_install_development_environment">Install development environment</a></h3>
 <div class="paragraph">
-<p>Every great mage has their sanctum, a personal development environment where spells are honed and wonders are crafted—a carefully constructed digital workspace where ideas come to life, lines of code flow seamlessly, and creativity flourishes. Crafting a PDE is not merely about tools and configurations; it’s an act of self-discovery and empowerment. A terminal-based PDE will seem daunting at first, like learning to play a fine instrument, but the power and music it produces later will resonant far better than any GUI alternative. Terminal interfaces aren&#8217;t just "for boomers" they are for a discrete, dicerning set of technologists who operate on a magical plane high above their peers.</p>
+<p>Every great mage has their sanctum, a personal development environment where spells are honed and wonders are crafted—a carefully constructed digital workspace where ideas come to life, lines of code flow seamlessly, and creativity flourishes. Crafting a PDE is not merely about tools and configurations; it’s an act of self-discovery and empowerment. A terminal-based PDE will seem daunting at first, like learning to play a fine instrument, but the power and music it produces later will resonant far better than any GUI alternative. Terminal interfaces aren&#8217;t just "for boomers" they are for a discrete, dicerning set of technologists who operate on a magical plane much higher than most of their peers.</p>
 </div>
 <div class="admonitionblock caution">
 <table>
@@ -1436,13 +1461,33 @@ in the early days before everything becomes second nature.</p>
 <div class="sect3">
 <h4 id="_window_manager_tmux"><a class="link" href="#_window_manager_tmux">Window manager: tmux</a></h4>
 <div class="paragraph">
-<p>Linux people fight for days over the best graphical "window manager" but the best code mages already know the answer to this: tmux, the terminal-based <em>multiplexer</em> (think of ciniplex, it&#8217;s the same, multiple screens). Who cares what your desktop environment is if you have mastered doing everything in the terminal including live collaboration with your buddies all sharing the same virtual keyboard. Tmux also provides universal cutting and pasting that functions <em>outside</em> of vim as well as provides a safe way to leave something running (like a Minecraft server console) and return to it later. This is virtually impossible without tmux. Learn it.</p>
+<p>"What&#8217;s your window manager?" is a question people with way too much time on their hands will ask you. Soon you can answer "tmux!"</p>
+</div>
+<div class="paragraph">
+<p>Strictly speaking tmux is a terminal session manager, a <em>multiplexer</em> ("multiple screens", think ciniplex) not a "window manager" according to most people&#8217;s definition which is tied to graphic user interfaces for some stupid reason. Control-w in tmux is literally for managing "terminal windows" so yes, tmux <em>is</em> a window manager. Now when pedantic GUI people want to waste ungodly amounts of time fighting over the best graphic window manager you can quickly answer them and get on with stuff that matters.</p>
+</div>
+<div class="paragraph">
+<p>Tmux isn&#8217;t <em>just</em> for managing windows, it also provides universal cut and paste functionality without leaving the terminal (stuff you cannot do with just a terminal editor) or using your mouse and allows live collaboration with your buddies all sharing the same virtual keyboard. Most importantly, however, tmux provides a safe way to leave something running and reattach to it later, even if your connection to the computer is dropped. This is virtually impossible without tmux. Learn it.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>I&#8217;ve worked more than 30 years as a remote employee, logging into central enterprise systems responsible for running things that keep products, money, and power flowing. What would happen if during an important, long-running thing my Internet connection died? That exact thing has happened multiple times, but every single time I was able to recover by simply reconnecting to my work network and reattaching tmux (or screen, tmux&#8217;s ancestor), sometimes while other team members were also connected simultaneously. People who say, "you don&#8217;t need tmux" are really limiting themselves at best, and living dangerously at worst.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_version_control_git_gh"><a class="link" href="#_version_control_git_gh">Version control: git + gh</a></h4>
+<h4 id="_source_control_git_gh"><a class="link" href="#_source_control_git_gh">Source control: git + gh</a></h4>
 <div class="paragraph">
-<p>Version control systems like Git help manage the spellbooks of developers. They preserve your progress, allow experimentation without fear, and let you collaborate with others seamlessly. GitHub is the leading place to store those repos with the <code>gh</code> command line tool.</p>
+<p>Source control systems like Git help manage the spellbooks of developers. They preserve your progress, allow experimentation without fear, and let you collaborate with others seamlessly. GitHub is the leading source control service and uniquely allows repos, pull requests, issues, comments to be managed with the <code>gh</code> command line tool (written in Go, btw).</p>
 </div>
 </div>
 <div class="sect3">
@@ -1451,6 +1496,190 @@ in the early days before everything becomes second nature.</p>
 <p>Harnessing the power of command-line tools like the terminal web browser <code>w3m</code> and the command line AI query tool <code>mods</code> from Charmbracelet powered by the Claude API, creates a streamlined environment for efficient web browsing and AI-assisted research from the terminal that dominates those doing the alternative from graphic user interfaces. This setup ensures you stay focused, efficient, and immersed in the terminal-first environment.</p>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_learn_basic_shell_commands"><a class="link" href="#_learn_basic_shell_commands">Learn basic shell commands</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="learnvim"><a class="link" href="#learnvim">Learn basic vim usage</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_learn_basic_tmux"><a class="link" href="#_learn_basic_tmux">Learn basic tmux</a></h3>
+<div class="sect3">
+<h4 id="_start_tmux_session"><a class="link" href="#_start_tmux_session">Start tmux session</a></h4>
+
+</div>
+<div class="sect3">
+<h4 id="_lookup_tmux_help"><a class="link" href="#_lookup_tmux_help">Lookup tmux help</a></h4>
+
+</div>
+<div class="sect3">
+<h4 id="_detact_from_tmux"><a class="link" href="#_detact_from_tmux">Detact from tmux</a></h4>
+
+</div>
+<div class="sect3">
+<h4 id="_reattach_to_tmux_session"><a class="link" href="#_reattach_to_tmux_session">Reattach to tmux session</a></h4>
+
+</div>
+<div class="sect3">
+<h4 id="_list_sessions"><a class="link" href="#_list_sessions">List sessions</a></h4>
+
+</div>
+<div class="sect3">
+<h4 id="_navigate_tmux_windows"><a class="link" href="#_navigate_tmux_windows">Navigate tmux windows</a></h4>
+
+</div>
+<div class="sect3">
+<h4 id="_split_window_into_panes"><a class="link" href="#_split_window_into_panes">Split window into panes</a></h4>
+
+</div>
+<div class="sect3">
+<h4 id="_cut_and_paste_text_anywhere"><a class="link" href="#_cut_and_paste_text_anywhere">Cut and paste text anywhere</a></h4>
+
+</div>
+<div class="sect3">
+<h4 id="_customize_tmux_conf"><a class="link" href="#_customize_tmux_conf">Customize ~/.tmux.conf</a></h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learn_w3m_web_browser"><a class="link" href="#_learn_w3m_web_browser">Learn w3m web browser</a></h3>
+<div class="sect3">
+<h4 id="_open_a_specific_url"><a class="link" href="#_open_a_specific_url">Open a specific URL</a></h4>
+
+</div>
+<div class="sect3">
+<h4 id="_search_web_from_command_line"><a class="link" href="#_search_web_from_command_line">Search web from command line</a></h4>
+
+</div>
+<div class="sect3">
+<h4 id="_follow_a_link"><a class="link" href="#_follow_a_link">Follow a link</a></h4>
+
+</div>
+<div class="sect3">
+<h4 id="_go_back_to_previous_page"><a class="link" href="#_go_back_to_previous_page">Go back to previous page</a></h4>
+
+</div>
+<div class="sect3">
+<h4 id="_open_graphic_web_browser"><a class="link" href="#_open_graphic_web_browser">Open graphic web browser</a></h4>
+
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_learn_to_code"><a class="link" href="#_learn_to_code">Learn to code</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Elements of code alchemy: the building blocks of all programs</p>
+</div>
+<div class="paragraph">
+<p>Programs, like alchemical creations, are forged from a set of fundamental elements. These elements, when combined with skill and intent, create the intricate systems that power our world. Understanding these core components is the first step in transforming raw ideas into functional, elegant applications.</p>
+</div>
+<div class="sect2">
+<h3 id="_the_four_fundamental_elements"><a class="link" href="#_the_four_fundamental_elements">The four fundamental elements</a></h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Variables (Earth):
+The foundation of all programs, variables store the data that gives your code purpose. Like the solid ground beneath your feet, they provide stability and structure.</p>
+</li>
+<li>
+<p>Logic (Fire):
+The spark that drives decision-making, logic fuels the flow of your programs. Conditionals and loops ignite the power to adapt and respond.</p>
+</li>
+<li>
+<p>Functions (Water):
+The essence of reusability, functions flow through your code, modular and flexible. They bring order to chaos, transforming repetition into simplicity.</p>
+</li>
+<li>
+<p>Data Structures (Air):
+The unseen currents that organize complexity, data structures enable efficient storage and retrieval. Arrays, lists, and maps carry your program’s breath of life.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_combining_the_elements"><a class="link" href="#_combining_the_elements">Combining the elements</a></h3>
+<div class="paragraph">
+<p>Just as an alchemist combines Earth, Fire, Water, and Air to create something extraordinary, so too does a programmer blend these elements into cohesive systems. Mastery comes not from knowing each individually but from understanding how they interact and balance one another.</p>
+</div>
+<div class="paragraph">
+<p>Remember: every grand application begins with these elemental fundamentals. Master them, and you hold the key to crafting any program your imagination can conjure.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cantrip_echo_greeting_hello_world"><a class="link" href="#_cantrip_echo_greeting_hello_world">Cantrip: Echo Greeting (Hello World)</a></h3>
+<div class="paragraph">
+<p><strong>Problem:</strong> I need to print something to the console for the user to read.</p>
+</div>
+<div class="paragraph">
+<p>Cast your first spell to greet the world of magic and code! This cantrip sets the tone for your magical journey ahead, giving acolytes like you a satisfying first success invoking code magic. "Hello World" is recognized across the realm as the first spell most mages will ever cast and continues to be a strong tradition today.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You should already feel completely comfortable opening, editing, and saving a file before doing this first spell. If not go back to <a href="#learnvim">Learn Vim</a> until you have mastered the basics.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-kn">package</span><span class="tok-w"> </span><span class="tok-nx">main</span><span class="tok-w">                        </span><i class="conum" data-value="1"></i><b>(1)</b>
+
+<span class="tok-kn">import</span><span class="tok-w"> </span><span class="tok-s">&quot;fmt&quot;</span><span class="tok-w">                        </span><i class="conum" data-value="2"></i><b>(2)</b>
+
+<span class="tok-kd">func</span><span class="tok-w"> </span><span class="tok-nx">main</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span><span class="tok-w">                       </span><i class="conum" data-value="3"></i><b>(3)</b>
+<span class="tok-w">    </span><span class="tok-nx">fmt</span><span class="tok-p">.</span><span class="tok-nx">Println</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello, World!&quot;</span><span class="tok-p">)</span><span class="tok-w">    </span><i class="conum" data-value="4"></i><b>(4)</b>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Declares this file is package <code>main</code> which is where the actio is</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Imports the standard <code>fmt</code> package containing <code>Println</code></td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Declares special <code>main</code> function, every program must have one</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Prints "Hello, World!" to the console with a new line at the end</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>I see sparks! Congratulations! If this is the first time you have ever written code that works then write this day down someplace special. Today is your coding birthday! One day you will look back on it with fondness and want to know what day it was that you started your life as a code mage.</p>
+</div>
+<div class="paragraph">
+<p>Now delete it all and try again, from scratch. Maybe say something else. Then to it again until you can do it without looking before moving on.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_develop_applications"><a class="link" href="#_develop_applications">Develop applications</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The path of the code mage: from learning to mastery</p>
+</div>
+<div class="paragraph">
+<p>Many embark on the journey of learning to code through small, contrived examples—simple spells to grasp the fundamentals. But true magic lies beyond these first incantations, in crafting real-world applications that solve meaningful problems for real people. To transition from student to creator is to embrace the challenges of building tools, systems, and experiences that resonate with others and leave a lasting impact.</p>
 </div>
 </div>
 </div>
@@ -1774,7 +2003,7 @@ in the early days before everything becomes second nature.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">vim</span><span class="tok-p">.</span><span class="tok-nx">cmd</span><span class="tok-p">(</span><span class="tok-err">&#39;</span><span class="tok-nx">source</span><span class="tok-w"> </span><span class="tok-o">~/</span><span class="tok-p">.</span><span class="tok-nx">vimrc</span><span class="tok-err">&#39;</span><span class="tok-p">)</span></code></pre>
+<pre>vim.cmd('source ~/.vimrc')</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1785,6 +2014,74 @@ in the early days before everything becomes second nature.</p>
 </div>
 <div class="paragraph">
 <p>Using <code>.vimrc</code> as your main configuration file provides the most flexibility and portability. It ensures you can work comfortably in almost any environment without needing to rely on Neovim-specific features. For someone who values a consistent workflow across systems, <code>.vimrc</code> is the pragmatic choice.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_why_another_go_book"><a class="link" href="#_why_another_go_book">Why another Go book?</a></h3>
+<div class="paragraph">
+<p>Almost all existing books covering Go suffer from one of the following failures:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Contain incorrect or out of date material</p>
+</li>
+<li>
+<p>To serious to be memorable or fun</p>
+</li>
+<li>
+<p>Assume "some programming" knowledge already</p>
+</li>
+<li>
+<p>Say nothing about how to setup a personal development environment</p>
+</li>
+<li>
+<p>Do not use the terminal except to compile</p>
+</li>
+<li>
+<p>Have no community associated with them for support</p>
+</li>
+<li>
+<p>Pick poor project ideas that are easily forgotten</p>
+</li>
+<li>
+<p>No accompanying app and command line assistant</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Not every author is willing to publish a $40 book claiming to cover generics and only have a proposed specification proving to be absolutely wrong then later charged another $40 for the "updated" version of the book. Not every publisher is generally as inept and irresponsible as Packt Publishing. Most books are written by great people who have put a lot of work into them. I get it. I just wanted something more and was tired of waiting.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_what_about_ap_computer_science"><a class="link" href="#_what_about_ap_computer_science">What about AP Computer Science?</a></h3>
+<div class="paragraph">
+<p>As of the writing of this book, the AP Computer Science program from College Board remains fundamentally broken. The materials are more than dated and down-right wrong in some cases. Here are some specific examples:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Using Java (without calling it Java)</p>
+</li>
+<li>
+<p>Teaching students that "array indexes start at 1" (and not zero)</p>
+</li>
+<li>
+<p>Emphasizing single-class, OOP inheritence over composition</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>AP Computer Science has become so irrelevant that many colleges either do not give credit for AP Computer Science or strongly suggest that students take the fundamental CS college courses anyway because APCS does not properly prepare them.</p>
+</div>
+<div class="paragraph">
+<p>Put your time to better use, by building a coding lab at home, or starting a coding club with friends building real projects using modern principles of softare development.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_why_winget"><a class="link" href="#_why_winget">Why winget?</a></h3>
+<div class="paragraph">
+<p>The Microsoft <code>winget</code> utility is the only officially supported way to install software on Windows from the command line. All other package managers (<code>scoop</code>, <code>choco</code>, etc.) may have inspired its creation, but are now more or less deprecated in favor of the official method. As such <code>winget</code> is the most reliable and secure of any software package manager. Even if you end up preferring one of the others you must learn <code>winget</code> in order to know how to officially update any Windows system from the command line. You cannot be sure your favorite method will be supported at work, for example, but you always know <code>winget</code> will be there.</p>
 </div>
 </div>
 </div>
@@ -1857,7 +2154,7 @@ in the early days before everything becomes second nature.</p>
 <div id="footer">
 <div id="footer-text">
 Version v0.0.1<br>
-Last updated 2024-11-24 06:29:17 -0500
+Last updated 2024-11-24 10:59:27 -0500
 </div>
 </div>
 </body>

@@ -1,4 +1,4 @@
-== Install Code-Mage
+== Install Code-Mage assistant
 
 Code-Mage (abbreviated as `cm`) is your ultimate tool to orchestrate your development environment. This guide walks you through the installation process for Mac, Windows, and Linux, starting from opening your terminal to running your first `cm` command.
 
@@ -18,7 +18,7 @@ Press `Win` to open the search box, type `powershell`, and press `Enter`.
 
 Press `Ctrl + Alt + T`.
 
-=== Install cm command
+=== Go install cm
 
 Code-Mage is contained in the `cm` command. See the Preface for more about what it does. Now it is time to use the `go` command to install it. This is the best way to install other Go projects in the safest way possible since the entire code of the project can be read by anyone to ensure there has been no tampering (as opposed to downloading some executable off the Internet).
 

@@ -14,7 +14,7 @@ Go was invented at Google to solve enterprise-scale problems facing one of the l
 
 Want to dual-class as a hacker and Code Mage? Go’s got you covered. Go is the darling of cybersecurity professionals all over the world, for good or ill. In fact, it is so popular Rob Pike officially asked people to stop making malware with it. In 2021, the sharp increase in incidents of malware written in Go was documented by several news outlets and watchdog groups. Go’s 100% compatibility with C, cross-platform compilation, significant standard library, embedded filesystem, decompilation challenges, and static linking make it perfect for hackers as well as engineers who just want to build a solid multi-call monolith binary (like BusyBox). Just search for "hackers love Golang" to read more about it.
 
-=== Go's is great for terminal apps
+=== Go is great for terminal apps
 
 Go’s sweet spot is for creating backend server APIs and terminal command-line tools, which is what this book is all about. After all, aren’t commands just spells we cast from the command line?
 
