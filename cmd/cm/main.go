@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
+import "github.com/rwxrob/code-mage-book/pkg/cmds/cm"
 
 func main() {
-	fmt.Println(`future home of code-mage`)
+	cm.Cmd.Exec()
 }
