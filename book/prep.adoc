@@ -24,7 +24,7 @@ Now is the point where it is really easy to get distracted. You could learn ever
 
 Just don't do it!
 
-You can waste that time later. For now, you have a lot to get ready and learn before coding, then, after you have got some really coding skill you will be better prepared to revisit these things and your arguments with random trolls (who haven't coded yet) will carry more weight because you have actually _done_ something.
+You can waste that time later. For now, you have a lot to get ready and learn before coding, then, after you have got some real coding skill you will be better prepared to revisit these things and your arguments with random trolls (who haven't coded yet) will carry more weight because you have actually _done_ something.
 ====
 
 include::prep/computer.adoc[]  
