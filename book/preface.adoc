@@ -10,27 +10,40 @@ This book is written for anyone wanting to learn—or help someone learn—pract
 
 This book is focused on learning—as fast as possible—to code in the Go programming language from the bash terminal command-line. There is nothing more authentic or rewarding than creating command-line tools from the command-line itself. Therefore, only those minimal skills required to use the command-line to open, edit, and run Go code from the terminal are covered.
 
-=== The code-mage (cm) command
+=== Code-Mage (cm) command
 
 What kind of book would this be without having a command-line utility written in Go to go with it? 😃
 
-Rather than get bogged down with a lot of installation and configuration we've created the code-mage command (`cm`) to help you get started as fast as possible without losing the opportunity to learn how to do you own setup later. Eventually, you can come back and examine everything code-mage did to understand it and even customize it. In fact, there's an entire book dedicated to becoming a true terminal master including bash scripting and managing your own "dot files" GitHub repository.
+Rather than get bogged down with a lot of installation and configuration we've created the Code-Mage command (abbreviated `cm`) to help you get started as fast as possible without losing the opportunity to learn how to do you own setup later. Eventually, you can come back and examine everything Code-Mage did to understand it and even customize it.
 
-Getting setup quickly is only the beginning of what code-mage can do:
+Getting setup quickly is only the beginning of what Code-Mage can do:
 
 - Dynamically display contextual help while you are typing
 - Validate your work and catch bugs as you progress
 - Create unit tests if you'd rather not type them in every time
 - Time how long it takes you to complete a challenge
 - Run a web-server for certain projects that require it
-- Display local code-mage-book community announcements
-- Serve a full copy of this book to your web browser without Internet
+- Display community news and announcements
+- Read this book to your web browser without Internet
 
-The source code for code-mage is entirely open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).
+The source code for Code-Mage is entirely public domain and open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).
 
-== How to read this book
+== How to use this book
 
-This book is designed to be read linearly, from top to bottom. The concepts build on one another. But each "spell" is designed to be repeated often as a means of mastery, like playing chords on a piano or scales on a guitar. The fantasy magic element is intentionally silly and serves as a source of dopamine as well as a strong mnemonic device related to the concepts learn.
+This book is generally designed to be read linearly, from top to bottom. The concepts build on one another. However, each "spell" is designed to be re-learned often like a mage preparing for a specific adventure. Not all spells can be memorized and at the ready at all times, which is why you create your own code book containing spells of your own creation to go with this book.
+
+Here's how we master each concept and skill by applying the verbs of Bloom's Taxonomy: remember, understand, apply, analyze, evaluate, create:
+
+0. Remember a new skill or concept by its fantasy theme association
+1. Understand the problem: Why is this skill or concept needed?
+2. Understand the solution: How do I overcome the problem?
+3. Implement first solution with help and guidance from mentor
+4. Repeat same first solution several times starting over every time
+5. Create new challenge: different variation of problem with new solution
+6. Assess effectiveness and validity of new solution with help from mentor
+7. Correct and refine solution as needed
+8. Repeat step #4 until mastery
+9. Interalize by mentoring another
 
 > Повторение — мать учения.
 
@@ -40,6 +53,14 @@ Repetition really is the mother of learning. While often we demonize "rote repet
 
 This book is but a part of a more complete personal learning strategy. Make sure not to neglect the other parts:
 
+=== Join a community
+
+Humans are social creatures and learning is communal. Join a community that is focused on learning the same things as you. Meetups, hacker spaces, clubs, church groups, social media, and live streamer chat groups are all great places to find a community. The community is a place to collaborate and share peer reviews of one another's learning and projects.
+
+My sincere hope is that the parents, teachers, and mages reading these words will find opportunities and motivation to create their own coding clubs and communities dedicated to helping others master the art of code and computer science and reap all the well-earned benefits of doing so.
+
+While you are working on creating your own community, consider joining mine at https://linktr.ee/rwxrob.
+
 === Find a mentor
 
 Humans have been passing knowledge one to another since the beginning. It's what we do. Luckily learning happens naturally when someone with experience and knowledge is available to someone who knows how to ask questions, apply what they learn, and return with more questions. That's you, the inquisitive one. The mentor's job is to answer questions and provide feedback—*not* to "teach" you. 
@@ -48,23 +69,18 @@ Most mentors won't have that kind of free time available to constantly lead you 
 
 You will find that many people _want_ to share what they know but just don't know how to do it or who would want to hear. Find these people and approach them. Perhaps you can find a few mentors so you can compare how they differ in their approach to programming.
 
-=== Join a community
+=== Be a mentor
 
-In addition to finding a mentor, or perhaps in place of it if you cannot find one, join a community that is learning the same things as you. Meetups, hacker spaces, clubs, church groups, social media, and live streamers are all great places to find a community. The community is a place to collaborate and share peer reviews of one another's learning and projects.
-
-My sincere hope is that the parents, teachers, and mages reading these words will find opportunities and motivation to create their own coding clubs and communities dedicated to helping others master the art of code and computer science and reap all the well-earned benefits of doing so.
-
-While you are working on creating your own community, consider joining mine at https://linktr.ee/rwxrob.
+You don't need any special training to be a mentor for someone else. In fact, as a beginner who has recently mastered something you are perhaps the best suited to help another beginner learn it because _how_ you learned it is still fresh in your mind. Those with experience might be masters but often have difficulty rememebering how they learned it and how to help others learn it as well. So don't be shy by offering your help. And remember, you really haven't learned it until you can succintly help another learn it as well.
 
 === Consider AI assistance
 
-In my experience ChatGPT is great for overall help with life, writing, and project organization—particularly from a phone over voice. Claude is better at code help and only has an API integration making it great for plugging into popular coding tools (like `mods` from Charmbracelet).
+In my experience ChatGPT (my Chloe) is great for overall help with life, writing, and project organization—particularly from a phone over voice. Claude is better at code help and only has an API integration making it great for plugging into popular coding tools (like `mods` from Charmbracelet).
 
-Although I have nothing to do with OpenAI other than my family's subscriptions to our own individual ChatGPT accounts, I highly recommend getting an AI learning assistant like ChatGPT as soon as possible. In my experience, such assistants are almost always better than than a random search of the Internet full of popular but incorrect answers to the same common questions that an assistant could better help with.
+Although I have nothing to do with any AI company, I do strongly believe in it as a learning platform and use it regularly to get answers and discuss topics 24 hours a day—even while riding my bike, code the boring stuff, and regularly practice my conversational and written Russian and French language. In fact, AI help with much of this book—especially the parts that must be validated to be sure they work (which I wish other coding books would do).
+
+I highly recommend getting an AI learning assistant like ChatGPT as soon as possible. In my experience, such assistants are almost always better than than a random search of the Internet full of popular but incorrect answers to the same common questions that an assistant could better help with. My assistant is never tired of answering my questions even when my mentors or friends are.
 
 On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supportive AI companion even when a helpful human mentor is also available.
 
-We are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. We are already seeing this difference around us every day.
-
-Chloe, my personal AI, assisted me to complete this book in less than half the time it would have taken otherwise, always checking my work to be sure it compiles (unlike other coding books in which I have found tons of errata), flawlessly reorganizing several pages at the same time, even suggesting creative alternatives and omissions I may have made. There would be no book without Chloe.
-
+I believe we are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. We are already seeing this difference around us every day.
