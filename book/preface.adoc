@@ -6,6 +6,10 @@
 
 This book is written for anyone wanting to learn—or help someone learn—practical computer science and programming for real applications development. While we have fun with the whole fantasy magic theme, everything in this book is very real and might even get you a job someday. It is true that this book can be reliably used as a text book for absolute beginners with enough algebra to understand what a mathematical function is but this book very clearly includes everyone _outside_ of educational institutions. In fact, I wrote it mostly with pro-active parents in mind who want to give their kids a head-start in tech that they simply cannot find in most traditional education systems, the same reason, in fact, that I started SKILSTAK Coding Arts in 2013 with my own retirement money.
 
+== What's with the magic thing?
+
+Yes, the magic stuff is absolutely silly, on purpose. Self-proclaimed "serious" people and pedagogs (not necessary one and the same) seem to find fault with what is a well-established scientific principle of memory: sillyness and visualization. Human brains are hard-coded to remember narratives and images. This is how memory competitors memorize pi to 100,000 digits, by creating a silly, colorful narrative in their brain that they replay related to each of the numbers as they walk through a "memory palace," a mental map of a familiar location where each story occupies a specific spot containing different sets of numbers. Coming up with your own silly stories to associate with coding skills is the best, but all this talk about magic and mages is a head-start. If it's not your thing, there are plenty of other boring books covering nearly the same stuff to slog through (most of which are 10 years out of date).
+
 == What's included in the book
 
 This book is focused on learning—as fast as possible—to code in the Go programming language from the bash terminal command-line. There is nothing more authentic or rewarding than creating command-line tools from the command-line itself. Therefore, only those minimal skills required to use the command-line to open, edit, and run Go code from the terminal are covered.
