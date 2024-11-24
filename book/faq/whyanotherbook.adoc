@@ -1,0 +1,14 @@
+== Why another Go book?
+
+Almost all existing books covering Go suffer from one of the following failures:
+
+- Contain incorrect or out of date material
+- To serious to be memorable or fun
+- Assume "some programming" knowledge already
+- Say nothing about how to setup a personal development environment
+- Do not use the terminal except to compile
+- Have no community associated with them for support
+- Pick poor project ideas that are easily forgotten
+- No accompanying app and command line assistant
+
+Not every author is willing to publish a $40 book claiming to cover generics and only have a proposed specification proving to be absolutely wrong then later charged another $40 for the "updated" version of the book. Not every publisher is generally as inept and irresponsible as Packt Publishing. Most books are written by great people who have put a lot of work into them. I get it. I just wanted something more and was tired of waiting.
