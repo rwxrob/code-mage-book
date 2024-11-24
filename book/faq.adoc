@@ -8,3 +8,6 @@ include::faq/whyvim.adoc[]
 
 include::faq/whyvimrc.adoc[]  
 
+include::faq/whyanotherbook.adoc[]  
+
+include::faq/apcs.adoc[]  
