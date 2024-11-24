@@ -1,0 +1,10 @@
+== Install Go
+
+To embark on the path of the developer, you must first forge your tools. In this guide, you'll install the Go programming language, equipping yourself with a blade of unparalleled efficiency. Whether on a Mac, Windows, or Linux machine, the process is straightforward.
+
+Open the official Go download site at https://go.dev/dl and find your operating system and following the instructions. Use one of the "Featured downloads" to keep things easy. On Mac you probably want to use ARM64 but do a little research about your computer to be sure. For Mac and Windows just double click on the installer that is downloaded to do the installation.
+
+[NOTE]
+====
+There are many different ways to install Go that you will later learn about, including using installers like `brew` and `winget` and `apt`. But for now, you just need to get Go onto your workstation as easily as possible.
+====

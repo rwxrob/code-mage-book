@@ -6,13 +6,19 @@ Before embarking on your journey to craft Go-based command-line applications, yo
 
 To create and compile Go-based command-line applications, ensure your workstation meets these minimum requirements:
 
-- **Processor**: A 64-bit processor (Intel or ARM).
-- **Memory**: At least 4 GB of RAM (8 GB or more is recommended for smoother multitasking).
-- **Storage**: At least 2 GB of free disk space for the Go compiler, dependencies, and your projects.
-- **Operating System**:
-  - **Mac**: macOS 10.13 or later.
-  - **Windows**: Windows 10 or later.
-- **Network**: Internet access for downloading the Go toolchain, dependencies, and updates.
+**Processor**: A 64-bit processor (Intel or ARM).
+
+**Memory**: At least 4 GB of RAM (8 GB or more is recommended for smoother multitasking).
+
+**Storage**: At least 2 GB of free disk space for the Go compiler, dependencies, and your projects.
+
+**Operating System**:
+
+- **Mac**: macOS 10.13 or later.
+- **Windows**: Windows 10 or later.
+- **Linux**: Ubuntu-based (preferably Linux Mint, apt-based).
+
+**Network**: Internet access for downloading the Go toolchain, dependencies, and updates.
 
 These requirements ensure that your workstation is equipped to handle the Go compiler and run the applications you create efficiently.
 
@@ -36,20 +42,17 @@ A laptop offers unparalleled flexibility and convenience for coding, making it a
 
 While desktops offer raw power and larger screens, the mobility and convenience of a laptop often make it the preferred choice for learners and professionals alike.
 
-=== Mac vs. Windows
+=== Mac vs. Windows vs. Linux
 
-[note]
-====
-What about Linux? You'll definitely learn that later, it's unavoidable when working in the tech arts. But that will come later. For now focus on getting a Mac or Windows machine working because that is what you likely already have or will be required to use for work. Despite what you've heard from zealous friends, Linux is primarily used as a server, not a desktop workstation, which is how we will use it.
-====
+When it comes to development, the choice between Mac, Windows, and Linux often depends on preference and compatibility with development tools. Here’s why many developers lean toward Mac:
 
-When it comes to development, the choice between Mac and Windows often depends on preference and compatibility with development tools. Here’s why many developers lean toward Mac:
-
-**Native Unix-like environment**: Mac provides a Unix-based operating system out of the box, which is closer to the environments where Go originated. This means you can use tools like `bash` and `vim` without additional configuration, creating a seamless experience for Go developers.
+**Native Unix-like environment**: Mac provides a Unix-based operating system out of the box, which is closer to the environments where Go originated. UNIX predates Linux by a decade and Mac is officially the largest UNIX distribution on the planet. This means you can use tools like `bash` and `vim` without additional configuration, creating a seamless experience for Go developers.
 
 **Cross-platform consistency**: The Go toolchain and libraries often behave more consistently on Unix-like systems (like Mac). This consistency can save you from troubleshooting environment-specific issues that sometimes occur on Windows.
 
 **Performance**: Macs (especially those with Apple Silicon processors) are optimized for performance and energy efficiency, making them an excellent choice for compiling and running Go applications. Plus they need very little power allowing you to take your magic on the road.
+
+**Brew**: The "missing" package manager (`brew`) simplifies installing tools like Go, enhancing the development experience.
 
 On the other hand, Windows offers its own strengths:
 
@@ -60,6 +63,8 @@ On the other hand, Windows offers its own strengths:
 **Winget**: The Windows Package Manager (`winget`) simplifies installing tools like Go, enhancing the development experience.
 
 While both Mac and Windows can serve as capable workstations, Mac’s Unix-based environment, seamless toolchain integration, and developer-centric design make it the preferred choice for many Go developers. However, if you’re already comfortable with Windows or prefer its ecosystem, modern tools like Git Bash make it a viable option.
+
+As much as we _love_ Linux, it really isn't an option for most beginners because it has to be installed either as container engine, virtual machine, or onto "bare metal" with a USB stick. These are _definitely_ worth learning, eventually. But for now we are just starting out so Mac and Windows are totally fine. Besides, most schools wouldn't even know how to install Linux in their labs even if they wanted to, and if they did, would have a lot more work to keep their Linux lab up and running. Some do, and they are _amazing_, but most are content to just the most common desktop OSes.
 
 Choose the workstation that suits your needs best and ensure it meets the minimum requirements—your enchanted coding journey awaits!
 

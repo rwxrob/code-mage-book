@@ -1,4 +1,4 @@
-== What it takes to be a code mage
+== What it takes
 
 [WARNING]
 ====

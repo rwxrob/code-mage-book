@@ -8,4 +8,4 @@ include::intro/magelife.adoc[]
 
 include::intro/ittakes.adoc[]  
 
-include::intro/golang.adoc[]  
+include::intro/whygo.adoc[]  

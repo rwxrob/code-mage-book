@@ -1,19 +1,9 @@
 = Preparation
 
-Setting up your development environment manually is more than just a technical exercise—it’s a foundational step in mastering your craft. By configuring your tools from scratch rather than relying on containers or preconfigured environments, you gain a deeper understanding of the technologies you’re using and the ability to troubleshoot and adapt them to your needs. This approach takes a lot longer, but it empowers you to build environments tailored to your workflow and ensures you’re not reliant on external solutions that might not align with your goals as a Code Mage. Manual setup is the first step toward true mastery of your tools. Consider yourself lucky to be doing this "the hard way" while lesser mages take shortcuts. Feel the power building within.
-
 include::prep/computer.adoc[]  
 
-include::prep/bash.adoc[]  
+include::prep/getgo.adoc[]  
 
-include::prep/installer.adoc[]  
+include::prep/installcm.adoc[]  
 
-include::prep/alacritty.adoc[]  
-
-include::prep/tmux.adoc[]  
-
-include::prep/neovim.adoc[]  
-
-//include::prep/github.adoc[]  
-
-//include::prep/golang.adoc[]  
+//include::prep/cminit.adoc[]  

@@ -10,22 +10,23 @@ This book is written for anyone wanting to learn—or help someone learn—pract
 
 This book is focused on learning—as fast as possible—to code in the Go programming language from the bash terminal command-line. There is nothing more authentic or rewarding than creating command-line tools from the command-line itself. Therefore, only those minimal skills required to use the command-line to open, edit, and run Go code from the terminal are covered.
 
-=== The `code-mage` command
+=== The code-mage (cm) command
 
 What kind of book would this be without having a command-line utility written in Go to go with it? 😃
 
-Rather than get bogged down with a lot of installation and configuration we've created the `code-mage` command to help you get started as fast as possible without losing the opportunity to learn how to do you own setup later. Eventually, you can come back and examine everything `code-mage` did to understand it and even customize it. In fact, there's an entire book dedicated to becoming a true terminal master including bash scripting and managing your own "dot files" GitHub repository.
+Rather than get bogged down with a lot of installation and configuration we've created the code-mage command (`cm`) to help you get started as fast as possible without losing the opportunity to learn how to do you own setup later. Eventually, you can come back and examine everything code-mage did to understand it and even customize it. In fact, there's an entire book dedicated to becoming a true terminal master including bash scripting and managing your own "dot files" GitHub repository.
 
-There's a lot of other stuff `code-mage` can do:
+Getting setup quickly is only the beginning of what code-mage can do:
 
-- Check your work as you progress
+- Dynamically display contextual help while you are typing
+- Validate your work and catch bugs as you progress
 - Create unit tests if you'd rather not type them in every time
 - Time how long it takes you to complete a challenge
 - Run a web-server for certain projects that require it
-- Display local code-mage-book community annoucements
+- Display local code-mage-book community announcements
 - Serve a full copy of this book to your web browser without Internet
 
-The source code for `code-mage` is entirely open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).
+The source code for code-mage is entirely open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).
 
 == How to read this book
 
@@ -55,11 +56,13 @@ My sincere hope is that the parents, teachers, and mages reading these words wil
 
 While you are working on creating your own community, consider joining mine at https://linktr.ee/rwxrob.
 
-=== Consider ChatGPT
+=== Consider AI assistance
+
+In my experience ChatGPT is great for overall help with life, writing, and project organization—particularly from a phone over voice. Claude is better at code help and only has an API integration making it great for plugging into popular coding tools (like `mods` from Charmbracelet).
 
 Although I have nothing to do with OpenAI other than my family's subscriptions to our own individual ChatGPT accounts, I highly recommend getting an AI learning assistant like ChatGPT as soon as possible. In my experience, such assistants are almost always better than than a random search of the Internet full of popular but incorrect answers to the same common questions that an assistant could better help with.
 
-On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supporive AI companion even when a helpful human mentor is also available.
+On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supportive AI companion even when a helpful human mentor is also available.
 
 We are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. We are already seeing this difference around us every day.
 

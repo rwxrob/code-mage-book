@@ -1,0 +1,19 @@
+== Running code-mage init
+
+Now that Go and `code-mage` (`cm`) have been installed on your computer. You can use them to assist with setting up the rest of your personal development environment or PDE. Mages call setting something up `initialization`.
+
+Running `code-mage init` (or `cm init`) does the following setup work for you so you don't have to, for now:
+
+- Provide `cm` cheat sheet filling one screen with only essentials
+- Set up your software installer (`brew`, `winget`, `apt`, etc.)
+- Install the best terminal for your computer (usually Alacritty)
+- Configure terminal to use gruvbox-material colors and bash shell
+- Install latest bash shell
+- Provide `cm learn bash` interactive guide
+- Configure bash with common preferences
+- Install vim or neovim (nvim) depending on your computer
+- Configure vim/nvim for coding Go, bash, python, html, css, javascript
+- Provide `cm learn vim` interactive guide
+- Install tmux terminal multiplexer to super-charge your terminal
+- Configure tmux to be vim friendly
+- Provide `cm learn tmux` interactive guide

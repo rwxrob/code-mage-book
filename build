@@ -4,23 +4,21 @@ read -r -d '' helptxt <<EOF
 
 This script is used for building this book.
 
-	help - print this help message
-	epub - build the dist/code-mage-book-<version>.epub
-	pdf  - build the dist/code-mage-book-<version>.pdf
-	html - build the docs/index-<version>.html
-	all  - build epub, pdf, html (default)
+	help  - print this help message
+	epub  - build the dist/code-mage-book-<version>.epub
+	pdf   - build the dist/code-mage-book-<version>.pdf
+	html  - build the docs/index-<version>.html
+	all   - build epub, pdf, html (default)
+	watch - build on any change
 
 For more information, see the README.md file.
 
 EOF
 
 # Read the version from the VERSION file
-if [[ ! -f VERSION ]]; then
-	echo "VERSION file not found!"
-	exit 1
+if [[ -z "$VERSION" && -f VERSION ]]; then
+	VERSION=$(head -1 VERSION)
 fi
-
-VERSION=$(head -1 VERSION)
 
 x-help() {
 	echo "$helptxt"
@@ -33,17 +31,17 @@ x-all() {
 }
 
 x-epub() {
-		asciidoctor-epub3 \
+	asciidoctor-epub3 \
 		-D "dist" \
 		-o "code-mage-book-v${VERSION}.epub" \
-		-a pdf-themesdir="./book/assets/themes" \
-		-a pdf-theme="dark-theme.yml" \
 		-a pdf-fontsdir="./book/assets/fonts" \
 		"./book/index.adoc"
 }
+#-a pdf-themesdir="./book/assets/themes" \
+#-a pdf-theme="dark-theme.yml" \
 
 x-pdf() {
-		asciidoctor-pdf \
+	asciidoctor-pdf \
 		-D "dist" \
 		-o "code-mage-book-v${VERSION}.pdf" \
 		-a pdf-themesdir="./book/assets/themes" \
@@ -52,7 +50,7 @@ x-pdf() {
 }
 
 x-html() {
-		asciidoctor \
+	asciidoctor \
 		-D "docs" \
 		-o "index.html" \
 		-a copy_script=./book/assets/scripts/script.js \
@@ -62,6 +60,20 @@ x-html() {
 x-clean() {
 	rm -rf docs
 	mkdir -p docs
+}
+
+x-watch() {
+	if [[ ! -d book ]]; then
+		echo "no book found, wrong directory?" && exit 1
+	fi
+	tmux rename-window "watching $(wd)/book"
+	# while true; do
+	entr bash -c '
+        echo "Change detected. Rebuilding..."
+				./build html
+				' < <(find .)
+	# sleep 1
+	# done
 }
 
 # --------------------- completion and delegation --------------------

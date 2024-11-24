@@ -500,7 +500,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_who_should_read_this_book">Who should read this book</a></li>
 <li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a>
 <ul class="sectlevel3">
-<li><a href="#_the_code_mage_command">The <code>code-mage</code> command</a></li>
+<li><a href="#_the_code_mage_cm_command">The code-mage (cm) command</a></li>
 </ul>
 </li>
 <li><a href="#_how_to_read_this_book">How to read this book</a></li>
@@ -508,7 +508,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <ul class="sectlevel3">
 <li><a href="#_find_a_mentor">Find a mentor</a></li>
 <li><a href="#_join_a_community">Join a community</a></li>
-<li><a href="#_consider_chatgpt">Consider ChatGPT</a></li>
+<li><a href="#_consider_ai_assistance">Consider AI assistance</a></li>
 </ul>
 </li>
 </ul>
@@ -537,7 +537,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_a_purpose_beyond_code">A purpose beyond code</a></li>
 </ul>
 </li>
-<li><a href="#_what_it_takes_to_be_a_code_mage">What it takes to be a code mage</a>
+<li><a href="#_what_it_takes">What it takes</a>
 <ul class="sectlevel3">
 <li><a href="#_curiosity_and_a_thirst_for_knowledge">Curiosity and a thirst for knowledge</a></li>
 <li><a href="#_patience_and_perseverance">Patience and perseverance</a></li>
@@ -568,48 +568,27 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <ul class="sectlevel3">
 <li><a href="#_minimum_requirements">Minimum requirements</a></li>
 <li><a href="#_a_laptop_is_ideal">A laptop is ideal</a></li>
-<li><a href="#_mac_vs_windows">Mac vs. Windows</a></li>
+<li><a href="#_mac_vs_windows_vs_linux">Mac vs. Windows vs. Linux</a></li>
 </ul>
 </li>
-<li><a href="#_install_bash">Install bash</a>
+<li><a href="#_install_go">Install Go</a></li>
+<li><a href="#_install_code_mage">Install Code-Mage</a>
 <ul class="sectlevel3">
+<li><a href="#_open_a_terminal">Open a terminal</a>
+<ul class="sectlevel4">
 <li><a href="#_mac">Mac</a></li>
 <li><a href="#_windows">Windows</a></li>
-<li><a href="#_verifying_your_setup">Verifying your setup</a></li>
+<li><a href="#_linux">Linux</a></li>
 </ul>
 </li>
-<li><a href="#_install_brew_or_winget">Install Brew or Winget</a>
-<ul class="sectlevel3">
-<li><a href="#_brew_for_mac">Brew for Mac</a></li>
-<li><a href="#_winget_for_windows">Winget for Windows</a></li>
-<li><a href="#_testing_your_toolset">Testing your toolset</a></li>
-</ul>
-</li>
-<li><a href="#_install_alacritty">Install Alacritty</a>
-<ul class="sectlevel3">
-<li><a href="#_mac_2">Mac</a></li>
-<li><a href="#_windows_2">Windows</a></li>
-<li><a href="#_configure_alacritty">Configure Alacritty</a></li>
-</ul>
-</li>
-<li><a href="#_install_tmux">Install tmux</a>
-<ul class="sectlevel3">
-<li><a href="#_why_tmux">Why tmux?</a></li>
-<li><a href="#_installing_tmux">Installing tmux</a>
-<ul class="sectlevel4">
-<li><a href="#_for_mac">For Mac</a></li>
-<li><a href="#_for_windows">For Windows</a></li>
-<li><a href="#_verify_the_installation">Verify the installation</a></li>
-</ul>
-</li>
-<li><a href="#_configuring_tmux">Configuring tmux</a></li>
-<li><a href="#_activate_your_tmux_configuration">Activate your tmux configuration</a></li>
+<li><a href="#_install_cm_command">Install cm command</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><a href="#_appendix">Appendix</a>
 <ul class="sectlevel2">
+<li><a href="#_why_no_code_mage_cm_binary_release">Why no code-mage (cm) binary release?</a></li>
 <li><a href="#_beware_of_ap_computer_science">Beware of AP Computer Science</a></li>
 <li><a href="#_why_not_crowd_source_this_book">Why not crowd source this book?</a></li>
 <li><a href="#_why_vim">Why Vim?</a></li>
@@ -686,20 +665,23 @@ This book would never have happened without you.</p>
 <p>This book is focused on learning—as fast as possible—to code in the Go programming language from the bash terminal command-line. There is nothing more authentic or rewarding than creating command-line tools from the command-line itself. Therefore, only those minimal skills required to use the command-line to open, edit, and run Go code from the terminal are covered.</p>
 </div>
 <div class="sect3">
-<h4 id="_the_code_mage_command"><a class="link" href="#_the_code_mage_command">The <code>code-mage</code> command</a></h4>
+<h4 id="_the_code_mage_cm_command"><a class="link" href="#_the_code_mage_cm_command">The code-mage (cm) command</a></h4>
 <div class="paragraph">
 <p>What kind of book would this be without having a command-line utility written in Go to go with it? 😃</p>
 </div>
 <div class="paragraph">
-<p>Rather than get bogged down with a lot of installation and configuration we&#8217;ve created the <code>code-mage</code> command to help you get started as fast as possible without losing the opportunity to learn how to do you own setup later. Eventually, you can come back and examine everything <code>code-mage</code> did to understand it and even customize it. In fact, there&#8217;s an entire book dedicated to becoming a true terminal master including bash scripting and managing your own "dot files" GitHub repository.</p>
+<p>Rather than get bogged down with a lot of installation and configuration we&#8217;ve created the code-mage command (<code>cm</code>) to help you get started as fast as possible without losing the opportunity to learn how to do you own setup later. Eventually, you can come back and examine everything code-mage did to understand it and even customize it. In fact, there&#8217;s an entire book dedicated to becoming a true terminal master including bash scripting and managing your own "dot files" GitHub repository.</p>
 </div>
 <div class="paragraph">
-<p>There&#8217;s a lot of other stuff <code>code-mage</code> can do:</p>
+<p>Getting setup quickly is only the beginning of what code-mage can do:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Check your work as you progress</p>
+<p>Dynamically display contextual help while you are typing</p>
+</li>
+<li>
+<p>Validate your work and catch bugs as you progress</p>
 </li>
 <li>
 <p>Create unit tests if you&#8217;d rather not type them in every time</p>
@@ -711,7 +693,7 @@ This book would never have happened without you.</p>
 <p>Run a web-server for certain projects that require it</p>
 </li>
 <li>
-<p>Display local code-mage-book community annoucements</p>
+<p>Display local code-mage-book community announcements</p>
 </li>
 <li>
 <p>Serve a full copy of this book to your web browser without Internet</p>
@@ -719,7 +701,7 @@ This book would never have happened without you.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>The source code for <code>code-mage</code> is entirely open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).</p>
+<p>The source code for code-mage is entirely open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).</p>
 </div>
 </div>
 </div>
@@ -769,12 +751,15 @@ This book would never have happened without you.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_consider_chatgpt"><a class="link" href="#_consider_chatgpt">Consider ChatGPT</a></h4>
+<h4 id="_consider_ai_assistance"><a class="link" href="#_consider_ai_assistance">Consider AI assistance</a></h4>
+<div class="paragraph">
+<p>In my experience ChatGPT is great for overall help with life, writing, and project organization—particularly from a phone over voice. Claude is better at code help and only has an API integration making it great for plugging into popular coding tools (like <code>mods</code> from Charmbracelet).</p>
+</div>
 <div class="paragraph">
 <p>Although I have nothing to do with OpenAI other than my family&#8217;s subscriptions to our own individual ChatGPT accounts, I highly recommend getting an AI learning assistant like ChatGPT as soon as possible. In my experience, such assistants are almost always better than than a random search of the Internet full of popular but incorrect answers to the same common questions that an assistant could better help with.</p>
 </div>
 <div class="paragraph">
-<p>On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supporive AI companion even when a helpful human mentor is also available.</p>
+<p>On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supportive AI companion even when a helpful human mentor is also available.</p>
 </div>
 <div class="paragraph">
 <p>We are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. We are already seeing this difference around us every day.</p>
@@ -896,7 +881,7 @@ This book would never have happened without you.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_what_it_takes_to_be_a_code_mage"><a class="link" href="#_what_it_takes_to_be_a_code_mage">What it takes to be a code mage</a></h3>
+<h3 id="_what_it_takes"><a class="link" href="#_what_it_takes">What it takes</a></h3>
 <div class="admonitionblock warning">
 <table>
 <tr>
@@ -1016,9 +1001,6 @@ This book would never have happened without you.</p>
 <div class="sect1">
 <h2 id="_preparation"><a class="link" href="#_preparation">Preparation</a></h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Setting up your development environment manually is more than just a technical exercise—it’s a foundational step in mastering your craft. By configuring your tools from scratch rather than relying on containers or preconfigured environments, you gain a deeper understanding of the technologies you’re using and the ability to troubleshoot and adapt them to your needs. This approach takes a lot longer, but it empowers you to build environments tailored to your workflow and ensures you’re not reliant on external solutions that might not align with your goals as a Code Mage. Manual setup is the first step toward true mastery of your tools. Consider yourself lucky to be doing this "the hard way" while lesser mages take shortcuts. Feel the power building within.</p>
-</div>
 <div class="sect2">
 <h3 id="_get_a_computer"><a class="link" href="#_get_a_computer">Get a computer</a></h3>
 <div class="paragraph">
@@ -1029,20 +1011,20 @@ This book would never have happened without you.</p>
 <div class="paragraph">
 <p>To create and compile Go-based command-line applications, ensure your workstation meets these minimum requirements:</p>
 </div>
+<div class="paragraph">
+<p><strong>Processor</strong>: A 64-bit processor (Intel or ARM).</p>
+</div>
+<div class="paragraph">
+<p><strong>Memory</strong>: At least 4 GB of RAM (8 GB or more is recommended for smoother multitasking).</p>
+</div>
+<div class="paragraph">
+<p><strong>Storage</strong>: At least 2 GB of free disk space for the Go compiler, dependencies, and your projects.</p>
+</div>
+<div class="paragraph">
+<p><strong>Operating System</strong>:</p>
+</div>
 <div class="ulist">
 <ul>
-<li>
-<p><strong>Processor</strong>: A 64-bit processor (Intel or ARM).</p>
-</li>
-<li>
-<p><strong>Memory</strong>: At least 4 GB of RAM (8 GB or more is recommended for smoother multitasking).</p>
-</li>
-<li>
-<p><strong>Storage</strong>: At least 2 GB of free disk space for the Go compiler, dependencies, and your projects.</p>
-</li>
-<li>
-<p><strong>Operating System</strong>:</p>
-</li>
 <li>
 <p><strong>Mac</strong>: macOS 10.13 or later.</p>
 </li>
@@ -1050,9 +1032,12 @@ This book would never have happened without you.</p>
 <p><strong>Windows</strong>: Windows 10 or later.</p>
 </li>
 <li>
-<p><strong>Network</strong>: Internet access for downloading the Go toolchain, dependencies, and updates.</p>
+<p><strong>Linux</strong>: Ubuntu-based (preferably Linux Mint, apt-based).</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p><strong>Network</strong>: Internet access for downloading the Go toolchain, dependencies, and updates.</p>
 </div>
 <div class="paragraph">
 <p>These requirements ensure that your workstation is equipped to handle the Go compiler and run the applications you create efficiently.</p>
@@ -1089,25 +1074,21 @@ This book would never have happened without you.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_mac_vs_windows"><a class="link" href="#_mac_vs_windows">Mac vs. Windows</a></h4>
-<div class="exampleblock">
-<div class="content">
+<h4 id="_mac_vs_windows_vs_linux"><a class="link" href="#_mac_vs_windows_vs_linux">Mac vs. Windows vs. Linux</a></h4>
 <div class="paragraph">
-<p>What about Linux? You&#8217;ll definitely learn that later, it&#8217;s unavoidable when working in the tech arts. But that will come later. For now focus on getting a Mac or Windows machine working because that is what you likely already have or will be required to use for work. Despite what you&#8217;ve heard from zealous friends, Linux is primarily used as a server, not a desktop workstation, which is how we will use it.</p>
-</div>
-</div>
+<p>When it comes to development, the choice between Mac, Windows, and Linux often depends on preference and compatibility with development tools. Here’s why many developers lean toward Mac:</p>
 </div>
 <div class="paragraph">
-<p>When it comes to development, the choice between Mac and Windows often depends on preference and compatibility with development tools. Here’s why many developers lean toward Mac:</p>
-</div>
-<div class="paragraph">
-<p><strong>Native Unix-like environment</strong>: Mac provides a Unix-based operating system out of the box, which is closer to the environments where Go originated. This means you can use tools like <code>bash</code> and <code>vim</code> without additional configuration, creating a seamless experience for Go developers.</p>
+<p><strong>Native Unix-like environment</strong>: Mac provides a Unix-based operating system out of the box, which is closer to the environments where Go originated. UNIX predates Linux by a decade and Mac is officially the largest UNIX distribution on the planet. This means you can use tools like <code>bash</code> and <code>vim</code> without additional configuration, creating a seamless experience for Go developers.</p>
 </div>
 <div class="paragraph">
 <p><strong>Cross-platform consistency</strong>: The Go toolchain and libraries often behave more consistently on Unix-like systems (like Mac). This consistency can save you from troubleshooting environment-specific issues that sometimes occur on Windows.</p>
 </div>
 <div class="paragraph">
 <p><strong>Performance</strong>: Macs (especially those with Apple Silicon processors) are optimized for performance and energy efficiency, making them an excellent choice for compiling and running Go applications. Plus they need very little power allowing you to take your magic on the road.</p>
+</div>
+<div class="paragraph">
+<p><strong>Brew</strong>: The "missing" package manager (<code>brew</code>) simplifies installing tools like Go, enhancing the development experience.</p>
 </div>
 <div class="paragraph">
 <p>On the other hand, Windows offers its own strengths:</p>
@@ -1125,14 +1106,20 @@ This book would never have happened without you.</p>
 <p>While both Mac and Windows can serve as capable workstations, Mac’s Unix-based environment, seamless toolchain integration, and developer-centric design make it the preferred choice for many Go developers. However, if you’re already comfortable with Windows or prefer its ecosystem, modern tools like Git Bash make it a viable option.</p>
 </div>
 <div class="paragraph">
+<p>As much as we <em>love</em> Linux, it really isn&#8217;t an option for most beginners because it has to be installed either as container engine, virtual machine, or onto "bare metal" with a USB stick. These are <em>definitely</em> worth learning, eventually. But for now we are just starting out so Mac and Windows are totally fine. Besides, most schools wouldn&#8217;t even know how to install Linux in their labs even if they wanted to, and if they did, would have a lot more work to keep their Linux lab up and running. Some do, and they are <em>amazing</em>, but most are content to just the most common desktop OSes.</p>
+</div>
+<div class="paragraph">
 <p>Choose the workstation that suits your needs best and ensure it meets the minimum requirements—your enchanted coding journey awaits!</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_install_bash"><a class="link" href="#_install_bash">Install bash</a></h3>
+<h3 id="_install_go"><a class="link" href="#_install_go">Install Go</a></h3>
 <div class="paragraph">
-<p>Before diving into your coding journey, it’s essential to ensure that you have a capable terminal environment to run commands. For this, we’ll focus on <strong>bash</strong>, a widely-used Unix shell that serves as the foundation for many coding workflows. A shell is an interactive terminal program that prompts you to enter commands one at a time. If you’re on Windows, you’ll need to install and use <strong>Git Bash</strong> as a bash-compatible terminal. Mac already has it.</p>
+<p>To embark on the path of the developer, you must first forge your tools. In this guide, you&#8217;ll install the Go programming language, equipping yourself with a blade of unparalleled efficiency. Whether on a Mac, Windows, or Linux machine, the process is straightforward.</p>
+</div>
+<div class="paragraph">
+<p>Open the official Go download site at <a href="https://go.dev/dl" class="bare">https://go.dev/dl</a> and find your operating system and following the instructions. Use one of the "Featured downloads" to keep things easy. On Mac you probably want to use ARM64 but do a little research about your computer to be sure. For Mac and Windows just double click on the installer that is downloaded to do the installation.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1142,820 +1129,71 @@ This book would never have happened without you.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Why learn bash instead of Zsh?</strong></p>
-</div>
-<div class="paragraph">
-<p>Bash (the Bourne Again Shell) is the most widely used and foundational shell in the Unix ecosystem. While Zsh offers additional features like advanced completion and a customizable environment, learning bash provides several key advantages:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Ubiquity</strong>: bash is the default shell on most Linux distributions and is widely available across servers, embedded systems, and even macOS (as a legacy option). Learning bash ensures you’re prepared for almost any Unix-based environment.</p>
-</li>
-<li>
-<p><strong>Portability</strong>: Scripts written in bash are compatible with a broader range of systems compared to Zsh. bash remains the best starting point for anyone looking to build a solid foundation in shell scripting and command-line mastery. Once you’re comfortable with bash, transitioning to Zsh or other shells becomes a matter of personal preference rather than necessity.</p>
-</li>
-</ul>
+<p>There are many different ways to install Go that you will later learn about, including using installers like <code>brew</code> and <code>winget</code> and <code>apt</code>. But for now, you just need to get Go onto your workstation as easily as possible.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="_mac"><a class="link" href="#_mac">Mac</a></h4>
-<div class="paragraph">
-<p>Mac computers come with bash pre-installed as part of the macOS operating system. To confirm bash is available:</p>
-</div>
-<div class="paragraph">
-<p><strong>Open Terminal</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press <code>Cmd + Space</code>, type <code>Terminal</code>, and press <code>Enter</code>.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Check bash version</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Run the following command:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">bash</span><span class="tok-w"> </span><span class="tok-o">--</span><span class="tok-nx">version</span></code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>If you see version information, bash is installed and ready to use.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The version of bash on Mac is very old but it will work for Go development. In the next section you can upgrade with <code>brew install bash</code> if you like once you have the <code>brew</code> installed.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows"><a class="link" href="#_windows">Windows</a></h4>
-<div class="paragraph">
-<p>Windows does not include bash natively, but you can use <strong>Git Bash</strong>, which provides a Unix-like terminal environment:</p>
-</div>
-<div class="paragraph">
-<p><strong>Install Git Bash</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Download Git for Windows from: <a href="https://git-scm.com/" class="bare">https://git-scm.com/</a>.</p>
-</li>
-<li>
-<p>Run the installer and follow these steps during installation:</p>
-</li>
-<li>
-<p>Choose your preferred editor (optional).</p>
-</li>
-<li>
-<p>Select "Git from the command line and also from 3rd-party software" when prompted.</p>
-</li>
-<li>
-<p>Leave default options for the rest of the setup unless you have specific needs.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Launch Git Bash</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>After installation, press <code>Win</code>, type <code>bash</code>, and press <code>Enter</code> to open the minimal bash terminal.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Check Bash version</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Run the following command:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">bash</span><span class="tok-w"> </span><span class="tok-o">--</span><span class="tok-nx">version</span></code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>If version information appears, Git Bash is successfully installed.</p>
-</li>
-</ul>
-</div>
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p>Perhaps your friends have told you to use WSL, the Windows Subsystem for Linux. WSL is an inferior Linux version from Microsoft. Git Bash is superior. It was created by the inventor of Linux and Git himself, works directly from Windows allowing you do to things like open graphics applications directly (such as your web browser or video clips player), supports use of USB devices, has better security, doesn&#8217;t break as easily, and doesn&#8217;t require installing an entire virtual machine meaning it uses far less resources saving mana for more powerful spells instead. Later, we will use an actual Linux Ubuntu distro used by most of the world and all enterprise tech companies, not Microsoft&#8217;s proprietary WSL. Now you know why.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_verifying_your_setup"><a class="link" href="#_verifying_your_setup">Verifying your setup</a></h4>
-<div class="paragraph">
-<p>To ensure your basic terminal is ready for coding:</p>
-</div>
-<div class="paragraph">
-<p><strong>Open your terminal</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Run a simple command</strong>:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span><span class="tok-nb">echo</span><span class="tok-w"> </span><span class="tok-s2">&quot;Your terminal is ready!&quot;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>If you see the message printed on the screen, your terminal environment is correctly set up.</p>
-</div>
-<div class="paragraph">
-<p>With bash or Git Bash installed and tested, your basic terminal is now ready to handle the commands needed for coding workflows. You can now proceed to upgrade from the basic terminal to Alacritty and install tools like Homebrew or Winget with confidence!</p>
-</div>
-</div>
 </div>
 <div class="sect2">
-<h3 id="_install_brew_or_winget"><a class="link" href="#_install_brew_or_winget">Install Brew or Winget</a></h3>
+<h3 id="_install_code_mage"><a class="link" href="#_install_code_mage">Install Code-Mage</a></h3>
 <div class="paragraph">
-<p>Before diving into the world of coding, you’ll need a reliable package manager to help you summon and install the tools of your trade. On Mac, this means using Homebrew, affectionately known as "brew." On Windows, your equivalent is the Windows Package Manager, <code>winget</code>. Both serve as your trusted assistants for setting up the magical crafting tools you’ll need.</p>
+<p>Code-Mage (abbreviated as <code>cm</code>) is your ultimate tool to orchestrate your development environment. This guide walks you through the installation process for Mac, Windows, and Linux, starting from opening your terminal to running your first <code>cm</code> command.</p>
 </div>
 <div class="sect3">
-<h4 id="_brew_for_mac"><a class="link" href="#_brew_for_mac">Brew for Mac</a></h4>
+<h4 id="_open_a_terminal"><a class="link" href="#_open_a_terminal">Open a terminal</a></h4>
 <div class="paragraph">
-<p>Homebrew simplifies the installation of software and tools, making it a must-have for any developer. Follow these steps to get it working on your Mac:</p>
+<p>First you need to open the built in terminal for your operating system.</p>
 </div>
+<div class="sect4">
+<h5 id="_mac"><a class="link" href="#_mac">Mac</a></h5>
 <div class="paragraph">
-<p><strong>Open Terminal</strong>:</p>
+<p>Press <code>Cmd + Space</code> to open Spotlight, type <code>terminal</code> and press <code>Enter</code>.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press <code>Cmd + Space</code>, type <code>Terminal</code>, and press <code>Enter</code> to open your command-line interface.</p>
-</li>
-</ul>
 </div>
+<div class="sect4">
+<h5 id="_windows"><a class="link" href="#_windows">Windows</a></h5>
 <div class="paragraph">
-<p><strong>Install Homebrew</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Run the following command to install Homebrew:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-o">/</span><span class="tok-nx">bin</span><span class="tok-o">/</span><span class="tok-nx">bash</span><span class="tok-w"> </span><span class="tok-o">-</span><span class="tok-nx">c</span><span class="tok-w"> </span><span class="tok-s">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</span></code></pre>
+<p>Press <code>Win</code> to open the search box, type <code>powershell</code>, and press <code>Enter</code>.</p>
 </div>
 </div>
+<div class="sect4">
+<h5 id="_linux"><a class="link" href="#_linux">Linux</a></h5>
 <div class="paragraph">
-<p><strong>Follow the prompts</strong>:</p>
+<p>Press <code>Ctrl + Alt + T</code>.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>During installation, you may be asked to enter your password and confirm some actions. Follow the on-screen instructions.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Verify the installation</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>After installation is complete, check that Homebrew is installed by running:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">brew</span><span class="tok-w"> </span><span class="tok-o">--</span><span class="tok-nx">version</span></code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>If you see version information, you’re ready to proceed.</p>
-</li>
-</ul>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_winget_for_windows"><a class="link" href="#_winget_for_windows">Winget for Windows</a></h4>
+<h4 id="_install_cm_command"><a class="link" href="#_install_cm_command">Install cm command</a></h4>
 <div class="paragraph">
-<p>Before using <code>winget</code>, you’ll need to open your terminal. On Windows, Git Bash provides a powerful terminal environment for developers. Here’s how to open it for the first time:</p>
+<p>Code-Mage is contained in the <code>cm</code> command. See the Preface for more about what it does. Now it is time to use the <code>go</code> command to install it. This is the best way to install other Go projects in the safest way possible since the entire code of the project can be read by anyone to ensure there has been no tampering (as opposed to downloading some executable off the Internet).</p>
 </div>
-<div class="paragraph">
-<p><strong>Open Git Bash</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press <code>Win</code> to open the search bar.</p>
-</li>
-<li>
-<p>Type <code>bash</code> and press <code>Enter</code> to launch the terminal.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>With Git Bash open, you’re ready to proceed with <code>winget</code> setup.</p>
-</div>
-<div class="paragraph">
-<p>The Windows Package Manager, <code>winget</code>, makes installing software on Windows as simple as typing a command. Here’s how to get started:</p>
-</div>
-<div class="paragraph">
-<p><strong>Check for Winget availability</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>winget</code> is included by default in Windows 10 (version 1809 or later) and Windows 11. Open Git Bash and type:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">winget</span><span class="tok-w"> </span><span class="tok-o">--</span><span class="tok-nx">version</span></code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>If a version number appears, you’re ready to use <code>winget</code>.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Install Winget (if necessary)</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>If <code>winget</code> is not available, install it by downloading the <strong>App Installer</strong> from the Microsoft Store: <a href="https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1" class="bare">https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong>Verify the installation</strong>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Open Git Bash and check that <code>winget</code> is working by running:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">winget</span><span class="tok-w"> </span><span class="tok-o">--</span><span class="tok-nx">version</span></code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>If you see version information, your package manager is ready to go.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_testing_your_toolset"><a class="link" href="#_testing_your_toolset">Testing your toolset</a></h4>
-<div class="paragraph">
-<p>To ensure your package manager is working properly, try installing a simple tool:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Brew</strong>:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">brew</span><span class="tok-w"> </span><span class="tok-nx">install</span><span class="tok-w"> </span><span class="tok-nx">wget</span></code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Winget</strong>:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-nx">winget</span><span class="tok-w"> </span><span class="tok-nx">install</span><span class="tok-w"> </span><span class="tok-o">--</span><span class="tok-nx">id</span><span class="tok-w"> </span><span class="tok-nx">GNU</span><span class="tok-p">.</span><span class="tok-nx">Wget</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Once installed, verify the tool by typing <code>wget --version</code>. If the version information displays, your package manager is functioning correctly.</p>
-</div>
-<div class="paragraph">
-<p>With Brew or Winget installed and tested, your magical toolset is now prepared. These package managers will simplify the installation of the many tools and dependencies you’ll need throughout your coding journey.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_install_alacritty"><a class="link" href="#_install_alacritty">Install Alacritty</a></h3>
-<div class="paragraph">
-<p>Creating a robust and visually appealing command portal requires tools that blend style, speed, and functionality. This section guides you through installing and configuring Alacritty with the Gruvbox-Material theme and Bash as a default shell. Instructions are provided for both Windows and Mac.</p>
-</div>
-<div class="paragraph">
-<p>Alacritty is a lightweight, GPU-accelerated terminal emulator known for its speed and simplicity. Follow the instructions for your platform:</p>
-</div>
-<div class="sect3">
-<h4 id="_mac_2"><a class="link" href="#_mac_2">Mac</a></h4>
-<div class="paragraph">
-<p>Open your terminal (press <code>Cmd + Space</code>, type <code>Terminal</code>, and press <code>Enter</code>) and run the following incantation to install Alacritty via Homebrew:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>alacritty</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Verify the installation by launching Alacritty:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press <code>Cmd + Space</code>, type <code>alacritty</code>, and press <code>Enter</code></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>If the terminal opens, the installation was successful. You might want to pin this to the desktop or the toolbar. You&#8217;ll be using it a lot.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_windows_2"><a class="link" href="#_windows_2">Windows</a></h4>
-<div class="paragraph">
-<p>Open Git Bash by pressing <code>Win</code> key and typing <code>bash</code>. Then, summon Alacritty using the following command:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>Alacritty.Alacritty<span class="tok-w"> </span>-e</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Verify the installation by launching Alacritty:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Press <code>Win</code> key to open start menu and type <code>alacritty</code>, or</p>
-</li>
-<li>
-<p>Open the Run dialog (press <code>Win + R</code>), type <code>alacritty</code>, and press <code>Enter</code>.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>If the terminal opens, the installation was successful. You might want to pin this to the desktop or the toolbar. You&#8217;ll be using it a lot.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_configure_alacritty"><a class="link" href="#_configure_alacritty">Configure Alacritty</a></h4>
-<div class="paragraph">
-<p>To ensure your Alacritty setup is fully optimized, copy the following configuration into your <code>alacritty.toml</code> file. This file is used to customize the appearance and behavior of Alacritty.</p>
-</div>
-<div class="paragraph">
-<p>Open or create the Alacritty configuration file at:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>%APPDATA%\alacritty\alacritty.toml</code> for Windows.</p>
-</li>
-<li>
-<p><code>~/.config/alacritty/alacritty.toml</code> for Mac or Linux.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Use any simple text editor on the computer to replace the contents of the file with the following configuration:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="toml"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span>
-<span class="normal">36</span>
-<span class="normal">37</span>
-<span class="normal">38</span>
-<span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span>
-<span class="normal">46</span>
-<span class="normal">47</span>
-<span class="normal">48</span>
-<span class="normal">49</span>
-<span class="normal">50</span>
-<span class="normal">51</span>
-<span class="normal">52</span>
-<span class="normal">53</span></pre></div></td><td class="code"><div><pre><span></span><span class="tok-k">[general]</span>
-<span class="tok-n">live_config_reload</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-kc">true</span>
-
-<span class="tok-k">[shell]</span>
-<span class="tok-c1">#program = &quot;C:\Program Files\Git\bin\bash.exe&quot; </span><i class="conum" data-value="1"></i><b>(1)</b>
-<span class="tok-c1">#program = &quot;/opt/homebrew/bin/bash&quot;            </span><i class="conum" data-value="2"></i><b>(2)</b>
-
-<span class="tok-k">[font]</span>
-<span class="tok-n">size</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">36</span>
-
-<span class="tok-k">[font.bold]</span>
-<span class="tok-n">family</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;UbuntuMono Nerd Font&quot;</span>
-<span class="tok-n">style</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;Bold&quot;</span>
-
-<span class="tok-k">[font.bold_italic]</span>
-<span class="tok-n">family</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;UbuntuMono Nerd Font&quot;</span>
-<span class="tok-n">style</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;Bold Italic&quot;</span>
-
-<span class="tok-k">[font.italic]</span>
-<span class="tok-n">family</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;UbuntuMono Nerd Font&quot;</span>
-<span class="tok-n">style</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;Italic&quot;</span>
-
-<span class="tok-k">[font.normal]</span>
-<span class="tok-n">family</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;UbuntuMono Nerd Font&quot;</span>
-<span class="tok-n">style</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;Regular&quot;</span>
-
-<span class="tok-k">[window.padding]</span>
-<span class="tok-n">x</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">8</span>
-<span class="tok-n">y</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-mi">8</span>
-
-<span class="tok-k">[colors.bright]</span>
-<span class="tok-n">black</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0x3c3836&quot;</span>
-<span class="tok-n">blue</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0x7daea3&quot;</span>
-<span class="tok-n">cyan</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0x89b482&quot;</span>
-<span class="tok-n">green</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0xa9b665&quot;</span>
-<span class="tok-n">magenta</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0xd3869b&quot;</span>
-<span class="tok-n">red</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0xea6962&quot;</span>
-<span class="tok-n">white</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0xd4be98&quot;</span>
-<span class="tok-n">yellow</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0xd8a657&quot;</span>
-
-<span class="tok-k">[colors.normal]</span>
-<span class="tok-n">black</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0x3c3836&quot;</span>
-<span class="tok-n">blue</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0x7daea3&quot;</span>
-<span class="tok-n">cyan</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0x89b482&quot;</span>
-<span class="tok-n">green</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0xa9b665&quot;</span>
-<span class="tok-n">magenta</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0xd3869b&quot;</span>
-<span class="tok-n">red</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0xea6962&quot;</span>
-<span class="tok-n">white</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0xd4be98&quot;</span>
-<span class="tok-n">yellow</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0xd8a657&quot;</span>
-
-<span class="tok-k">[colors.primary]</span>
-<span class="tok-n">background</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0x282828&quot;</span>
-<span class="tok-n">foreground</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-s2">&quot;0xd4be98&quot;</span>
-</pre></div></td></tr></table></div></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Change bash shell</strong>:</p>
-</div>
-<div class="colist arabic">
+<div class="admonitionblock warning">
 <table>
 <tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Uncomment this line for Windows</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Uncomment this line for Mac but also make sure to run <code>brew install bash</code> from the terminal command line</td>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Never just download and install anything from the Internet that you do not absolutely trust, including Code-Mage. In this case everything is open so you know exactly what is happening, or at least other security-minded mentors and educators do.</p>
+</div>
+</td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Save the file and restart Alacritty to apply the configuration.</strong> Once you have made these changes any change to this file will automatically update the terminal while it is running.</p>
-</div>
-<div class="paragraph">
-<p><strong>Test your setup by launching Alacritty</strong> and verifying that bash starts as the default shell.</p>
-</div>
-<hr>
-<div class="paragraph">
-<p>Congratulations! You now have a sleek and powerful command portal, combining Alacritty&#8217;s speed, the aesthetic brilliance of your custom configuration, and the versatility of your preferred shell.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_install_tmux"><a class="link" href="#_install_tmux">Install tmux</a></h3>
-<div class="paragraph">
-<p>As a Code Mage, your ability to manage multiple spells (commands) simultaneously is critical. Enter <strong>tmux</strong>, the terminal multiplexer—a powerful tool for organizing and navigating your terminal sessions like a true master. Think of tmux as a portal that splits your  into multiple panes and windows, each capable of running its own spell. In this section, you&#8217;ll learn why tmux is essential and how to set it up with a configuration designed for optimal efficiency.</p>
-</div>
-<div class="sect3">
-<h4 id="_why_tmux"><a class="link" href="#_why_tmux">Why tmux?</a></h4>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Multitasking Made Easy</strong>: tmux allows you to split your terminal into multiple panes, making it easier to monitor and manage simultaneous tasks.</p>
-</li>
-<li>
-<p><strong>Session Persistence</strong>: Forget losing work due to a dropped connection. tmux keeps your sessions alive even when your terminal closes.</p>
-</li>
-<li>
-<p><strong>Customizable Interface</strong>: With tmux, you can tailor your workspace with custom keybindings, colors, and layouts to match your workflow.</p>
-</li>
-<li>
-<p><strong>Efficiency Boost</strong>: Navigate, resize, and manage panes with simple keyboard shortcuts, reducing the need to switch between multiple terminal tabs or windows.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_installing_tmux"><a class="link" href="#_installing_tmux">Installing tmux</a></h4>
-<div class="sect4">
-<h5 id="_for_mac"><a class="link" href="#_for_mac">For Mac</a></h5>
-<div class="paragraph">
-<p>If you&#8217;re using Mac with Homebrew installed, run the following spell to install tmux:</p>
+<p>After opening a terminal enter the following command:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>brew<span class="tok-w"> </span>install<span class="tok-w"> </span>tmux</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_for_windows"><a class="link" href="#_for_windows">For Windows</a></h5>
-<div class="paragraph">
-<p>On Windows, you can install tmux using <code>winget</code>:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>winget<span class="tok-w"> </span>install<span class="tok-w"> </span>--id<span class="tok-w"> </span>tmux.tmux</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_verify_the_installation"><a class="link" href="#_verify_the_installation">Verify the installation</a></h5>
-<div class="paragraph">
-<p>Confirm tmux is installed by running:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>tmux<span class="tok-w"> </span>-V</code></pre>
+<pre class="pygments highlight"><code data-lang="shell"><span></span>go<span class="tok-w"> </span>install<span class="tok-w"> </span>github.com/rwxrob/code-mage-book/cmd/cm@latest</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>If you see the version number, your command portal is ready!</p>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_configuring_tmux"><a class="link" href="#_configuring_tmux">Configuring tmux</a></h4>
-<div class="paragraph">
-<p>To maximize the power of tmux, use the following custom configuration file. Don&#8217;t worry about understanding anything that is in it. You&#8217;ll have plenty of time to learn all about tmux usage and configuration later. For now just save it as <code>.tmux.conf</code> (don&#8217;t forget the dot) in your home directory (commonly written as <code>~/.tmux.conf</code>) using whatever text editor you have:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="tmux"><div class="lineno"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span>
-<span class="normal">36</span>
-<span class="normal">37</span>
-<span class="normal">38</span>
-<span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span>
-<span class="normal">46</span>
-<span class="normal">47</span>
-<span class="normal">48</span>
-<span class="normal">49</span>
-<span class="normal">50</span>
-<span class="normal">51</span>
-<span class="normal">52</span>
-<span class="normal">53</span>
-<span class="normal">54</span>
-<span class="normal">55</span>
-<span class="normal">56</span>
-<span class="normal">57</span>
-<span class="normal">58</span>
-<span class="normal">59</span>
-<span class="normal">60</span>
-<span class="normal">61</span>
-<span class="normal">62</span>
-<span class="normal">63</span>
-<span class="normal">64</span>
-<span class="normal">65</span>
-<span class="normal">66</span>
-<span class="normal">67</span>
-<span class="normal">68</span>
-<span class="normal">69</span>
-<span class="normal">70</span>
-<span class="normal">71</span>
-<span class="normal">72</span>
-<span class="normal">73</span>
-<span class="normal">74</span>
-<span class="normal">75</span>
-<span class="normal">76</span>
-<span class="normal">77</span>
-<span class="normal">78</span>
-<span class="normal">79</span>
-<span class="normal">80</span>
-<span class="normal">81</span>
-<span class="normal">82</span>
-<span class="normal">83</span>
-<span class="normal">84</span>
-<span class="normal">85</span>
-<span class="normal">86</span>
-<span class="normal">87</span>
-<span class="normal">88</span>
-<span class="normal">89</span>
-<span class="normal">90</span></pre></div></td><td class="code"><div><pre><span></span># change default meta key to same as screen
-unbind C-b
-unbind C-a
-set -g prefix C-a
-
-# turn pane sync on/off
-bind -r y setw synchronize-panes
-
-# reload configuration
-bind -r r source-file ~/.tmux.conf \; display &quot;Config reloaded&quot;
-
-# add double-tap meta key to toggle last window
-bind-key C-a last-window
-
-# use a different prefix for nested
-bind-key -n C-y send-prefix
-
-# create more intuitive split key combos (same as modern screen)
-unbind |
-bind | split-window -h
-bind &#39;\&#39; split-window -h
-bind &#39;C-\&#39; split-window -h
-unbind -
-bind - split-window -v
-unbind _
-bind _ split-window -v
-
-# kill current window and all panes
-bind-key &amp; kill-window
-
-# vi for copy mode
-setw -g mode-keys vi
-
-# vi for command status
-set -g status-keys vi
-
-# vi keys to resize
-bind -r C-k resize-pane -U 1
-bind -r C-j resize-pane -D 1
-bind -r C-h resize-pane -L 1
-bind -r C-l resize-pane -R 1
-
-# vi keys to navigate panes
-bind -r k select-pane -U
-bind -r j select-pane -D
-bind -r h select-pane -L
-bind -r l select-pane -R
-
-# avoid cursor movement messing with resize
-set -g repeat-time 200
-
-# 24-bit color
-set -g default-terminal &quot;tmux-256color&quot;
-set -ga terminal-overrides &quot;,xterm-256color:Tc&quot;
-
-set -g clock-mode-style 12
-setw -g clock-mode-colour cyan
-set -g base-index 1
-setw -g pane-base-index 1
-
-# color the pane borders nearly invisible
-# (when not using hacked tmux without them)
-set -g pane-border-style &quot;fg=#171717&quot;
-set -g pane-active-border-style &quot;fg=#171717&quot;
-
-# color of the window selection background
-set -g mode-style &quot;bg=black&quot;
-
-# when status bar is displayed
-set -g status-style &quot;fg=#665c54&quot;
-set -g status-bg default
-set -g status-position top
-set -g status-interval 1
-set -g status-left &quot;&quot;
-
-# disable status bar (prefer index)
-set -g status off
-set -g window-status-current-format &quot;&quot;
-
-# start with 1
-set -g base-index 1
-set -g pane-base-index 1
-
-set -g message-style &quot;fg=red&quot;
-
-# better window names
-set -g automatic-rename
-
-# form vim/tmux d/y buffer sync
-set -g focus-events
-</pre></div></td></tr></table></div></code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_activate_your_tmux_configuration"><a class="link" href="#_activate_your_tmux_configuration">Activate your tmux configuration</a></h4>
-<div class="paragraph">
-<p>Once the configuration file is in place, reload it with the following command:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="shell"><span></span>tmux<span class="tok-w"> </span>source-file<span class="tok-w"> </span>~/.tmux.conf</code></pre>
-</div>
+<p>This same command can be used any time to update to the latest version and works for installing any Go command as well.</p>
 </div>
 </div>
 </div>
@@ -1964,6 +1202,12 @@ set -g focus-events
 <div class="sect1">
 <h2 id="_appendix"><a class="link" href="#_appendix">Appendix</a></h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_why_no_code_mage_cm_binary_release"><a class="link" href="#_why_no_code_mage_cm_binary_release">Why no code-mage (cm) binary release?</a></h3>
+<div class="paragraph">
+<p>Usually people use something like <code>goreleaser</code> to create a binary downloadable command or installation. But code-mage (<code>cm</code>) doesn&#8217;t because we assume the user has Go installed. This also bypasses the security measures that Mac computers are particularly annoying about when downloading executables that don&#8217;t comply with Apple&#8217;s idea of what a safe executable is. Plus we want to encourage examination of anything before it is installed and using <code>go install</code> always suggests the where the source is available for review.</p>
+</div>
+</div>
 <div class="sect2">
 <h3 id="_beware_of_ap_computer_science"><a class="link" href="#_beware_of_ap_computer_science">Beware of AP Computer Science</a></h3>
 <div class="paragraph">

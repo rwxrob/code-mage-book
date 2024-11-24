@@ -1,0 +1,37 @@
+== Install Code-Mage
+
+Code-Mage (abbreviated as `cm`) is your ultimate tool to orchestrate your development environment. This guide walks you through the installation process for Mac, Windows, and Linux, starting from opening your terminal to running your first `cm` command.
+
+=== Open a terminal
+
+First you need to open the built in terminal for your operating system.
+
+==== Mac
+
+Press `Cmd + Space` to open Spotlight, type `terminal` and press `Enter`.
+
+==== Windows
+
+Press `Win` to open the search box, type `powershell`, and press `Enter`.
+
+==== Linux
+
+Press `Ctrl + Alt + T`.
+
+=== Install cm command
+
+Code-Mage is contained in the `cm` command. See the Preface for more about what it does. Now it is time to use the `go` command to install it. This is the best way to install other Go projects in the safest way possible since the entire code of the project can be read by anyone to ensure there has been no tampering (as opposed to downloading some executable off the Internet).
+
+[WARNING]
+====
+Never just download and install anything from the Internet that you do not absolutely trust, including Code-Mage. In this case everything is open so you know exactly what is happening, or at least other security-minded mentors and educators do.
+====
+
+After opening a terminal enter the following command:
+
+[source,shell]
+----
+go install github.com/rwxrob/code-mage-book/cmd/cm@latest
+----
+
+This same command can be used any time to update to the latest version and works for installing any Go command as well.

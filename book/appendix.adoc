@@ -1,5 +1,9 @@
 = Appendix
 
+== Why no code-mage (cm) binary release?
+
+Usually people use something like `goreleaser` to create a binary downloadable command or installation. But code-mage (`cm`) doesn't because we assume the user has Go installed. This also bypasses the security measures that Mac computers are particularly annoying about when downloading executables that don't comply with Apple's idea of what a safe executable is. Plus we want to encourage examination of anything before it is installed and using `go install` always suggests the where the source is available for review.
+
 == Beware of AP Computer Science
 
 As of the writing of this book, the AP Computer Science program from College Board remains fundamentally broken. The materials are more than dated and down-right wrong in some cases. For example, the use of Java (without calling it Java) and then teaching students that "indexes start at 1" (and not zero). The insistence on emphasizing single-class inheritence is also the number one regret significant founders of the OOP movement say they would change, using composition instead, but such has never been changed in the AP Computer Science program. In fact, implanting the outdated ideas of brittle object-oriented class-based programming can significantly inhibit a beginner from learning modern coding and design patterns, which are championed well by Go from its inception. Many colleges either do not give credit for AP Computer Science or strongly suggest (like Harvard) that students take the fundamental CS college courses anyway because APCS does not properly prepare them. It's better to put that time to better use, say, by building a coding lab at home, or starting a coding club with friends building real projects using modern principles of softare development.
