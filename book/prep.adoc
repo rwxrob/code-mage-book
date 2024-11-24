@@ -1,4 +1,31 @@
-= Preparation
+= Prepare
+
+[.text-center]
+_"Learning happens in the lab, not the lecture hall."_
+
+You are probably excited to get going and we've done our best to help you get started as quickly as possible. Here's a summary of what you'll need to do to prepare:
+
+[start=0]
+. Learn to type from home row
+. Get a computer
+. Install the Go programming language
+. Install Code-Mage using Go
+. Create personal development environment (PDE) with Code-Mage
+. Learn basic shell commands to get around and work with files
+. Learn basic vim to edit your code
+. Learn basic tmux to get the most out of your terminal
+. Learn basic git and gh to save and share your code
+
+For most people this preparation takes a few hours, but there is no avoiding it to become a true code mage.
+
+[CAUTION]
+====
+Now is the point where it is really easy to get distracted. You could learn everything there is to know about bash, Linux, vim, tmux, and more. You could spent endless hours going online to find the absolute best possible terminal, colors and configuration. You could fight endlessly with people about the best editor, Linux distribution, first programming language, or color scheme. You could defend your decision to use your preferred operating system.
+
+Just don't do it!
+
+You can waste that time later. For now, you have a lot to get ready and learn before coding, then, after you have got some really coding skill you will be better prepared to revisit these things and your arguments with random trolls (who haven't coded yet) will carry more weight because you have actually _done_ something.
+====
 
 include::prep/computer.adoc[]  
 
@@ -6,4 +33,4 @@ include::prep/getgo.adoc[]
 
 include::prep/installcm.adoc[]  
 
-//include::prep/cminit.adoc[]  
+include::prep/cminit.adoc[]  

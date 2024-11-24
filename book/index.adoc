@@ -43,4 +43,6 @@ include::prep.adoc[]
 
 //include::spells.adoc[] 
 
-include::appendix.adoc[]  
+include::faq.adoc[]  
+
+include::licenses.adoc[]  

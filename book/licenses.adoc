@@ -1,0 +1,33 @@
+= Appendix: Legal
+
+== License (code): CC0 1.0
+
+Code snippets and examples have a very permissive license allowing anyone to use them in any capacity. The code examples in this book are dedicated to the public domain under the terms of the **Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication**. This means:
+
+- **No Restrictions**: You are free to use, modify, share, and distribute the code examples for any purpose, commercial or non-commercial, without asking for permission.
+
+- **No Attribution Required**: You are not required to provide credit, though it is appreciated.
+
+- **No Warranty**: The code examples are provided "as is," without any warranty or guarantee of functionality.
+
+For the full legal text, visit:  
+https://creativecommons.org/publicdomain/zero/1.0/
+
+== License (prose): CC BY-NC-ND 4.0
+
+While this book is designed to be shared, it is important that the content not change in any distributed form to avoid confusion. Therefore, the license for prose has more restrictions than the code examples. The prose of this book is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).
+
+This license allows you to:
+
+- **Share**: Copy and redistribute the material in any medium or format.
+
+Under the following terms:
+
+- **Attribution**: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+- **NonCommercial**: You may not use the material for commercial purposes.
+
+- **NoDerivatives**: If you remix, transform, or build upon the material, you may not distribute the modified material.
+
+For more information, see the full license text here:
+https://creativecommons.org/licenses/by-nc-nd/4.0/

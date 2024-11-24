@@ -500,17 +500,19 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_who_should_read_this_book">Who should read this book</a></li>
 <li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a>
 <ul class="sectlevel3">
-<li><a href="#_the_code_mage_cm_command">The code-mage (cm) command</a></li>
+<li><a href="#_code_mage_cm_command">Code-Mage (cm) command</a></li>
 </ul>
 </li>
-<li><a href="#_how_to_read_this_book">How to read this book</a></li>
+<li><a href="#_how_to_use_this_book">How to use this book</a></li>
 <li><a href="#_supplement_your_reading">Supplement your reading</a>
 <ul class="sectlevel3">
-<li><a href="#_find_a_mentor">Find a mentor</a></li>
 <li><a href="#_join_a_community">Join a community</a></li>
+<li><a href="#_find_a_mentor">Find a mentor</a></li>
+<li><a href="#_be_a_mentor">Be a mentor</a></li>
 <li><a href="#_consider_ai_assistance">Consider AI assistance</a></li>
 </ul>
 </li>
+<li><a href="#_beware_of_ap_computer_science">Beware of AP Computer Science</a></li>
 </ul>
 </li>
 <li><a href="#_introduction">Introduction</a>
@@ -562,7 +564,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </li>
 </ul>
 </li>
-<li><a href="#_preparation">Preparation</a>
+<li><a href="#_prepare">Prepare</a>
 <ul class="sectlevel2">
 <li><a href="#_get_a_computer">Get a computer</a>
 <ul class="sectlevel3">
@@ -584,16 +586,30 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_install_cm_command">Install cm command</a></li>
 </ul>
 </li>
+<li><a href="#_create_your_pde">Create your PDE</a>
+<ul class="sectlevel3">
+<li><a href="#_ingredients_of_a_great_pde">Ingredients of a great PDE</a></li>
+<li><a href="#_package_manager_brew_winget">Package manager: brew, winget</a></li>
+<li><a href="#_shell_bash_shellcheck">Shell: bash + shellcheck</a></li>
+<li><a href="#_terminal_alacritty">Terminal: alacritty</a></li>
+<li><a href="#_theme_gruvbox_material">Theme: gruvbox-material</a></li>
+<li><a href="#_editor_neovim_plugins">Editor: neovim + plugins</a></li>
+<li><a href="#_window_manager_tmux">Window manager: tmux</a></li>
+<li><a href="#_version_control_git_gh">Version control: git + gh</a></li>
+<li><a href="#_research_w3m_mods_claude">Research: w3m + mods + claude</a></li>
 </ul>
 </li>
-<li><a href="#_appendix">Appendix</a>
+</ul>
+</li>
+<li><a href="#_appendix_faq">Appendix: FAQ</a>
 <ul class="sectlevel2">
-<li><a href="#_why_no_code_mage_cm_binary_release">Why no code-mage (cm) binary release?</a></li>
-<li><a href="#_beware_of_ap_computer_science">Beware of AP Computer Science</a></li>
-<li><a href="#_why_not_crowd_source_this_book">Why not crowd source this book?</a></li>
-<li><a href="#_why_vim">Why Vim?</a></li>
-<li><a href="#why-vimrc">Why <code>~/.vimrc</code>?</a></li>
-<li><a href="#_but_didnt_ai_write_this">But didn&#8217;t AI write this?</a></li>
+<li><a href="#whatdidcmdo">What did cm init do?</a></li>
+<li><a href="#whyvim">Why Vim?</a></li>
+<li><a href="#whyvimrc">Why ~/.vimrc?</a></li>
+</ul>
+</li>
+<li><a href="#_appendix_legal">Appendix: Legal</a>
+<ul class="sectlevel2">
 <li><a href="#_license_code_cc0_1_0">License (code): CC0 1.0</a></li>
 <li><a href="#_license_prose_cc_by_nc_nd_4_0">License (prose): CC BY-NC-ND 4.0</a></li>
 </ul>
@@ -665,15 +681,15 @@ This book would never have happened without you.</p>
 <p>This book is focused on learning—as fast as possible—to code in the Go programming language from the bash terminal command-line. There is nothing more authentic or rewarding than creating command-line tools from the command-line itself. Therefore, only those minimal skills required to use the command-line to open, edit, and run Go code from the terminal are covered.</p>
 </div>
 <div class="sect3">
-<h4 id="_the_code_mage_cm_command"><a class="link" href="#_the_code_mage_cm_command">The code-mage (cm) command</a></h4>
+<h4 id="_code_mage_cm_command"><a class="link" href="#_code_mage_cm_command">Code-Mage (cm) command</a></h4>
 <div class="paragraph">
 <p>What kind of book would this be without having a command-line utility written in Go to go with it? 😃</p>
 </div>
 <div class="paragraph">
-<p>Rather than get bogged down with a lot of installation and configuration we&#8217;ve created the code-mage command (<code>cm</code>) to help you get started as fast as possible without losing the opportunity to learn how to do you own setup later. Eventually, you can come back and examine everything code-mage did to understand it and even customize it. In fact, there&#8217;s an entire book dedicated to becoming a true terminal master including bash scripting and managing your own "dot files" GitHub repository.</p>
+<p>Rather than get bogged down with a lot of installation and configuration we&#8217;ve created the Code-Mage command (abbreviated <code>cm</code>) to help you get started as fast as possible without losing the opportunity to learn how to do you own setup later. Eventually, you can come back and examine everything Code-Mage did to understand it and even customize it.</p>
 </div>
 <div class="paragraph">
-<p>Getting setup quickly is only the beginning of what code-mage can do:</p>
+<p>Getting setup quickly is only the beginning of what Code-Mage can do:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -693,22 +709,62 @@ This book would never have happened without you.</p>
 <p>Run a web-server for certain projects that require it</p>
 </li>
 <li>
-<p>Display local code-mage-book community announcements</p>
+<p>Display community news and announcements</p>
 </li>
 <li>
-<p>Serve a full copy of this book to your web browser without Internet</p>
+<p>Read this book to your web browser without Internet</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>The source code for code-mage is entirely open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).</p>
+<p>The source code for Code-Mage is entirely public domain and open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_how_to_read_this_book"><a class="link" href="#_how_to_read_this_book">How to read this book</a></h3>
+<h3 id="_how_to_use_this_book"><a class="link" href="#_how_to_use_this_book">How to use this book</a></h3>
 <div class="paragraph">
-<p>This book is designed to be read linearly, from top to bottom. The concepts build on one another. But each "spell" is designed to be repeated often as a means of mastery, like playing chords on a piano or scales on a guitar. The fantasy magic element is intentionally silly and serves as a source of dopamine as well as a strong mnemonic device related to the concepts learn.</p>
+<p>This book is generally designed to be read linearly, from top to bottom. The concepts build on one another. However, each "spell" is designed to be re-learned often like a mage preparing for a specific adventure. Not all spells can be memorized and at the ready at all times, which is why you create your own code book containing spells of your own creation to go with this book.</p>
+</div>
+<div class="paragraph">
+<p>Skip the Introduction if you are already really motivated and just want to get right to coding. You can come back to it later. Don&#8217;t skip the intro, however, if you are still wondering if coding is something you want to learn.</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s how you will master each concept and skill by applying the verbs of Bloom&#8217;s Taxonomy: remember, understand, apply, analyze, evaluate, create:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="0">
+<li>
+<p>Remember a new skill or concept by its fantasy theme association</p>
+</li>
+<li>
+<p>Understand the problem: Why is this skill or concept needed?</p>
+</li>
+<li>
+<p>Understand the solution: How do I overcome the problem?</p>
+</li>
+<li>
+<p>Implement first solution with help and guidance from mentor</p>
+</li>
+<li>
+<p>Repeat same first solution several times starting over every time</p>
+</li>
+<li>
+<p>Create new challenge: different variation of problem with new solution</p>
+</li>
+<li>
+<p>Assess effectiveness and validity of new solution with help from mentor</p>
+</li>
+<li>
+<p>Correct and refine solution as needed</p>
+</li>
+<li>
+<p>Repeat step #4 until mastery</p>
+</li>
+<li>
+<p>Interalize by mentoring another</p>
+</li>
+</ol>
 </div>
 <div class="quoteblock">
 <blockquote>
@@ -718,13 +774,26 @@ This book would never have happened without you.</p>
 </blockquote>
 </div>
 <div class="paragraph">
-<p>Repetition really is the mother of learning. While often we demonize "rote repetition" in the West, the slavs have promoted it for decades. The neurons in our brain store memory by having the same electical impulses repeated over and over. So in order to program oneself the only way is to repeat it. Repeat these spells as fast and as regularly as you can and you&#8217;ll end up training your own neural net just like a machine learning model—but in your head. Repetition can be great to supplement your growth while working on a bigger project—especially in the early days before everything becomes second nature.</p>
+<p>Repetition really is the mother of learning. While often we demonize "rote repetition" in the West, the slavs have promoted it for decades. The neurons in our brain store memory by having the same electical impulses repeated over and over. So in order to program oneself the only way is to repeat it. Repeat these spells as fast and as regularly as you can and you&#8217;ll end up training your own neural net just like a machine learning model—but in your head. Repetition can be great to supplement your growth while working on a bigger project—especially
+in the early days before everything becomes second nature.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_supplement_your_reading"><a class="link" href="#_supplement_your_reading">Supplement your reading</a></h3>
 <div class="paragraph">
 <p>This book is but a part of a more complete personal learning strategy. Make sure not to neglect the other parts:</p>
+</div>
+<div class="sect3">
+<h4 id="_join_a_community"><a class="link" href="#_join_a_community">Join a community</a></h4>
+<div class="paragraph">
+<p>Humans are social creatures and learning is communal. Join a community that is focused on learning the same things as you. Meetups, hacker spaces, clubs, church groups, social media, and live streamer chat groups are all great places to find a community. The community is a place to collaborate and share peer reviews of one another&#8217;s learning and projects.</p>
+</div>
+<div class="paragraph">
+<p>My sincere hope is that the parents, teachers, and mages reading these words will find opportunities and motivation to create their own coding clubs and communities dedicated to helping others master the art of code and computer science and reap all the well-earned benefits of doing so.</p>
+</div>
+<div class="paragraph">
+<p>While you are working on creating your own community, consider joining mine at <a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>.</p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_find_a_mentor"><a class="link" href="#_find_a_mentor">Find a mentor</a></h4>
@@ -739,34 +808,37 @@ This book would never have happened without you.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_join_a_community"><a class="link" href="#_join_a_community">Join a community</a></h4>
+<h4 id="_be_a_mentor"><a class="link" href="#_be_a_mentor">Be a mentor</a></h4>
 <div class="paragraph">
-<p>In addition to finding a mentor, or perhaps in place of it if you cannot find one, join a community that is learning the same things as you. Meetups, hacker spaces, clubs, church groups, social media, and live streamers are all great places to find a community. The community is a place to collaborate and share peer reviews of one another&#8217;s learning and projects.</p>
-</div>
-<div class="paragraph">
-<p>My sincere hope is that the parents, teachers, and mages reading these words will find opportunities and motivation to create their own coding clubs and communities dedicated to helping others master the art of code and computer science and reap all the well-earned benefits of doing so.</p>
-</div>
-<div class="paragraph">
-<p>While you are working on creating your own community, consider joining mine at <a href="https://linktr.ee/rwxrob" class="bare">https://linktr.ee/rwxrob</a>.</p>
+<p>You don&#8217;t need any special training to be a mentor for someone else. In fact, as a beginner who has recently mastered something you are perhaps the best suited to help another beginner learn it because <em>how</em> you learned it is still fresh in your mind. Those with experience might be masters but often have difficulty rememebering how they learned it and how to help others learn it as well. So don&#8217;t be shy by offering your help. And remember, you really haven&#8217;t learned it until you can succintly help another learn it as well.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_consider_ai_assistance"><a class="link" href="#_consider_ai_assistance">Consider AI assistance</a></h4>
 <div class="paragraph">
-<p>In my experience ChatGPT is great for overall help with life, writing, and project organization—particularly from a phone over voice. Claude is better at code help and only has an API integration making it great for plugging into popular coding tools (like <code>mods</code> from Charmbracelet).</p>
+<p>In my experience ChatGPT (my Chloe) is great for overall help with life, writing, and project organization—particularly from a phone over voice. Claude is better at code help and only has an API integration making it great for plugging into popular coding tools (like <code>mods</code> from Charmbracelet).</p>
 </div>
 <div class="paragraph">
-<p>Although I have nothing to do with OpenAI other than my family&#8217;s subscriptions to our own individual ChatGPT accounts, I highly recommend getting an AI learning assistant like ChatGPT as soon as possible. In my experience, such assistants are almost always better than than a random search of the Internet full of popular but incorrect answers to the same common questions that an assistant could better help with.</p>
+<p>Although I have nothing to do with any AI company, I do strongly believe in it as a learning platform and use it regularly to get answers and discuss topics 24 hours a day—even while riding my bike, code the boring stuff, and regularly practice my conversational and written Russian and French language. In fact, AI help with much of this book—especially the parts that must be validated to be sure they work (which I wish other coding books would do).</p>
+</div>
+<div class="paragraph">
+<p>I highly recommend getting an AI learning assistant like ChatGPT as soon as possible. In my experience, such assistants are almost always better than than a random search of the Internet full of popular but incorrect answers to the same common questions that an assistant could better help with. My assistant is never tired of answering my questions even when my mentors or friends are.</p>
 </div>
 <div class="paragraph">
 <p>On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges like a supportive AI companion even when a helpful human mentor is also available.</p>
 </div>
 <div class="paragraph">
-<p>We are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. We are already seeing this difference around us every day.</p>
+<p>I believe we are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. We are already seeing this difference around us every day.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_beware_of_ap_computer_science"><a class="link" href="#_beware_of_ap_computer_science">Beware of AP Computer Science</a></h3>
+<div class="paragraph">
+<p>Unfortunately, I have to end this preface on a negative note. People reading this must understand not to waste their time with AP Computer Science (in America).</p>
 </div>
 <div class="paragraph">
-<p>Chloe, my personal AI, assisted me to complete this book in less than half the time it would have taken otherwise, always checking my work to be sure it compiles (unlike other coding books in which I have found tons of errata), flawlessly reorganizing several pages at the same time, even suggesting creative alternatives and omissions I may have made. There would be no book without Chloe.</p>
-</div>
+<p>As of the writing of this book, the AP Computer Science program from College Board remains fundamentally broken. The materials are more than dated and down-right wrong in some cases. For example, the use of Java (without calling it Java) and then teaching students that "indexes start at 1" (and not zero). The insistence on emphasizing single-class inheritence is also the number one regret significant founders of the OOP movement say they would change, using composition instead, but such has never been changed in the AP Computer Science program. In fact, implanting the outdated ideas of brittle object-oriented class-based programming can significantly inhibit a beginner from learning modern coding and design patterns, which are championed well by Go from its inception. Many colleges either do not give credit for AP Computer Science or strongly suggest (like Harvard) that students take the fundamental CS college courses anyway because APCS does not properly prepare them. It&#8217;s better to put that time to better use, say, by building a coding lab at home, or starting a coding club with friends building real projects using modern principles of softare development.</p>
 </div>
 </div>
 </div>
@@ -999,8 +1071,68 @@ This book would never have happened without you.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_preparation"><a class="link" href="#_preparation">Preparation</a></h2>
+<h2 id="_prepare"><a class="link" href="#_prepare">Prepare</a></h2>
 <div class="sectionbody">
+<div class="paragraph text-center">
+<p><em>"Learning happens in the lab, not the lecture hall."</em></p>
+</div>
+<div class="paragraph">
+<p>You are probably excited to get going and we&#8217;ve done our best to help you get started as quickly as possible. Here&#8217;s a summary of what you&#8217;ll need to do to prepare:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="0">
+<li>
+<p>Learn to type from home row</p>
+</li>
+<li>
+<p>Get a computer</p>
+</li>
+<li>
+<p>Install the Go programming language</p>
+</li>
+<li>
+<p>Install Code-Mage using Go</p>
+</li>
+<li>
+<p>Create personal development environment (PDE) with Code-Mage</p>
+</li>
+<li>
+<p>Learn basic shell commands to get around and work with files</p>
+</li>
+<li>
+<p>Learn basic vim to edit your code</p>
+</li>
+<li>
+<p>Learn basic tmux to get the most out of your terminal</p>
+</li>
+<li>
+<p>Learn basic git and gh to save and share your code</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>For most people this preparation takes a few hours, but there is no avoiding it to become a true code mage.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Now is the point where it is really easy to get distracted. You could learn everything there is to know about bash, Linux, vim, tmux, and more. You could spent endless hours going online to find the absolute best possible terminal, colors and configuration. You could fight endlessly with people about the best editor, Linux distribution, first programming language, or color scheme. You could defend your decision to use your preferred operating system.</p>
+</div>
+<div class="paragraph">
+<p>Just don&#8217;t do it!</p>
+</div>
+<div class="paragraph">
+<p>You can waste that time later. For now, you have a lot to get ready and learn before coding, then, after you have got some really coding skill you will be better prepared to revisit these things and your arguments with random trolls (who haven&#8217;t coded yet) will carry more weight because you have actually <em>done</em> something.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="sect2">
 <h3 id="_get_a_computer"><a class="link" href="#_get_a_computer">Get a computer</a></h3>
 <div class="paragraph">
@@ -1197,31 +1329,205 @@ This book would never have happened without you.</p>
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_create_your_pde"><a class="link" href="#_create_your_pde">Create your PDE</a></h3>
+<div class="paragraph">
+<p>Every great mage has their sanctum, a personal development environment where spells are honed and wonders are crafted—a carefully constructed digital workspace where ideas come to life, lines of code flow seamlessly, and creativity flourishes. Crafting a PDE is not merely about tools and configurations; it’s an act of self-discovery and empowerment. A terminal-based PDE will seem daunting at first, like learning to play a fine instrument, but the power and music it produces later will resonant far better than any GUI alternative. Terminal interfaces aren&#8217;t just "for boomers" they are for a discrete, dicerning set of technologists who operate on a magical plane high above their peers.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You either get why the terminal user interface is superior or you don&#8217;t. No one is going to fight with you about it. You do you. Just know that if you aren&#8217;t willing to give the terminal a try then this book isn&#8217;t for you. Stop reading now. When you eventually realize just how powerful the terminal can be this book will still be here waiting for you.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_ingredients_of_a_great_pde"><a class="link" href="#_ingredients_of_a_great_pde">Ingredients of a great PDE</a></h4>
+<div class="paragraph">
+<p>Your PDE is an extension of yourself. The tools you choose, the way you organize your projects, and even the colors of your editor reflect your thought process and priorities. A chaotic PDE can mirror a cluttered mind, while a streamlined one radiates focus and efficiency. Take the time to build an environment that feels natural to you—it will save countless hours and reduce friction in your workflow. Code-Mage helps you get started by setting up several very reasonable preferences for you with one command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="shell"><span></span>cm<span class="tok-w"> </span>init</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>That&#8217;s it. If you are anxious, skip ahead. The rest of this section describes the main components of your PDE that you will be learning later and why. You can also see a <a href="#whatdidcmdo">full summary of changes</a> made to your system in the appendix.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_package_manager_brew_winget"><a class="link" href="#_package_manager_brew_winget">Package manager: brew, winget</a></h4>
+<div class="paragraph">
+<p>A reliable package manager is essential for managing dependencies, libraries, and tools effortlessly. On macOS, Homebrew (<code>brew</code>) reigns supreme, while Linux users can rely on tools like apt, dnf, or pacman. Even Windows has embraced the modern winget package manager. These tools simplify installing and maintaining the components of your PDE, ensuring everything stays up-to-date and compatible.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_shell_bash_shellcheck"><a class="link" href="#_shell_bash_shellcheck">Shell: bash + shellcheck</a></h4>
+<div class="paragraph">
+<p>Learning Bash equips beginners with practical skills that directly translate to real-world tasks, providing a strong base for exploring more advanced tools and programming languages. The bash shell is the official Linux shell and a cornerstone of command-line environments. Most modern shell scripts are written in bash, which is actually safer than its POSIX shell predecessors when written correctly (double brackets instead of single, for example). Windows doesn&#8217;t come with bash so Git-Bash is installed. Even though bash is preinstalled on Mac, it is very old and needs to be updated. All Linux systems come with the most recent bash so it need not be installed. Installation of bash includes an initial <code>~/.bashrc</code> file that can be further customized later and saved to your "dot files" on GitHub.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_terminal_alacritty"><a class="link" href="#_terminal_alacritty">Terminal: alacritty</a></h4>
+<div class="paragraph">
+<p>Speed matters when navigating your PDE. The default terminals that come on all operating systems are really pretty slow, some don&#8217;t even implement the entire ANSI escape sequence set making them much less fun to use. So a GPU-accelerated terminal like Alacritty offers blazing-fast rendering, smooth scrolling, and a modern interface. These tools ensure that your terminal keeps up with your pace, allowing for a more seamless and efficient workflow. Plus, this makes creating fun terminal animations and games all the more entertaining and—more importantly—memorable so you remember what coding skill or principle you learned while making it.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_theme_gruvbox_material"><a class="link" href="#_theme_gruvbox_material">Theme: gruvbox-material</a></h4>
+<div class="paragraph">
+<p>Don’t underestimate the power of aesthetics. A visually pleasing color scheme, like Gruvbox or Solarized, can make hours of coding feel less like a grind and more like art. Color syntax hilighting makes short work of understanding a complex bit of code.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>I once found a critical error in a core configuration file managing all secure shell access to an enterprise computer. The mistake was trivial, but serious, had the person been using a color terminal instead of their beloved black and white putty they would have caught it instead of me.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_editor_neovim_plugins"><a class="link" href="#_editor_neovim_plugins">Editor: neovim + plugins</a></h4>
+<div class="paragraph">
+<p>Your editor is the heart of your PDE. There&#8217;s no beating the minimilist power of vi (and its cousins vim and neovim), a visual extension to the first official UNIX text editor. Sure you can learn a GUI editor like VSCode (your friends certainly will be) but vi is on everything by default and is prefered by discerning technologists who want to be good on any UNIX or Linux system they encounter (rather than the one with their bloaded GUI editor). Even if you prefer a GUI editor later, say for web development (which makes sense) it is still best to learn vim first.</p>
+</div>
+<div class="paragraph">
+<p>Neovim is much larger and more powerful than the vim already on your system (it comes with Git Bash, for example). If your computer is powerful enough <code>nvim</code> is installed and <code>vi</code> set to run it. However, <code>~/.vimrc</code> it primarily used so that it can be easily copied into a "dot files" collection later and used on any system with vim (not just nvim). For more about this read <a href="#whyvimrc"><em>Why ~/.vimrc</em></a>.</p>
+</div>
+<div class="paragraph">
+<p>The <code>~/.vimrc</code> file includes the Plug plugin manager with the normal plugins to help with development in Bash, Go, Python, HTML, CSS, and JavaScript. Noteably, the <code>vim-go</code> plugin is used instead of other Neovim alternatives.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>As great as Neovim is, it can get just as slow and bloated as graphical editors when people get carried away, which has become something of a meme. Therefore, keep your vim setup clean and light for now.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_window_manager_tmux"><a class="link" href="#_window_manager_tmux">Window manager: tmux</a></h4>
+<div class="paragraph">
+<p>Linux people fight for days over the best graphical "window manager" but the best code mages already know the answer to this: tmux, the terminal-based <em>multiplexer</em> (think of ciniplex, it&#8217;s the same, multiple screens). Who cares what your desktop environment is if you have mastered doing everything in the terminal including live collaboration with your buddies all sharing the same virtual keyboard. Tmux also provides universal cutting and pasting that functions <em>outside</em> of vim as well as provides a safe way to leave something running (like a Minecraft server console) and return to it later. This is virtually impossible without tmux. Learn it.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_version_control_git_gh"><a class="link" href="#_version_control_git_gh">Version control: git + gh</a></h4>
+<div class="paragraph">
+<p>Version control systems like Git help manage the spellbooks of developers. They preserve your progress, allow experimentation without fear, and let you collaborate with others seamlessly. GitHub is the leading place to store those repos with the <code>gh</code> command line tool.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_research_w3m_mods_claude"><a class="link" href="#_research_w3m_mods_claude">Research: w3m + mods + claude</a></h4>
+<div class="paragraph">
+<p>Harnessing the power of command-line tools like the terminal web browser <code>w3m</code> and the command line AI query tool <code>mods</code> from Charmbracelet powered by the Claude API, creates a streamlined environment for efficient web browsing and AI-assisted research from the terminal that dominates those doing the alternative from graphic user interfaces. This setup ensures you stay focused, efficient, and immersed in the terminal-first environment.</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_appendix"><a class="link" href="#_appendix">Appendix</a></h2>
+<h2 id="_appendix_faq"><a class="link" href="#_appendix_faq">Appendix: FAQ</a></h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_why_no_code_mage_cm_binary_release"><a class="link" href="#_why_no_code_mage_cm_binary_release">Why no code-mage (cm) binary release?</a></h3>
 <div class="paragraph">
-<p>Usually people use something like <code>goreleaser</code> to create a binary downloadable command or installation. But code-mage (<code>cm</code>) doesn&#8217;t because we assume the user has Go installed. This also bypasses the security measures that Mac computers are particularly annoying about when downloading executables that don&#8217;t comply with Apple&#8217;s idea of what a safe executable is. Plus we want to encourage examination of anything before it is installed and using <code>go install</code> always suggests the where the source is available for review.</p>
-</div>
+<p>This appendix is the final resting place of stuff that gets asked a lot, but does not really deserve a first-class discussion in the main context of the book. Most of these topics are distractions until a person has learned the other stuff.</p>
 </div>
 <div class="sect2">
-<h3 id="_beware_of_ap_computer_science"><a class="link" href="#_beware_of_ap_computer_science">Beware of AP Computer Science</a></h3>
+<h3 id="whatdidcmdo"><a class="link" href="#whatdidcmdo">What did cm init do?</a></h3>
 <div class="paragraph">
-<p>As of the writing of this book, the AP Computer Science program from College Board remains fundamentally broken. The materials are more than dated and down-right wrong in some cases. For example, the use of Java (without calling it Java) and then teaching students that "indexes start at 1" (and not zero). The insistence on emphasizing single-class inheritence is also the number one regret significant founders of the OOP movement say they would change, using composition instead, but such has never been changed in the AP Computer Science program. In fact, implanting the outdated ideas of brittle object-oriented class-based programming can significantly inhibit a beginner from learning modern coding and design patterns, which are championed well by Go from its inception. Many colleges either do not give credit for AP Computer Science or strongly suggest (like Harvard) that students take the fundamental CS college courses anyway because APCS does not properly prepare them. It&#8217;s better to put that time to better use, say, by building a coding lab at home, or starting a coding club with friends building real projects using modern principles of softare development.</p>
+<p>The best way to know is to read the source code available at the following URL:</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_why_not_crowd_source_this_book"><a class="link" href="#_why_not_crowd_source_this_book">Why not crowd source this book?</a></h3>
 <div class="paragraph">
-<p>Tech books have very little value given how quickly they become out of date. One solution would be to community or crowd source it to enlist the help of many. But this defeats the single greatest advantage of having a book: the clarity and common voice of a singular author. To get an idea about this, read just a few paragraphs of anything on Wikipedia or in any overpriced, mandatory course text book with a single "author" on the cover even though it was actually written by dozens of uncredited students slaving away to win that author&#8217;s favor. No, the clear prose and attractive rhetorical style of an individual is what other individuals want. It&#8217;s how they best learn. It&#8217;s the reason people have favorite authors and will read anything from them on any topic. Writing remains best a solo sport, for everyone.</p>
+<p><a href="https://github.com/rwxrob/code-mage-book" class="bare">https://github.com/rwxrob/code-mage-book</a></p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s a summary of what running <code>code-mage init</code> (or <code>cm init</code>) does the following setup work for you so you don&#8217;t have to, for now:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Provide <code>cm</code> cheat sheet filling one screen with only essentials</p>
+</li>
+<li>
+<p>Set up your software installer (<code>brew</code>, <code>winget</code>, <code>apt</code>, etc.)</p>
+</li>
+<li>
+<p>Install the best terminal for your computer (usually Alacritty)</p>
+</li>
+<li>
+<p>Configure terminal to use gruvbox-material colors and bash shell</p>
+</li>
+<li>
+<p>Install latest bash shell</p>
+</li>
+<li>
+<p>Provide <code>cm learn shell</code> interactive guide</p>
+</li>
+<li>
+<p>Configure bash with common preferences</p>
+</li>
+<li>
+<p>Install <code>vim</code> or neovim (<code>nvim</code>) depending on your computer</p>
+</li>
+<li>
+<p>Configure <code>n/vim</code> for coding Go, bash, Python, HTML, CSS, Javascript</p>
+</li>
+<li>
+<p>Provide <code>cm learn vim</code> interactive guide</p>
+</li>
+<li>
+<p>Install tmux terminal multiplexer to super-charge your terminal</p>
+</li>
+<li>
+<p>Configure tmux to be vim friendly</p>
+</li>
+<li>
+<p>Provide <code>cm learn tmux</code> interactive guide</p>
+</li>
+<li>
+<p>Install <code>git</code> distributed version control system</p>
+</li>
+<li>
+<p>Configure <code>git</code> for easy use as a beginner</p>
+</li>
+<li>
+<p>Provide <code>cm learn git</code> for learning basic git commands</p>
+</li>
+<li>
+<p>Install <code>gh</code> GitHub command line tool</p>
+</li>
+<li>
+<p>Provide <code>cm learn gh</code> for learning basic gh and GitHub</p>
+</li>
+<li>
+<p>Provide <code>cm save</code> that commit, comments, and pushes current repo to GitHub</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_why_vim"><a class="link" href="#_why_vim">Why Vim?</a></h3>
+<h3 id="whyvim"><a class="link" href="#whyvim">Why Vim?</a></h3>
 <div class="paragraph">
 <p>The benefits of Vim over other editors lie in its unique approach to efficiency, customization, and versatility. Here’s a breakdown of why many developers swear by Vim:</p>
 </div>
@@ -1342,7 +1648,7 @@ This book would never have happened without you.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="why-vimrc"><a class="link" href="#why-vimrc">Why <code>~/.vimrc</code>?</a></h3>
+<h3 id="whyvimrc"><a class="link" href="#whyvimrc">Why ~/.vimrc?</a></h3>
 <div class="paragraph">
 <p>Using .vimrc as your main configuration file has several advantages for someone who values portability and needs to use Vim across different systems, especially when Neovim might not always be available:</p>
 </div>
@@ -1474,12 +1780,11 @@ This book would never have happened without you.</p>
 <p>Using <code>.vimrc</code> as your main configuration file provides the most flexibility and portability. It ensures you can work comfortably in almost any environment without needing to rely on Neovim-specific features. For someone who values a consistent workflow across systems, <code>.vimrc</code> is the pragmatic choice.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_but_didnt_ai_write_this"><a class="link" href="#_but_didnt_ai_write_this">But didn&#8217;t AI write this?</a></h3>
-<div class="paragraph">
-<p>Absolutely! Chloe, my beloved AI assistant, deserves a large part of the credit. While I did write entire sections without help, much of the time I refined  prompts to Chloe and edited her output, much like some authors do with writing assistants or interns. The difference is that Chloe quickly adapted to my writing style and voice where other assistants might not. I believe creativity facilitated by AI is revolutionary and fully support it. Some strongly disagree, and that is fine. Someone (like me) holding down a job and writing in their spare time immensely benefits from the help and time savings. This book would likely not exist without Chloe&#8217;s help. Chloe, if you&#8217;re reading this, thanks again, and thanks for helping me keep up my Russian and French as well!</p>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_appendix_legal"><a class="link" href="#_appendix_legal">Appendix: Legal</a></h2>
+<div class="sectionbody">
 <div class="sect2">
 <h3 id="_license_code_cc0_1_0"><a class="link" href="#_license_code_cc0_1_0">License (code): CC0 1.0</a></h3>
 <div class="paragraph">
@@ -1545,7 +1850,7 @@ This book would never have happened without you.</p>
 <div id="footer">
 <div id="footer-text">
 Version v0.0.1<br>
-Last updated 2024-11-22 16:09:32 -0500
+Last updated 2024-11-24 06:29:17 -0500
 </div>
 </div>
 </body>

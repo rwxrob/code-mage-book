@@ -1,0 +1,67 @@
+== Create your PDE
+
+Every great mage has their sanctum, a personal development environment where spells are honed and wonders are crafted—a carefully constructed digital workspace where ideas come to life, lines of code flow seamlessly, and creativity flourishes. Crafting a PDE is not merely about tools and configurations; it’s an act of self-discovery and empowerment. A terminal-based PDE will seem daunting at first, like learning to play a fine instrument, but the power and music it produces later will resonant far better than any GUI alternative. Terminal interfaces aren't just "for boomers" they are for a discrete, dicerning set of technologists who operate on a magical plane high above their peers.
+
+[CAUTION]
+====
+You either get why the terminal user interface is superior or you don't. No one is going to fight with you about it. You do you. Just know that if you aren't willing to give the terminal a try then this book isn't for you. Stop reading now. When you eventually realize just how powerful the terminal can be this book will still be here waiting for you.
+====
+
+=== Ingredients of a great PDE
+
+Your PDE is an extension of yourself. The tools you choose, the way you organize your projects, and even the colors of your editor reflect your thought process and priorities. A chaotic PDE can mirror a cluttered mind, while a streamlined one radiates focus and efficiency. Take the time to build an environment that feels natural to you—it will save countless hours and reduce friction in your workflow. Code-Mage helps you get started by setting up several very reasonable preferences for you with one command:
+
+[source,shell]
+----
+cm init
+----
+
+That's it. If you are anxious, skip ahead. The rest of this section describes the main components of your PDE that you will be learning later and why. You can also see a <<whatdidcmdo, full summary of changes>> made to your system in the appendix.
+
+=== Package manager: brew, winget
+
+A reliable package manager is essential for managing dependencies, libraries, and tools effortlessly. On macOS, Homebrew (`brew`) reigns supreme, while Linux users can rely on tools like apt, dnf, or pacman. Even Windows has embraced the modern winget package manager. These tools simplify installing and maintaining the components of your PDE, ensuring everything stays up-to-date and compatible.
+
+=== Shell: bash + shellcheck
+
+Learning Bash equips beginners with practical skills that directly translate to real-world tasks, providing a strong base for exploring more advanced tools and programming languages. The bash shell is the official Linux shell and a cornerstone of command-line environments. Most modern shell scripts are written in bash, which is actually safer than its POSIX shell predecessors when written correctly (double brackets instead of single, for example). Windows doesn't come with bash so Git-Bash is installed. Even though bash is preinstalled on Mac, it is very old and needs to be updated. All Linux systems come with the most recent bash so it need not be installed. Installation of bash includes an initial `~/.bashrc` file that can be further customized later and saved to your "dot files" on GitHub.
+
+=== Terminal: alacritty
+
+Speed matters when navigating your PDE. The default terminals that come on all operating systems are really pretty slow, some don't even implement the entire ANSI escape sequence set making them much less fun to use. So a GPU-accelerated terminal like Alacritty offers blazing-fast rendering, smooth scrolling, and a modern interface. These tools ensure that your terminal keeps up with your pace, allowing for a more seamless and efficient workflow. Plus, this makes creating fun terminal animations and games all the more entertaining and—more importantly—memorable so you remember what coding skill or principle you learned while making it.
+
+=== Theme: gruvbox-material
+
+Don’t underestimate the power of aesthetics. A visually pleasing color scheme, like Gruvbox or Solarized, can make hours of coding feel less like a grind and more like art. Color syntax hilighting makes short work of understanding a complex bit of code.
+
+[NOTE]
+====
+I once found a critical error in a core configuration file managing all secure shell access to an enterprise computer. The mistake was trivial, but serious, had the person been using a color terminal instead of their beloved black and white putty they would have caught it instead of me.
+====
+
+=== Editor: neovim + plugins
+
+Your editor is the heart of your PDE. There's no beating the minimilist power of vi (and its cousins vim and neovim), a visual extension to the first official UNIX text editor. Sure you can learn a GUI editor like VSCode (your friends certainly will be) but vi is on everything by default and is prefered by discerning technologists who want to be good on any UNIX or Linux system they encounter (rather than the one with their bloaded GUI editor). Even if you prefer a GUI editor later, say for web development (which makes sense) it is still best to learn vim first.
+
+Neovim is much larger and more powerful than the vim already on your system (it comes with Git Bash, for example). If your computer is powerful enough `nvim` is installed and `vi` set to run it. However, `~/.vimrc` it primarily used so that it can be easily copied into a "dot files" collection later and used on any system with vim (not just nvim). For more about this read <<whyvimrc, _Why ~/.vimrc_>>.
+
+The `~/.vimrc` file includes the Plug plugin manager with the normal plugins to help with development in Bash, Go, Python, HTML, CSS, and JavaScript. Noteably, the `vim-go` plugin is used instead of other Neovim alternatives.
+
+[CAUTION]
+====
+As great as Neovim is, it can get just as slow and bloated as graphical editors when people get carried away, which has become something of a meme. Therefore, keep your vim setup clean and light for now.
+====
+
+=== Window manager: tmux
+
+Linux people fight for days over the best graphical "window manager" but the best code mages already know the answer to this: tmux, the terminal-based _multiplexer_ (think of ciniplex, it's the same, multiple screens). Who cares what your desktop environment is if you have mastered doing everything in the terminal including live collaboration with your buddies all sharing the same virtual keyboard. Tmux also provides universal cutting and pasting that functions _outside_ of vim as well as provides a safe way to leave something running (like a Minecraft server console) and return to it later. This is virtually impossible without tmux. Learn it.
+
+=== Version control: git + gh
+
+Version control systems like Git help manage the spellbooks of developers. They preserve your progress, allow experimentation without fear, and let you collaborate with others seamlessly. GitHub is the leading place to store those repos with the `gh` command line tool.
+
+=== Research: w3m + mods + claude
+
+Harnessing the power of command-line tools like the terminal web browser `w3m` and the command line AI query tool `mods` from Charmbracelet powered by the Claude API, creates a streamlined environment for efficient web browsing and AI-assisted research from the terminal that dominates those doing the alternative from graphic user interfaces. This setup ensures you stay focused, efficient, and immersed in the terminal-first environment.
+
+
