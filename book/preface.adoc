@@ -32,7 +32,7 @@ The source code for Code-Mage is entirely public domain and open for review so y
 
 This book is generally designed to be read linearly, from top to bottom. The concepts build on one another. However, each "spell" is designed to be re-learned often like a mage preparing for a specific adventure. Not all spells can be memorized and at the ready at all times, which is why you create your own code book containing spells of your own creation to go with this book.
 
-Skip the Introduction if you are already really motivated and just want to get right to coding. You can come back to it later. Don't skip it if you are still wondering if coding is something you want to learn.
+Skip the Introduction if you are already really motivated and just want to get right to coding. You can come back to it later. Don't skip the intro, however, if you are still wondering if coding is something you want to learn.
 
 Here's how you will master each concept and skill by applying the verbs of Bloom's Taxonomy: remember, understand, apply, analyze, evaluate, create:
 
