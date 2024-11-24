@@ -8,6 +8,7 @@ This script is used for building this book.
 	epub  - build the dist/code-mage-book-<version>.epub
 	pdf   - build the dist/code-mage-book-<version>.pdf
 	html  - build the docs/index-<version>.html
+	cm    - build and install cm command
 	all   - build epub, pdf, html (default)
 	watch - build on any change
 
@@ -55,6 +56,10 @@ x-html() {
 		-o "index.html" \
 		-a copy_script=./book/assets/scripts/script.js \
 		"./book/index.adoc"
+}
+
+x-cm() {
+	go install ./cmd/cm
 }
 
 x-clean() {
