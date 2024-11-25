@@ -11,17 +11,11 @@ First you need to open the built in terminal for your operating system.
 Fight the temptation to install a better terminal right now. Code-Mage installs the Alacritty terminal for you with `cm init` in the next step. You can always install and use something else later if you don't like it.
 ====
 
-**Mac**
+**Mac**: Press `Cmd + Space` to open Spotlight, type `terminal` and press `Enter`.
 
-Press `Cmd + Space` to open Spotlight, type `terminal` and press `Enter`.
+**Windows**: Press `Win` to open the search box, type `powershell`, and press `Enter`.
 
-**Windows**
-
-Press `Win` to open the search box, type `powershell`, and press `Enter`.
-
-**Linux**
-
-Press `Ctrl + Alt + T`.
+**Linux**: Press `Ctrl + Alt + T`.
 
 === Verify go command
 
@@ -100,3 +94,4 @@ go install github.com/rwxrob/code-mage-book/cmd/cm@latest
 
 This same command can be used any time to update to the latest version and works for installing any Go command as well.
 
+---

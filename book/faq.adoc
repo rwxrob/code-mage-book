@@ -8,7 +8,8 @@ include::faq/whyvim.adoc[]
 
 include::faq/whyvimrc.adoc[]  
 
-
 include::faq/apcs.adoc[]  
 
 include::faq/whywinget.adoc[]  
+
+include::faq/why-github.adoc[]  

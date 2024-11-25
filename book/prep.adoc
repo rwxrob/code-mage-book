@@ -1,22 +1,18 @@
-= Prepare
+= Prepare to code
 
-[.text-center]
-_"Learning happens in the lab, not the lecture hall."_
+> Learning happens in the lab, not the lecture hall.
 
 You are probably excited to get going and we've done our best to help you get started as quickly as possible. Here's a summary of what you'll need to do to prepare:
 
 [start=0]
 . Learn to type from home row
 . Get a computer
-. Install the Go programming language
-. Install Code-Mage using Go
-. Create personal development environment (PDE) with Code-Mage
-. Learn basic shell commands to get around and work with files
-. Learn basic vim to edit your code
-. Learn basic tmux to get the most out of your terminal
-. Learn basic git and gh to save and share your code
+. Install the Go compiler and Code-Mage using Go
+. Install the development tools you'll need (with help form Code-Mage)
+. Connect with a supportive learning community
+. Learn to learn, take notes, and use your new development tools
 
-For most people this preparation takes a few hours, but there is no avoiding it to become a true code mage.
+For most people this preparation takes a few hours, but there is simply no avoiding it if you want to actually learn and have that learning stick with you later.
 
 [CAUTION]
 ====
@@ -31,9 +27,13 @@ include::prep/start-taking-notes.adoc[]
 
 include::prep/computer.adoc[]
 
-//include::prep/email-account.adoc[]
+include::prep/get-email-account.adoc[]
 
-//include::prep/github-account.adoc[]
+include::prep/create-slack-account.adoc[]
+
+include::prep/create-github-account.adoc[]
+
+include::prep/learn-basic-markdown.adoc[]
 
 include::prep/getgo.adoc[]
 
@@ -51,5 +51,5 @@ include::prep/learntmux.adoc[]
 
 include::prep/learnw3m.adoc[]
 
-//include::prep/learnmods.adoc[]
+include::prep/learn-mods-ai.adoc[]
 

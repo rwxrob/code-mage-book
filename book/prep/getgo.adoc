@@ -8,3 +8,5 @@ Open the official Go download site at https://go.dev/dl and find your operating 
 ====
 There are many different ways to install Go that you will later learn about, including using installers like `brew` and `winget` and `apt`. But for now, you just need to get Go onto your workstation as easily as possible.
 ====
+
+---

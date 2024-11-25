@@ -1,13 +1,11 @@
 == What's included in the book
 
-This book is focused on learning to code in Go from the bash terminal command line, nothing more. There is nothing more authentic or rewarding than creating command-line tools from the command-line itself. Therefore, only those minimal skills required to use the command-line to open, edit, and run Go code from the terminal are covered.
+This book is focused on learning to code in Go from the terminal command line and everything that requires for an absolute beginner who has never even heard of a terminal before, that's it, nothing more. It is very rewarding creating command-line programs from the command-line itself. We want to get doing that as fast as possible, but some stuff cannot be skipped to get there. Anything that can, has been.
 
 [[cm-summary]]
 === The Code-Mage (cm) command
 
-We have created a command-line setup tool and learning assistant written in Go to accompany this book: Code-Mage (abbreviated as `cm`). With one `cm init` command everything you need is installed and configured. Eventually, you can come back and examine everything Code-Mage did to better understand and customize it. (In fact, there's an entire book dedicated to it and advanced terminal mastery.)
-
-Getting setup quickly is only the beginning of what the Code-Mage command can do:
+I created Code-Mage to skip a lot of that setup stuff with `cm init` in a way that you can come back to later and understand it if you want. But that's not all it can do:
 
 - Dynamically display contextual help while you are typing
 - Validate your work and catch bugs as you progress
@@ -17,5 +15,6 @@ Getting setup quickly is only the beginning of what the Code-Mage command can do
 - Display community news and announcements
 - Read this book to your web browser without Internet
 
-The source code for Code-Mage is entirely public domain and open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).
+I won't lie, I'm very proud of Code-Mage. I really wish I had it when I was learning. In fact, making the things you wish you had is a great way to find project ideas and motivation. The source code for Code-Mage is entirely public domain and open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).
 
+---

@@ -502,7 +502,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_whats_with_the_magic_thing">What&#8217;s with the magic thing?</a></li>
 <li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a>
 <ul class="sectlevel3">
-<li><a href="#_the_code_mage_cm_command">The Code-Mage (cm) command</a></li>
+<li><a href="#cm-summary">The Code-Mage (cm) command</a></li>
 </ul>
 </li>
 <li><a href="#_how_to_use_this_book">How to use this book</a></li>
@@ -565,8 +565,16 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </li>
 </ul>
 </li>
-<li><a href="#_prepare">Prepare</a>
+<li><a href="#_prepare_to_code">Prepare to code</a>
 <ul class="sectlevel2">
+<li><a href="#_start_taking_notes">Start taking notes</a>
+<ul class="sectlevel3">
+<li><a href="#_why_notes_matter">Why notes matter</a></li>
+<li><a href="#_the_value_of_starting_simple">The value of starting simple</a></li>
+<li><a href="#_a_note_taking_habit_for_mages">A note-taking habit for mages</a></li>
+<li><a href="#_from_paper_to_systems">From paper to systems</a></li>
+</ul>
+</li>
 <li><a href="#_get_a_computer">Get a computer</a>
 <ul class="sectlevel3">
 <li><a href="#_minimum_requirements">Minimum requirements</a></li>
@@ -574,17 +582,42 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_mac_vs_windows_vs_linux">Mac vs. Windows vs. Linux</a></li>
 </ul>
 </li>
-<li><a href="#_install_go_language">Install Go language</a></li>
-<li><a href="#_install_code_mage_assistant">Install Code-Mage assistant</a>
+<li><a href="#_create_an_email_account">Create an email account</a>
 <ul class="sectlevel3">
-<li><a href="#_open_a_terminal">Open a terminal</a>
-<ul class="sectlevel4">
-<li><a href="#_mac">Mac</a></li>
-<li><a href="#_windows">Windows</a></li>
-<li><a href="#_linux">Linux</a></li>
+<li><a href="#_why_email_matters">Why email matters</a></li>
+<li><a href="#_choosing_the_right_email_service">Choosing the right email service</a></li>
+<li><a href="#_how_email_powers_your_learning_and_collaboration">How email powers your learning and collaboration</a></li>
+<li><a href="#_tips_for_managing_email">Tips for managing email</a></li>
 </ul>
 </li>
-<li><a href="#_go_install_cm">Go install cm</a></li>
+<li><a href="#_create_slack_account">Create Slack account</a>
+<ul class="sectlevel3">
+<li><a href="#_why_create_a_slack_account">Why create a Slack account?</a></li>
+<li><a href="#_how_to_create_a_slack_account">How to create a Slack account</a></li>
+<li><a href="#_best_practices">Best practices</a></li>
+<li><a href="#_why_slack_now">Why Slack now?</a></li>
+</ul>
+</li>
+<li><a href="#_create_a_github_account">Create a GitHub account</a>
+<ul class="sectlevel3">
+<li><a href="#_why_create_a_github_account">Why create a GitHub account?</a></li>
+<li><a href="#_how_to_create_a_github_account">How to create a GitHub account</a></li>
+<li><a href="#_why_github_now">Why GitHub now?</a></li>
+</ul>
+</li>
+<li><a href="#_learn_basic_markdown">Learn basic Markdown</a>
+<ul class="sectlevel3">
+<li><a href="#_why_use_markdown">Why use Markdown?</a></li>
+<li><a href="#_start_taking_markdown_notes">Start taking Markdown notes</a></li>
+<li><a href="#_basic_syntax">Basic syntax</a></li>
+</ul>
+</li>
+<li><a href="#_install_official_go_compiler">Install official Go compiler</a></li>
+<li><a href="#_install_code_mage_assistant">Install Code-Mage assistant</a>
+<ul class="sectlevel3">
+<li><a href="#_open_a_builtin_terminal">Open a builtin terminal</a></li>
+<li><a href="#_verify_go_command">Verify go command</a></li>
+<li><a href="#_use_go_to_install_cm">Use go to install cm</a></li>
 </ul>
 </li>
 <li><a href="#_install_development_environment">Install development environment</a>
@@ -600,6 +633,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_research_w3m_mods_claude">Research: w3m + mods + claude</a></li>
 </ul>
 </li>
+<li><a href="#_start_alacritty_terminal">Start Alacritty terminal</a></li>
 <li><a href="#_learn_basic_shell_commands">Learn basic shell commands</a></li>
 <li><a href="#learnvim">Learn basic vim usage</a></li>
 <li><a href="#_learn_basic_tmux">Learn basic tmux</a>
@@ -624,6 +658,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_open_graphic_web_browser">Open graphic web browser</a></li>
 </ul>
 </li>
+<li><a href="#_learn_mods_claude_ai">Learn mods + Claude AI</a></li>
 </ul>
 </li>
 <li><a href="#_learn_to_code">Learn to code</a>
@@ -641,6 +676,16 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#whyvimrc">Why ~/.vimrc?</a></li>
 <li><a href="#_what_about_ap_computer_science">What about AP Computer Science?</a></li>
 <li><a href="#_why_winget">Why winget?</a></li>
+<li><a href="#why-github">Why GitHub?</a>
+<ul class="sectlevel3">
+<li><a href="#_the_power_of_popularity">The power of popularity</a></li>
+<li><a href="#_superior_visibility">Superior visibility</a></li>
+<li><a href="#_best_in_class_command_line_tool">Best-in-class command-line tool</a></li>
+<li><a href="#_comparing_to_gitlab_sourcehut_and_others">Comparing to GitLab, SourceHut, and others</a></li>
+<li><a href="#_addressing_microsoft_ownership">Addressing Microsoft ownership</a></li>
+<li><a href="#_conclusion">Conclusion</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#_appendix_legal">Appendix: Legal</a>
@@ -707,7 +752,10 @@ This book would never have happened without you.</p>
 <div class="sect2">
 <h3 id="_why_another_go_book"><a class="link" href="#_why_another_go_book">Why another Go book?</a></h3>
 <div class="paragraph">
-<p>I&#8217;ve spend several hundred dollars on Go books, always wanting to find one I could just use and recommend. Since starting SKILSTAK Coding Arts in 2013 and learning and teaching Go since 2014 (when TJ Hallowaychuk famously wrote <a href="https://medium.com/@tjholowaychuk/farewell-node-js-4ba9e7f3e52b">Farewell to Node</a>) I have noticed all Go books suffer from one or more of the following annoyances:</p>
+<p>I&#8217;ve spend several hundred dollars on Go books, always wanting to find one I could just use and recommend to absolute beginners—who have not only never coded before—but didn&#8217;t know the word "code" could be used as a verb, the type of beginner who thinks "print" involves a printing press or things that run out of toner, those who have never heard the words Linux or GitHub before in their lives, who think a "terminal" is something to run through at the airport when they are late for a flight. "Go, do you mean like Okay Go, that band from 90s?" These wonderfully clueless people have absolutely zero tech background and never regretted it, until now. Now, for whatever reason, they want to learn to code and, you guessed it, they cannot find a single book out there written for <em>them</em>.</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;ve been a nerd and a geek my entire life and have the photos to prove it (look up the difference). It turns out, I also have a gift for linguistics that includes speaking fluent Russian, French, Creole and English but also translating techno-babble into comprehensive prose and conversation in order to help <em>anyone</em> to discover how to learn <em>anything</em> in their own way. Since starting SKILSTAK Coding Arts in 2013 and learning and teaching Go in 2014 (when TJ Hallowaychuk famously wrote <a href="https://medium.com/@tjholowaychuk/farewell-node-js-4ba9e7f3e52b">Farewell to Node</a>) I have noticed all Go books suffer from one or more of the following annoyances:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -727,7 +775,7 @@ This book would never have happened without you.</p>
 <p>Lack a free and supportive learning community</p>
 </li>
 <li>
-<p>To serious to be memorable or fun—especially for kids</p>
+<p>Take themselves too seriously to be memorable or fun</p>
 </li>
 <li>
 <p>Ignore how to setup a personal development environment</p>
@@ -738,39 +786,39 @@ This book would never have happened without you.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Most of them have some sort of dependency on the Internet to get the accompanying code, but none have any kind of downloadable personal learning assistant app, like Code-Mage.</p>
+<p>Most of these books have some sort of dependency on the Internet to get the accompanying code, but none have any kind of downloadable personal learning assistant app, like the one I developed in Go for this book: Code-Mage.</p>
 </div>
 <div class="paragraph">
-<p>At the risk of sounding too negative, however, I&#8217;ll describe the last straw for me. I bought a $40 book to learn about generics that turned out to not cover generics at all—but even worse—contained an entire chapter <em>claiming</em> to teach generics that contained a vague proposition for generics that was never adopted by the language. This author and publisher rushed their book out based on false information confusing me and potentially thousands of others. Then they charged another $40 for a "new edition" of the same book without even attempting to give anyone back their money they wasted for the first book. You can probably guess the book, author, and publisher, which is notorious for this kind of fraudulent cash-grab.</p>
+<p>At the risk of sounding too negative, I&#8217;ll describe the straw that broke my back. I bought a $40 book to learn about generics that turned out to not cover generics at all—but even worse—contained an entire chapter <em>claiming</em> to teach generics that contained a vague proposition for generics that was never adopted by the language. This author and publisher rushed their book out based on false information confusing me and potentially thousands of others. Then they charged another $40 for a "new edition" of the same book without even attempting to give anyone back the money they wasted for the first book. I lost hundreds in premium time wasted. You can probably guess the book, author, and publisher, which is notorious for this kind of fraudulent cash-grab.</p>
 </div>
 <div class="paragraph">
-<p>Needless to say, I was furious. Most books are written by great people who have put a lot of time and energy into them. At worse they are annoying in their imperfections. But this blatant "screw you, give us your money" made me mad enough to follow my own mantra: <em>don&#8217;t get mad, get busy</em>. I started thinking about what I would put into a book based on what I <em>knew</em> hundreds of people I had helped to learn Go as a first language would want, and now you are reading it.</p>
+<p>Needless to say, I was furious. Most books are written by great people who have put a lot of time and energy into them. At worse they are annoying in their imperfections. But this blatant "screw you, give us your money" made me mad enough to follow my own mantra: <em>don&#8217;t get mad, get busy</em>. I started thinking about what I would put into a book based on what I <em>knew</em> hundreds of absolutely non-technical people I had helped to learn Go as a first language would want, and now you are reading it.</p>
 </div>
+<hr>
 </div>
 <div class="sect2">
 <h3 id="_who_should_read_this_book"><a class="link" href="#_who_should_read_this_book">Who should read this book</a></h3>
 <div class="paragraph">
 <p>This book is written for anyone wanting to learn—or help someone learn—practical computer science and programming for real applications development. While we have fun with the whole fantasy magic theme, everything in this book is very real and might even get you a job someday. It is true that this book can be reliably used as a text book for absolute beginners with enough algebra to understand what a mathematical function is but this book very clearly includes everyone <em>outside</em> of educational institutions. In fact, I wrote it mostly with pro-active parents in mind who want to give their kids a head-start in tech that they simply cannot find in most traditional education systems, the same reason, in fact, that I started SKILSTAK Coding Arts in 2013 with my own retirement money.</p>
 </div>
+<hr>
 </div>
 <div class="sect2">
 <h3 id="_whats_with_the_magic_thing"><a class="link" href="#_whats_with_the_magic_thing">What&#8217;s with the magic thing?</a></h3>
 <div class="paragraph">
 <p>Yes, the magic stuff is absolutely silly—on purpose. Self-proclaimed "serious" people and pedagogues (not necessary one and the same) seem to find fault with what is a well-established scientific principle of memory: silliness. Human brains are hard-coded to remember silly narratives and images. This is how memory competitors memorize Pi to 100,000 digits, by creating a silly, colorful narrative in their brain that they replay related to each of the numbers as they walk through a "memory palace," a mental map of a familiar location where each story occupies a specific spot containing different sets of numbers. Coming up with your own silly stories to associate with coding skills is the best, but all this talk about magic and mages is a head-start. If it&#8217;s not your thing, there are plenty of other boring books covering nearly the same stuff to slog through (most of which are 10 years out of date).</p>
 </div>
+<hr>
 </div>
 <div class="sect2">
 <h3 id="_whats_included_in_the_book"><a class="link" href="#_whats_included_in_the_book">What&#8217;s included in the book</a></h3>
 <div class="paragraph">
-<p>This book is focused on learning to code in Go from the bash terminal command line, nothing more. There is nothing more authentic or rewarding than creating command-line tools from the command-line itself. Therefore, only those minimal skills required to use the command-line to open, edit, and run Go code from the terminal are covered.</p>
+<p>This book is focused on learning to code in Go from the terminal command line and everything that requires for an absolute beginner who has never even heard of a terminal before, that&#8217;s it, nothing more. It is very rewarding creating command-line programs from the command-line itself. We want to get doing that as fast as possible, but some stuff cannot be skipped to get there. Anything that can, has been.</p>
 </div>
 <div class="sect3">
-<h4 id="_the_code_mage_cm_command"><a class="link" href="#_the_code_mage_cm_command">The Code-Mage (cm) command</a></h4>
+<h4 id="cm-summary"><a class="link" href="#cm-summary">The Code-Mage (cm) command</a></h4>
 <div class="paragraph">
-<p>We have created a command-line setup tool and learning assistant written in Go to accompany this book: Code-Mage (abbreviated as <code>cm</code>). With one <code>cm init</code> command everything you need is installed and configured. Eventually, you can come back and examine everything Code-Mage did to better understand and customize it. (In fact, there&#8217;s an entire book dedicated to it and advanced terminal mastery.)</p>
-</div>
-<div class="paragraph">
-<p>Getting setup quickly is only the beginning of what the Code-Mage command can do:</p>
+<p>I created Code-Mage to skip a lot of that setup stuff with <code>cm init</code> in a way that you can come back to later and understand it if you want. But that&#8217;s not all it can do:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -798,8 +846,9 @@ This book would never have happened without you.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>The source code for Code-Mage is entirely public domain and open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).</p>
+<p>I won&#8217;t lie, I&#8217;m very proud of Code-Mage. I really wish I had it when I was learning. In fact, making the things you wish you had is a great way to find project ideas and motivation. The source code for Code-Mage is entirely public domain and open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).</p>
 </div>
+<hr>
 </div>
 </div>
 <div class="sect2">
@@ -858,6 +907,7 @@ This book would never have happened without you.</p>
 <p>Repetition really is the mother of learning. While often we demonize "rote repetition" in the West, the slavs have promoted it for decades. The neurons in our brain store memory by having the same electical impulses repeated over and over. So in order to program oneself the only way is to repeat it. Repeat these spells as fast and as regularly as you can and you&#8217;ll end up training your own neural net just like a machine learning model—but in your head. Repetition can be great to supplement your growth while working on a bigger project—especially
 in the early days before everything becomes second nature.</p>
 </div>
+<hr>
 </div>
 <div class="sect2">
 <h3 id="_supplement_your_reading"><a class="link" href="#_supplement_your_reading">Supplement your reading</a></h3>
@@ -967,6 +1017,7 @@ in the early days before everything becomes second nature.</p>
 <div class="paragraph">
 <p>Learning to code is not just about mastering a skill—it’s about gaining the confidence to explore, experiment, and innovate in a world driven by technology. No matter your background or goals, coding has something to offer. The journey may have its challenges, but the rewards are immense. So take the first step—your adventure in coding awaits!</p>
 </div>
+<hr>
 </div>
 </div>
 <div class="sect2">
@@ -1022,6 +1073,7 @@ in the early days before everything becomes second nature.</p>
 <div class="paragraph">
 <p>The Code Mage doesn’t just write programs—they solve problems, empower others, and build bridges between technology and humanity. Their magic isn’t limited to code but extends to creating tools, services, and experiences that make life better. The world becomes a better place all around because of them.</p>
 </div>
+<hr>
 </div>
 </div>
 <div class="sect2">
@@ -1108,6 +1160,7 @@ in the early days before everything becomes second nature.</p>
 <div class="paragraph">
 <p>Becoming a Code Mage is not about perfection; it’s about embracing the journey. If you’re ready to cultivate these attributes and immerse yourself in the magical world of code, you already have what it takes to start. The path ahead may be challenging, but the rewards are boundless. The realm of coding awaits—will you answer the call?</p>
 </div>
+<hr>
 </div>
 </div>
 <div class="sect2">
@@ -1143,10 +1196,14 @@ in the early days before everything becomes second nature.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_prepare"><a class="link" href="#_prepare">Prepare</a></h2>
+<h2 id="_prepare_to_code"><a class="link" href="#_prepare_to_code">Prepare to code</a></h2>
 <div class="sectionbody">
-<div class="paragraph text-center">
-<p><em>"Learning happens in the lab, not the lecture hall."</em></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Learning happens in the lab, not the lecture hall.</p>
+</div>
+</blockquote>
 </div>
 <div class="paragraph">
 <p>You are probably excited to get going and we&#8217;ve done our best to help you get started as quickly as possible. Here&#8217;s a summary of what you&#8217;ll need to do to prepare:</p>
@@ -1160,30 +1217,21 @@ in the early days before everything becomes second nature.</p>
 <p>Get a computer</p>
 </li>
 <li>
-<p>Install the Go programming language</p>
+<p>Install the Go compiler and Code-Mage using Go</p>
 </li>
 <li>
-<p>Install Code-Mage using Go</p>
+<p>Install the development tools you&#8217;ll need (with help form Code-Mage)</p>
 </li>
 <li>
-<p>Create personal development environment (PDE) with Code-Mage</p>
+<p>Connect with a supportive learning community</p>
 </li>
 <li>
-<p>Learn basic shell commands to get around and work with files</p>
-</li>
-<li>
-<p>Learn basic vim to edit your code</p>
-</li>
-<li>
-<p>Learn basic tmux to get the most out of your terminal</p>
-</li>
-<li>
-<p>Learn basic git and gh to save and share your code</p>
+<p>Learn to learn, take notes, and use your new development tools</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>For most people this preparation takes a few hours, but there is no avoiding it to become a true code mage.</p>
+<p>For most people this preparation takes a few hours, but there is simply no avoiding it if you want to actually learn and have that learning stick with you later.</p>
 </div>
 <div class="admonitionblock caution">
 <table>
@@ -1204,6 +1252,57 @@ in the early days before everything becomes second nature.</p>
 </td>
 </tr>
 </table>
+</div>
+<div class="sect2">
+<h3 id="_start_taking_notes"><a class="link" href="#_start_taking_notes">Start taking notes</a></h3>
+<div class="paragraph">
+<p>Capturing the magic of thought</p>
+</div>
+<div class="paragraph">
+<p>In the journey of learning, problem-solving, and creating, taking notes is as important as casting spells to preserve fleeting thoughts. Whether you use a sophisticated digital tool (like GitHub or Obsidian) or a simple piece of paper, the act of note-taking is a powerful practice that unlocks clarity, reinforces memory, and fosters creativity.</p>
+</div>
+<div class="sect3">
+<h4 id="_why_notes_matter"><a class="link" href="#_why_notes_matter">Why notes matter</a></h4>
+<div class="paragraph">
+<p><strong>Preserving ideas</strong>: Our minds are like flowing rivers of thought. Without notes, many brilliant ideas risk being swept away. Notes capture these ideas, making them tangible and retrievable.</p>
+</div>
+<div class="paragraph">
+<p><strong>Enhancing memory</strong>: The process of writing, even on paper, strengthens your ability to recall information. It’s an active engagement with the material that makes it stick.</p>
+</div>
+<div class="paragraph">
+<p><strong>Organizing complexity</strong>: Notes allow you to break down complex concepts into manageable pieces, creating a map that guides your understanding.</p>
+</div>
+<div class="paragraph">
+<p><strong>Encouraging reflection</strong>: By reviewing your notes, you can identify patterns, revisit insights, and refine your thinking over time.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_value_of_starting_simple"><a class="link" href="#_the_value_of_starting_simple">The value of starting simple</a></h4>
+<div class="paragraph">
+<p>You don’t need a perfect system to begin. Even a humble notebook can be your first spellbook. What matters is consistency and intent. Scribble ideas, sketch diagrams, or jot down questions—whatever helps you capture and organize your thoughts.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_a_note_taking_habit_for_mages"><a class="link" href="#_a_note_taking_habit_for_mages">A note-taking habit for mages</a></h4>
+<div class="paragraph">
+<p><strong>Always be ready</strong>: Keep a notebook or a few blank sheets nearby, whether at your desk or on the go.</p>
+</div>
+<div class="paragraph">
+<p><strong>Write what matters</strong>: Focus on key points, insights, and actionable ideas rather than trying to transcribe everything.</p>
+</div>
+<div class="paragraph">
+<p><strong>Review and reflect</strong>: Set aside time to revisit your notes. What once seemed incomplete might spark new understanding.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_from_paper_to_systems"><a class="link" href="#_from_paper_to_systems">From paper to systems</a></h4>
+<div class="paragraph">
+<p>As your habit grows, you might find value in transitioning to a digital system that organizes your notes into searchable collections. But remember: the tool is less important than the practice. What matters most is capturing the magic of your thoughts, whether in ink or bytes.</p>
+</div>
+<div class="paragraph">
+<p>Taking notes is not just about recording—it’s about thinking. With each word you write, you deepen your engagement with your learning, your ideas, and yourself. Start small, stay consistent, and watch as your notes become a treasure trove of inspiration and growth.</p>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_get_a_computer"><a class="link" href="#_get_a_computer">Get a computer</a></h3>
@@ -1318,7 +1417,480 @@ in the early days before everything becomes second nature.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_install_go_language"><a class="link" href="#_install_go_language">Install Go language</a></h3>
+<h3 id="_create_an_email_account"><a class="link" href="#_create_an_email_account">Create an email account</a></h3>
+<div class="paragraph">
+<p>Your gateway to learning and collaboration</p>
+</div>
+<div class="paragraph">
+<p>In the digital age, your email account is more than just a communication tool—it’s the foundation of your online identity. A reliable email address is essential for accessing educational platforms, joining communities, and managing services like GitHub. Here’s why getting your own personal email account is a critical first step in your journey (if you don&#8217;t have one already).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This section is unnecessarily long for most people. I have learned from direct experience with parents and educators that there is this idea that "students"—particularly kids—don&#8217;t need an email to learn. Strictly speaking they don&#8217;t, but there are very many reasons to get them started as early as possible with their <em>own personal email</em> that they carry with them. Often schools setup email only to rob the person from that email as soon as they leave school. This unnecessarily disrupts that person&#8217;s learning opportunities outside of that school (perhaps by nefarious design).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_why_email_matters"><a class="link" href="#_why_email_matters">Why email matters</a></h4>
+<div class="paragraph">
+<p><strong>Account Creation</strong>: Most services require an email address to create an account. Whether you’re signing up for GitHub to manage your code, joining an educational learning platform, or subscribing to a community forum, your email is the gateway to these opportunities.</p>
+</div>
+<div class="paragraph">
+<p><strong>Identity Verification</strong>: Services often use email for identity verification. This ensures that your accounts are secure and recoverable in case you forget a password or need to reset access.</p>
+</div>
+<div class="paragraph">
+<p><strong>Communication</strong>: Many platforms use email to send critical updates, notifications, and resources. A well-organized email account ensures you don’t miss important messages.</p>
+</div>
+<div class="paragraph">
+<p><strong>Privacy and Professionalism</strong>: A secure, reliable email address—especially one from a service like ProtonMail—protects your privacy and presents a professional image when engaging with communities and collaborators.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_choosing_the_right_email_service"><a class="link" href="#_choosing_the_right_email_service">Choosing the right email service</a></h4>
+<div class="paragraph">
+<p>For most users, selecting a reliable and secure email provider is vital. While free services like Gmail are popular, privacy-focused options like ProtonMail offer additional benefits, including end-to-end encryption and strong data protection.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_how_email_powers_your_learning_and_collaboration"><a class="link" href="#_how_email_powers_your_learning_and_collaboration">How email powers your learning and collaboration</a></h4>
+<div class="paragraph">
+<p><strong>GitHub</strong>: GitHub requires an email address to create an account and communicate updates about repositories, issues, and pull requests. A well-managed email helps you stay informed and connected.</p>
+</div>
+<div class="paragraph">
+<p><strong>Educational platforms</strong>: Online learning platforms, such as Coursera, edX, and Khan Academy, use your email for registration and access to course materials. They also send reminders and announcements to keep you on track.</p>
+</div>
+<div class="paragraph">
+<p><strong>Community engagement</strong>: Developer forums, coding bootcamps, and discussion boards rely on email to verify users and facilitate networking.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tips_for_managing_email"><a class="link" href="#_tips_for_managing_email">Tips for managing email</a></h4>
+<div class="paragraph">
+<p><strong>Use a professional address</strong>: Choose an email address that reflects your identity and professionalism. Avoid overly casual or complex names.</p>
+</div>
+<div class="paragraph">
+<p><strong>Enable security features</strong>: Use two-factor authentication (2FA) to protect your account and ensure your provider supports encryption.</p>
+</div>
+<div class="paragraph">
+<p><strong>Organize your inbox</strong>: Create folders or labels for services like GitHub, learning platforms, and community forums to keep your inbox tidy and manageable.</p>
+</div>
+<div class="paragraph">
+<p>Setting up a reliable email account is a small but significant step that unlocks a world of opportunities in learning and collaboration. Whether you’re diving into development with GitHub, joining an online course, or participating in a vibrant learning community, your email is the first key to the digital kingdom. Choose wisely, stay organized, and let it be the foundation for your growth.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_slack_account"><a class="link" href="#_create_slack_account">Create Slack account</a></h3>
+<div class="paragraph">
+<p>Connecting with communities and teams</p>
+</div>
+<div class="paragraph">
+<p>Slack is a powerful communication platform used by teams, communities, and organizations worldwide to collaborate and share ideas. Creating a Slack account allows you to connect with others, join workspaces, and participate in meaningful conversations. Here’s why you should create an account and how to do it.</p>
+</div>
+<div class="sect3">
+<h4 id="_why_create_a_slack_account"><a class="link" href="#_why_create_a_slack_account">Why create a Slack account?</a></h4>
+<div class="paragraph">
+<p><strong>Seamless Communication</strong>: Slack makes real-time communication easy with channels for focused discussions and direct messages for private conversations.</p>
+</div>
+<div class="paragraph">
+<p><strong>Community Engagement</strong>: Many livestream communities, open-source projects, and learning groups use Slack as their hub for collaboration and networking.</p>
+</div>
+<div class="paragraph">
+<p><strong>Team Collaboration</strong>: Slack is widely adopted in workplaces for organizing team communication, file sharing, and project management.</p>
+</div>
+<div class="paragraph">
+<p><strong>Integrated Tools</strong>: Slack integrates with tools like Google Drive, GitHub, Trello, and more, streamlining workflows and enhancing productivity.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_how_to_create_a_slack_account"><a class="link" href="#_how_to_create_a_slack_account">How to create a Slack account</a></h4>
+<div class="paragraph">
+<p><strong>Visit Slack</strong>: Go to <a href="https://slack.com">Slack’s homepage</a> in your web browser.</p>
+</div>
+<div class="paragraph">
+<p><strong>Sign up</strong>: Click on the "Sign Up" button. Enter your email address and click "Continue."</p>
+</div>
+<div class="paragraph">
+<p><strong>Verify email</strong>: Slack will send a confirmation email to the address you provided. Open the email and click the verification link.</p>
+</div>
+<div class="paragraph">
+<p><strong>Join a workspace</strong>: There are any number of great workspaces to join, here are a few recommendations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://invite.slack.golangbridge.org" class="bare">https://invite.slack.golangbridge.org</a> (free)</p>
+</li>
+<li>
+<p><a href="https://techworkersclub.com" class="bare">https://techworkersclub.com</a> (minimal lifetime cost)</p>
+</li>
+<li>
+<p><a href="https://rwxrob.slack.com" class="bare">https://rwxrob.slack.com</a> (free, but personal invite only, never anonymous)</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Access to the <a href="https://rwxrob.slack.com" class="bare">https://rwxrob.slack.com</a> workspace is invite only for my professional friends. I make no promises you will be accepted or not removed for any reason I see fit. Contact me to request membership and mention what you are interested in and why you want to become a member of our professional community. I am very peculiar about only allowing people dedicated to behaving professionally and helping anyone with their own learning journey. If you seek help, you promise to pass it on. There is no age restriction, but everyone in Slack is required to use their full, real name in their profile. No anonymous accounts will be accepted.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Set Up Your Profile</strong>: Add a profile picture and fill out your display name and other details. Customize your profile to reflect your personality or professional role.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_best_practices"><a class="link" href="#_best_practices">Best practices</a></h4>
+<div class="paragraph">
+<p><strong>Explore Slack Basics</strong>: Familiarize yourself with channels, direct messages, and mentions.</p>
+</div>
+<div class="paragraph">
+<p><strong>Practice Professional Conduct</strong>: Unlike platforms such as Discord or Twitch, Slack is often used in professional environments. Using clear, respectful, and concise communication not only fosters collaboration but also helps build a reputation for professionalism. Avoid casual or overly informal language unless the workspace culture explicitly encourages it. Use proper grammar, avoid slang, and maintain a polite tone in all interactions. Slack is <em>not</em> Discord, Twitch, or Reddit. Be professional.</p>
+</div>
+<div class="paragraph">
+<p><strong>Why This Matters</strong>: Professional conduct on Slack mirrors workplace expectations. Practicing these behaviors now prepares you for real-world employment scenarios, where Slack or similar tools may be used daily. It shows potential employers and collaborators that you can engage respectfully and effectively in team settings.</p>
+</div>
+<div class="paragraph">
+<p><strong>Organize Your Workspaces</strong>: If you join multiple workspaces, switch between them easily from the sidebar.</p>
+</div>
+<div class="paragraph">
+<p><strong>Enable Notifications</strong>: Set up notifications to stay informed about important messages without being overwhelmed.</p>
+</div>
+<div class="paragraph">
+<p><strong>Customize Settings</strong>: Adjust your preferences for themes, availability, and message behavior.</p>
+</div>
+<div class="paragraph">
+<p><strong>Organize Your Workspaces</strong>: If you join multiple workspaces, switch between them easily from the sidebar.</p>
+</div>
+<div class="paragraph">
+<p><strong>Enable Notifications</strong>: Set up notifications to stay informed about important messages without being overwhelmed.</p>
+</div>
+<div class="paragraph">
+<p><strong>Customize Settings</strong>: Adjust your preferences for themes, availability, and message behavior.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_why_slack_now"><a class="link" href="#_why_slack_now">Why Slack now?</a></h4>
+<div class="paragraph">
+<p>Whether you’re connecting with our livestream community, collaborating with a team, or exploring learning opportunities, Slack provides a flexible and robust platform for communication and collaboration. By creating an account today, you gain access to an ecosystem of vibrant discussions, shared resources, and opportunities for growth.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_a_github_account"><a class="link" href="#_create_a_github_account">Create a GitHub account</a></h3>
+<div class="paragraph">
+<p>A developer&#8217;s first step</p>
+</div>
+<div class="paragraph">
+<p>GitHub is one of the most powerful platforms for collaboration, code sharing, and version control. Creating a GitHub account is an essential step for developers, students, and anyone looking to participate in open-source projects or manage their personal projects effectively. Here’s a guide on how to create your account and why it matters.</p>
+</div>
+<div class="sect3">
+<h4 id="_why_create_a_github_account"><a class="link" href="#_why_create_a_github_account">Why create a GitHub account?</a></h4>
+<div class="paragraph">
+<p><strong>Version Control</strong>: GitHub is built on Git, a distributed version control system that helps you track changes in your code, collaborate with others, and maintain a history of your project.</p>
+</div>
+<div class="paragraph">
+<p><strong>Collaboration</strong>: GitHub enables teams and communities to work together on projects, sharing ideas, code, and feedback seamlessly.</p>
+</div>
+<div class="paragraph">
+<p><strong>Portfolio Building</strong>: Your GitHub profile showcases your work. It’s an excellent way to build a public portfolio for potential employers or collaborators to see your coding skills.</p>
+</div>
+<div class="paragraph">
+<p><strong>Access to Open-Source Projects</strong>: GitHub hosts millions of open-source repositories. Contributing to these projects helps you learn, network, and gain valuable experience.</p>
+</div>
+<div class="paragraph">
+<p><strong>Integration</strong>: Many tools, platforms, and educational resources integrate directly with GitHub, making it a central hub for your development activities.</p>
+</div>
+<div class="paragraph">
+<p><em>See <a href="#why-github">Why GitHub?</a> for a more in-depth discussion and comparison to other services.</em></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_how_to_create_a_github_account"><a class="link" href="#_how_to_create_a_github_account">How to create a GitHub account</a></h4>
+<div class="paragraph">
+<p><strong>Visit GitHub</strong>: Go to <a href="https://github.com">GitHub&#8217;s web site</a> in your web browser.</p>
+</div>
+<div class="paragraph">
+<p><strong>Sign up</strong>: Click on the "Sign up" button in the top-right corner and enter your email address, create a username, and set a strong password. Keep your username lowercase with nothing but letters and possibly a dash, avoid underscore.</p>
+</div>
+<div class="paragraph">
+<p><strong>Verify your email</strong>: GitHub will send a verification email to the address you provided. Open the email and click the verification link to activate your account.</p>
+</div>
+<div class="paragraph">
+<p><strong>Choose a plan</strong>: GitHub offers free and paid plans. For most beginners, the free plan is sufficient as it includes unlimited public and private repositories.</p>
+</div>
+<div class="paragraph">
+<p><strong>Set up your profile</strong>: - Add a profile picture and a bio that reflects your interests and goals. Optionally, link your website or social media accounts. Eventually, you will want to flesh out your special repo that matches your username that becomes your GitHub professional profile.</p>
+</div>
+<div class="paragraph">
+<p><strong>Create your first repository</strong>: A repository (or “repo”) is where your project files are stored. Click "New Repository" to start your first project. Name it <code>notes</code> or <code>codebook</code> and make it private, for now. Even though this isn&#8217;t really private stuff, it keeps from diluting your public appearance to others. Too many tiny projects and beginner repos distract from your online presence.</p>
+</div>
+<div class="paragraph">
+<p><strong>Follow some repos</strong>: Star and follow a few project repos. Consider starting with the following related to this book:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/rwxrob/code-mage-book" class="bare">https://github.com/rwxrob/code-mage-book</a></p>
+</li>
+<li>
+<p><a href="https://github.com/rwxrob/awesome-go" class="bare">https://github.com/rwxrob/awesome-go</a></p>
+</li>
+<li>
+<p><a href="https://github.com/rwxrob/bonzai" class="bare">https://github.com/rwxrob/bonzai</a></p>
+</li>
+<li>
+<p><a href="https://github.com/rwxrob/rwxrob" class="bare">https://github.com/rwxrob/rwxrob</a></p>
+</li>
+<li>
+<p><a href="https://github.com/rwxrob/skilstak" class="bare">https://github.com/rwxrob/skilstak</a></p>
+</li>
+<li>
+<p><a href="https://github.com/rwxrob/dot" class="bare">https://github.com/rwxrob/dot</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Who knows, perhaps soon you can contribute.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_why_github_now"><a class="link" href="#_why_github_now">Why GitHub now?</a></h4>
+<div class="paragraph">
+<p>Creating a GitHub account is not just a task; it’s an invitation to join a global community of developers. Whether you’re learning to code, managing personal projects, or contributing to the open-source world, GitHub provides the tools and visibility to grow your skills and connect with others. Start your journey today and become part of the development ecosystem.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_learn_basic_markdown"><a class="link" href="#_learn_basic_markdown">Learn basic Markdown</a></h3>
+<div class="paragraph">
+<p>Your spell book will not just be written in Go, but also Markdown, a lightweight markup language that allows document formatting and such using nothing but a plain text editor. It&#8217;s simple, powerful, and perfect for taking notes or creating documents quickly. This page will guide you through the essential features of Markdown, helping you harness its potential for organizing and presenting information.</p>
+</div>
+<div class="sect3">
+<h4 id="_why_use_markdown"><a class="link" href="#_why_use_markdown">Why use Markdown?</a></h4>
+<div class="paragraph">
+<p><strong>Simplicity</strong>: Markdown’s syntax is intuitive and easy to learn.</p>
+</div>
+<div class="paragraph">
+<p><strong>Portability</strong>: Notes written in Markdown can be used across various platforms and converted to formats like HTML, PDF, or Word.</p>
+</div>
+<div class="paragraph">
+<p><strong>Focus</strong>: By removing the need for complex formatting tools, Markdown helps you concentrate on the content.</p>
+</div>
+<div class="paragraph">
+<p><strong>Versatility</strong>: Markdown works well for notes, documentation, blogs, and even presentations.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_start_taking_markdown_notes"><a class="link" href="#_start_taking_markdown_notes">Start taking Markdown notes</a></h4>
+<div class="paragraph">
+<p>Start practicing Markdown by creating simple notes in your new GitHub notes repo. Maybe copy over any hand-written notes on paper into your digital notes on GitHub. Use the syntax highlighting watch as your notes transform into well-structured, professional-looking documents. Markdown’s simplicity and power make it a tool you’ll want in your digital toolkit.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_basic_syntax"><a class="link" href="#_basic_syntax">Basic syntax</a></h4>
+<div class="paragraph">
+<p>The following covers only the Markdown basics but that is all you should ever use—specifically <a href="https://docs.github.com/articles/markdown-basics">GitHub Flavored Markdown</a>—unless you <em>really</em> need it because you will end up making your content incompatible with another Markdown tool later that you might want to use.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Simple really is better here. After having to port my knowledge base of notes between several different systems and always being burned by slight incompatibilities making a ton of work to do the conversion I have learned that sticking with the least amount of Markdown customization and extensions is best. When writing books, however, there are other alternatives that are far more powerful than Markdown, such as AsciiDoc, which is what this book is written in.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Headings</strong></p>
+</div>
+<div class="paragraph">
+<p>Create headings by prefixing text with one to six hashtag <code>#</code> symbols (but preferably no more than three):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="markdown"><span></span><span class="tok-gh"># Header 1</span>
+<span class="tok-gu">## Header 2</span>
+<span class="tok-gu">### Header 3</span></code></pre>
+</div>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Emphasis</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Bold</strong>: Surround text with double asterisks (<code>**</code>) or underscores (<code>__</code>) (but preferably <code>**</code>):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="markdown"><span></span><span class="tok-gs">**bold text**</span>
+<span class="tok-gs">__bold text__</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Italic</strong>: Surround text with single asterisks (<code>*</code>) or underscores (<code>_</code>) (but preferably <code>*</code>):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="markdown"><span></span><span class="tok-ge">*italic text*</span>
+<span class="tok-ge">_italic text_</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong><strong>Bold and Italic</strong></strong>: Combine both for extra emphasis:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="markdown"><span></span>***bold and italic text***</code></pre>
+</div>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Be careful about mixing the these within the same span. Markdown renders don&#8217;t really agree about how to handle that so error on the side of caution and avoid mixing them.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Lists</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Unordered Lists</strong>: Use <code>-</code>, <code>*</code>, or <code>+</code> for bullet points (but preferably dash <code>-</code>). Use four spaces for indented sub-list items:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="markdown"><span></span><span class="tok-k">-</span><span class="tok-w"> </span>Item 1
+<span class="tok-k">-</span><span class="tok-w"> </span>Item 2
+<span class="tok-w">     </span><span class="tok-k">-</span><span class="tok-w"> </span>Sub-item 2.1</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Ordered Lists</strong>: Use numbers followed by a period (just <code>1.</code> is fine):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="markdown"><span></span><span class="tok-k">1.</span> First item
+<span class="tok-k">2.</span> Second item
+<span class="tok-w">  </span><span class="tok-k">1.</span> Sub-item 2.1</code></pre>
+</div>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Links</strong></p>
+</div>
+<div class="paragraph">
+<p>Create clickable links with the format:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="markdown"><span></span>[<span class="tok-nt">Link Text</span>](<span class="tok-na">https://example.com</span>)</code></pre>
+</div>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Images</strong></p>
+</div>
+<div class="paragraph">
+<p>Embed images using the same syntax as links, but prefix with an exclamation mark (<code>!</code>):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="markdown"><span></span>![<span class="tok-nt">Alt Text</span>](<span class="tok-na">https://example.com/image.png</span>)</code></pre>
+</div>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Code</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Inline Code</strong>: Use backticks for short code snippets:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="markdown"><span></span>Here is some <span class="tok-sb">`inline code`</span> in a sentence.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Block Code</strong>: Use triple backticks for multi-line code and the name of the syntax immediately after:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="markdown"><span></span><span class="tok-sb">```go</span>
+<span class="tok-kd">func</span><span class="tok-w"> </span><span class="tok-nx">main</span><span class="tok-p">()</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">  </span><span class="tok-nx">fmt</span><span class="tok-p">.</span><span class="tok-nx">Println</span><span class="tok-p">(</span><span class="tok-s">&quot;Hello, Markdown!&quot;</span><span class="tok-p">)</span>
+<span class="tok-p">}</span>
+<span class="tok-sb">```</span></code></pre>
+</div>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Blockquotes</strong></p>
+</div>
+<div class="paragraph">
+<p>Indent text with a <code>&gt;</code> to create blockquotes. Keep paragraphs to a single long line wrapper than wrapping the text so that the source code itself displays well on any window or tmux pane of any size. Hard wraps never work well:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="markdown"><span></span><span class="tok-k">&gt; </span><span class="tok-ge">This is a blockquote. It can span multiple lines.</span></code></pre>
+</div>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Separators</strong></p>
+</div>
+<div class="paragraph">
+<p>Also called "horizontal rule" using three or more dashes (<code>----</code>), or tildes (<code>~~~~</code>) (but preferably use exactly four to easily find them).</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Tables</strong></p>
+</div>
+<div class="paragraph">
+<p>Create tables with pipes (<code>|</code>) and dashes:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="markdown"><span></span>| Header 1 | Header 2 |
+|----------|----------|
+| Row 1    | Data     |
+| Row 2    | More     |</code></pre>
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_install_official_go_compiler"><a class="link" href="#_install_official_go_compiler">Install official Go compiler</a></h3>
 <div class="paragraph">
 <p>To embark on the path of the developer, you must first forge your tools. In this guide, you&#8217;ll install the Go programming language, equipping yourself with a blade of unparalleled efficiency. Whether on a Mac, Windows, or Linux machine, the process is straightforward.</p>
 </div>
@@ -1339,6 +1911,7 @@ in the early days before everything becomes second nature.</p>
 </tr>
 </table>
 </div>
+<hr>
 </div>
 <div class="sect2">
 <h3 id="_install_code_mage_assistant"><a class="link" href="#_install_code_mage_assistant">Install Code-Mage assistant</a></h3>
@@ -1346,43 +1919,109 @@ in the early days before everything becomes second nature.</p>
 <p>Code-Mage (abbreviated as <code>cm</code>) is your ultimate tool to orchestrate your development environment. This guide walks you through the installation process for Mac, Windows, and Linux, starting from opening your terminal to running your first <code>cm</code> command.</p>
 </div>
 <div class="sect3">
-<h4 id="_open_a_terminal"><a class="link" href="#_open_a_terminal">Open a terminal</a></h4>
+<h4 id="_open_a_builtin_terminal"><a class="link" href="#_open_a_builtin_terminal">Open a builtin terminal</a></h4>
 <div class="paragraph">
 <p>First you need to open the built in terminal for your operating system.</p>
 </div>
-<div class="sect4">
-<h5 id="_mac"><a class="link" href="#_mac">Mac</a></h5>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>Press <code>Cmd + Space</code> to open Spotlight, type <code>terminal</code> and press <code>Enter</code>.</p>
+<p>Fight the temptation to install a better terminal right now. Code-Mage installs the Alacritty terminal for you with <code>cm init</code> in the next step. You can always install and use something else later if you don&#8217;t like it.</p>
 </div>
+</td>
+</tr>
+</table>
 </div>
-<div class="sect4">
-<h5 id="_windows"><a class="link" href="#_windows">Windows</a></h5>
 <div class="paragraph">
-<p>Press <code>Win</code> to open the search box, type <code>powershell</code>, and press <code>Enter</code>.</p>
+<p><strong>Mac</strong>: Press <code>Cmd + Space</code> to open Spotlight, type <code>terminal</code> and press <code>Enter</code>.</p>
 </div>
-</div>
-<div class="sect4">
-<h5 id="_linux"><a class="link" href="#_linux">Linux</a></h5>
 <div class="paragraph">
-<p>Press <code>Ctrl + Alt + T</code>.</p>
+<p><strong>Windows</strong>: Press <code>Win</code> to open the search box, type <code>powershell</code>, and press <code>Enter</code>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Linux</strong>: Press <code>Ctrl + Alt + T</code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_verify_go_command"><a class="link" href="#_verify_go_command">Verify go command</a></h4>
+<div class="paragraph">
+<p>Before installing <code>cm</code> verify that the <code>go</code> command installed correctly by simply running <code>go</code> command itself, which should print something like the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code><span></span>Go is a tool for managing Go source code.
+
+Usage:
+
+	go &lt;command&gt; [arguments]
+
+The commands are:
+
+	bug         start a bug report
+	build       compile packages and dependencies
+	clean       remove object files and cached files
+	doc         show documentation for package or symbol
+	env         print Go environment information
+	fix         update packages to use new APIs
+	fmt         gofmt (reformat) package sources
+	generate    generate Go files by processing source
+	get         add dependencies to current module and install them
+	install     compile and install packages and dependencies
+	list        list packages or modules
+	mod         module maintenance
+	work        workspace maintenance
+	run         compile and run Go program
+	telemetry   manage telemetry data and settings
+	test        test packages
+	tool        run specified go tool
+	version     print Go version
+	vet         report likely mistakes in packages
+
+Use &quot;go help &lt;command&gt;&quot; for more information about a command.
+
+Additional help topics:
+
+	buildconstraint build constraints
+	buildmode       build modes
+	c               calling between Go and C
+	cache           build and test caching
+	environment     environment variables
+	filetype        file types
+	go.mod          the go.mod file
+	gopath          GOPATH environment variable
+	goproxy         module proxy protocol
+	importpath      import path syntax
+	modules         modules, module versions, and more
+	module-auth     module authentication using go.sum
+	packages        package lists and patterns
+	private         configuration for downloading non-public code
+	testflag        testing flags
+	testfunc        testing functions
+	vcs             controlling version control with GOVCS
+
+Use &quot;go help &lt;topic&gt;&quot; for more information about that topic.</code></pre>
 </div>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_go_install_cm"><a class="link" href="#_go_install_cm">Go install cm</a></h4>
+<h4 id="_use_go_to_install_cm"><a class="link" href="#_use_go_to_install_cm">Use go to install cm</a></h4>
 <div class="paragraph">
-<p>Code-Mage is contained in the <code>cm</code> command. See the Preface for more about what it does. Now it is time to use the <code>go</code> command to install it. This is the best way to install other Go projects in the safest way possible since the entire code of the project can be read by anyone to ensure there has been no tampering (as opposed to downloading some executable off the Internet).</p>
+<p>Code-Mage is contained in the <code>cm</code> command. See the <a href="#cm-summary">summary</a> in the Preface for more about what it does. Now it is time to use the <code>go</code> command to install it. This is the best way to install any Go project. It is the safest way since the entire code of the project can be read by anyone to ensure there has been no tampering (as opposed to downloading some executable off the Internet). Plus you always get the latest unless you specify another specific version.</p>
 </div>
-<div class="admonitionblock warning">
+<div class="admonitionblock caution">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
+<i class="fa icon-caution" title="Caution"></i>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Never just download and install anything from the Internet that you do not absolutely trust, including Code-Mage. In this case everything is open so you know exactly what is happening, or at least other security-minded mentors and educators do.</p>
+<p>Now is a good time to warn you never to just download and install anything from the Internet that you do not absolutely trust, including Code-Mage. In this case everything is open so you know exactly what is happening, or at least other security-minded mentors and educators do.</p>
 </div>
 </td>
 </tr>
@@ -1399,6 +2038,7 @@ in the early days before everything becomes second nature.</p>
 <div class="paragraph">
 <p>This same command can be used any time to update to the latest version and works for installing any Go command as well.</p>
 </div>
+<hr>
 </div>
 </div>
 <div class="sect2">
@@ -1538,6 +2178,30 @@ in the early days before everything becomes second nature.</p>
 </div>
 </div>
 <div class="sect2">
+<h3 id="_start_alacritty_terminal"><a class="link" href="#_start_alacritty_terminal">Start Alacritty terminal</a></h3>
+<div class="paragraph">
+<p>The Alacritty terminal is a swift and powerful tool, a perfect companion for any Code Mage seeking speed and precision in their craft. This guide will teach you how to summon this magical terminal on Mac, Windows, and Linux, regardless of your platform.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mac</strong></p>
+</div>
+<div class="paragraph">
+<p>Press <code>Cmd + Space</code> to open Spotlight, type <code>alacritty</code> and press <code>Enter</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Windows</strong></p>
+</div>
+<div class="paragraph">
+<p>Press <code>Win</code> to open the search bar. Type <code>alacritty</code> and press <code>Enter</code>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Linux</strong></p>
+</div>
+<div class="paragraph">
+<p>Press <code>Super</code> (<code>Win</code>) key to open search bar. Type <code>alacritty</code> and press <code>Enter</code>.</p>
+</div>
+</div>
+<div class="sect2">
 <h3 id="_learn_basic_shell_commands"><a class="link" href="#_learn_basic_shell_commands">Learn basic shell commands</a></h3>
 
 </div>
@@ -1606,6 +2270,10 @@ in the early days before everything becomes second nature.</p>
 <h4 id="_open_graphic_web_browser"><a class="link" href="#_open_graphic_web_browser">Open graphic web browser</a></h4>
 
 </div>
+</div>
+<div class="sect2">
+<h3 id="_learn_mods_claude_ai"><a class="link" href="#_learn_mods_claude_ai">Learn mods + Claude AI</a></h3>
+
 </div>
 </div>
 </div>
@@ -2085,6 +2753,84 @@ The unseen currents that organize complexity, data structures enable efficient s
 <h3 id="_why_winget"><a class="link" href="#_why_winget">Why winget?</a></h3>
 <div class="paragraph">
 <p>The Microsoft <code>winget</code> utility is the only officially supported way to install software on Windows from the command line. All other package managers (<code>scoop</code>, <code>choco</code>, etc.) may have inspired its creation, but are now more or less deprecated in favor of the official method. As such <code>winget</code> is the most reliable and secure of any software package manager. Even if you end up preferring one of the others you must learn <code>winget</code> in order to know how to officially update any Windows system from the command line. You cannot be sure your favorite method will be supported at work, for example, but you always know <code>winget</code> will be there.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="why-github"><a class="link" href="#why-github">Why GitHub?</a></h3>
+<div class="paragraph">
+<p>The case for the most widely used development platform</p>
+</div>
+<div class="paragraph">
+<p>When it comes to platforms for managing and collaborating on code, there are several contenders, including GitLab, SourceHut, and Bitbucket. However, GitHub remains the most widely used and influential platform for developers worldwide. Here’s why GitHub consistently outshines its competitors, even for those who might have reservations about its corporate backing by Microsoft.</p>
+</div>
+<div class="sect3">
+<h4 id="_the_power_of_popularity"><a class="link" href="#_the_power_of_popularity">The power of popularity</a></h4>
+<div class="paragraph">
+<p>GitHub’s dominance in the market isn’t just a matter of numbers—it’s a testament to its value:</p>
+</div>
+<div class="paragraph">
+<p><strong>Largest Developer Community</strong>: With millions of active users and repositories, GitHub is the go-to platform for collaboration and discovery. The sheer size of its community means more opportunities for networking, learning, and contributing to meaningful projects.</p>
+</div>
+<div class="paragraph">
+<p><strong>Industry Standard</strong>: Most companies, open-source projects, and educational platforms use GitHub as their primary development hub. Knowledge of GitHub is often expected in job applications, making it a must-know platform for developers.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_superior_visibility"><a class="link" href="#_superior_visibility">Superior visibility</a></h4>
+<div class="paragraph">
+<p><strong>Searchability</strong>: GitHub&#8217;s advanced search tools make it easy to find projects, issues, and contributions, helping you discover opportunities and solutions faster.</p>
+</div>
+<div class="paragraph">
+<p><strong>Project Showcase</strong>: A GitHub profile serves as a portfolio, showcasing your work to potential employers, collaborators, and contributors. Public repositories on GitHub are more likely to be discovered and gain traction compared to other platforms.</p>
+</div>
+<div class="paragraph">
+<p><strong>Integration with Ecosystems</strong>: GitHub integrates seamlessly with countless third-party tools and services, from CI/CD pipelines to deployment platforms.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_best_in_class_command_line_tool"><a class="link" href="#_best_in_class_command_line_tool">Best-in-class command-line tool</a></h4>
+<div class="paragraph">
+<p>GitHub’s command-line tool, <code>gh</code>, offers unparalleled efficiency for developers who prefer working in the terminal:</p>
+</div>
+<div class="paragraph">
+<p><strong>Ease of Use</strong>: <code>gh</code> simplifies common tasks like creating issues, managing pull requests, and cloning repositories—all without leaving the command line.</p>
+</div>
+<div class="paragraph">
+<p><strong>Efficiency in Workflow</strong>: GitHub’s CLI provides shortcuts for managing projects and repositories directly, saving time and effort.</p>
+</div>
+<div class="paragraph">
+<p><strong>Advanced Features</strong>: Interactive features like viewing pull request details or switching between branches are intuitive and developer-focused.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_comparing_to_gitlab_sourcehut_and_others"><a class="link" href="#_comparing_to_gitlab_sourcehut_and_others">Comparing to GitLab, SourceHut, and others</a></h4>
+<div class="paragraph">
+<p><strong>GitLab</strong>: While GitLab offers powerful CI/CD features, its interface and community size don’t match GitHub’s. GitLab’s paid tiers are often necessary for features GitHub offers for free, like private repositories.</p>
+</div>
+<div class="paragraph">
+<p><strong>SourceHut</strong>: SourceHut appeals to minimalists but lacks the extensive features, integrations, and user base that GitHub provides.</p>
+</div>
+<div class="paragraph">
+<p><strong>Bitbucket</strong>: Popular for enterprise solutions, Bitbucket trails GitHub in open-source adoption and community engagement.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_addressing_microsoft_ownership"><a class="link" href="#_addressing_microsoft_ownership">Addressing Microsoft ownership</a></h4>
+<div class="paragraph">
+<p>For some, Microsoft’s acquisition of GitHub in 2018 raised concerns. Many don&#8217;t know that Microsoft saved GitHub from catastrophic bankruptcy. However, Microsoft has largely honored its commitment to maintaining GitHub’s independence and focus on supporting open-source development.</p>
+</div>
+<div class="paragraph">
+<p><strong>Investment in Features</strong>: Since the acquisition, GitHub has introduced numerous improvements, including GitHub Actions, Codespaces, and enhanced security features.</p>
+</div>
+<div class="paragraph">
+<p><strong>Open-Source Support</strong>: GitHub remains home to the world’s largest collection of open-source projects, demonstrating its dedication to fostering community-driven development.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_conclusion"><a class="link" href="#_conclusion">Conclusion</a></h4>
+<div class="paragraph">
+<p>While alternatives like GitLab and SourceHut have their merits, GitHub’s unparalleled visibility, expansive community, and best-in-class tools make it the platform of choice for developers worldwide. Even for those wary of Microsoft’s involvement, GitHub’s contributions to open-source development and its continued innovation make it an essential part of any developer’s toolkit. Choosing GitHub means joining the largest, most active network of developers and setting yourself up for success in the modern software development ecosystem.</p>
+</div>
 </div>
 </div>
 </div>

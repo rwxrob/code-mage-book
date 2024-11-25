@@ -1,0 +1,170 @@
+== Learn basic Markdown
+
+Your spell book will not just be written in Go, but also Markdown, a lightweight markup language that allows document formatting and such using nothing but a plain text editor. It's simple, powerful, and perfect for taking notes or creating documents quickly. This page will guide you through the essential features of Markdown, helping you harness its potential for organizing and presenting information.
+
+=== Why use Markdown?
+
+**Simplicity**: Markdown’s syntax is intuitive and easy to learn.
+
+**Portability**: Notes written in Markdown can be used across various platforms and converted to formats like HTML, PDF, or Word.
+
+**Focus**: By removing the need for complex formatting tools, Markdown helps you concentrate on the content.
+
+**Versatility**: Markdown works well for notes, documentation, blogs, and even presentations.
+
+=== Start taking Markdown notes
+
+Start practicing Markdown by creating simple notes in your new GitHub notes repo. Maybe copy over any hand-written notes on paper into your digital notes on GitHub. Use the syntax highlighting watch as your notes transform into well-structured, professional-looking documents. Markdown’s simplicity and power make it a tool you’ll want in your digital toolkit.
+
+=== Basic syntax
+
+The following covers only the Markdown basics but that is all you should ever use—specifically https://docs.github.com/articles/markdown-basics[GitHub Flavored Markdown]—unless you _really_ need it because you will end up making your content incompatible with another Markdown tool later that you might want to use.
+
+[CAUTION]
+====
+Simple really is better here. After having to port my knowledge base of notes between several different systems and always being burned by slight incompatibilities making a ton of work to do the conversion I have learned that sticking with the least amount of Markdown customization and extensions is best. When writing books, however, there are other alternatives that are far more powerful than Markdown, such as AsciiDoc, which is what this book is written in.
+====
+
+---
+
+**Headings**
+
+Create headings by prefixing text with one to six hashtag `#` symbols (but preferably no more than three):
+
+[source,markdown]
+----
+# Header 1
+## Header 2
+### Header 3
+----
+
+---
+
+**Emphasis**
+
+**Bold**: Surround text with double asterisks (`**`) or underscores (`__`) (but preferably `**`):
+
+[source, markdown]
+----
+**bold text**
+__bold text__
+----
+
+*Italic*: Surround text with single asterisks (`*`) or underscores (`_`) (but preferably `*`):
+
+[source, markdown]
+----
+*italic text*
+_italic text_
+----
+
+***Bold and Italic***: Combine both for extra emphasis:
+
+[source, markdown]
+----
+***bold and italic text***
+----
+
+[CAUTION]
+====
+Be careful about mixing the these within the same span. Markdown renders don't really agree about how to handle that so error on the side of caution and avoid mixing them.
+====
+
+---
+
+**Lists**
+
+**Unordered Lists**: Use `-`, `*`, or `+` for bullet points (but preferably dash `-`). Use four spaces for indented sub-list items:
+
+[source, markdown]
+----
+- Item 1
+- Item 2
+     - Sub-item 2.1
+----
+
+**Ordered Lists**: Use numbers followed by a period (just `1.` is fine):
+
+[source, markdown]
+----
+1. First item
+2. Second item
+  1. Sub-item 2.1
+----
+
+---
+
+**Links**
+
+Create clickable links with the format:
+
+[source, markdown]
+----
+[Link Text](https://example.com)
+----
+
+---
+
+**Images**
+
+Embed images using the same syntax as links, but prefix with an exclamation mark (`!`):
+
+[source, markdown]
+----
+![Alt Text](https://example.com/image.png)
+----
+
+---
+
+**Code**
+
+**Inline Code**: Use backticks for short code snippets:
+
+[source, markdown]
+----
+Here is some `inline code` in a sentence.
+----
+
+**Block Code**: Use triple backticks for multi-line code and the name of the syntax immediately after:
+
+[source, markdown]
+----
+```go
+func main() {
+  fmt.Println("Hello, Markdown!")
+}
+```
+----
+
+---
+
+**Blockquotes**
+
+Indent text with a `>` to create blockquotes. Keep paragraphs to a single long line wrapper than wrapping the text so that the source code itself displays well on any window or tmux pane of any size. Hard wraps never work well:
+
+[source, markdown]
+----
+> This is a blockquote. It can span multiple lines.
+----
+
+---
+
+**Separators**
+
+Also called "horizontal rule" using three or more dashes (`----`), or tildes (`~~~~`) (but preferably use exactly four to easily find them).
+
+---
+
+**Tables**
+
+Create tables with pipes (`|`) and dashes:
+
+[source,markdown]
+----
+| Header 1 | Header 2 |
+|----------|----------|
+| Row 1    | Data     |
+| Row 2    | More     |
+----
+
+---
