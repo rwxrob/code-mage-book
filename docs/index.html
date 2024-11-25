@@ -497,11 +497,12 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_dedication">Dedication</a></li>
 <li><a href="#_preface">Preface</a>
 <ul class="sectlevel2">
+<li><a href="#_why_another_go_book">Why another Go book?</a></li>
 <li><a href="#_who_should_read_this_book">Who should read this book</a></li>
 <li><a href="#_whats_with_the_magic_thing">What&#8217;s with the magic thing?</a></li>
 <li><a href="#_whats_included_in_the_book">What&#8217;s included in the book</a>
 <ul class="sectlevel3">
-<li><a href="#_code_mage_cm_command">Code-Mage (cm) command</a></li>
+<li><a href="#_the_code_mage_cm_command">The Code-Mage (cm) command</a></li>
 </ul>
 </li>
 <li><a href="#_how_to_use_this_book">How to use this book</a></li>
@@ -509,7 +510,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <ul class="sectlevel3">
 <li><a href="#_join_a_community">Join a community</a></li>
 <li><a href="#_find_a_mentor">Find a mentor</a></li>
-<li><a href="#_be_a_mentor">Be a mentor</a></li>
+<li><a href="#_become_a_mentor">Become a mentor</a></li>
 <li><a href="#_consider_ai_assistance">Consider AI assistance</a></li>
 </ul>
 </li>
@@ -638,7 +639,6 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#whatdidcmdo">What did cm init do?</a></li>
 <li><a href="#whyvim">Why Vim?</a></li>
 <li><a href="#whyvimrc">Why ~/.vimrc?</a></li>
-<li><a href="#_why_another_go_book">Why another Go book?</a></li>
 <li><a href="#_what_about_ap_computer_science">What about AP Computer Science?</a></li>
 <li><a href="#_why_winget">Why winget?</a></li>
 </ul>
@@ -705,6 +705,49 @@ This book would never have happened without you.</p>
 <h2 id="_preface"><a class="link" href="#_preface">Preface</a></h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="_why_another_go_book"><a class="link" href="#_why_another_go_book">Why another Go book?</a></h3>
+<div class="paragraph">
+<p>I&#8217;ve spend several hundred dollars on Go books, always wanting to find one I could just use and recommend. Since starting SKILSTAK Coding Arts in 2013 and learning and teaching Go since 2014 (when TJ Hallowaychuk famously wrote <a href="https://medium.com/@tjholowaychuk/farewell-node-js-4ba9e7f3e52b">Farewell to Node</a>) I have noticed all Go books suffer from one or more of the following annoyances:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Incorrect or out of date material</p>
+</li>
+<li>
+<p>Avoid real, practical applications</p>
+</li>
+<li>
+<p>Shun the terminal, except to compile</p>
+</li>
+<li>
+<p>Assume "some programming" already, usually C</p>
+</li>
+<li>
+<p>Lack a free and supportive learning community</p>
+</li>
+<li>
+<p>To serious to be memorable or fun—especially for kids</p>
+</li>
+<li>
+<p>Ignore how to setup a personal development environment</p>
+</li>
+<li>
+<p>Pick poor project ideas that are too big and easily forgotten</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Most of them have some sort of dependency on the Internet to get the accompanying code, but none have any kind of downloadable personal learning assistant app, like Code-Mage.</p>
+</div>
+<div class="paragraph">
+<p>At the risk of sounding too negative, however, I&#8217;ll describe the last straw for me. I bought a $40 book to learn about generics that turned out to not cover generics at all—but even worse—contained an entire chapter <em>claiming</em> to teach generics that contained a vague proposition for generics that was never adopted by the language. This author and publisher rushed their book out based on false information confusing me and potentially thousands of others. Then they charged another $40 for a "new edition" of the same book without even attempting to give anyone back their money they wasted for the first book. You can probably guess the book, author, and publisher, which is notorious for this kind of fraudulent cash-grab.</p>
+</div>
+<div class="paragraph">
+<p>Needless to say, I was furious. Most books are written by great people who have put a lot of time and energy into them. At worse they are annoying in their imperfections. But this blatant "screw you, give us your money" made me mad enough to follow my own mantra: <em>don&#8217;t get mad, get busy</em>. I started thinking about what I would put into a book based on what I <em>knew</em> hundreds of people I had helped to learn Go as a first language would want, and now you are reading it.</p>
+</div>
+</div>
+<div class="sect2">
 <h3 id="_who_should_read_this_book"><a class="link" href="#_who_should_read_this_book">Who should read this book</a></h3>
 <div class="paragraph">
 <p>This book is written for anyone wanting to learn—or help someone learn—practical computer science and programming for real applications development. While we have fun with the whole fantasy magic theme, everything in this book is very real and might even get you a job someday. It is true that this book can be reliably used as a text book for absolute beginners with enough algebra to understand what a mathematical function is but this book very clearly includes everyone <em>outside</em> of educational institutions. In fact, I wrote it mostly with pro-active parents in mind who want to give their kids a head-start in tech that they simply cannot find in most traditional education systems, the same reason, in fact, that I started SKILSTAK Coding Arts in 2013 with my own retirement money.</p>
@@ -713,24 +756,21 @@ This book would never have happened without you.</p>
 <div class="sect2">
 <h3 id="_whats_with_the_magic_thing"><a class="link" href="#_whats_with_the_magic_thing">What&#8217;s with the magic thing?</a></h3>
 <div class="paragraph">
-<p>Yes, the magic stuff is absolutely silly, on purpose. Self-proclaimed "serious" people and pedagogs (not necessary one and the same) seem to find fault with what is a well-established scientific principle of memory: sillyness and visualization. Human brains are hard-coded to remember narratives and images. This is how memory competitors memorize pi to 100,000 digits, by creating a silly, colorful narrative in their brain that they replay related to each of the numbers as they walk through a "memory palace," a mental map of a familiar location where each story occupies a specific spot containing different sets of numbers. Coming up with your own silly stories to associate with coding skills is the best, but all this talk about magic and mages is a head-start. If it&#8217;s not your thing, there are plenty of other boring books covering nearly the same stuff to slog through (most of which are 10 years out of date).</p>
+<p>Yes, the magic stuff is absolutely silly—on purpose. Self-proclaimed "serious" people and pedagogues (not necessary one and the same) seem to find fault with what is a well-established scientific principle of memory: silliness. Human brains are hard-coded to remember silly narratives and images. This is how memory competitors memorize Pi to 100,000 digits, by creating a silly, colorful narrative in their brain that they replay related to each of the numbers as they walk through a "memory palace," a mental map of a familiar location where each story occupies a specific spot containing different sets of numbers. Coming up with your own silly stories to associate with coding skills is the best, but all this talk about magic and mages is a head-start. If it&#8217;s not your thing, there are plenty of other boring books covering nearly the same stuff to slog through (most of which are 10 years out of date).</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_whats_included_in_the_book"><a class="link" href="#_whats_included_in_the_book">What&#8217;s included in the book</a></h3>
 <div class="paragraph">
-<p>This book is focused on learning—as fast as possible—to code in the Go programming language from the bash terminal command-line. There is nothing more authentic or rewarding than creating command-line tools from the command-line itself. Therefore, only those minimal skills required to use the command-line to open, edit, and run Go code from the terminal are covered.</p>
+<p>This book is focused on learning to code in Go from the bash terminal command line, nothing more. There is nothing more authentic or rewarding than creating command-line tools from the command-line itself. Therefore, only those minimal skills required to use the command-line to open, edit, and run Go code from the terminal are covered.</p>
 </div>
 <div class="sect3">
-<h4 id="_code_mage_cm_command"><a class="link" href="#_code_mage_cm_command">Code-Mage (cm) command</a></h4>
+<h4 id="_the_code_mage_cm_command"><a class="link" href="#_the_code_mage_cm_command">The Code-Mage (cm) command</a></h4>
 <div class="paragraph">
-<p>What kind of book would this be without having a command-line utility written in Go to go with it? 😃</p>
+<p>We have created a command-line setup tool and learning assistant written in Go to accompany this book: Code-Mage (abbreviated as <code>cm</code>). With one <code>cm init</code> command everything you need is installed and configured. Eventually, you can come back and examine everything Code-Mage did to better understand and customize it. (In fact, there&#8217;s an entire book dedicated to it and advanced terminal mastery.)</p>
 </div>
 <div class="paragraph">
-<p>Rather than get bogged down with a lot of installation and configuration we&#8217;ve created the Code-Mage command (abbreviated <code>cm</code>) to help you get started as fast as possible without losing the opportunity to learn how to do you own setup later. Eventually, you can come back and examine everything Code-Mage did to understand it and even customize it.</p>
-</div>
-<div class="paragraph">
-<p>Getting setup quickly is only the beginning of what Code-Mage can do:</p>
+<p>Getting setup quickly is only the beginning of what the Code-Mage command can do:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -849,15 +889,15 @@ in the early days before everything becomes second nature.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_be_a_mentor"><a class="link" href="#_be_a_mentor">Be a mentor</a></h4>
+<h4 id="_become_a_mentor"><a class="link" href="#_become_a_mentor">Become a mentor</a></h4>
 <div class="paragraph">
-<p>You don&#8217;t need any special training to be a mentor for someone else. In fact, as a beginner who has recently mastered something you are perhaps the best suited to help another beginner learn it because <em>how</em> you learned it is still fresh in your mind. Those with experience might be masters but often have difficulty rememebering how they learned it and how to help others learn it as well. So don&#8217;t be shy by offering your help. And remember, you really haven&#8217;t learned it until you can succintly help another learn it as well.</p>
+<p>You don&#8217;t need any special training to be a mentor for someone else. In fact, as a beginner who has recently mastered something you are perhaps the best suited to help another beginner learn it because <em>how</em> you learned it is still fresh in your mind. Those with experience might be masters but often have difficulty remembering how they learned it and how to help others learn it as well. So don&#8217;t be shy by offering your help. And remember, you really haven&#8217;t learned it until you can succinctly help another learn it as well.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_consider_ai_assistance"><a class="link" href="#_consider_ai_assistance">Consider AI assistance</a></h4>
 <div class="paragraph">
-<p>In my experience ChatGPT (my Chloe) is great for overall help with life, writing, and project organization—particularly from a phone over voice. Claude is better at code help and only has an API integration making it great for plugging into popular coding tools (like <code>mods</code> from Charmbracelet).</p>
+<p>In my experience ChatGPT is great for overall help with life, writing, and project organization—particularly from a phone over voice. Claude is better at code help and only has an API integration making it great for plugging into popular coding tools (like <code>mods</code> from Charmbracelet).</p>
 </div>
 <div class="paragraph">
 <p>Although I have nothing to do with any AI company, I do strongly believe in it as a learning platform and use it regularly to get answers and discuss topics 24 hours a day—even while riding my bike, code the boring stuff, and regularly practice my conversational and written Russian and French language. In fact, AI help with much of this book—especially the parts that must be validated to be sure they work (which I wish other coding books would do).</p>
@@ -2017,43 +2057,6 @@ The unseen currents that organize complexity, data structures enable efficient s
 </div>
 </div>
 <div class="sect2">
-<h3 id="_why_another_go_book"><a class="link" href="#_why_another_go_book">Why another Go book?</a></h3>
-<div class="paragraph">
-<p>Almost all existing books covering Go suffer from one of the following failures:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Contain incorrect or out of date material</p>
-</li>
-<li>
-<p>To serious to be memorable or fun</p>
-</li>
-<li>
-<p>Assume "some programming" knowledge already</p>
-</li>
-<li>
-<p>Say nothing about how to setup a personal development environment</p>
-</li>
-<li>
-<p>Do not use the terminal except to compile</p>
-</li>
-<li>
-<p>Have no community associated with them for support</p>
-</li>
-<li>
-<p>Pick poor project ideas that are easily forgotten</p>
-</li>
-<li>
-<p>No accompanying app and command line assistant</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Not every author is willing to publish a $40 book claiming to cover generics and only have a proposed specification proving to be absolutely wrong then later charged another $40 for the "updated" version of the book. Not every publisher is generally as inept and irresponsible as Packt Publishing. Most books are written by great people who have put a lot of work into them. I get it. I just wanted something more and was tired of waiting.</p>
-</div>
-</div>
-<div class="sect2">
 <h3 id="_what_about_ap_computer_science"><a class="link" href="#_what_about_ap_computer_science">What about AP Computer Science?</a></h3>
 <div class="paragraph">
 <p>As of the writing of this book, the AP Computer Science program from College Board remains fundamentally broken. The materials are more than dated and down-right wrong in some cases. Here are some specific examples:</p>
@@ -2154,7 +2157,7 @@ The unseen currents that organize complexity, data structures enable efficient s
 <div id="footer">
 <div id="footer-text">
 Version v0.0.1<br>
-Last updated 2024-11-24 10:59:27 -0500
+Last updated 2024-11-24 22:38:24 -0500
 </div>
 </div>
 </body>

@@ -1,0 +1,18 @@
+== Why another Go book?
+
+I've spend several hundred dollars on Go books, always wanting to find one I could just use and recommend. Since starting SKILSTAK Coding Arts in 2013 and learning and teaching Go since 2014 (when TJ Hallowaychuk famously wrote https://medium.com/@tjholowaychuk/farewell-node-js-4ba9e7f3e52b[Farewell to Node]) I have noticed all Go books suffer from one or more of the following annoyances:
+
+- Incorrect or out of date material
+- Avoid real, practical applications
+- Shun the terminal, except to compile
+- Assume "some programming" already, usually C
+- Lack a free and supportive learning community
+- To serious to be memorable or fun—especially for kids
+- Ignore how to setup a personal development environment
+- Pick poor project ideas that are too big and easily forgotten
+
+Most of them have some sort of dependency on the Internet to get the accompanying code, but none have any kind of downloadable personal learning assistant app, like Code-Mage.
+
+At the risk of sounding too negative, however, I'll describe the last straw for me. I bought a $40 book to learn about generics that turned out to not cover generics at all—but even worse—contained an entire chapter _claiming_ to teach generics that contained a vague proposition for generics that was never adopted by the language. This author and publisher rushed their book out based on false information confusing me and potentially thousands of others. Then they charged another $40 for a "new edition" of the same book without even attempting to give anyone back their money they wasted for the first book. You can probably guess the book, author, and publisher, which is notorious for this kind of fraudulent cash-grab.
+
+Needless to say, I was furious. Most books are written by great people who have put a lot of time and energy into them. At worse they are annoying in their imperfections. But this blatant "screw you, give us your money" made me mad enough to follow my own mantra: _don't get mad, get busy_. I started thinking about what I would put into a book based on what I _knew_ hundreds of people I had helped to learn Go as a first language would want, and now you are reading it.
