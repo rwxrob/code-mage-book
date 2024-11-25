@@ -7,9 +7,9 @@ You are probably excited to get going and we've done our best to help you get st
 [start=0]
 . Get a computer
 . Learn to type from home row
+. Connect with a supportive learning community
 . Install the Go compiler and Code-Mage using Go
 . Install the development tools you'll need (with help from Code-Mage)
-. Connect with a supportive learning community
 . Learn to learn, take notes, and use your new development tools
 
 For most people this preparation takes a few hours, but there is simply no avoiding it if you want to actually learn and have that learning stick with you later.
