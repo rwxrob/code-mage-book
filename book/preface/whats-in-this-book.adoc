@@ -2,6 +2,7 @@
 
 This book is focused on learning to code in Go from the bash terminal command line, nothing more. There is nothing more authentic or rewarding than creating command-line tools from the command-line itself. Therefore, only those minimal skills required to use the command-line to open, edit, and run Go code from the terminal are covered.
 
+[[cm-summary]]
 === The Code-Mage (cm) command
 
 We have created a command-line setup tool and learning assistant written in Go to accompany this book: Code-Mage (abbreviated as `cm`). With one `cm init` command everything you need is installed and configured. Eventually, you can come back and examine everything Code-Mage did to better understand and customize it. (In fact, there's an entire book dedicated to it and advanced terminal mastery.)

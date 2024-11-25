@@ -6,6 +6,11 @@ Code-Mage (abbreviated as `cm`) is your ultimate tool to orchestrate your develo
 
 First you need to open the built in terminal for your operating system.
 
+[CAUTION]
+====
+Fight the temptation to install a better terminal right now. Code-Mage installs the Alacritty terminal for you with `cm init` in the next step. You can always install and use something else later if you don't like it.
+====
+
 ==== Mac
 
 Press `Cmd + Space` to open Spotlight, type `terminal` and press `Enter`.
@@ -18,13 +23,72 @@ Press `Win` to open the search box, type `powershell`, and press `Enter`.
 
 Press `Ctrl + Alt + T`.
 
+=== Verify go command
+
+Before installing `cm` verify that the `go` command installed correctly by simply running `go` command itself, which should print something like the following:
+
+[source]
+----
+Go is a tool for managing Go source code.
+
+Usage:
+
+	go <command> [arguments]
+
+The commands are:
+
+	bug         start a bug report
+	build       compile packages and dependencies
+	clean       remove object files and cached files
+	doc         show documentation for package or symbol
+	env         print Go environment information
+	fix         update packages to use new APIs
+	fmt         gofmt (reformat) package sources
+	generate    generate Go files by processing source
+	get         add dependencies to current module and install them
+	install     compile and install packages and dependencies
+	list        list packages or modules
+	mod         module maintenance
+	work        workspace maintenance
+	run         compile and run Go program
+	telemetry   manage telemetry data and settings
+	test        test packages
+	tool        run specified go tool
+	version     print Go version
+	vet         report likely mistakes in packages
+
+Use "go help <command>" for more information about a command.
+
+Additional help topics:
+
+	buildconstraint build constraints
+	buildmode       build modes
+	c               calling between Go and C
+	cache           build and test caching
+	environment     environment variables
+	filetype        file types
+	go.mod          the go.mod file
+	gopath          GOPATH environment variable
+	goproxy         module proxy protocol
+	importpath      import path syntax
+	modules         modules, module versions, and more
+	module-auth     module authentication using go.sum
+	packages        package lists and patterns
+	private         configuration for downloading non-public code
+	testflag        testing flags
+	testfunc        testing functions
+	vcs             controlling version control with GOVCS
+
+Use "go help <topic>" for more information about that topic.
+----
+
 === Go install cm
 
-Code-Mage is contained in the `cm` command. See the Preface for more about what it does. Now it is time to use the `go` command to install it. This is the best way to install other Go projects in the safest way possible since the entire code of the project can be read by anyone to ensure there has been no tampering (as opposed to downloading some executable off the Internet).
+Code-Mage is contained in the `cm` command. See the <<cm-summary, summary>> in the Preface for more about what it does. Now it is time to use the `go` command to install it. This is the best way to install any Go project. It is the safest way since the entire code of the project can be read by anyone to ensure there has been no tampering (as opposed to downloading some executable off the Internet). Plus you always get the latest unless you specify another specific version.
 
-[WARNING]
+[CAUTION]
 ====
-Never just download and install anything from the Internet that you do not absolutely trust, including Code-Mage. In this case everything is open so you know exactly what is happening, or at least other security-minded mentors and educators do.
+Now is a good time to warn you never to just download and install anything from the Internet that you do not absolutely trust, including Code-Mage. In this case everything is open so you know exactly what is happening, or at least other security-minded mentors and educators do.
 ====
 
 After opening a terminal enter the following command:
@@ -35,3 +99,4 @@ go install github.com/rwxrob/code-mage-book/cmd/cm@latest
 ----
 
 This same command can be used any time to update to the latest version and works for installing any Go command as well.
+
