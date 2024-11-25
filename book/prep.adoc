@@ -39,6 +39,8 @@ include::prep/installcm.adoc[]
 
 include::prep/cminit.adoc[]  
 
+include::prep/start-alacritty.adoc[]  
+
 include::prep/learnshell.adoc[]  
 
 include::prep/learnvim.adoc[]  

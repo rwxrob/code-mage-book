@@ -2,7 +2,7 @@
 
 Code-Mage (abbreviated as `cm`) is your ultimate tool to orchestrate your development environment. This guide walks you through the installation process for Mac, Windows, and Linux, starting from opening your terminal to running your first `cm` command.
 
-=== Open a terminal
+=== Open a builtin terminal
 
 First you need to open the built in terminal for your operating system.
 
@@ -11,15 +11,15 @@ First you need to open the built in terminal for your operating system.
 Fight the temptation to install a better terminal right now. Code-Mage installs the Alacritty terminal for you with `cm init` in the next step. You can always install and use something else later if you don't like it.
 ====
 
-==== Mac
+**Mac**
 
 Press `Cmd + Space` to open Spotlight, type `terminal` and press `Enter`.
 
-==== Windows
+**Windows**
 
 Press `Win` to open the search box, type `powershell`, and press `Enter`.
 
-==== Linux
+**Linux**
 
 Press `Ctrl + Alt + T`.
 
@@ -82,7 +82,7 @@ Additional help topics:
 Use "go help <topic>" for more information about that topic.
 ----
 
-=== Go install cm
+=== Use go to install cm
 
 Code-Mage is contained in the `cm` command. See the <<cm-summary, summary>> in the Preface for more about what it does. Now it is time to use the `go` command to install it. This is the best way to install any Go project. It is the safest way since the entire code of the project can be read by anyone to ensure there has been no tampering (as opposed to downloading some executable off the Internet). Plus you always get the latest unless you specify another specific version.
 
