@@ -2,14 +2,10 @@
 
 The Alacritty terminal is a swift and powerful tool, a perfect companion for any Code Mage seeking speed and precision in their craft. This guide will teach you how to summon this magical terminal on Mac, Windows, and Linux, regardless of your platform.
 
-**Mac**
+**Mac**: Press `Cmd + Space` to open Spotlight, type `alacritty` and press `Enter`.
 
-Press `Cmd + Space` to open Spotlight, type `alacritty` and press `Enter`
+**Windows**: Press `Win` to open the search bar. Type `alacritty` and press `Enter`.
 
-**Windows**
+**Linux**: Press `Super` (`Win`) key to open search bar. Type `alacritty` and press `Enter`.
 
-Press `Win` to open the search bar. Type `alacritty` and press `Enter`.
-
-**Linux**
-
-Press `Super` (`Win`) key to open search bar. Type `alacritty` and press `Enter`.
+---

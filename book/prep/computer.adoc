@@ -68,3 +68,4 @@ As much as we _love_ Linux, it really isn't an option for most beginners because
 
 Choose the workstation that suits your needs best and ensure it meets the minimum requirements—your enchanted coding journey awaits!
 
+---

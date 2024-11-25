@@ -73,3 +73,4 @@ Source control systems like Git help manage the spellbooks of developers. They p
 
 Harnessing the power of command-line tools like the terminal web browser `w3m` and the command line AI query tool `mods` from Charmbracelet powered by the Claude API, creates a streamlined environment for efficient web browsing and AI-assisted research from the terminal that dominates those doing the alternative from graphic user interfaces. This setup ensures you stay focused, efficient, and immersed in the terminal-first environment.
 
+---
