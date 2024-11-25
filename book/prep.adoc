@@ -5,8 +5,8 @@
 You are probably excited to get going and we've done our best to help you get started as quickly as possible. Here's a summary of what you'll need to do to prepare:
 
 [start=0]
-. Learn to type from home row
 . Get a computer
+. Learn to type from home row
 . Install the Go compiler and Code-Mage using Go
 . Install the development tools you'll need (with help form Code-Mage)
 . Connect with a supportive learning community
