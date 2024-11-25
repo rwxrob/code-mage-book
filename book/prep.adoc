@@ -27,27 +27,29 @@ Just don't do it!
 You can waste that time later. For now, you have a lot to get ready and learn before coding, then, after you have got some real coding skill you will be better prepared to revisit these things and your arguments with random trolls (who haven't coded yet) will carry more weight because you have actually _done_ something.
 ====
 
-include::prep/computer.adoc[]  
+include::prep/start-taking-notes.adoc[]
 
-//include::prep/emailaccount.adoc[]  
+include::prep/computer.adoc[]
 
-//include::prep/ghaccount.adoc[]  
+//include::prep/email-account.adoc[]
 
-include::prep/getgo.adoc[]  
+//include::prep/github-account.adoc[]
 
-include::prep/installcm.adoc[]  
+include::prep/getgo.adoc[]
 
-include::prep/cminit.adoc[]  
+include::prep/installcm.adoc[]
 
-include::prep/start-alacritty.adoc[]  
+include::prep/cminit.adoc[]
 
-include::prep/learnshell.adoc[]  
+include::prep/start-alacritty.adoc[]
 
-include::prep/learnvim.adoc[]  
+include::prep/learnshell.adoc[]
 
-include::prep/learntmux.adoc[]  
+include::prep/learnvim.adoc[]
 
-include::prep/learnw3m.adoc[]  
+include::prep/learntmux.adoc[]
 
-//include::prep/learnmods.adoc[]  
+include::prep/learnw3m.adoc[]
+
+//include::prep/learnmods.adoc[]
 
