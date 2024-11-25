@@ -13,7 +13,7 @@ I created Code-Mage to skip a lot of that setup stuff with `cm init` in a way th
 - Time how long it takes you to complete a challenge
 - Run a web-server for certain projects that require it
 - Display community news and announcements
-- Read this book to your web browser without Internet
+- Read this book in your web browser without Internet
 
 I won't lie, I'm very proud of Code-Mage. I really wish I had it when I was learning. In fact, making the things you wish you had is a great way to find project ideas and motivation. The source code for Code-Mage is entirely public domain and open for review so you can compile and install your own if you feel uncomfortable—as you should—trusting a downloadable executable from the Internet. More on that later (see Preparation).
 
