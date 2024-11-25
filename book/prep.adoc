@@ -8,7 +8,7 @@ You are probably excited to get going and we've done our best to help you get st
 . Get a computer
 . Learn to type from home row
 . Install the Go compiler and Code-Mage using Go
-. Install the development tools you'll need (with help form Code-Mage)
+. Install the development tools you'll need (with help from Code-Mage)
 . Connect with a supportive learning community
 . Learn to learn, take notes, and use your new development tools
 
