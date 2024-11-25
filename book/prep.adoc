@@ -37,13 +37,17 @@ include::prep/create-github-account.adoc[]
 
 include::prep/learn-basic-markdown.adoc[]
 
+//include::prep/install-alacritty.adoc[]
+
+//include::prep/install-bash.adoc[]
+
 include::prep/getgo.adoc[]
+
+include::prep/start-alacritty.adoc[]
 
 include::prep/installcm.adoc[]
 
 include::prep/cminit.adoc[]
-
-include::prep/start-alacritty.adoc[]
 
 include::prep/learnshell.adoc[]
 
