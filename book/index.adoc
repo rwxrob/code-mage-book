@@ -28,22 +28,24 @@
 :pygments-style: vs
 :pygments-linenums-mode: table
 
-include::copyright.adoc[]  
+include::copyright.adoc[]
 
-include::dedication.adoc[]  
+include::dedication.adoc[]
 
-//include::foreward.adoc[]  
+//include::foreward.adoc[]
 
-include::preface.adoc[]  
+include::preface.adoc[]
 
-include::intro.adoc[]  
+include::intro.adoc[]
 
 include::prep.adoc[]
 
-include::code.adoc[] 
+include::code.adoc[]
 
-include::develop.adoc[] 
+include::develop.adoc[]
 
-include::faq.adoc[]  
+include::faq.adoc[]
 
-include::licenses.adoc[]  
+include::licenses.adoc[]
+
+include::final.adoc[]

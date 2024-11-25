@@ -1,0 +1,21 @@
+<<<
+
+= Other titles by the author
+
+_Coming soon..._
+
+*Terminal Velocity*:  
+_Master the fastest human-computer interface with bash_
+
+*Bonzai Beauty*:  
+_Compose completable command trees with the Go Bonzai command-line framework_
+
+*homelab init*:  
+_Extend your code-mage magic with a ProxMox power tower_
+
+*Autodidactic*:  
+_Keys to success as a modern knowledge worker_
+
+*Programming with Purpose*:  
+_Coding for self-empowerment to save humanity_
+
